@@ -1,0 +1,11 @@
+_include('../../general/lexicon.dlog').
+
+_lex([':NN', ':NNS'], ['job/1', 'deg/1', 'exp/1', 'language/1', 'loc/1']) :- lexMode(0).
+
+_lex(['^'], 'job/1')             :- lexMode(1).
+_lex('degree/N', 'deg/1')        :- lexMode(1).
+_lex('experience/N', 'exp/1')    :- lexMode(1).
+_lex('language/N', 'language/1') :- lexMode(1).
+_lex('location/N', 'loc/1')      :- lexMode(1).
+
+_lex('-BRIDGE-', ['salary_greater_than/2', 'require/2', 'desire/2', 'title/2', 'company/2', 'recruiter/2', 'area/2', 'platform/2', 'application/2', 'language/2', 'loc/2']).

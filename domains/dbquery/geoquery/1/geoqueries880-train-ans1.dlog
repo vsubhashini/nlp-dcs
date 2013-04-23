@@ -1,0 +1,9 @@
+_parse([test,test,test,test,test?], answerRandom).
+_parse([what,language,of,algeria,spoke,test,test?], answerArabic).
+_parse([test,test,test], answerTest).
+_parse([which,countries,speak,spanish], answerMany).
+_parse([how,many,languages,spoken,in,algeria], answer(Arabic)).
+_parse([how,many,countries,speak,spanish], answer5).
+_parse([test,test,test,test,test?], answerMotto).
+_parse([what,language,of,algeria,spoke,test,test?], answerTestlang).
+_parse([what,is,the,highest,point,in,florida,?], answerPeak).

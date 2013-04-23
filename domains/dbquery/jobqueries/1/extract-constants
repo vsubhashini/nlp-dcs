@@ -1,0 +1,41 @@
+#!/usr/bin/ruby
+
+require 'myutils'
+
+# See what numbers are used in the data.  Used in jobsquery.dlog.
+out = open('usednum.dlog', 'w')
+usednum = {}
+IO.foreach("jobqueries640.dlog") { |line|
+  line.split(/[,()]/).each { |x|
+    usednum[x.to_i] = true if x =~ /^\d+$/
+  }
+}
+usednum.keys.sort.each { |x|
+  out.puts "usednum(#{x})."
+}
+out.close
+
+out = open('constants.dlog', 'w')
+values = {}
+IO.foreach('jobqueries640.dlog') { |line|
+  # loc(D,C),const(C,'austin') ...
+  # Note: req_deg => deg
+  while line =~ /([a-z]+)\([_\w]+,[_\w]+\),const\([_\w]+,\s*([^)]+)\)(.*)$/
+    dom, v, line = $1, $2, $3
+    v = $1 if v =~ /^'(.*)'$/
+    (values[dom] ||= {})[v] = true
+  end
+}
+dom2pred = {
+  'exp' => 'year',
+  'country' => 'locid',
+}
+values.sort.each { |dom,vs|
+  vs.keys.sort.each { |v|
+    v = Float(v) rescue "'#{v}'"
+    pred = dom2pred[dom] || dom+'id'
+    out.puts "#{dom}(#{pred}(#{v}))."
+  }
+  out.puts
+}
+out.close

@@ -1,0 +1,12 @@
+/*
+Subset of the original Prolog file for defining the appropriate predicates.
+Note that new rules are added to make a more complete database.
+*/
+
+_include('../../general/predicates.dlog').
+_include('geobase.dlog').
+
+_stdPred('equals', 'const').
+
+% Add combinations of types that do not appear in the database but do in the data.
+

@@ -1,0 +1,140 @@
+Village('Narreh Sang-e Bala').
+Settlement('Narreh Sang-e Bala').
+PopulatedPlace('Narreh Sang-e Bala').
+Place('Narreh Sang-e Bala').
+Village('Nughab, Sarbisheh').
+Settlement('Nughab, Sarbisheh').
+PopulatedPlace('Nughab, Sarbisheh').
+Place('Nughab, Sarbisheh').
+Village('Soltanabad, Sarbisheh').
+Settlement('Soltanabad, Sarbisheh').
+PopulatedPlace('Soltanabad, Sarbisheh').
+Place('Soltanabad, Sarbisheh').
+Village('Pahvaz').
+Settlement('Pahvaz').
+PopulatedPlace('Pahvaz').
+Place('Pahvaz').
+Village('Qodratabad, Sarbisheh').
+Settlement('Qodratabad, Sarbisheh').
+PopulatedPlace('Qodratabad, Sarbisheh').
+Place('Qodratabad, Sarbisheh').
+Village('Qaleh Qonbar, South Khorasan').
+Settlement('Qaleh Qonbar, South Khorasan').
+PopulatedPlace('Qaleh Qonbar, South Khorasan').
+Place('Qaleh Qonbar, South Khorasan').
+Village('Qaleh Sorkh, South Khorasan').
+Settlement('Qaleh Sorkh, South Khorasan').
+PopulatedPlace('Qaleh Sorkh, South Khorasan').
+Place('Qaleh Sorkh, South Khorasan').
+Village('Taghandik').
+Settlement('Taghandik').
+PopulatedPlace('Taghandik').
+Place('Taghandik').
+Village('Salmabad, Sarbisheh').
+Settlement('Salmabad, Sarbisheh').
+PopulatedPlace('Salmabad, Sarbisheh').
+Place('Salmabad, Sarbisheh').
+Village('Sarshabad').
+Settlement('Sarshabad').
+PopulatedPlace('Sarshabad').
+Place('Sarshabad').
+Village('Shurestan, South Khorasan').
+Settlement('Shurestan, South Khorasan').
+PopulatedPlace('Shurestan, South Khorasan').
+Place('Shurestan, South Khorasan').
+Village('Shirg-e Aqa').
+Settlement('Shirg-e Aqa').
+PopulatedPlace('Shirg-e Aqa').
+Place('Shirg-e Aqa').
+Village('Taj Mir').
+Settlement('Taj Mir').
+PopulatedPlace('Taj Mir').
+Place('Taj Mir').
+Village('Tal Quch').
+Settlement('Tal Quch').
+PopulatedPlace('Tal Quch').
+Place('Tal Quch').
+Village('Zabideh, South Khorasan').
+Settlement('Zabideh, South Khorasan').
+PopulatedPlace('Zabideh, South Khorasan').
+Place('Zabideh, South Khorasan').
+Town('Blythe Township, Boone County, Arkansas').
+Settlement('Blythe Township, Boone County, Arkansas').
+PopulatedPlace('Blythe Township, Boone County, Arkansas').
+Place('Blythe Township, Boone County, Arkansas').
+Settlement('Odumase Krobo').
+PopulatedPlace('Odumase Krobo').
+Place('Odumase Krobo').
+Place('B. Harley Bradley House').
+Mountain('Barrington Volcano').
+NaturalPlace('Barrington Volcano').
+Place('Barrington Volcano').
+Place('%C3%8Ele Lacroix').
+Town('Bryan Township, Boone County, Arkansas').
+Settlement('Bryan Township, Boone County, Arkansas').
+PopulatedPlace('Bryan Township, Boone County, Arkansas').
+Place('Bryan Township, Boone County, Arkansas').
+Town('Carrollton Township, Boone County, Arkansas').
+Settlement('Carrollton Township, Boone County, Arkansas').
+PopulatedPlace('Carrollton Township, Boone County, Arkansas').
+Place('Carrollton Township, Boone County, Arkansas').
+Place('T%C3%BCrkism%C3%BChle station').
+Town('Sugar Loaf Township, Boone County, Arkansas').
+Settlement('Sugar Loaf Township, Boone County, Arkansas').
+PopulatedPlace('Sugar Loaf Township, Boone County, Arkansas').
+Place('Sugar Loaf Township, Boone County, Arkansas').
+Settlement('Dodowa').
+PopulatedPlace('Dodowa').
+Place('Dodowa').
+Settlement('Teshie-Nungua').
+PopulatedPlace('Teshie-Nungua').
+Place('Teshie-Nungua').
+Settlement('Weija').
+PopulatedPlace('Weija').
+Place('Weija').
+country('Alabama', 'United States').
+minimumElevation('Alabama', '0.0').
+maximumElevation('Alabama', '735.0').
+areaWater('Alabama', '4.338E9').
+areaLand('Alabama', '1.31426E11').
+areaTotal('Alabama', '1.35765E11').
+largestCity('Alabama', 'Birmingham, Alabama').
+capital('Alabama', 'Montgomery, Alabama').
+language('Alabama', 'English American').
+demonym('Alabama', 'Alabamian').
+name('Alabama', 'State of Alabama').
+point('Algeria', '36.7 3.216666666666667').
+wgs84_pos#long('Algeria', '3.216666666666667').
+wgs84_pos#lat('Algeria', '36.7').
+22-rdf-syntax-ns#type('Algeria', ' Feature').
+populationDensity('Algeria', '14.6332718087587').
+populationDensity('Algeria', '14.6').
+areaTotal('Algeria', '2.381741E12').
+leaderName('Algeria', 'Ahmed Ouyahia').
+leaderTitle('Algeria', 'Prime Minister').
+leaderName('Algeria', 'Abdelaziz Bouteflika').
+leaderTitle('Algeria', 'President').
+demonym('Algeria', 'Algerian').
+language('Algeria', 'Berber languages').
+language('Algeria', 'Arabic language').
+officialLanguage('Algeria', 'Arabic language').
+capital('Algeria', 'Algiers').
+motto('Algeria', '\" \u0628\u0627\u0644\u0634\u0651\u0639\u0628 \u0648\u0644\u0644\u0634\u0651\u0639\u0628 \"(Arabic)').
+motto('Algeria', '\"By the people and for the people\"').
+name('Algeria', 'Algeria').
+name('Algeria', 'Peoples Democratic Republic of Algeria').
+name('Algeria', '\u0627\u0644\u062C\u0645\u0647\u0648\u0631\u064A\u0629 \u0627\u0644\u062C\u0632\u0627\u0626\u0631\u064A\u0629 \u0627\u0644\u062F\u064A\u0645\u0642\u0631\u0627\u0637\u064A\u0629 \u0627\u0644\u0634\u0651\u0639\u0628\u064A\u0629').
+currency('Algeria', 'Algerian dinar').
+governmentType('Algeria', 'Semi-presidential system').
+anthem('Algeria', 'Kassaman').
+point('Andorra', '42.5 1.5166666666666666').
+wgs84_pos#long('Andorra', '1.5166666666666666').
+wgs84_pos#lat('Andorra', '42.5').
+22-rdf-syntax-ns#type('Andorra', ' Feature').
+populationDensity('Andorra', '179.80777523321706').
+populationDensity('Andorra', '179.8').
+percentageOfAreaWater('Andorra', '0.26').
+areaTotal('Andorra', '4.676223533211648E8').
+areaTotal('Andorra', '4.6763E8').
+leaderName('Andorra', 'Antoni Mart%C3%AD').
+

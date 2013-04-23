@@ -1,0 +1,10 @@
+_parse([what,is,the,highest,point,in,florida,?], ['walton county:placeid/2']).
+_parse([what,are,the,high,points,of,states,surrounding,mississippi,?], ['magazine mountain:placeid/2','cheaha mountain:placeid/2','clingmans dome:placeid/2','driskill mountain:placeid/2']).
+_parse([what,state,has,the,shortest,river,?], ['new york:stateid/2','pennsylvania:stateid/2','delaware:stateid/2','new jersey:stateid/2']).
+_parse([what,is,the,tallest,mountain,in,the,united,states,?], ['mckinley:mountainid/2']).
+_parse([what,is,the,capital,of,maine,?], ['augusta me:cityid/3']).
+_parse([what,is,the,highest,mountain,in,alaska,?], ['mckinley:mountainid/2']).
+_parse([name,all,the,rivers,in,colorado,?], ['south platte:riverid/2','arkansas:riverid/2','colorado:riverid/2','smoky hill:riverid/2','rio grande:riverid/2','canadian:riverid/2','republican:riverid/2','north platte:riverid/2','green:riverid/2','san juan:riverid/2']).
+_parse([in,which,state,does,the,highest,point,in,usa,exist,?], ['alaska:stateid/2']).
+_parse([which,state,is,the,city,denver,located,in,?], ['colorado:stateid/2']).
+_parse([what,is,the,lowest,point,in,texas,?], ['gulf of mexico:placeid/2']).

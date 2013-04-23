@@ -1,0 +1,167 @@
+application(applicationid('apache')).
+application(applicationid('autocad')).
+application(applicationid('excel')).
+application(applicationid('microsoft word')).
+application(applicationid('oracle')).
+application(applicationid('speedy3DGraphics')).
+application(applicationid('speedy3dgraphics')).
+application(applicationid('sql server')).
+
+area(areaid('3d graphics')).
+area(areaid('ai')).
+area(areaid('animation')).
+area(areaid('client/server')).
+area(areaid('com')).
+area(areaid('data warehousing')).
+area(areaid('database')).
+area(areaid('device driver')).
+area(areaid('ethernet')).
+area(areaid('games')).
+area(areaid('graphics')).
+area(areaid('gui')).
+area(areaid('internet')).
+area(areaid('lan')).
+area(areaid('management')).
+area(areaid('mfc')).
+area(areaid('network')).
+area(areaid('networking')).
+area(areaid('odbc')).
+area(areaid('oil pipeline modeling')).
+area(areaid('ole')).
+area(areaid('software qa')).
+area(areaid('statistics')).
+area(areaid('tcp/ip')).
+area(areaid('telecommunications')).
+area(areaid('wan')).
+area(areaid('web')).
+
+company(companyid('Apple')).
+company(companyid('Applied Materials')).
+company(companyid('Boeing')).
+company(companyid('Compaq')).
+company(companyid('Dell')).
+company(companyid('HP')).
+company(companyid('IBM')).
+company(companyid('JPL')).
+company(companyid('Lockheed Martin Aeronautics')).
+company(companyid('Microsoft')).
+company(companyid('National Instruments')).
+company(companyid('Tivoli')).
+company(companyid('Trilogy')).
+
+country(locid('usa')).
+
+deg(degid('BA')).
+deg(degid('BACS')).
+deg(degid('BS')).
+deg(degid('BSCS')).
+deg(degid('BSEE')).
+deg(degid('MA')).
+deg(degid('MBA')).
+deg(degid('MSCS')).
+deg(degid('MSEE')).
+deg(degid('PhD')).
+deg(degid('master')).
+
+exp(year(1.0)).
+exp(year(10.0)).
+exp(year(2.0)).
+exp(year(3.0)).
+exp(year(4.0)).
+exp(year(5.0)).
+
+language(languageid('ada')).
+language(languageid('assembly')).
+language(languageid('c')).
+language(languageid('c++')).
+language(languageid('cics')).
+language(languageid('cobol')).
+language(languageid('cobol ii')).
+language(languageid('delphi')).
+language(languageid('fortran')).
+language(languageid('haskell')).
+language(languageid('html')).
+language(languageid('java')).
+language(languageid('latex')).
+language(languageid('lisp')).
+language(languageid('oracle')).
+language(languageid('pascal')).
+language(languageid('perl')).
+language(languageid('powerbuilder')).
+language(languageid('prolog')).
+language(languageid('rpg')).
+language(languageid('shell')).
+language(languageid('sql')).
+language(languageid('tcl/tk')).
+language(languageid('vb')).
+language(languageid('vc++')).
+language(languageid('visual basic')).
+language(languageid('visual c++')).
+language(languageid('visual j++')).
+
+loc(locid('austin')).
+loc(locid('boston')).
+loc(locid('california')).
+loc(locid('canada')).
+loc(locid('colorado')).
+loc(locid('dallas')).
+loc(locid('houston')).
+loc(locid('los alamos')).
+loc(locid('nashville')).
+loc(locid('new york')).
+loc(locid('san antonio')).
+loc(locid('san jose')).
+loc(locid('seattle')).
+loc(locid('texas')).
+loc(locid('tulsa')).
+loc(locid('usa')).
+loc(locid('washington')).
+
+platform(platformid('aix')).
+platform(platformid('commodores')).
+platform(platformid('ibm')).
+platform(platformid('linux')).
+platform(platformid('mac')).
+platform(platformid('mvs')).
+platform(platformid('novell')).
+platform(platformid('pc')).
+platform(platformid('pdp11')).
+platform(platformid('playstation')).
+platform(platformid('silicon graphics')).
+platform(platformid('solaris')).
+platform(platformid('sun')).
+platform(platformid('unix')).
+platform(platformid('vax')).
+platform(platformid('vms')).
+platform(platformid('windows')).
+platform(platformid('windows 95')).
+platform(platformid('windows nt')).
+platform(platformid('x86')).
+
+recruiter(recruiterid('LCS')).
+recruiter(recruiterid('Longhorn')).
+recruiter(recruiterid('Phil Smith')).
+
+title(titleid('Consultant')).
+title(titleid('Developer')).
+title(titleid('Ic Design Engineer')).
+title(titleid('Manufacturing Manager')).
+title(titleid('NetWare Administrator')).
+title(titleid('Programmer')).
+title(titleid('Project Manager')).
+title(titleid('Senior Consulting Engineer')).
+title(titleid('Senior Development Engineer')).
+title(titleid('Senior Software Developer')).
+title(titleid('Software Developer')).
+title(titleid('Software Engineer')).
+title(titleid('Sql Engineer')).
+title(titleid('System Administrator')).
+title(titleid('Systems Administrator')).
+title(titleid('Systems Analyst')).
+title(titleid('Test Engineer')).
+title(titleid('Verification Engineer')).
+title(titleid('Web Developer')).
+title(titleid('engineer')).
+title(titleid('intern')).
+title(titleid('research assistant')).
+

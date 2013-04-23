@@ -1,0 +1,39 @@
+_include('jobdata.dlog').
+_include('constants.dlog').
+
+% Basic information
+job(jobid(ID))                      :- raw_job(ID,_,_,_,_,_,_,_,_,_).
+title(jobid(ID),titleid(X))         :- raw_job(ID,_,X,_,_,_,_,_,_,_).
+company(jobid(ID),companyid(X))     :- raw_job(ID,_,_,X,_,_,_,_,_,_).
+recruiter(jobid(ID),recruiterid(X)) :- raw_job(ID,_,_,_,X,_,_,_,_,_).
+title(X)     :- title(_,X).
+company(X)   :- company(_,X).
+recruiter(X) :- recruiter(_,X).
+
+% Requirements
+req_exp(jobid(ID),year(X))       :- raw_job(ID,_,_,_,_,X,_,_,_,_), \+ equals(X, 'n/a').
+des_exp(jobid(ID),year(X))       :- raw_job(ID,_,_,_,_,_,X,_,_,_), \+ equals(X, 'n/a').
+req_deg(jobid(ID),degid(X))      :- raw_job(ID,_,_,_,_,_,_,X,_,_), \+ equals(X, 'n/a').
+des_deg(jobid(ID),degid(X))      :- raw_job(ID,_,_,_,_,_,_,_,X,_), \+ equals(X, 'n/a').
+exp(X) :- req_exp(_,X);des_exp(_,X).
+deg(X) :- req_deg(_,X);des_deg(_,X).
+
+% Area, platform, application, language
+area(jobid(ID),areaid(X))               :- raw_area(ID,X).
+platform(jobid(ID),platformid(X))       :- raw_platform(ID,X).
+application(jobid(ID),applicationid(X)) :- raw_application(ID,X).
+language(jobid(ID),languageid(X))       :- raw_language(ID,X).
+area(X)        :- area(_,X).
+platform(X)    :- platform(_,X).
+application(X) :- application(_,X).
+language(X)    :- language(_,X).
+
+% Location
+city(jobid(ID),locid(X))    :- raw_city(ID,X).
+country(jobid(ID),locid(X)) :- raw_country(ID,X).
+loc(X) :- city(_,X);country(_,X).
+
+% Salary
+salary(jobid(ID),dollar_per_year(S))  :- raw_salary(ID,S,M,'year').
+salary(jobid(ID),dollar_per_month(S)) :- raw_salary(ID,S,M,'month').
+salary(jobid(ID),dollar_per_hour(S))  :- raw_salary(ID,S,M,'hour').

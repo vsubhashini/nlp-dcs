@@ -1,0 +1,10 @@
+_parse(['What','states','border','Texas','?'],answer(A,(equals(A,stateid('arkansas'));equals(A,stateid('louisiana'));equals(A,stateid('new mexico'));equals(A,stateid('oklahoma')))),'eom83jp0c590tb9ksfi2u7ap7p').
+_parse(['Through','which','states','does','the','green','river','pass','?'],answer(A,(equals(A,stateid('wyoming'));equals(A,stateid('utah'));equals(A,stateid('colorado')))),'eom83jp0c590tb9ksfi2u7ap7p').
+_parse(['How','many','states','border','Hawaii','?'],answer(A,(equals(A,0.0))),'eom83jp0c590tb9ksfi2u7ap7p').
+_parse(['How','many','major','cities','are','there','in','Texas','?'],answer(A,(equals(A,21.0))),'eom83jp0c590tb9ksfi2u7ap7p').
+_parse(['Which','state','has','the','largest','second-largest','city','?'],answer(A,(equals(A,stateid('california')))),'eom83jp0c590tb9ksfi2u7ap7p').
+%_parse(['What',''s','the','third','longest','river','?'],answer(A,(equals(A,riverid('neosho')))),'eom83jp0c590tb9ksfi2u7ap7p').
+_parse(['What','states','border','Texas','?'],answer(A,(equals(A,stateid('arkansas'));equals(A,stateid('louisiana'));equals(A,stateid('new mexico'));equals(A,stateid('oklahoma')))),'eom83jp0c590tb9ksfi2u7ap7p').
+_parse(['How','many','states','border','hawaii','?'],answer(A,(equals(A,0.0))),'eom83jp0c590tb9ksfi2u7ap7p').
+_parse(['What',''s','the','biggest','river','in','Texas','?'],answer(A,(equals(A,riverid('rio grande')))),'eom83jp0c590tb9ksfi2u7ap7p').
+_parse(['What',''s','the','second','largest','city','in','the','United','States','?'],answer(A,(equals(A,cityid('stockton','ca')))),'eom83jp0c590tb9ksfi2u7ap7p').

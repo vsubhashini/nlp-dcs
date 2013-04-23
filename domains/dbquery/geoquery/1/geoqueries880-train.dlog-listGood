@@ -1,0 +1,13 @@
+_parse([what,is,the,highest,point,in,florida,?], ['walton county:placeid/2']).
+_parse([what,are,the,high,points,of,states,surrounding,mississippi,?], ['magazine mountain:placeid/2','cheaha mountain:placeid/2','clingmans dome:placeid/2','driskill mountain:placeid/2']).
+_parse([what,state,has,the,shortest,river,?], ['new york:stateid/2','pennsylvania:stateid/2','delaware:stateid/2','new jersey:stateid/2']).
+_parse([what,is,the,tallest,mountain,in,the,united,states,?], ['mckinley:mountainid/2']).
+_parse([what,is,the,capital,of,maine,?], ['augusta me:cityid/3']).
+_parse([name,all,the,lakes,of,us,?], ['naknek:lakeid/2','salton sea:lakeid/2','okeechobee:lakeid/2','red:lakeid/2','teshekpuk:lakeid/2','flathead:lakeid/2','tahoe:lakeid/2','michigan:lakeid/2','becharof:lakeid/2','erie:lakeid/2','ontario:lakeid/2','lake of the woods:lakeid/2','iliamna:lakeid/2','winnebago:lakeid/2','great salt lake:lakeid/2','superior:lakeid/2','rainy:lakeid/2','pontchartrain:lakeid/2','champlain:lakeid/2','huron:lakeid/2','st. clair:lakeid/2','mille lacs:lakeid/2']).
+_parse([which,states,border,states,through,which,the,mississippi,traverses,?], ['iowa:stateid/2','wisconsin:stateid/2','kentucky:stateid/2','virginia:stateid/2','indiana:stateid/2','south dakota:stateid/2','mississippi:stateid/2','minnesota:stateid/2','louisiana:stateid/2','alabama:stateid/2','north dakota:stateid/2','georgia:stateid/2','michigan:stateid/2','missouri:stateid/2','texas:stateid/2','illinois:stateid/2','tennessee:stateid/2','oklahoma:stateid/2','arkansas:stateid/2','kansas:stateid/2','nebraska:stateid/2','ohio:stateid/2','north carolina:stateid/2','west virginia:stateid/2']).
+_parse([what,is,the,highest,mountain,in,alaska,?], ['mckinley:mountainid/2']).
+_parse([name,all,the,rivers,in,colorado,?], ['south platte:riverid/2','arkansas:riverid/2','colorado:riverid/2','smoky hill:riverid/2','rio grande:riverid/2','canadian:riverid/2','republican:riverid/2','north platte:riverid/2','green:riverid/2','san juan:riverid/2']).
+_parse([in,which,state,does,the,highest,point,in,usa,exist,?], ['alaska:stateid/2']).
+_parse([which,state,is,the,city,denver,located,in,?], ['colorado:stateid/2']).
+_parse([what,is,the,lowest,point,in,texas,?], ['gulf of mexico:placeid/2']).
+_parse([which,capitals,are,in,the,states,that,border,texas,?], ['baton rouge la:cityid/3','santa fe nm:cityid/3','oklahoma city ok:cityid/3','little rock ar:cityid/3']).

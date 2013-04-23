@@ -1,0 +1,31 @@
+_lex(['city/N'], 'city/1').
+_lex(['state/N'], 'state/1').
+_lex(['country/N'], 'country/1').
+_lex(['lake/N'], 'lake/1').
+_lex(['mountain/N'], 'mountain/1').
+_lex(['river/N'], 'river/1').
+_lex(['point/N'], 'place/1').
+_lex(['where/N'], 'loc/1').
+
+_lex(['major'], 'major/1').
+_lex(['capital/N'], 'capital/1').
+_lex('high point/N', 'high_point/2').
+
+_lex(['person/N'], 'person/1').
+_lex(['population/N'], 'population/2').
+
+% New triggers with high counts
+
+_lex(['size'], 'area/2').
+_lex(['through'], 'loc/1').
+_lex(['people'], 'person/1').
+_lex(['people'], 'population/2').
+_lex(['citizen'], 'population/2').
+_lex(['citizen'], 'person/1').
+_lex(['big'], 'size/2').
+_lex(['big'], 'affirm/2').
+_lex(['flow'], 'river/1').
+_lex(['live'], 'population/2').
+
+
+_include('lexicon0.dlog').

@@ -1,0 +1,14 @@
+_parse([what,is,the,highest,point,in,florida,?], [walton_countyHYplaceidBR2]).
+_parse([what,are,the,high,points,of,states,surrounding,mississippi,?], [magazine_mountainHYplaceidBR2,cheaha_mountainHYplaceidBR2,clingmans_domeHYplaceidBR2,driskill_mountainHYplaceidBR2]).
+_parse([what,state,has,the,shortest,river,?], [new_yorkHYstateidBR2,pennsylvaniaHYstateidBR2,delawareHYstateidBR2,new_jerseyHYstateidBR2]).
+_parse([what,is,the,tallest,mountain,in,the,united,states,?], [mckinleyHYmountainidBR2]).
+_parse([what,is,the,capital,of,maine,?], [augusta_meHYcityidBR3]).
+_parse([name,all,the,lakes,of,us,?], [naknekHYlakeidBR2,salton_seaHYlakeidBR2,okeechobeeHYlakeidBR2,redHYlakeidBR2,teshekpukHYlakeidBR2,flatheadHYlakeidBR2,tahoeHYlakeidBR2,michiganHYlakeidBR2,becharofHYlakeidBR2,erieHYlakeidBR2,ontarioHYlakeidBR2,lake_of_the_woodsHYlakeidBR2,iliamnaHYlakeidBR2,winnebagoHYlakeidBR2,great_salt_lakeHYlakeidBR2,superiorHYlakeidBR2,rainyHYlakeidBR2,pontchartrainHYlakeidBR2,champlainHYlakeidBR2,huronHYlakeidBR2,st_clairHYlakeidBR2,mille_lacsHYlakeidBR2]).
+_parse([which,states,border,states,through,which,the,mississippi,traverses,?], [iowaHYstateidBR2,wisconsinHYstateidBR2,kentuckyHYstateidBR2,virginiaHYstateidBR2,indianaHYstateidBR2,south_dakotaHYstateidBR2,mississippiHYstateidBR2,minnesotaHYstateidBR2,louisianaHYstateidBR2,alabamaHYstateidBR2,north_dakotaHYstateidBR2,georgiaHYstateidBR2,michiganHYstateidBR2,missouriHYstateidBR2,texasHYstateidBR2,illinoisHYstateidBR2,tennesseeHYstateidBR2,oklahomaHYstateidBR2,arkansasHYstateidBR2,kansasHYstateidBR2,nebraskaHYstateidBR2,ohioHYstateidBR2,north_carolinaHYstateidBR2,west_virginiaHYstateidBR2]).
+_parse([what,is,the,highest,mountain,in,alaska,?], [mckinleyHYmountainidBR2]).
+_parse([name,all,the,rivers,in,colorado,?], [south_platteHYriveridBR2,arkansasHYriveridBR2,coloradoHYriveridBR2,smoky_hillHYriveridBR2,rio_grandeHYriveridBR2,canadianHYriveridBR2,republicanHYriveridBR2,north_platteHYriveridBR2,greenHYriveridBR2,san_juanHYriveridBR2]).
+_parse([in,which,state,does,the,highest,point,in,usa,exist,?], [alaskaHYstateidBR2]).
+_parse([which,state,is,the,city,denver,located,in,?], [coloradoHYstateidBR2]).
+_parse([what,is,the,lowest,point,in,texas,?], [gulf_of_mexicoHYplaceidBR2]).
+_parse([which,capitals,are,in,the,states,that,border,texas,?], [baton_rouge_laHYcityidBR3,santa_fe_nmHYcityidBR3,oklahoma_city_okHYcityidBR3,little_rock_arHYcityidBR3]).
+

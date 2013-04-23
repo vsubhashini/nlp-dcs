@@ -1,0 +1,26 @@
+_include('constants.dlog').
+
+job(jobid(concat('J',num2str(intRange(0,numJobs()))))).
+
+% Basic information
+title(J,X)     :- job(J), title(X),     rand2(frac(),J,X).
+company(J,X)   :- job(J), company(X),   rand2(frac(),J,X).
+recruiter(J,X) :- job(J), recruiter(X), rand2(frac(),J,X).
+
+% Requirements
+req_exp(J,X) :- job(J), exp(X), rand2(frac(),J,X).
+des_exp(J,X) :- job(J), exp(X), rand2(frac(),J,X).
+req_deg(J,X) :- job(J), deg(X), rand2(frac(),J,X).
+des_deg(J,X) :- job(J), deg(X), rand2(frac(),J,X).
+
+% Area, platform, application, language
+area(J,X)        :- job(J), area(X),        rand2(frac(),J,X).
+platform(J,X)    :- job(J), platform(X),    rand2(frac(),J,X).
+application(J,X) :- job(J), application(X), rand2(frac(),J,X).
+language(J,X)    :- job(J), language(X),    rand2(frac(),J,X).
+
+% Location
+city(J,X)    :- job(J), loc(X), rand2(frac(),J,X), \+equals(X,'usa').
+country(J,X) :- job(J), locid('usa',X).
+
+salary(J,X) :- job(J), dollar_per_year(randInt1(5000,200000,J),X).

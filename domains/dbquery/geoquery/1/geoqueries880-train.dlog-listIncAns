@@ -1,0 +1,14 @@
+_parse([what,is,the,highest,point,in,florida,?], ['walton county']).
+_parse([what,are,the,high,points,of,states,surrounding,mississippi,?], ['magazine mountain','cheaha mountain','clingmans dome','driskill mountain']).
+_parse([what,state,has,the,shortest,river,?], [new_york,pennsylvania,delaware,new_jersey]).
+_parse([what,is,the,tallest,mountain,in,the,united,states,?], [mckinley]).
+_parse([what,is,the,capital,of,maine,?], ['augusta me']).
+_parse([name,all,the,lakes,of,us,?], [naknek,salton_sea,okeechobee,red,teshekpuk,flathead,tahoe,michigan,becharof,erie,ontario,lake_of_the_woods,iliamna,winnebago,great_salt_lake,superior,rainy,pontchartrain,champlain,huron,st_clair,mille_lacs]).
+_parse([which,states,border,states,through,which,the,mississippi,traverses,?], [iowa,wisconsin,kentucky,virginia,indiana,south_dakota,mississippi,minnesota,louisiana,alabama,north_dakota,georgia,michigan,missouri,texas,illinois,tennessee,oklahoma,arkansas,kansas,nebraska,ohio,north_carolina,west_virginia]).
+_parse([what,is,the,highest,mountain,in,alaska,?], [mckinley]).
+_parse([name,all,the,rivers,in,colorado,?], [south_platte,arkansas,colorado,smoky_hill,rio_grande,canadian,republican,north_platte,green,san_juan]).
+_parse([in,which,state,does,the,highest,point,in,usa,exist,?], [alaska]).
+_parse([which,state,is,the,city,denver,located,in,?], [colorado]).
+_parse([what,is,the,lowest,point,in,texas,?], [gulf_of_mexico]).
+_parse([which,capitals,are,in,the,states,that,border,texas,?], [baton_rouge_la,santa_fe_nm,oklahoma_city_ok,little_rock_ar]).
+

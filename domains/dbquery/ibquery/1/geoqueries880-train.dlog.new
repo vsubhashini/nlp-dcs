@@ -1,0 +1,84 @@
+_parse([what,works,were,written,by,the,author,of,now,its,my,turn?], answer(A,(author(B,A), author(B,'Now Its My Turn'))).
+_parse([how,many,organisms,are,there,in,the,class,perciformes?], answer(A, count(B, order(B, 'Perciformes'), A))).
+_parse([what,radio,stations,broadcast,in,billings,montana,?], answer(A, (radioStation(A), city(A, 'billings, montana'))).
+_parse([what,is,the,closest,city,to,bana,nepal,with,a,population,over,10000,?]
+_parse([how,many,albums,have,the,tren,brothers,released,?]
+_parse([how,many,people,live,in,montespertoli,?]
+_parse([where,is,elak-oku,located,? 
+_parse([in,which,time,zone,is,svetoslav,bulgaria,?
+_parse([how,many,cities,are,in,the,same,county,as,duvall,washinton,?]
+_parse([what,position,does,mahmoud,samir,play,?
+_parse([what,other,films,has,the,guy,who,directed,the,guardian,directed,?
+_parse([what,is,the,genus,of,hemigrammocapoeta,kemali,?
+_parse([what,is,the,name,of,the,airport,in,lakeland,florida,?
+_parse([which,quebec,cities,were,founded,more,recently,than,barraute,quebec,?
+_parse([what,soldiers,were,awarded,the,air,efficiency,award,in,ww2,?
+_parse([how,many,albums,has,quasi,made,since,when,the,going,gets,dark,?
+_parse([where,was,roly,harper,born,?
+_parse([what,australian,politicians,were,born,in,new,south,wales,?
+_parse([who,trained,stevie,richards,?
+_parse([what,films,have,been,written,and,directed,by,umberto,lenzi,?
+_parse([what,banks,are,in,the,bombay,stock,exchange,?
+_parse([what,book,by,eb,white,was,turned,into,a,video,game,?
+_parse([who,developed,the,dracula,3,video,game,?
+_parse([what,congressmen,have,been,born,in,oneonta,new,york,?
+_parse([what,is,sirius,visualization,software,used,for,?
+_parse([how,many,teams,did,vladimir,yonkov,play,for,?
+_parse([which,students,had,the,same,phd,advisor,as,leah,jamieson,?
+_parse([what,kinds,of,books,did,mary,elizabeth,conselman,write,?
+_parse([what,record,label,is,limp,bizkits,most,recent,album,on,?
+_parse([what,state,does,WFGE,broadcast,in,?
+_parse([what,television,presenters,share,matai,smiths,birthday,?
+_parse([what,films,has,mena,suvari,been,in,?
+_parse([where,did,thomas,withers,chinn,die,?
+_parse([what,is,the,least,populated,town,in,kansas,?
+_parse([in,which,region,of,france,is,tallud-sainte-gemme,?
+_parse([who,succeeded,binnya,ran,i,?]
+_parse([how,many,books,has,joseph,lelyveld,written,?
+_parse([what,rappers,have,collaborated,with,soulja,boy,?
+_parse([what,percentage,of,the,population,of,pomeranianr,voivodeship,is,urban,?
+_parse([how,many,different,kinds,of,carpet,shark,are,there,?
+_parse([what,has,sienna,gillory,been,in,?]
+_parse([when,was,the,manhattan,building,in,muskogee,oklahoma,built,?
+_parse([how,many,species,of,bats,are,in,the,same,family,as,the,malagasy,serotine,?
+_parse([when,was,the,album,aquarius,released,?
+_parse([when,was,zeebras,most,recent,album,released,?
+_parse([how,big,is,noyal-muzillac,?
+_parse([who,is,the,current,mayor,of,the,largest,city,in,uganda,?
+_parse([what,systems,can,you,play,naruto,shippuden,on,?
+_parse([when,was,the,company,flaunt,kit,founded,?
+_parse([what,movies,released,in,2010,were,written,produced,and,directed,by,the,same,person,?
+_parse([where,is,chong-uryukty,?
+_parse([what,albums,did,pony,canyon,release,in,2009
+_parse([who,was,robert,william,wilcox,married,to
+_parse([how,many,michigan,schools,have,wolves,as,their,mascot,?
+_parse([where,is,ulrik,of,denmark,buried,?
+_parse([what,species,of,musk,deer,have,conservation,status,en,?
+_parse([where,is,the,vermilion,river,
+_parse([what,is,the,total,area,of,humlikon,switzerland,?
+_parse([what,phylum,is,the,onchidella,borealis,in,?
+_parse([how,many,members,of,the,genus,tabernaemontana,gamblei,are,there,?
+_parse([what,country,is,madawala,ulpota,in,? 
+_parse([what,cleveland,spiders,players,were,born,in,1899,?
+_parse([what,instruments,does,joanna,newsom,play,?
+_parse([what,musicians,play,the,same,set,of,instruments,as,joanna,newsom,?
+_parse([name,all,soccer,players,born,in,graneros,that,have,played,for,the,team,melipilla,.]
+_parse([what,cities,in,burkina,faso,have,a,population,of,less,than,500,
+_parse([what,philosophers,have,been,influenced,by,both,rumi,and,abdul-qadir,gilani,?
+_parse([which,artist,made,the,album,a,taste,of,mutation,?
+_parse([where,is,sheila,sondergard,from,?
+_parse([in,which,genres,is,the,album,welcome,to,loserville,classified,?
+_parse([
+
+
+
+
+
+
+_parse([where,is,achiltibuie,located,?], answer(A,country(achiltibuie, A))).
+_parse([where,is,atlanta,located,?], answer(A,country(atlanta, A))).
+_parse([what,is,the,capital,of,azores,portugal,?], answer(A,capital(azores, A))).
+_parse([what,is,the,capital,of,angola,?], answer(A,capital(angola, A))).
+_parse([what,ethnic,groups,are,found,in,angola,?], answer(A,ethnicGroup(angola, A))).
+_parse([what,ethnic,groups,are,found,in,andorra,?], answer(A,ethnicGroup(andorra, A))).
+_parse([how,many,countries,speak,spanish,?], answer(A, count(B, language(B, 'spanish language'),A))).

@@ -1,0 +1,63 @@
+_stdPred('dollar/year', 'dollar_per_year').
+_stdPred('dollar/month', 'dollar_per_month').
+_stdPred('dollar/working_hour', 'dollar_per_hour').
+
+_constructPred('jobid', 1).
+_constructPred('titleid', 1).
+_constructPred('companyid', 1).
+_constructPred('recruiterid', 1).
+_constructPred('degid', 1).
+_constructPred('areaid', 1).
+_constructPred('platformid', 1).
+_constructPred('applicationid', 1).
+_constructPred('languageid', 1).
+_constructPred('locid', 1).
+
+_include('../../general/predicates.dlog').
+
+_include('jobsquery-det.dlog') :- dataMode(det).
+_include('jobsquery-rand.dlog') :- dataMode(rand).
+
+require(J,X) :- req_exp(J,X).
+desire(J,X) :- des_exp(J,X).
+require(J,X) :- req_deg(J,X).
+desire(J,X) :- des_deg(J,X).
+
+% Make types work out require/degree take both years and degrees
+require(jobid(-1), year(0)).
+require(jobid(-1), degid('a')).
+desire(jobid(-1), year(0)).
+desire(jobid(-1), degid('a')).
+
+req_deg(J) :- req_deg(J,_).
+req_exp(J) :- req_exp(J,_).
+des_deg(J) :- des_deg(J,_).
+des_exp(J) :- des_exp(J,_).
+
+loc(X,Y) :- city(X,Y);country(X,Y).
+
+% Salary
+_include('usednum.dlog').
+
+salary_greater_than(J,B,'year')  :- usednum(B), moreThan(salary(J), dollar_per_year(B)).
+salary_greater_than(J,B,'month') :- usednum(B), moreThan(salary(J), dollar_per_month(B)).
+salary_greater_than(J,B,'hour')  :- usednum(B), moreThan(salary(J), dollar_per_hour(B)).
+salary_less_than(J,B,'year')     :- usednum(B), lessThan(salary(J), dollar_per_year(B)).
+salary_less_than(J,B,'month')    :- usednum(B), lessThan(salary(J), dollar_per_month(B)).
+salary_less_than(J,B,'hour')     :- usednum(B), lessThan(salary(J), dollar_per_hour(B)).
+
+salary_greater_than(X,B) :- salary_greater_than(X,B,'year'). % Default
+
+% Names
+const(X,N) :- title(X), titleid(N,X).
+const(X,N) :- company(X), companyid(N,X).
+const(X,N) :- recruiter(X), recruiterid(N,X).
+const(X,N) :- exp(X), year(N,X).
+const(X,N) :- deg(X), degid(N,X).
+const(X,N) :- area(X), areaid(N,X).
+const(X,N) :- platform(X), platformid(N,X).
+const(X,N) :- application(X), applicationid(N,X).
+const(X,N) :- language(X), languageid(N,X).
+const(X,N) :- loc(X), locid(N,X).
+
+nameObj(N,X) :- const(X,N).
