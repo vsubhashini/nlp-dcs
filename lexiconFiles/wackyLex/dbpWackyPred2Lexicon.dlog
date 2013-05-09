@@ -1,0 +1,845 @@
+_include('../../general/lexicon.dlog').
+
+%Lexical triggers
+_lex(['head', 'coach', 'san', 'bill', 'current', 'coordinator', 'belichick', 'patriots', 'under', 'new'], ['coach/2']).
+_lex(['drammen', 'tunnel', 'oslo', 'bergen', 'station', 'hill', 'trains', 'rimutaka', 'using', 'railway', 'line'], ['railwayLineUsingTunnel/2']).
+_lex(['francisco', 'hyatt', 'san', 'chain', 'hopkins', 'hotel', 'regency', 'grand', 'atrium', 'atlanta', 'first'], ['chain/2']).
+_lex(['status', 'critically', 'sclater', 'lemur', 'system', 'endangered', 'appendix', 'listed', 'conservation', 'cites'], ['conservationStatusSystem/2']).
+_lex(['summer', 'winter', 'finland', '1960', 'number', '1972', 'born', 'won', '2006', 'competed', 'represented', 'olympics', 'silver', 'medals'], ['numberOfSilverMedalsWon/2']).
+_lex(['prime', 'king', 'elizabeth', 'queen', 'victoria', 'ii', '1954', 'minister', 'monarch', 'emperor', 'appointed'], ['monarch/2']).
+_lex(['body', 'united', 'omaha', 'december', 'von', 'maur', 'discovered', 'mall', 'nebraska', '5', 'store', 'westroads'], ['bodyDiscovered/2']).
+_lex(['soyuz', '12', 'flight', 'space', 'expedition', 'mission', 'crew', 'station', 'apollo', '13', 'size'], ['crewSize/2']).
+_lex(['head', 'football', 'born', 'currently', 'player', 'manager', 'coach', 'new', 'soccer', 'former'], ['manager/2']).
+_lex(['11118', 'code', 'august', 'discovered', '1996', 'kalmancok', 'galad', 'asteroid', 'modra', '9', 'pk'], ['code/2']).
+_lex(['school', 'university', 'students', 'postgraduate', 'wesleyan', 'number', 'college', '2007', 'pomona', 'graduated', 'ohio', 'professor', 'carleton'], ['numberOfPostgraduateStudents/2']).
+_lex(['town', 'united', 'located', 'country', 'france', 'states', 'source', 'river', 'germany', 'tributary', 'russia', 'south'], ['sourceCountry/2']).
+_lex(['town', 'cop', 'liza', 'based', 'baron', 'series', 'bedlam', 'chief', 'near', 'invasion', 'ivy', 'markovia'], ['based_near/2']).
+_lex(['parliamentary', 'parliament', 'house', 'commons', 'conservative', 'member', 'mp', 'represented', 'constituency', 'south'], ['memberOfParliament/2']).
+_lex(['album', 'pink', 'band', 'track', 'song', 'single', 'released', 'second', 'rock', 'first'], ['album/2']).
+_lex(['alliance', 'liberal', 'reform', 'democrat', 'free', 'member', 'affiliation', 'part', 'party', 'international', 'european'], ['europeanAffiliation/2']).
+_lex(['curt', 'manchin', 'west', 'state', 'governor', 'virginia', 'anderson', 'delegate', 'maryland', 'republican', 'joe'], ['stateDelegate/2']).
+_lex(['grape', 'pinot', 'known', 'riesling', 'grapes', 'growing', 'aoc', 'valley', 'cabernet', 'ava', 'wine'], ['growingGrape/2']).
+_lex(['discovered', 'houten', 'van', 'cornelis', 'discoverer', 'asteroid', 'johannes', 'gehrels', 'ingrid', 'observatory', 'palomar'], ['discoverer/2']).
+_lex(['king', 'formed', 'england', 'band', 'henry', 'years', 'ii', 'start', 'became', 'year', 'active', 'john', 'film', 'first'], ['activeYearsStartYear/2']).
+_lex(['provincial', 'short', 'buffer', 'park', 'number', 'community', 'downtown', 'visitors', '3', 'rondeau', 'cottagers', 'local'], ['numberOfVisitors/2']).
+_lex(['league', 'nfl', 'national', 'debut', 'american', 'football', 'born', 'running', 'team', 'new', 'former', 'quarterback'], ['debutTeam/2']).
+_lex(['firm', 'attorneys', 'llp', 'number', 'born', 'offices', 'cameron', 'world', 'firms', 'law', 'more'], ['numberOfOffices/2']).
+_lex(['body', 'language', 'min', 'academy', 'government', 'nan', 'kannada', 'regulator', 'norwegian', 'hokkien', 'taiwan'], ['languageRegulator/2']).
+_lex(['square', 'junction', 'west', 'regent', 'circus', 'street', 'london', 'oxford', 'river', 'meeting', 'situated', 'road'], ['meetingRoad/2']).
+_lex(['school', 'basketball', 'university', 'teams', 'high', 'state', 'college', 'team', 'home', 'mascot'], ['mascot/2']).
+_lex(['city', 'school', 'united', 'university', 'one', 'born', 'college', 'new', 'such', 'homepage', 'first'], ['homepage/2']).
+_lex(['tikka', 'made', 'cheese', 'ranch', 'bacon', 'sandwich', 'dressing', 'dish', 'chicken', 'rice', 'ingredient'], ['ingredient/2']).
+_lex(['division', 'chevrolet', 'company', 'motors', 'owned', 'general', 'cbs', 'chrysler', 'corporation', 'mitsubishi'], ['division/2']).
+_lex(['building', 'built', 'frank', 'museum', 'bauhaus', 'gropius', 'architect', 'designed', 'significant', 'house', 'walter'], ['significantBuilding/2']).
+_lex(['hong', 'court', 'house', 'grosvenor', 'hotel', 'number', 'kong', 'peninsula', 'held', '2007', 'manila', 'restaurants'], ['numberOfRestaurants/2']).
+_lex(['england', 'district', 'area', 'region', 'park', 'derbyshire', 'range', 'pico', 'peak', 'village', 'highest', 'national'], ['highestRegion/2']).
+_lex(['alps', 'mountain', 'limestone', 'group', 'hills', 'northern', 'geology', 'southern', 'range', 'part', 'mountains'], ['geology/2']).
+_lex(['city', 'beltway', 'route', 'drive', 'located', 'highway', 'circle', '285', 'atlanta', 'road', 'interstate'], ['beltwayCity/2']).
+_lex(['pt', 'cruiser', 'gmc', 'automobile', 'ford', 'platform', 'chrysler', 'car', 'new', 'gm', 'saturn'], ['automobilePlatform/2']).
+_lex(['school', 'xi', 'zhu', 'philosophy', 'philosopher', 'philosophical', 'marxism', 'confucianism', 'marx', 'karl', 'neoplatonism'], ['philosophicalSchool/2']).
+_lex(['taluk', 'code', 'north', 'rto', 'kohala', 'rawalpindi', 'vypin', 'vehicle', 'paravur', 'east', 'highway'], ['vehicleCode/2']).
+_lex(['147', 'jimmy', 'made', 'against', 'break', 'championship', 'during', 'davis', 'world', 'white', 'highest', 'match'], ['highestBreak/2']).
+_lex(['race', 'driver', 'grand', 'michael', 'one', 'prix', 'pole', 'won', 'schumacher', 'formula', '2008', 'italian'], ['poleDriver/2']).
+_lex(['1992', 'flight', 'maiden', 'space', 'mission', 'endeavour', 'crew', 'shuttle', 'new', 'first'], ['firstFlight/2']).
+_lex(['school', 'attended', 'rugby', 'played', 'union', 'players', 'college', 'born', 'international', 'george'], ['school/2']).
+_lex(['arena', 'network', 'theatre', 'university', 'college', 'stadium', 'known', 'now', 'austin', 'former', 'texas', 'name'], ['formerName/2']).
+_lex(['town', 'united', 'pennsylvania', 'country', 'india', 'states', 'located', 'river', 'mouth', 'tributary', 'southern', 'south'], ['mouthCountry/2']).
+_lex(['2200', '997', 'transmission', 'manual', 'porsche', 'torque', 'gt2', 'curb', '4500', 'gearbox', 'rpm'], ['transmission/2']).
+_lex(['male', 'gender', 'top', 'michael', 'award', 'won', 'female', 'performance', 'comedy', 'vocalist', 'best'], ['gender/2']).
+_lex(['code', 'singapore', 'located', 'mrt', 'transit', 'agency', 'shanghai', 'station', 'mass', 'rapid', 'line', 'railway'], ['agencyStationCode/2']).
+_lex(['romania', 'right', 'north', 'creek', 'west', 'flows', 'confluence', 'river', 'missouri', 'tributary', 'south'], ['rightTributary/2']).
+_lex(['late', 'television', 'show', 'appeared', 'host', 'david', 'tonight', 'presenter', 'live', 'night', 'news'], ['presenter/2']).
+_lex(['skating', 'tatiana', 'coach', 'skaters', 'coached', 'igor', 'including', 'partner', 'tamara', 'former', 'moskvina'], ['formerCoach/2']).
+_lex(['league', 'played', 'season', 'national', 'football', 'york', 'baseball', 'hockey', 'team', 'new', 'yankees'], ['team/2']).
+_lex(['school', '12', 'students', 'age', 'grades', 'public', 'high', 'located', 'range', 'schools', 'senior', 'junior'], ['ageRange/2']).
+_lex(['bridge', 'north', 'west', 'minnesota', 'flows', 'bay', 'located', 'near', 'place', 'mouth', 'river', 'south'], ['mouthPlace/2']).
+_lex(['album', 'given', 'name', 'song', 'comics', 'series', 'later', 'character', 'music', 'new', 'captain', 'first'], ['givenName/2']).
+_lex(['south', 'direction', 'end', 'west', 'route', 'street', 'highway', 'north', 'east', 'avenue', 'road', 'interstate'], ['routeEndDirection/2']).
+_lex(['suites', 'hotel', 'guest', 'singapore', 'currently', 'accommodations', 'number', 'including', 'rooms', 'world', 'tribute'], ['numberOfRooms/2']).
+_lex(['haavoda', 'faction', 'sama', 'samaja', 'split', 'mapai', 'party', 'ahdut', 'lanka', 'mapam', 'left'], ['splitFromParty/2']).
+_lex(['used', 'grape', 'wines', 'de', 'notable', 'riesling', 'variety', 'grapes', 'white', 'xynisteri', 'wine'], ['notableWine/2']).
+_lex(['ghana', 'cup', 'season', 'national', 'football', 'africa', 'nations', 'current', 'squad', 'namibia', 'team', '2008'], ['currentSeason/2']).
+_lex(['canada', 'high', 'school', 'united', 'athletic', 'bus', 'region', 'states', 'new', 'served', 'company', 'association'], ['regionServed/2']).
+_lex(['blue', '1859', 'brown', 'over', 'value', 'black', 'hsv', 'coordinate', 'new', 'white', '1959', '100', 'first'], ['hsvCoordinateValue/2']).
+_lex(['television', 'corporation', 'company', 'licensee', 'broadcasting', 'radio', 'owned', 'llc', 'station', 'fm', 'channel'], ['licensee/2']).
+_lex(['locatelli', 'michelin', 'ahead', 'restaurant', 'plaxy', 'two', 'chef', 'wood', 'london', 'voted'], ['chef/2']).
+_lex(['ii', 'united', 'army', 'civil', 'general', 'states', 'american', 'during', 'battle', 'world', 'war'], ['battle/2']).
+_lex(['prime', 'harper', 'oceans', 'loyola', 'current', 'fisheries', 'greg', 'aglukkaq', 'portfolio', 'hearn', 'minister'], ['portfolio/2']).
+_lex(['end', 'istanbul', 'tunnel', 'boston', 'route', 'under', 'project', 'marmaray', 'station', 'm1', 'location', 'between', 'connecting'], ['routeEndLocation/2']).
+_lex(['catholic', 'school', 'conception', 'patron', 'academy', 'sister', 'connelly', 'high', 'schools', 'international', 'immaculate'], ['schoolPatron/2']).
+_lex(['summer', 'winter', '1980', 'moscow', '28', 'number', 'nations', 'participating', 'born', 'won', 'games', 'competed', 'olympics'], ['numberOfParticipatingNations/2']).
+_lex(['pound', 'plays', 'born', 'tennis', 'dick', '185', 'player', 'american', 'savitt', '1927', '4'], ['plays/2']).
+_lex(['canada', 'language', 'god', 'anthem', 'national', 'queen', 'o', 'republic', 'spanish', 'save'], ['anthem/2']).
+_lex(['ranking', 'champion', 'beat', 'wins', 'born', 'won', 'world', 'stephen', 'professional', 'beating', 'final', 'first'], ['rankingWins/2']).
+_lex(['zealand', 'arts', 'currently', 'auckland', 'university', 'associate', 'number', 'award', 'awarded', '2001', 'volunteers', 'fine'], ['numberOfVolunteers/2']).
+_lex(['iceline', 'little', 'nevada', 'creek', '447', 'two', 'access', 'trail', 'forest', 'aliso', 'valley'], ['access/2']).
+_lex(['development', 'major', 'participant', 'joint', 'component', 'processes', 'research', 'project', 'framework', 'initiatives', 'technology', 'european'], ['projectParticipant/2']).
+_lex(['indianapolis', 'car', 'driver', 'born', 'won', 'poles', 'race', 'team', 'formula', 'racing', '500'], ['poles/2']).
+_lex(['final', 'rage', '19', 'ufc', 'heavyweight', 'against', 'finals', 'featured', 'following', 'cage', 'event', 'champion'], ['followingEvent/2']).
+_lex(['shiraz', 'grape', 'varieties', 'very', 'burgundy', 'pinot', 'varietals', 'noir', 'white', 'red', 'wine'], ['varietals/2']).
+_lex(['kingdom', 'province', 'city', 'located', 'republic', 'capital', 'born', 'new', 'empire', 'south'], ['capital/2']).
+_lex(['legislature', 'bundestag', 'parliament', 'greens', 'sabha', 'german', 'political', 'member', 'united', 'council', 'alliance', 'party'], ['politicalPartyInLegislature/2']).
+_lex(['fielder', 'field', 'right', 'played', 'playing', 'kelly', 'batting', 'team', 'hocking', 'position', 'side', 'tony'], ['battingSide/2']).
+_lex(['christening', 'galaxy', 'ms', 'date', 'new', 'ship', 'launched', 'christened'], ['christeningDate/2']).
+_lex(['rimini', 'province', 'villages', 'italy', 'di', 'contains', 'municipality', 'frazione', 'subdivisions', 'frazioni'], ['frazioni/2']).
+_lex(['art', 'dada', 'renaissance', 'artists', 'such', 'baroque', 'italian', 'painting', 'painter', 'movement'], ['movement/2']).
+_lex(['lanes', 'opened', 'mersey', 'tunnel', 'number', 'queensway', 'freeway', 'tunnels', 'hill', '1934', 'm1', 'road'], ['numberOfLanes/2']).
+_lex(['specialist', 'arts', 'england', 'school', 'community', 'sports', 'high', 'college', 'technology', 'secondary'], ['specialist/2']).
+_lex(['directed', 'novel', 'name', 'william', 'born', 'american', 'birth', 'known', 'john', 'george', 'film', 'first'], ['birthName/2']).
+_lex(['building', 'pueblo', 'style', 'deco', 'acoma', 'art', 'dome', 'millennium', 'london', 'architecture', 'architectural', 'new'], ['architecturalStyle/2']).
+_lex(['street', 'theatre', 'centre', 'west', 'albert', 'located', 'aldwych', 'london', 'address', 'hall', 'royal'], ['address/2']).
+_lex(['school', 'placement', '17', 'students', 'age', 'high', 'courses', 'classes', 'ratio', 'weeks', 'senior'], ['ratio/2']).
+_lex(['kind', 'government', 'collective', 'municipality', 'hachenburg', 'community', 'westerburg', 'lies', 'belongs', 'verbandsgemeinde', 'found', 'local', 'association'], ['associationOfLocalGovernment/2']).
+_lex(['origin', 'christian', 'stylistic', 'punk', 'jazz', 'metal', 'disco', 'band', 'music', 'rock', 'blues', 'funk'], ['stylisticOrigin/2']).
+_lex(['leader', 'alliance', 'progressive', 'canadian', 'day', 'new', 'party', 'democratic', 'former', 'first'], ['otherParty/2']).
+_lex(['novel', 'cooper', 'runway', 'number', '1992', 'mohicans', 'film', 'last', 'pages', 'came', 'first'], ['numberOfPages/2']).
+_lex(['album', 'brown', 'purple', 'yellow', 'cmyk', 'pink', 'floyd', 'black', '2007', 'coordinate', '100', 'white', 'first'], ['cmykCoordinateYellow/2']).
+_lex(['wha', '1997', 'dallas', 'nhl', '77th', 'father', '3rd', 'draft', 'entry', 'general', 'gainey'], ['whaDraft/2']).
+_lex(['ii', 'used', 'world', 'army', 'german', 'states', 'united', 'during', 'navy', 'served', 'war'], ['usedInWar/2']).
+_lex(['icefields', 'banff', 'park', 'national', 'municipality', 'lake', 'located', 'jasper', 'alberta', 'rural', 'parkway', 'river'], ['ruralMunicipality/2']).
+_lex(['holmes', 'map', 'topographic', 'serra', 'peaks', 'mountain', 'national', 'system', 'number', 'summit', 'peak', 'junipero', 'geiranger', 'tallest', 'mount'], ['nationalTopographicSystemMapNumber/2']).
+_lex(['city', 'name', 'queen', 'leader', 'ii', 'born', 'london', 'minister', 'council', 'president', 'wales', 'mayor'], ['leaderName/2']).
+_lex(['plant', 'family', 'heron', 'gull', 'great', 'species', 'common', 'known', 'genus', 'bird'], ['family/2']).
+_lex(['prime', 'zhou', 'deputy', 'enlai', 'zedong', 'minister', 'party', 'john', 'leader', 'mao'], ['deputy/2']).
+_lex(['distance', '1968', 'grand', '1980', '1978', 'west', 'laps', 'african', 'prix', 'spanish', 'south', 'italian'], ['distanceLaps/2']).
+_lex(['directed', 'play', 'used', 'theatre', 'currently', 'production', 'productions', '2007', 'london', '2008', 'finborough', 'stage'], ['currentlyUsedFor/2']).
+_lex(['dialect', 'language', 'people', 'spoken', 'flemish', 'india', 'french', 'kannada', 'english', 'south'], ['spokenIn/2']).
+_lex(['down', 'school', 'educated', 'england', 'northern', 'county', 'born', 'antrim', 'college', 'ireland'], ['county/2']).
+_lex(['plasmodium', 'apicomplexa', 'class', 'phylum', 'including', 'protozoa', 'such', 'genus', 'proteobacteria', 'species'], ['phylum/2']).
+_lex(['composed', 'series', 'bill', 'soundtrack', 'fantasy', 'theme', 'music', 'composer', 'final', 'cosby'], ['composer/2']).
+_lex(['conference', 'league', 'school', 'west', 'suburban', 'illinois', 'high', 'rural', 'type', 'campus', 'association', 'secondary'], ['campusType/2']).
+_lex(['town', 'lyon', 'le', 'strasbourg', 'de', 'french', 'france', 'located', 'near', 'villeurbanne', 'intercommunality'], ['intercommunality/2']).
+_lex(['mannitol', 'cas', 'number', 'unspecified', 'chloroxylenol', 'chemical', 'numbers', 'stereochemistry', 'formula', 'abstracts'], ['casNumber/2']).
+_lex(['murder', 'last', 'ryan', 'jesus', 'death', 'act', 'aids', 'white', 'cause', 'crucifixion', 'care'], ['deathCause/2']).
+_lex(['blue', '10', '20', '30', '2000', '1970', 'rgb', 'green', 'teal', 'coordinate', 'black', 'red', 'first'], ['rgbCoordinateRed/2']).
+_lex(['code', '21', 'area', 'june', 'wellington', 'rome', '2002', 'born', '2001', 'germany', '2004', '2006'], ['areaCode/2']).
+_lex(['based', 'airways', 'destination', 'airlines', 'air', 'services', 'flights', 'airline', 'international', 'operated', 'auckland'], ['destination/2']).
+_lex(['11', 'upper', 'school', 'england', '18', 'age', 'girls', 'high', 'college', 'comprehensive', 'aged', 'secondary'], ['upperAge/2']).
+_lex(['held', 'paris', 'country', 'driver', 'one', 'prix', 'race', 'fastest', 'motor', 'grand', 'formula', '2008', '1950'], ['fastestDriverCountry/2']).
+_lex(['prime', 'king', 'city', 'title', 'governor', 'leader', 'chief', 'minister', 'president', 'mayor', 'former', 'first'], ['leaderTitle/2']).
+_lex(['canada', 'michelle', 'good', 'coached', 'choreographer', 'began', 'kwan', 'brubaker', 'time', 'partner', 'former'], ['formerChoreographer/2']).
+_lex(['outlook', 'gmc', 'enclave', 'buick', 'platform', 'acadia', 'vehicle', 'riding', 'gm', 'saturn', 'lambda'], ['vehicle/2']).
+_lex(['bridge', 'opened', 'theatre', 'opening', 'tunnel', 'station', 'london', 'year', 'new', 'railway', 'line', 'first'], ['openingYear/2']).
+_lex(['world', 'estonian', 'service', 'finnish', 'cross', 'air', 'navy', 'yeomanry', 'during', 'battle', 'honours', 'war'], ['battleHonours/2']).
+_lex(['engine', 'used', 'chevrolet', 'honda', 'toyota', 'ford', 'aircraft', 'car', 'volkswagen', 'manufacturer', 'first'], ['manufacturer/2']).
+_lex(['army', 'mexico', 'kansas', 'royal', 'lake', 'york', 'navy', 'new', 'river', 'type', 'city'], ['type/2']).
+_lex(['president', 'lieutenant', 'colonel', 'major', 'rank', 'marshal', 'william', 'field', 'ayub', 'military', 'general', 'admiral'], ['militaryRank/2']).
+_lex(['mercury', 'chevrolet', 'transportation', 'pontiac', 'civic', 'car', 'honda', 'related', 'ford', 'platform', 'chrysler', 'buick', 'mean'], ['relatedMeanOfTransportation/2']).
+_lex(['publication', 'journal', 'review', 'wiley', 'published', 'founded', 'society', 'american', 'sons', 'year', 'john', 'final', 'scientific'], ['finalPublicationYear/2']).
+_lex(['king', 'united', 'william', 'states', 'born', 'place', 'york', 'birth', 'new', 'england', 'john', 'first'], ['birthPlace/2']).
+_lex(['play', 'theatre', 'premiere', 'royal', 'london', 'production', 'place', 'amadeus', 'broadway', 'first', 'assurance', 'stage'], ['premierePlace/2']).
+_lex(['selby', 'championship', 'higgins', 'maguire', 'rank', 'mark', 'current', 'born', 'stephen', 'world', '2008', 'final'], ['currentRank/2']).
+_lex(['grown', 'italy', 'variety', 'region', 'sauvignon', 'riesling', 'germany', 'grape', 'white', 'blanc', 'wine'], ['wineRegion/2']).
+_lex(['television', 'episode', 'show', 'series', 'company', 'bbc', 'produced', 'cbs', 'nbc', 'news', 'animated'], ['company/2']).
+_lex(['prime', 'thomas', 'clark', 'lewis', 'meriwether', 'appointer', 'governor', 'william', 'jefferson', 'president', 'appointed'], ['appointer/2']).
+_lex(['gulama', 'khan', 'kublai', 'julius', 'heir', 'son', 'ii', 'zhenjin', 'chief', 'paramount', 'lothair'], ['heir/2']).
+_lex(['lower', 'district', 'saxony', 'samtgemeinde', 'municipality', 'community', 'seat', 'joint', 'uelsen', 'germany'], ['jointCommunity/2']).
+_lex(['prize', 'medal', 'peace', 'award', 'awarded', 'won', 'nobel', 'physics', 'film', 'first'], ['award/2']).
+_lex(['translator', 'northeast', 'airs', 'w292de', 'florida', 'signed', 'broadcast', 'wnzf', 'radio', 'station'], ['broadcastTranslator/2']).
+_lex(['championship', 'won', 'car', 'driver', 'one', 'championships', 'race', 'team', 'formula', 'racing', '500'], ['championships/2']).
+_lex(['samoa', 'mexico', 'team', 'wrestling', 'antonio', 'joe', 'wrestler', 'japan', 'new', 'billed', 'match'], ['billed/2']).
+_lex(['anglican', 'school', 'australia', 'name', 'created', 'unite', 'bay', 'uniting', 'church', 'mary', 'chaplain'], ['chaplain/2']).
+_lex(['major', 'island', 'mindanao', 'british', 'mindoro', 'archipelago', 'part', 'ireland', 'luzon', 'islands', 'isles'], ['majorIsland/2']).
+_lex(['win', 'grand', 'one', 'prix', 'won', 'victory', 'team', 'formula', '2008', 'first', 'italian'], ['firstWin/2']).
+_lex(['bridge', 'mississippi', 'crosses', 'north', 'over', 'thames', 'between', 'crossing', 'river', 'road'], ['crosses/2']).
+_lex(['seven', 'slogan', 'network', 'nine', 'imparja', 'television', 'station', 'radio', 'news', 'affiliate', 'channel'], ['slogan/2']).
+_lex(['style', 'romanesque', 'louis', 'marcel', 'richardsonian', 'design', 'designed', 'significant', 'richardson', 'architect', 'chair', 'hobson'], ['significantDesign/2']).
+_lex(['catholic', 'school', 'diocese', 'high', 'located', 'roman', 'schools', 'oversight', 'bishop', 'oshkosh', 'fort'], ['oversight/2']).
+_lex(['united', 'fighter', 'marine', 'attack', 'air', 'states', 'aircraft', 'navy', 'squadron', 'super', 'hornet'], ['aircraftFighter/2']).
+_lex(['directed', 'high', 'crowe', 'series', 'fast', 'creative', 'director', 'american', 'ridgemont', 'cameron', 'times', 'film'], ['creativeDirector/2']).
+_lex(['mountain', 'river', 'form', 'pennsylvania', 'west', 'confluence', 'source', 'near', 'through', 'ohio', 'along', 'pittsburgh', 'allegheny'], ['sourceConfluenceMountain/2']).
+_lex(['general', 'corps', 'army', 'under', 'commander', 'chief', 'command', 'commanded', 'military', 'john', 'george'], ['militaryCommand/2']).
+_lex(['official', 'middlesex', 'business', 'ahead', 'university', 'blair', 'ssrn', 'one', 'tony', 'international'], ['other/2']).
+_lex(['begin', 'b', 'gay', 'song', 'day', 'band', 'single', 'prejudice', 'beguine', 'pride', 'side', 'porter'], ['bSide/2']).
+_lex(['used', 'laser', 'mapping', 'module', 'panoramic', 'camera', 'mass', 'lunar', 'spectrometer', '15', 'apollo', 'sim'], ['lunarModule/2']).
+_lex(['school', 'xi', 'zhu', 'song', 'economist', 'philosophy', 'murray', 'dynasty', 'era', 'austrian', 'rothbard'], ['era/2']).
+_lex(['legislature', 'assembly', 'senate', 'house', 'florida', 'number', 'representatives', 'districts', 'state', 'california', 'members'], ['numberOfMembers/2']).
+_lex(['prime', 'pakistan', 'khan', 'chose', 'ali', 'fraser', 'liaquat', 'governor', 'general', 'sir', 'muhammad', 'minister'], ['governorGeneral/2']).
+_lex(['christian', 'haavoda', 'form', 'centre', 'likud', 'mapai', 'party', 'ahdut', 'merged', 'herut'], ['mergedIntoParty/2']).
+_lex(['division', 'wehrmacht', 'patron', 'german', 'colonel', 'von', 'leibstandarte', '1st', 'ss', 'hitler', 'adolf'], ['patron/2']).
+_lex(['zealand', 'north', 'island', 'philippines', 'one', 'archipelago', 'located', 'islands', 'new', 'south'], ['archipelago/2']).
+_lex(['dollar', 'against', 'france', 'currency', 'germany', '2004', '2008', 'uefa', 'spain', 'euro'], ['currency/2']).
+_lex(['mountain', 'area', 'within', 'located', 'american', 'subregion', 'viticultural', 'napa', 'valley', 'ava', 'wine'], ['subregion/2']).
+_lex(['rainie', 'show', 'tv', 'series', 'song', 'taiwanese', 'ending', 'drama', 'theme', 'yang', 'starring'], ['endingTheme/2']).
+_lex(['city', 'dechencholing', 'cebu', 'palace', 'manor', 'monastery', 'weald', 'system', 'located', 'downland', 'gridshell', 'structural'], ['structuralSystem/2']).
+_lex(['television', 'network', 'station', 'broadcasting', 'angeles', 'los', 'meaning', 'callsign', 'affiliate', 'radio', 'news', 'channel'], ['callsignMeaning/2']).
+_lex(['airlines', 'based', 'hub', 'airways', 'flights', 'air', 'airport', 'airline', 'international', 'flight'], ['hubAirport/2']).
+_lex(['mickey', 'subspecies', 'bugs', 'bunny', 'lion', 'daffy', 'rabbit', 'duck', 'cartoon', 'mouse', 'species'], ['species/2']).
+_lex(['raf', 'cessna', 'force', 'recon', 'royal', 'operates', 'states', 'tornado', 'aircraft', 'panavia', 'air'], ['aircraftRecon/2']).
+_lex(['influenced', 'thomas', 'works', 'john', 'philosophy', 'philosophers', 'friedrich', 'plato', 'aristotle', 'such', 'include'], ['influenced/2']).
+_lex(['christian', 'oldies', 'format', 'station', 'radio', 'broadcasting', 'music', 'news', 'fm', 'talk', 'programme'], ['programmeFormat/2']).
+_lex(['serving', 'rail', 'lines', 'located', 'train', 'lrt', 'manila', 'station', 'railway', 'main', 'line'], ['servingRailwayLine/2']).
+_lex(['1999', 'corporation', 'company', 'acquired', '2001', '2006', '2007', 'year', 'party', '2008', 'extinction', 'merged'], ['extinctionYear/2']).
+_lex(['murders', 'media', 'graham', 'rue', 'clips', 'monos', 'magazine', 'version', 'morgue', 'poe', 'type', 'first'], ['mediaType/2']).
+_lex(['catholic', 'school', 'name', 'district', 'academy', 'football', 'teams', 'high', 'libertyville', 'team', 'home'], ['teamName/2']).
+_lex(['army', 'colonel', 'infantry', '2nd', 'regiment', 'commander', 'during', 'james', 'military', 'captain', 'war', 'unit'], ['militaryUnit/2']).
+_lex(['united', 'service', 'stalin', 'academy', 'under', 'class', 'states', 'start', 'year', 'graduated', 'military', 'john', 'war'], ['serviceStartYear/2']).
+_lex(['tellico', 'federal', 'official', 'project', 'skyway', 'version', 'robbinsville', 'controversial', 'small', 'soldiers', 'preview', 'tennessee', 'latest'], ['latestPreviewVersion/2']).
+_lex(['daughter', 'jews', 'powhatan', 'american', 'jesus', 'born', 'chief', 'ethnicity', 'new', 'pocahontas', 'christians'], ['ethnicity/2']).
+_lex(['dartmoor', 'pony', 'naval', 'figure', 'sturdy', 'crown', 'teignmouth', 'whiteface', 'animal', 'riding', 'spratt'], ['animal/2']).
+_lex(['television', 'entertainment', 'pictures', 'company', 'bbc', 'owned', 'radio', 'channel', 'news', 'sony', 'owning'], ['owningCompany/2']).
+_lex(['building', 'provided', 'service', 'boise', 'translator', 'twin', 'idaho', 'nbc', 'falls', 'ktvb', 'channel'], ['otherChannel/2']).
+_lex(['soyuz', 'flight', 'space', '19', 'expedition', 'landing', 'crew', 'iss', 'station', 'vehicle', 'international', 'launched'], ['landingVehicle/2']).
+_lex(['map', 'immingham', 'electric', 'railroad', 'edmonton', 'york', 'new', 'line', 'harlem', 'railway', 'highway'], ['map/2']).
+_lex(['plant', 'grove', 'mount', 'oak', 'school', 'pleasant', 'hopewell', 'schools', 'somerset', 'east', 'carmel'], ['plant/2']).
+_lex(['designer', 'ibm', 'language', 'created', 'series', 'game', 'aircraft', 'games', 'designed', 'first'], ['designer/2']).
+_lex(['description', 'ncbi', 'database', 'research', 'chemical', 'pubchem', 'genome', 'ensembl', 'such', 'protein', 'data'], ['description/2']).
+_lex(['sub', 'stations', 'provide', 'wcsh', 'state', 'broadcasting', 'updates', 'digital', 'weather', 'nassau', 'news', 'channel', 'wlbz'], ['digitalSubChannel/2']).
+_lex(['album', 'united', 'group', 'entertainment', 'company', 'emi', 'label', 'distributing', 'record', 'music', 'records', 'released'], ['distributingCompany/2']).
+_lex(['album', 'longtype', 'third', 'series', 'character', 'iv', 'ii', 'viii', 'iii', 'final', 'first'], ['longtype/2']).
+_lex(['art', '140', 'age', 'nationally', 'scitrek', 'gallery', 'glass', 'collection', 'national', 'designed'], ['collection/2']).
+_lex(['genres', 'world', 'punk', 'jazz', 'metal', 'pop', 'band', 'fusion', 'music', 'rock', 'genre', 'ska'], ['musicFusionGenre/2']).
+_lex(['resting', 'john', 'england', 'portugal', 'wife', 'son', 'ii', 'place', 'king', 'jerusalem', 'george', 'first'], ['restingPlace/2']).
+_lex(['highway', 'end', 'west', 'route', 'station', 'road', 'between', 'north', 'line', 'south', 'interstate'], ['routeEnd/2']).
+_lex(['led', 'forces', 'yellow', 'routed', 'fuji', 'battle', 'fought', 'french', 'sea', 'date', 'minden'], ['date/2']).
+_lex(['thomas', 'james', 'university', 'william', 'jefferson', 'minister', 'president', 'john', 'george', 'secretary'], ['president/2']).
+_lex(['australia', 'served', 'states', 'united', 'during', 'new', 'korean', 'causalties', 'war', 'south', 'vietnam'], ['causalties/2']).
+_lex(['associated', 'siwon', 'han', 'choi', 'taiwanese', 'actor', 'members', 'act', 'geng', 'super', 'junior', 'wang'], ['associatedAct/2']).
+_lex(['album', 'singer', 'lead', 'released', 'guitarist', 'member', 'band', 'drummer', 'rock', 'song'], ['bandMember/2']).
+_lex(['pink', '10', 'brown', 'purple', '30', '1970', 'cmyk', '2000', 'black', 'coordinate', 'white', 'cyanic', 'first'], ['cmykCoordinateCyanic/2']).
+_lex(['championship', 'wins', 'driver', 'one', 'won', 'race', 'team', 'formula', 'racing', '500', 'car'], ['wins/2']).
+_lex(['scientific', 'nature', 'journal', 'issn', 'number', 'standard', 'published', 'international', 'serial', 'eissn'], ['issn/2']).
+_lex(['newspapers', 'headquarters', 'daily', 'times', 'herald', 'newspaper', 'york', 'new', 'press', 'news', 'post'], ['headquarters/2']).
+_lex(['city', 'francisco', 'belgrade', 'novi', 'zurich', 'zagreb', 'skopje', 'sad', 'podgorica', 'twin', 'sarajevo', 'ljubljana'], ['twinCity/2']).
+_lex(['album', 'singer', 'released', 'song', 'orchestra', 'alias', 'music', 'band', 'such', 'film', 'first'], ['alias/2']).
+_lex(['lyon', 'january', 'de', 'french', 'france', 'born', 'subdivisions', 'won', 'tours', '2007', '9'], ['subdivisions/2']).
+_lex(['television', 'stations', 'station', 'affiliate', 'sign', 'cbs', 'broadcasting', 'call', 'news', 'nbc', 'new', 'channel'], ['callSign/2']).
+_lex(['bin', 'dubai', 'united', 'founding', 'rashid', 'ruler', 'de', 'mohammed', 'al', 'sheikh', 'person', 'maktoum'], ['foundingPerson/2']).
+_lex(['hours', 'space', 'million', 'mission', 'number', '1', '3', 'miles', 'earth', 'orbits', 'gemini'], ['numberOfOrbits/2']).
+_lex(['philosophy', 'theory', 'work', 'notable', 'idea', 'philosopher', 'friedrich', 'book', 'aristotle', 'marx', 'karl', 'kapital'], ['notableIdea/2']).
+_lex(['sonic', 'nomura', 'artist', 'tetsuya', 'character', 'fantasy', 'game', 'designed', 'characters', 'team', 'final'], ['gameArtist/2']).
+_lex(['summer', 'winter', '1976', 'austria', 'finland', 'number', '1972', 'held', 'competitors', '1924', 'olympics', 'medal'], ['numberOfCompetitors/2']).
+_lex(['satellite', 'rocket', 'launch', 'launches', 'vehicle', 'space', '1', 'failed', 'delta', 'shuttle', 'launched', 'first'], ['failedLaunches/2']).
+_lex(['11', '1991', 'october', '21', '1981', 'january', 'rank', '1', 'born', '2001', 'highest', 'first'], ['highestRank/2']).
+_lex(['directed', 'produced', 'producer', 'released', 'song', 'director', 'band', 'album', 'film', 'first'], ['producer/2']).
+_lex(['album', 'love', 'released', 'song', 'cover', 'band', 'single', 'rock', 'hit', 'musical', 'first'], ['musicalBand/2']).
+_lex(['government', 'union', 'national', 'football', 'demonym', 'born', 'republic', 'african', 'war', 'south', 'first'], ['demonym/2']).
+_lex(['flight', 'space', 'expedition', 'mission', 'crew', 'soyuz', 'astronaut', 'during', 'apollo', 'first'], ['mission/2']).
+_lex(['alliance', 'star', 'airways', 'skyteam', 'airlines', 'air', 'member', 'american', 'airline', 'oneworld'], ['alliance/2']).
+_lex(['affairs', 'wilson', 'alma', 'princeton', 'institute', 'professor', 'school', 'woodrow', 'mater', 'college', 'public', 'university'], ['almaMater/2']).
+_lex(['currently', 'financial', 'frank', 'bill', 'barney', 'chairman', 'committee', 'house', 'services', 'chair'], ['committee/2']).
+_lex(['entrances', 'potholers', '1947', 'number', 'keen', 'near', 'two', 'potholes', 'new', 'ingleborough', 'friends', 'out'], ['numberOfEntrances/2']).
+_lex(['politician', 'ump', 'patrick', 'socialist', 'de', 'french', 'current', 'born', 'party', 'mayor'], ['mayor/2']).
+_lex(['google', 'ibm', 'series', 'released', 'game', 'games', 'developed', 'such', 'software', 'microsoft', 'developer'], ['developer/2']).
+_lex(['perimeter', 'name', 'under', 'airlines', 'lounge', 'china', 'airline', 'served', 'mandarin', 'subsidiary', 'destinations'], ['lounge/2']).
+_lex(['internationally', 'same', 'one', 's', 'systems', 'although', 'new', 'line', 'true', 'microsoft', 'first'], ['internationally/2']).
+_lex(['joins', 'form', 'drains', 'sinuses', 'straight', 'confluence', 'mentioned', 'above', 'merges', 'venous', 'sinus'], ['drainsTo/2']).
+_lex(['alps', 'mountains', 'great', 'valley', 'north', 'west', 'range', 'between', 'east', 'border', 'desert'], ['border/2']).
+_lex(['october', 'march', 'september', 'december', 'year', 'actress', 'born', 'american', 'actor', 'birth', 'january', 'film'], ['birthYear/2']).
+_lex(['canada', 'television', 'australia', 'network', 'country', 'company', 'states', 'united', 'radio', 'location', 'japan', 'channel'], ['locationCountry/2']).
+_lex(['nfl', 'signed', 'practice', 'agent', 'squad', 'draft', 'free', 'year', '2008', 'undrafted', '2007'], ['undraftedYear/2']).
+_lex(['head', 'coach', 'club', 'assistant', 'national', 'football', 'manager', 'fc', 'team', 'new', 'former'], ['managerClub/2']).
+_lex(['sound', 'reggae', 'music', 'punk', 'disco', 'band', 'ska', 'rock', 'derivative', 'blues', 'dancehall'], ['derivative/2']).
+_lex(['1991', 'kosar', 'touchdowns', 'young', 'steve', 'draft', 'quarterback', 'yards', 'browns', 'threw', 'round', 'supplemental', 'bernie'], ['supplementalDraftRound/2']).
+_lex(['worldnetdaily', 'ram', 'moore', 'founder', 'hindu', 'work', 'farah', 'conservative', 'chief', 'joseph', '2006', 'editor'], ['chiefEditor/2']).
+_lex(['selig', 'major', 'league', 'ceo', 'national', 'football', 'commissioner', 'baseball', 'bud', 'stern', 'association'], ['ceo/2']).
+_lex(['hip', 'city', 'flies', 'force', 'mil', 'mubarak', 'egyptian', 'over', 'attack', 'aircraft', 'near', 'helicopter'], ['aircraftHelicopterAttack/2']).
+_lex(['byway', 'scenic', 'national', 'yellowhead', 'system', 'trail', 'pico', 'seaway', 'new', 'route', 'highway'], ['highwaySystem/2']).
+_lex(['album', 'love', 'released', 'singles', 'maybe', 'song', 'band', 'single', 'songs', 'side', 'first'], ['aSide/2']).
+_lex(['relaxin', 'davis', '1', 'band', 'base', 'receptor', 'human', 'release', 'gene', 'chromosome', 'first'], ['band/2']).
+_lex(['university', 'rutherford', 'notable', 'pons', 'fleischmann', 'william', 'hans', 'student', 'martin', 'isaac', 'stanley', 'ernest'], ['notableStudent/2']).
+_lex(['series', 'west', 'trains', 'line', 'shinkansen', 'japan', 'rolling', 'e231', 'railway', 'monorail', 'stock'], ['railwayRollingStock/2']).
+_lex(['brown', 'over', 'white', '50', 'cmyk', 'american', 'black', '1950', 'teal', 'coordinate', 'magenta', '100', 'first'], ['cmykCoordinateMagenta/2']).
+_lex(['prime', 'john', 'emperor', 'james', 'david', 'minister', 'under', 'president', 'son', 'george', 'successor'], ['successor/2']).
+_lex(['album', 'king', 'death', 'end', 'band', 'years', 'ii', 'april', 'american', 'died', 'year', 'active', 'emperor', 'film'], ['activeYearsEndYear/2']).
+_lex(['raf', 'flight', 'rocket', 'f', 'vostok', 'launches', 'launch', '1', '65', '1965', 'total', 'first'], ['totalLaunches/2']).
+_lex(['rcmp', 'mounted', 'tank', 'army', 'symbol', 'canadian', 'royal', 'regiment', 'identification', 'police', 'battalion', 'highlanders'], ['identificationSymbol/2']).
+_lex(['website', 'digital', 'known', 'logo', 'channel', 'mntv'], ['digitalChannel/2']).
+_lex(['internationals', 'welsh', 'season', 'university', '29', 'joined', 'rfc', 'future', 'swansea', 'davey'], ['university/2']).
+_lex(['satellite', 'eutelsat', 'flight', 'rocket', 'maiden', 'launch', 'successfully', 'orbit', 'ii', '1b', 'atlas', 'launched'], ['maidenFlight/2']).
+_lex(['1987', 'arnaldo', 'marxist', 'redgrave', 'nationalist', 'spokesperson', 'formed', 'peruvian', 'election', 'party', 'presidential'], ['spokesperson/2']).
+_lex(['sims', 'wheel', 'computing', 'drive', 'wii', 'gamecube', 'consoles', '2', 'games', 'such', 'input', 'xbox'], ['computingInput/2']).
+_lex(['states', 'united', 'pennsylvania', 'west', 'schuylkill', 'county', 'virginia', 'confluence', 'source', 'state', 'river', 'ohio', 'tributary'], ['sourceConfluenceState/2']).
+_lex(['conference', 'division', 'league', 'pittsburgh', 'university', 'football', 'college', 'team', 'athletics', 'ivy', 'dalhousie'], ['athletics/2']).
+_lex(['foundation', 'school', 'athletic', 'number', 'high', 'state', '2007', 'new', 'staff', 'public', 'association', 'software'], ['numberOfStaff/2']).
+_lex(['helicopters', 'patrol', 'westland', 'king', 'royal', 'modified', 'maritime', 'aircraft', 'sea', 'navy'], ['aircraftPatrol/2']).
+_lex(['domain', 'family', 'orders', 'genera', 'within', 'lists', 'order', 'phylum', 'section', 'archaea', 'bacteria'], ['domain/2']).
+_lex(['building', 'end', 'opened', 'mersey', 'tunnel', 'kingsway', '1934', 'two', 'queensway', 'connecting', 'tunnels', 'year', 'road'], ['buildingEndYear/2']).
+_lex(['television', 'episode', 'series', 'character', 'ii', 'fantasy', 'game', 'street', 'final', 'first'], ['series/2']).
+_lex(['title', 'review', 'magazine', 'new', 'pc', 'chief', 'republic', 'editor', 'world', 'served', 'newsweek'], ['editorTitle/2']).
+_lex(['lyrics', 'song', 'andrew', 'written', 'book', 'music', 'stephen', 'broadway', 'musical', 'sondheim'], ['musicBy/2']).
+_lex(['television', 'doctor', 'series', 'show', 'bbc', 'related', 'one', 'pepsi', 'wild', 'news', 'today'], ['related/2']).
+_lex(['count', 'acute', 'center', 'facility', 'medical', 'bed', 'beds', 'located', 'hospital', 'university', 'care'], ['bedCount/2']).
+_lex(['sheading', 'garff', 'ballasalla', 'populated', 'rushen', 'abbey', 'located', 'near', 'village', 'laxey', 'man'], ['sheading/2']).
+_lex(['canal', 'liverpool', 'end', 'leigh', 'point', 'west', 'bridgewater', 'ship', 'coal', 'wigan', 'manchester', 'railway', 'original'], ['originalEndPoint/2']).
+_lex(['nightly', 'television', 'show', 'pictures', 'produced', 'released', 'distributor', 'news', 'nbc', 'film', 'dreamworks'], ['distributor/2']).
+_lex(['joint', 'food', 'railway', 'environmental', 'hygiene', 'station', 'department', 'logo', 'line', 'dorset', 'somerset'], ['logo/2']).
+_lex(['category', 'basketball', 'court', 'club', 'bowls', 'green', 'stadium', 'bowling', 'home', 'swansea', 'association'], ['category/2']).
+_lex(['television', 'network', 'show', 'appeared', 'series', 'mtv', 'cbs', 'nbc', 'comedy', 'channel'], ['network/2']).
+_lex(['function', 'saturn', 'rocket', 'launch', 'spending', 'developed', 'moon', 'program', 'v', 'earth', 'apollo', 'stage'], ['rocketFunction/2']).
+_lex(['city', 'north', 'west', 'route', 'downtown', 'located', 'motorway', 'between', 'junction', 'highway', 'interstate'], ['routeJunction/2']).
+_lex(['cn', 'commuter', 'canadian', 'national', 'reporting', 'rail', 'mark', 'station', 'mbta', 'massachusetts', 'line', 'railway'], ['reportingMark/2']).
+_lex(['coup', 'date', 'won', 'government', 'months', 'kohl', 'years', 'start', 'helmut', 'became', 'eight', 'active', 'aristide', 'left'], ['activeYearsStartDate/2']).
+_lex(['distance', 'short', 'north', 'wairarapa', 'hutt', 'wellington', 'electrification', 'located', 'station', 'line', 'type', 'railway'], ['typeOfElectrification/2']).
+_lex(['operations', 'pakistan', 'school', 'af', 'colonel', 'deputy', 'commandant', 'director', 'charge', 'officer', 'military', 'instructor'], ['officerInCharge/2']).
+_lex(['province', 'city', 'england', 'born', 'county', 'located', 'part', 'california', 'york', 'new', 'south'], ['isPartOf/2']).
+_lex(['league', 'cfl', 'football', 'played', 'canadian', 'bc', 'lions', 'place', 'stadium', 'home'], ['homeStadium/2']).
+_lex(['composed', 'song', 'charlie', 'david', 'soundtrack', 'score', 'music', 'composer', 'john', 'original', 'film'], ['musicComposer/2']).
+_lex(['kingdom', 'voyage', 'united', 'service', 'maiden', 'sky', 'norwegian', 'cruise', 'entered', 'norway', 'line', 'dover'], ['maidenVoyage/2']).
+_lex(['1968', 'grand', 'prix', 'second', 'place', 'team', 'matra', '2008', 'best', 'italian'], ['secondTeam/2']).
+_lex(['senators', 'd', 'associate', 'oboi', 'sonin', 'two', 'suksaha', 'four', 'senator', 'barbara', 'ebilun'], ['associate/2']).
+_lex(['portsmouth', 'built', 'homeport', 'rose', 'ii', 'ss', 'ferry', 'ship', 'pride', 'mary', 'baltimore'], ['homeport/2']).
+_lex(['porto', 'eastern', 'pradesh', 'kalahari', 'da', 'located', 'state', 'namibia', 'ghats', 'highest', 'andhra', 'desert'], ['highestState/2']).
+_lex(['congress', 'political', 'national', 'malaysian', 'coalition', 'affiliation', 'gibraltar', 'barisan', 'african', 'party', 'nasional'], ['nationalAffiliation/2']).
+_lex(['corps', 'third', 'army', 'canadian', 'commander', 'lieutenant', 'arthur', 'command', 'currie', 'during', 'general'], ['thirdCommander/2']).
+_lex(['bridge', 'mountain', 'north', 'area', 'island', 'national', 'park', 'located', 'peak', 'highest', 'mount'], ['locatedInArea/2']).
+_lex(['league', 'played', 'home', 'park', 'bowl', 'field', 'game', 'stadium', 'team', 'new', 'tenant'], ['tenant/2']).
+_lex(['canada', 'summer', 'australia', 'italy', 'winter', 'gold', '1960', 'number', 'represented', 'won', 'olympics', 'netherlands', 'norway', 'medals'], ['numberOfGoldMedalsWon/2']).
+_lex(['album', 'member', 'group', 'nan', 'taiwanese', 'past', 'band', 'quan', 'music', 'chou', 'members', 'mama'], ['pastMember/2']).
+_lex(['training', 'art', 'school', 'artist', 'institute', 'studied', 'arts', 'born', 'york', 'new', 'fine'], ['training/2']).
+_lex(['art', 'publication', 'nimmervoll', 'times', 'steve', 'magazine', '5', 'editor', 'previous', 'first', 'once'], ['previousEditor/2']).
+_lex(['north', 'language', 'spoken', 'english', 'india', 'new', 'spanish', 'urdu', 'england', 'south'], ['language/2']).
+_lex(['fifa', 'accountants', 'government', 'football', 'member', 'membership', 'board', 'international', 'organization', 'public', 'association'], ['membership/2']).
+_lex(['monte', 'brussels', 'island', 'monaco', 'scotland', 'born', 'hebrides', 'largest', 'belgium', 'settlement', 'carlo', 'isle'], ['largestSettlement/2']).
+_lex(['army', 'second', 'part', 'place', 'during', 'fought', 'battle', 'invasion', 'operation', 'war', 'first'], ['place/2']).
+_lex(['harecastle', 'canal', 'england', 'kennet', 'mersey', 'tunnel', 'bruce', 'through', 'trent', 'waterway', 'avon'], ['waterwayThroughTunnel/2']).
+_lex(['zone', 'ceuta', 'time', 'cambodia', 'bangkok', 'born', 'capital', 'thailand', 'penh', 'spain', 'phnom'], ['timeZone/2']).
+_lex(['championship', 'wrestling', 'wwe', 'held', 'professional', 'mixed', 'world', 'promotion', 'pride', 'event', 'wrestlemania'], ['promotion/2']).
+_lex(['school', 'theatre', 'hospital', 'line', 'until', 'station', 'college', 'closed', 'year', 'railway', 'closing', 'company'], ['closingYear/2']).
+_lex(['origin', 'united', 'italy', '22', 'union', 'soviet', 'france', 'states', 'germany', 'river', 'nazi'], ['origin/2']).
+_lex(['album', 'connotation', 'love', 'people', 'light', 'blue', 'snow', 'green', 'blood', 'white', 'red'], ['connotation/2']).
+_lex(['paperback', 'novel', 'isbn', 'orbit', 'book', 'london', 'published', 'banks', 'iain', 'first'], ['isbn/2']).
+_lex(['activities', 'joint', 'company', 'funded', 'commission', 'research', 'framework', 'efpia', 'medicines', 'projects', 'european'], ['fundedBy/2']).
+_lex(['doritos', 'pepsico', 'creator', 'brand', 'almond', 'mhop', 'famous', 'sewell', 'bakewell', 'dried', 'dish', 'tart'], ['creatorOfDish/2']).
+_lex(['helicopters', 'boeing', 'westland', 'royal', 'air', 'aircraft', 'sea', 'navy', 'force', 'wing', 'transport'], ['aircraftTransport/2']).
+_lex(['city', 'river', 'norfolk', 'municipality', 'located', 'york', 'new', 'castle', 'east', 'hall'], ['municipality/2']).
+_lex(['born', 'season', 'football', 'number', 'player', '2007', 'yards', 'team', '2008', 'quarterback'], ['number/2']).
+_lex(['count', 'city', 'story', 'center', 'floor', 'completed', 'building', 'one', 'floors', 'skyscraper', 'tower', 'tallest'], ['floorCount/2']).
+_lex(['album', 'love', 'artist', 'song', 'cover', 'band', 'single', 'rock', 'hit', 'musical', 'released', 'first'], ['musicalArtist/2']).
+_lex(['pictures', 'company', 'bbc', 'owned', 'london', 'stadium', 'news', 'owner', 'sony', 'new', 'radio'], ['owner/2']).
+_lex(['nearest', 'san', 'provincial', 'island', 'national', 'area', 'park', 'located', 'near', 'city', 'south', 'fort'], ['nearestCity/2']).
+_lex(['canal', 'thomas', 'cut', 'mersey', 'james', 'brindley', 'father', 'near', 'stadium', 'trent', 'engineer'], ['engineer/2']).
+_lex(['impact', 'genetics', 'december', 'study', 'factor', 'al', 'american', 'human', 'published', '2008', '2009', 'journal'], ['impactFactorAsOf/2']).
+_lex(['city', 'school', 'professor', 'studied', 'airport', 'college', 'new', 'international', 'river', 'university'], ['city/2']).
+_lex(['canal', 'junction', 'mersey', 'bridgewater', 'manchester', 'forest', 'ship', 'river', 'navigation', 'peak'], ['hasJunctionWith/2']).
+_lex(['star', 'trek', 'last', 'guest', 'zone', 'played', 'episodes', 'seen', 'twilight', 'episode', 'man'], ['guest/2']).
+_lex(['television', 'service', 'train', 'company', 'bbc', 'engineering', 'station', 'radio', 'bus', 'line', 'bank'], ['service/2']).
+_lex(['television', 'episode', 'producer', 'created', 'tv', 'series', 'executive', 'david', 'appeared', 'night', 'show'], ['executiveProducer/2']).
+_lex(['town', 'opened', 'tube', 'platforms', '2', 'london', 'between', 'station', 'railway', 'line', 'south'], ['railwayPlatforms/2']).
+_lex(['dean', 'jayne', 'students', 'ice', 'current', 'torvill', 'christopher', 'shibutani', 'world', 'partner', 'former'], ['currentPartner/2']).
+_lex(['cranfield', 'university', 'students', 'technology', 'professor', '1967', 'number', 'institute', 'california', 'college', 'undergraduate', 'over'], ['numberOfUndergraduateStudents/2']).
+_lex(['1st', 'drafted', 'nhl', 'selected', 'overall', 'draft', 'pick', 'entry', 'round', 'first'], ['draft/2']).
+_lex(['ambrose', 'san', 'patron', 'anthony', 'milan', 'rome', 'padua', 'saint', 'peter', 'bishop'], ['saint/2']).
+_lex(['belgrade', 'title', 'club', 'elections', 'barcelona', 'general', '2003', 'fc', 'take', 'president', 'soccer', 'chairman'], ['chairmanTitle/2']).
+_lex(['kingdom', 'passengers', 'united', 'buses', 'bus', 'route', 'contracted', 'per', 'station', 'london', 'underground', 'day', 'transport'], ['passengersPerDay/2']).
+_lex(['north', 'creek', 'reservoir', 'dam', 'lake', 'flows', 'water', 'located', 'river', 'south', 'inflow'], ['inflow/2']).
+_lex(['blue', '10', 'saturation', 'brown', '100', 'over', 'billboard', 'hot', 'hsv', 'coordinate', 'white', 'top', 'first'], ['hsvCoordinateSaturation/2']).
+_lex(['group', 'founder', 'released', 'company', 'signed', 'label', 'founded', 'record', 'records', 'first'], ['foundedBy/2']).
+_lex(['aired', 'episode', '22', 'hour', 'series', '13', 'number', 'episodes', 'minutes', 'television', 'first'], ['numberOfEpisodes/2']).
+_lex(['city', 'municipalities', 'commune', 'arrondissement', 'de', 'france', 'located', 'near', 'belgium', 'brussels'], ['arrondissement/2']).
+_lex(['mountain', 'north', 'bridge', 'west', 'minnesota', 'flows', 'bay', 'located', 'near', 'mouth', 'river', 'south'], ['mouthMountain/2']).
+_lex(['catholic', 'pope', 'xii', 'pius', 'canonized', 'ii', 'saint', 'church', 'paul', 'john'], ['canonizedBy/2']).
+_lex(['raf', 'satellite', 'rocket', 'launch', 'successful', 'launches', '56', '1', 'vostok', '1956', 'launched', 'first'], ['successfulLaunches/2']).
+_lex(['town', 'area', 'welsh', 'carmarthenshire', 'county', 'near', 'village', 'cardiff', 'wales', 'swansea', 'south', 'principal'], ['principalArea/2']).
+_lex(['used', 'flight', 'rocket', 'launch', 'ariane', 'delta', '1', 'saturn', 'v', 'stages', 'launched'], ['rocketStages/2']).
+_lex(['count', 'cylinder', '12', '107', '1', '3', '2', '5', '2005', '101', 'class', 'first'], ['cylinderCount/2']).
+_lex(['town', 'gmina', 'district', 'voivodeship', 'poland', 'within', 'france', 'county', 'part', 'village', 'administrative'], ['part/2']).
+_lex(['street', 'tunnel', 'route', 'part', 'camden', 'road', 'way', 'valley', 'avenue', 'michigan', 'highway', 'alpine'], ['isPartOfRoute/2']).
+_lex(['rand', 'sister', 'phillipa', 'estonian', 'choreographer', 'coached', 'dancers', 'towler', 'twin', 'kristin', 'mother'], ['choreographer/2']).
+_lex(['elba', 'august', 'september', 'island', 'number', 'pacific', 'ocean', 'wake', 'islands', 'isles', 'atoll'], ['numberOfIslands/2']).
+_lex(['shop', 'gaffney', 'art', 'opened', 'classic', 'kiefel', 'university', 'winner', 'bismark', 'allen', 'called', 'recent'], ['recentWinner/2']).
+_lex(['album', 'singer', 'associated', 'artist', 'rock', 'guitarist', 'band', 'music', 'artists', 'such', 'song', 'john', 'musical'], ['associatedMusicalArtist/2']).
+_lex(['college', 'north', 'professor', 'school', 'affiliation', 'state', 'california', 'new', 'london', 'university', 'carolina'], ['affiliation/2']).
+_lex(['1770', 'chinese', 'born', 'miwok', 'british', 'plains', 'black', 'kroeber', 'alfred', 'total', 'population'], ['totalPopulation/2']).
+_lex(['albany', 'school', 'students', 'rival', 'two', 'high', 'middle', 'college', 'academy', 'schools', 'south'], ['rival/2']).
+_lex(['mississippi', 'river', 'north', 'creek', 'west', 'romania', 'flows', 'ohio', 'tributary', 'south', 'left'], ['leftTributary/2']).
+_lex(['shawnee', '55', 'currently', 'number', 'vineyards', 'cultivation', 'grapes', 'home', 'valley', 'ava', 'red'], ['numberOfVineyards/2']).
+_lex(['independent', 'school', 'united', 'located', 'academy', 'private', 'day', 'states', 'providence', 'classes', 'class'], ['classes/2']).
+_lex(['building', 'built', 'frank', 'mount', 'park', 'wright', 'architect', 'lloyd', 'house', 'designed'], ['architect/2']).
+_lex(['player', 'season', 'nhl', 'born', 'draft', 'york', 'team', 'forward', 'new', 'traded', 'hockey'], ['draftTeam/2']).
+_lex(['coach', 'played', 'university', 'football', 'player', 'state', 'college', 'team', 'former', 'first'], ['college/2']).
+_lex(['raf', 'garrison', 'force', 'army', 'air', 'states', 'united', 'command', 'base', 'squadron', 'wing'], ['garrison/2']).
+_lex(['available', 'windows', 'system', 'mac', 'operating', 'systems', 'linux', 'x', 'os', 'microsoft', 'software'], ['operatingSystem/2']).
+_lex(['1987', 'surname', 'bentley', 'born', 'rules', 'league', 'april', 'greg', 'gregory', 'footballer', 'australian'], ['surname/2']).
+_lex(['united', 'district', 'nominee', 'house', 'fimian', 'candidate', 'virginia', 'representatives', 'states', '11th', 'keith'], ['nominee/2']).
+_lex(['prospect', 'league', 'currently', 'plays', 'team', 'ahl', 'born', 'american', 'ice', '6', 'professional', 'hockey'], ['prospectTeam/2']).
+_lex(['metro', 'service', 'lines', 'transit', 'rail', 'number', '1', 'station', 'bus', 'routes', 'line'], ['numberOfLines/2']).
+_lex(['alps', 'mountains', 'mountain', 'national', 'm', 'located', 'range', 'place', 'peak', 'highest', 'mount'], ['highestPlace/2']).
+_lex(['drafted', 'nfl', 'season', 'selected', 'overall', 'draft', 'year', 'nba', 'first', 'round', 'pick'], ['draftYear/2']).
+_lex(['spaceport', 'cospar', 'carrying', 'spacecraft', '2001', 'progress', 'allowed', 'russian', '2', 'november', 'kazakhstan', 'id'], ['cosparId/2']).
+_lex(['school', 'barking', 'west', 'croydon', 'station', 'london', 'south', 'borough', 'road', 'dagenham'], ['borough/2']).
+_lex(['death', 'january', 'september', 'december', 'june', 'actor', 'april', 'american', 'october', 'film', 'year', 'died'], ['deathYear/2']).
+_lex(['trainer', 'training', 'used', 'force', 'jet', 'air', 'aircraft', 'pilatus', 'team', 'display'], ['aircraftTrainer/2']).
+_lex(['novel', 'based', 'author', 'character', 'work', 'notable', 'fictional', 'written', 'book', 'series', 'film', 'first'], ['notableWork/2']).
+_lex(['strength', '1812', 'army', 'pacific', 'states', 'united', 'navy', 'during', 'first', 'war', '1879'], ['strength/2']).
+_lex(['congress', 'sabha', 'lok', 'national', 'political', 'elections', 'member', 'elected', 'indian', 'party', 'constituency', 'leader'], ['politicalPartyOfLeader/2']).
+_lex(['limitations', 'hormone', 'warfare', '1980', 'acquired', 'kamov', 'aircraft', 'used', 'navy', 'helicopter', 'indian'], ['aircraftHelicopter/2']).
+_lex(['11', '10', 'october', 'built', 'number', '1', 'born', 'american', '2', '5', '12', '14'], ['numberBuilt/2']).
+_lex(['ticino', 'aargau', 'district', 'municipality', 'canton', 'located', 'vaud', 'swiss', 'switzerland', 'valais'], ['canton/2']).
+_lex(['ball', 'snowboard', 'skiing', 'game', 'equipment', 'paintball', '2006', 'team', 'snowboarding', 'ski', 'alpine'], ['equipment/2']).
+_lex(['passengers', 'metro', 'changshou', 'guangzhou', 'per', '1', 'lu', 'year', 'station', 'line'], ['passengersPerYear/2']).
+_lex(['upn', 'television', 'abc', 'network', 'programming', 'broadcast', 'cbs', 'station', 'affiliate', 'nbc', 'former', 'channel'], ['formerBroadcastNetwork/2']).
+_lex(['league', 'played', 'club', 'football', 'ks', 'fc', 'chairman', 'team', 'owner', 'president'], ['chairman/2']).
+_lex(['laser', 'mapping', 'module', '15', 'panoramic', 'camera', 'command', 'sim', 'spectrometer', 'mass', 'apollo', 'gamma'], ['commandModule/2']).
+_lex(['play', 'language', 'kanyasulkam', 'considered', 'greatest', 'telugu', 'original', 'wrote', 'first'], ['originalLanguage/2']).
+_lex(['television', 'cbs', 'mtv', 'show', 'bbc', 'itv', '4', 'series', 'nbc', 'channel'], ['channel/2']).
+_lex(['province', 'canada', 'school', 'italy', 'university', 'comune', 'region', 'located', 'turin', 'italian'], ['province/2']).
+_lex(['town', 'states', 'united', 'italy', 'country', 'minnesota', 'minneapolis', 'county', 'twin', 'new', 'bergen', 'south'], ['twinCountry/2']).
+_lex(['television', 'episode', 'show', 'series', 'number', 'vampire', '1', '2', '5', 'season', 'first'], ['seasonNumber/2']).
+_lex(['album', 'singer', 'associated', 'song', 'guitarist', 'artists', 'band', 'music', 'rock', 'such', 'john'], ['associatedBand/2']).
+_lex(['town', 'land', 'thuringia', 'collectivity', 'district', 'altenburger', 'fulda', 'municipality', 'werra', 'germany', 'river', 'administrative'], ['administrativeCollectivity/2']).
+_lex(['united', 'ethnic', 'year', '2002', '2001', 'census', 'republic', '2007', 'groups', '2005', '2008', '2009', 'population'], ['ethnicGroupsInYear/2']).
+_lex(['direction', 'right', 'north', 'creek', 'follows', 'aliso', 'trail', 'canyon', 'wood', 'northerly', 'child', 'branches'], ['rightChild/2']).
+_lex(['great', 'north', 'region', 'nebraska', 'confluence', 'source', 'montana', 'south', 'missouri', 'along', 'river', 'platte', 'highway'], ['sourceConfluenceRegion/2']).
+_lex(['sartarelli', 'fang', 'la', 'birnbaum', 'translator', 'edition', 'novel', 'jack', 'english', 'translated', 'translation'], ['translator/2']).
+_lex(['television', 'west', 'florida', '43', 'class', 'station', 'palm', 'beach', 'former', 'channel'], ['formerChannel/2']).
+_lex(['baseman', 'season', 'pitcher', 'award', 'running', 'won', 'yards', 'year', 'position', 'quarterback', 'first'], ['position/2']).
+_lex(['status', 'personalities', 'evri', 'acquired', 'company', 'epicentric', 'vignette', 'understanding', 'current', 'beta', 'standards', '286'], ['currentStatus/2']).
+_lex(['burial', 'mahmud', 'king', 'egypt', 'saladin', 'delhi', 'augustus', 'rome', 'place', 'tiberius', 'nero', 'emperor'], ['placeOfBurial/2']).
+_lex(['bridgton', 'school', 'basketball', 'played', 'university', 'football', 'high', 'born', 'points', 'attended', 'highschool'], ['highschool/2']).
+_lex(['river', 'form', 'pennsylvania', 'west', 'confluence', 'source', 'near', 'place', 'ohio', 'through', 'along', 'pittsburgh', 'allegheny'], ['sourceConfluencePlace/2']).
+_lex(['legislative', 'legislature', 'lower', 'assembly', 'name', 'senate', 'house', 'period', 'illinois', 'representatives', 'state', 'california', 'general'], ['legislativePeriodName/2']).
+_lex(['eagle', 'species', 'class', 'bird', 'including', 'known', 'mammal', 'include', 'birds', 'order'], ['class/2']).
+_lex(['directed', 'play', 'samuel', 'theatre', 'played', 'premiere', 'mute', 'character', 'godot', 'waiting', 'production', 'beckett'], ['muteCharacterInPlay/2']).
+_lex(['city', 'school', 'synonym', 'mysore', 'upon', 'tyne', 'located', 'salaam', 'india', 'river', 'carmel'], ['synonym/2']).
+_lex(['prospect', 'league', 'ahl', 'plays', 'currently', 'ice', 'born', 'american', 'hockey', 'professional', 'playing'], ['prospectLeague/2']).
+_lex(['used', 'philharmonic', 'fender', 'orchestra', 'guitar', 'instrument', 'berlin', 'les', 'piano', 'gibson', 'paul'], ['instrument/2']).
+_lex(['plants', 'owl', 'little', 'family', 'species', 'including', 'grebe', 'genus', 'order', 'penguin'], ['order/2']).
+_lex(['tunnel', 'oslo', 'route', 'between', 'folkestone', 'start', 'station', 'through', 'location', 'kent', 'under', 'railway', 'channel'], ['routeStartLocation/2']).
+_lex(['city', 'television', 'based', 'theatre', 'company', 'royal', 'station', 'london', 'location', 'new', 'first'], ['locationCity/2']).
+_lex(['europe', 'parliament', 'group', 'democracy', 'union', 'list', 'member', 'liberals', 'alliance', 'democrats', 'european'], ['europeanParliamentGroup/2']).
+_lex(['plate', 'north', 'over', 'formed', 'range', 'hotspot', 'american', 'orogeny', 'basin', 'anahim'], ['orogeny/2']).
+_lex(['town', 'province', 'england', 'born', 'region', 'italy', 'located', 'london', 'north', 'borough', 'south'], ['region/2']).
+_lex(['album', 'novels', 'subsequent', 'work', 'character', 'two', 'dune', 'released', 'book', 'series', 'albums', 'first'], ['subsequentWork/2']).
+_lex(['selection', 'challenger', 'mcauliffe', 'presence', 'space', 'christa', 'project', 'cancelled', 'live', 'shuttle', 'teacher'], ['selection/2']).
+_lex(['sixth', 'funded', 'beingrid', 'research', 'project', 'framework', 'fp6', 'under', 'type', 'integrated', 'programme'], ['projectType/2']).
+_lex(['north', 'opened', 'tunnel', 'station', 'number', '1', 'tracks', 'street', 'channel', '2', 'line', 'south'], ['numberOfTracks/2']).
+_lex(['platinum', 'love', 'gold', 'glory', 'certification', 'song', 'single', 'cd', 'second', 'uk', 'certified'], ['certification/2']).
+_lex(['podiums', 'car', 'driver', 'one', 'born', 'race', 'team', 'formula', 'racing', 'former', '500'], ['podiums/2']).
+_lex(['scheduled', 'based', 'target', 'service', 'airways', 'island', 'airlines', 'air', 'airport', 'airline', 'international'], ['targetAirport/2']).
+_lex(['mountain', 'northern', 'mountains', 'west', 'virginia', 'located', 'andes', 'chile', 'allegheny', 'highest', 'argentina'], ['highestMountain/2']).
+_lex(['city', 'united', 'transportation', 'government', 'jurisdiction', 'states', 'state', 'york', 'department', 'new', 'jersey'], ['jurisdiction/2']).
+_lex(['adams', 'richard', 'vice', 'presidents', 'ford', 'william', 'jefferson', 'president', 'john', 'nixon'], ['vicePresident/2']).
+_lex(['city', 'united', 'airlines', 'national', 'headquarter', 'air', 'airport', 'airline', 'party', 'new', 'international'], ['headquarter/2']).
+_lex(['90377', '10th', 'telescope', 'oschin', 'responsible', 'eris', 'discovered', 'taken', 'planet', 'sedna', 'discovery'], ['discovered/2']).
+_lex(['founding', 'northern', '17', 'created', 'community', 'districts', 'gujarat', 'date', 'european', 'former', 'came', 'out'], ['foundingDate/2']).
+_lex(['sir', 'von', 'father', 'brother', 'son', 'william', 'relation', 'kim', 'randolph', 'former', 'richthofen'], ['relation/2']).
+_lex(['catholic', 'don', 'professor', 'current', 'born', 'state', 'college', 'rector', 'bosco', 'university'], ['rector/2']).
+_lex(['league', 'congress', 'national', 'african', 'young', 'youth', 'scottish', 'party', 'communist', 'wing'], ['youthWing/2']).
+_lex(['vic', 'end', 'elliot', 'theatre', 'west', 'current', 'billy', 'old', 'production', 'london', 'spacey', 'kevin'], ['currentProduction/2']).
+_lex(['de', 'plays', 'played', 'club', 'currently', 'football', 'born', 'fc', 'team', 'playing', 'ground'], ['ground/2']).
+_lex(['israel', 'census', 'haifa', 'january', 'israeli', 'season', 'herzliya', '2007', 'year', '2008', '2009', 'maccabi'], ['censusYear/2']).
+_lex(['prime', 'parliament', 'office', 'governor', 'former', 'member', 'state', 'minister', 'party', 'leader', 'secretary'], ['office/2']).
+_lex(['football', 'sir', 'basketball', 'league', 'played', 'national', 'title', 'canadian', 'born', 'king', 'first'], ['title/2']).
+_lex(['county', 'identifier', 'service', 'city', 'regional', 'air', 'angeles', 'located', 'airport', 'location', 'international', 'served', 'faa'], ['faaLocationIdentifier/2']).
+_lex(['directed', 'movie', 'writer', 'written', 'director', 'american', 'role', 'film', 'films', 'best', 'first'], ['writer/2']).
+_lex(['acadamies', 'lancing', 'corporation', 'fellow', 'current', 'college', 'chairman', 'woodard', 'chair', 'label', 'trustee'], ['chairLabel/2']).
+_lex(['member', 'liberal', 'socialist', 'hamas', 'socialists', 'affiliation', 'party', 'brotherhood', 'international', 'democratic', 'european'], ['internationalAffiliation/2']).
+_lex(['show', 'university', 'bbc', 'employer', 'director', 'born', 'radio', 'ganassi', 'president', 'racing', 'chip'], ['employer/2']).
+_lex(['blumenthal', 'head', 'laundry', 'berkshire', 'restaurant', 'thomas', 'fat', 'chef', 'duck', 'cookbook', 'heston'], ['headChef/2']).
+_lex(['united', 'group', 'serbs', 'russians', 'kosovo', 'people', 'russia', 'ethnic', 'albanians', 'war', 'population'], ['ethnicGroup/2']).
+_lex(['picture', 'network', 'format', '720p', 'fox', 'simulcast', 'high', 'hd', 'news', 'definition', 'channel', '1080i'], ['pictureFormat/2']).
+_lex(['zealand', 'project', 'power', 'proposed', 'farm', 'eolica', 'county', 'construction', 'fuel', 'new', 'wind'], ['fuel/2']).
+_lex(['novel', 'rocky', 'movie', 'appearance', 'character', 'fictional', 'oz', 'series', 'powers', 'film', 'first'], ['firstAppearance/2']).
+_lex(['mountain', 'district', 'mountains', 'mount', 'lake', 'range', 'fell', 'peak', 'english', 'highest'], ['mountainRange/2']).
+_lex(['united', 'force', 'army', 'royal', 'air', 'guard', 'command', 'forces', 'marine', 'wing', 'structure'], ['commandStructure/2']).
+_lex(['2003', 'march', 'april', 'jiabao', 'national', 'premier', 'wen', 'majority', 'wu', 'election', 'born', 'until'], ['electionMajority/2']).
+_lex(['ranking', 'school', 'columbia', 'professor', 'harvard', 'york', 'yale', 'graduated', 'new', 'law', 'university'], ['ranking/2']).
+_lex(['actor', 'best', 'company', 'bill', 'award', 'ferrari', 'film', 'occupation', 'microsoft', 'disney', 'first'], ['occupation/2']).
+_lex(['non', 'vampire', 'science', 'age', 'scouting', 'fiction', 'boys', 'book', 'published', 'interview', 'new', 'guide', 'subject'], ['nonFictionSubject/2']).
+_lex(['secretary', 'general', 'member', 'born', 'okada', 'katsuya', 'members', 'party', 'japan', 'democratic', 'former', 'italian'], ['secretaryGeneral/2']).
+_lex(['canada', 'foundation', 'united', 'corporation', 'company', 'one', 'founded', 'states', 'place', 'japan', 'bank', 'first'], ['foundationPlace/2']).
+_lex(['sound', 'buy', 'puget', 'number', 'ava', '12', 'wineries', 'grapes', 'growers', 'grow'], ['numberOfWineries/2']).
+_lex(['league', 'copa', 'club', 'currently', 'azul', 'cruz', '2001', 'w', 'honours', 'libertadores', 'trinidad'], ['honours/2']).
+_lex(['opened', 'metro', 'stations', 'light', 'transit', 'lines', 'number', 'station', 'new', 'line', 'rail'], ['numberOfStations/2']).
+_lex(['1982', 'grand', 'driver', 'prix', 'second', 'race', 'result', 'team', 'austrian', 'best', 'hill'], ['secondDriver/2']).
+_lex(['zealand', 'franc', 'united', 'country', 'official', 'dollar', 'states', 'currency', 'pound', 'replaced', 'new', 'using'], ['usingCountry/2']).
+_lex(['album', 'dj', 'released', 'series', 'compilation', 'jazz', 'cd', 'mix', 'part', 'nubreed', 'compiler'], ['compiler/2']).
+_lex(['member', 'school', 'athletic', 'national', 'abbreviation', 'american', 'council', 'international', 'schools', 'world', 'association'], ['abbreviation/2']).
+_lex(['leggo', 'circulation', 'engraver', 'friday', '000', '2', 'editor', 'newspaper', 'news', 'age'], ['circulation/2']).
+_lex(['soyuz', 'flight', 'launch', 'iss', 'space', 'crew', 'station', 'expedition', 'aboard', 'vehicle', 'international', 'launched'], ['launchVehicle/2']).
+_lex(['album', 'artist', 'track', 'song', 'single', 'band', 'second', 'rock', 'albums', 'released', 'first'], ['artist/2']).
+_lex(['last', 'austin', 'played', 'character', 'goldmember', 'appearance', 'fonzie', 'fictional', 'days', 'powers', 'film', 'happy'], ['lastAppearance/2']).
+_lex(['both', 'race', 'grand', 'donington', 'mclaren', 'driver', 'prix', 'won', 'fastest', 'team', 'formula', 'first'], ['fastestDriverTeam/2']).
+_lex(['sister', 'network', 'sky', 'vh1', 'two', 'one', 'bbc', 'station', 'mtv', 'news', 'television', 'channel'], ['sisterStation/2']).
+_lex(['directed', 'life', 'short', 'richard', 'waking', 'cinematography', 'cinematographer', 'film', 'films', 'documentary', 'best'], ['cinematography/2']).
+_lex(['play', 'pageant', 'old', 'ramona', 'show', 'live', 'outdoor', 'historical', 'grumpy', 'women', 'subject'], ['subjectOfPlay/2']).
+_lex(['bridge', 'danube', 'valley', 'willamette', 'bratislava', 'county', 'located', 'lisbon', 'tagus', 'river'], ['river/2']).
+_lex(['television', 'creator', 'appeared', 'series', 'created', 'character', 'fictional', 'david', 'show', 'first'], ['creator/2']).
+_lex(['madoc', 'school', 'ontario', 'centre', 'students', 'number', 'high', 'located', 'serving', '930', 'hastings'], ['schoolNumber/2']).
+_lex(['broadcast', 'triangle', 'show', 'share', 'four', 'source', 'game', 'germany', 'publications', 'inquirer', 'highest', 'channel'], ['shareSource/2']).
+_lex(['engine', 'requirement', 'magic', 'windows', 'galactica', 'xbox', '2002', 'released', 'game', 'unreal', 'microsoft'], ['requirement/2']).
+_lex(['ceremony', 'freeman', 'olympic', 'bearer', 'opening', 'summer', 'torch', 'cauldron', 'lit', '2000', 'olympics', 'shooting'], ['torchBearer/2']).
+_lex(['iso6392', 'code', 'language', 'form', 'nynorsk', 'official', 'two', 'one', 'norwegian', 'written', 'standard', 'norway'], ['iso6392Code/2']).
+_lex(['school', 'professor', 'private', 'department', 'strathclyde', 'college', 'stephen', 'jonathan', 'university', 'principal'], ['principal/2']).
+_lex(['school', 'university', 'students', 'academy', 'enrollment', 'number', 'high', 'harvard', 'college', 'law', 'over'], ['numberOfStudents/2']).
+_lex(['younger', 'gershwin', 'mothra', 'brother', 'father', 'sister', 'son', 'relative', 'mother', 'tony', 'halliwell'], ['relative/2']).
+_lex(['swedish', 'doctoral', 'uppsala', 'students', 'professor', 'arts', 'number', 'institute', 'lund', 'medicine', 'law', 'studies', 'university'], ['numberOfDoctoralStudents/2']).
+_lex(['tributary', 'north', 'creek', 'located', 'west', 'region', 'source', 'river', 'valley', 'platte', 'south', 'colorado'], ['sourceRegion/2']).
+_lex(['album', 'group', 'song', 'guitarist', 'member', 'band', 'drummer', 'rock', 'new', 'former'], ['formerBandMember/2']).
+_lex(['victory', 'war', 'paris', 'treaty', 'ended', 'american', 'result', 'confederate', 'battle', 'union', 'first'], ['result/2']).
+_lex(['basketball', 'gaelic', 'university', 'football', 'player', 'born', 'college', 'team', 'arkansas', 'sport', 'former'], ['sport/2']).
+_lex(['clamp', 'dna', 'cells', 'group', 'located', 'base', 'pair', 'position', 'gene', 'arm', 'chromosome'], ['arm/2']).
+_lex(['hue', '1830', '30', 'august', 'brown', 'football', 'vermilion', 'born', 'american', '1930', 'hsv', 'coordinate', 'new'], ['hsvCoordinateHue/2']).
+_lex(['engine', 'valvetrain', 'combustion', 'dohc', '1998cc', 'nissan', 'produced', 's20', 'internal', '1970s'], ['valvetrain/2']).
+_lex(['division', 'capacity', '1979', 'played', 'career', 'currently', 'girona', 'tikkanen', 'player', 'fc', 'born'], ['capacity/2']).
+_lex(['pope', 'xii', 'pius', 'canonized', 'ii', 'saint', 'paul', 'john', 'beatified', 'maria'], ['beatifiedBy/2']).
+_lex(['predecessor', 'king', 'death', 'emperor', 'later', 'david', 'ii', 'roman', 'under', 'during', 'son'], ['predecessor/2']).
+_lex(['sheer', 'supercharger', 'burning', 'track', 'things', 'review', 'burn', 'eyes', 'taken', 'red', 'darker'], ['review/2']).
+_lex(['town', 'borough', 'dresden', 'district', 'near', 'stuttgart', 'berlin', 'germany', 'kassel', 'administrative', 'karlsruhe'], ['administrativeDistrict/2']).
+_lex(['originally', 'rebuilder', 'operated', 'steam', 'locomotive', '2101', 'reading', 'company'], ['rebuilder/2']).
+_lex(['town', 'north', 'scottish', 'area', 'west', 'lanarkshire', 'scotland', 'born', 'lieutenancy', 'village', 'fife', 'east'], ['lieutenancyArea/2']).
+_lex(['mississippi', 'north', 'college', 'university', 'state', 'california', 'york', 'new', 'ohio', 'river'], ['state/2']).
+_lex(['1991', 'volcanic', 'last', 'eruption', 'philippines', 'june', 'mount', 'erupted', 'year', 'volcano', 'pinatubo'], ['eruptionYear/2']).
+_lex(['heart', 'named', 'formed', 'emedicine', 'syndrome', 'arthritis', 'disease', 'research', 'performed', 'article', 'anthrax', 'subject'], ['emedicineSubject/2']).
+_lex(['dialect', 'germanic', 'latin', 'old', 'language', 'family', 'spoken', 'languages', 'german', 'english', 'telugu'], ['languageFamily/2']).
+_lex(['c', 'e', 'atc', 'boldenone', 'positive', 'vitamin', 'drug', 'methcathinone', 'tested', 'prefix', 'related', 'derivative'], ['atcPrefix/2']).
+_lex(['e', 'findings', 'substances', 'inconclusive', 'natural', 'vitamin', 'effects', 'such', 'melatonin', 'thumbnail'], ['thumbnail/2']).
+_lex(['11', 'ostrava', 'metro', 'september', 'czechoslovakia', 'czech', 'born', '2001', 'republic', 'team', 'population', 'first'], ['populationMetro/2']).
+_lex(['bridge', 'north', 'opened', 'number', 'vauxhall', 'road', 'spans', '2005', 'along', 'river', 'sea', 'cliff'], ['numberOfSpans/2']).
+_lex(['jones', 'coach', 'dallas', 'cowboys', 'jerry', 'general', 'current', 'manager', 'team', 'new'], ['generalManager/2']).
+_lex(['alps', 'king', 'emperor', 'england', 'parent', 'father', 'son', 'ii', 'mother', 'daughter', 'river'], ['parent/2']).
+_lex(['novel', 'artist', 'cover', 'published', 'clive', 'sawyer', 'illustrated', 'book', 'written', 'books', 'barker', 'children'], ['coverArtist/2']).
+_lex(['represents', 'bavaria', 'christian', 'union', 'member', 'department', 'social', 'popular', 'party', 'leader', 'movement'], ['leaderParty/2']).
+_lex(['operations', '1990', 'commencing', 'jacads', 'testing', 'june', 'operational', 'verification', 'hgncid', 'began'], ['hgncid/2']).
+_lex(['catholic', 'school', 'boys', 'students', 'marist', 'st', 'high', 'located', 'college', 'marcellin', 'denomination'], ['denomination/2']).
+_lex(['city', 'currently', 'university', 'visiting', 'chancellor', 'professor', 'vice', 'london', 'hull', 'warwick'], ['viceChancellor/2']).
+_lex(['melilla', 'north', 'district', 'zone', 'azores', 'parish', 'de', 'da', 'spanish', 'ceuta', 'daylight', 'time', 'saving', 'spain'], ['daylightSavingTimeZone/2']).
+_lex(['named', 'endeavour', 'space', 'james', 'hms', 'cook', 'u', 'shuttle', 'ship', 'captain'], ['namedAfter/2']).
+_lex(['rhetoric', 'work', 'aristotle', 'philosophy', 'book', 'interest', 'politics', 'ethics', 'main', 'physics', 'metaphysics', 'first'], ['mainInterest/2']).
+_lex(['fare', 'central', 'opened', 'zone', 'tube', 'terminal', 'station', 'london', 'grand', 'line', 'railway'], ['fareZone/2']).
+_lex(['album', 'united', 'group', 'entertainment', 'emi', 'label', 'distributing', 'record', 'music', 'records', 'released'], ['distributingLabel/2']).
+_lex(['album', 'gnu', 'jazz', 'fantasy', 'music', 'band', 'rock', 'genre', 'such', 'blues', 'comedy'], ['genre/2']).
+_lex(['president', 'united', 'italy', 'france', 'states', 'born', 'germany', 'during', 'nationality', 'former', 'first'], ['nationality/2']).
+_lex(['school', 'diversity', 'invicta', 'university', 'county', 'meaning', 'radio', 'kent', 'motto', 'fm'], ['motto/2']).
+_lex(['river', 'north', 'west', 'park', 'lake', 'source', 'near', 'place', 'through', 'valley', 'south'], ['sourcePlace/2']).
+_lex(['championship', 'beat', 'wins', 'mark', 'player', 'snooker', 'won', 'world', 'stephen', 'professional', 'final'], ['otherWins/2']).
+_lex(['league', 'currently', 'plays', 'played', 'club', 'football', 'born', 'american', 'fc', 'soccer'], ['league/2']).
+_lex(['11', 'school', 'located', 'northern', 'year', 'between', 'ages', 'per', 'dartmoor', 'visitors', 'community', 'manoeuvres', 'children'], ['visitorsPerYear/2']).
+_lex(['municipalities', 'district', 'neighboring', 'municipality', 'canton', 'located', 'vaud', 'swiss', 'switzerland', 'borders', 'bern'], ['neighboringMunicipality/2']).
+_lex(['license', 'gnu', 'public', 'free', 'server', 'released', 'under', 'general', 'microsoft', 'software'], ['license/2']).
+_lex(['city', 'united', 'born', 'country', 'university', 'france', 'states', 'located', 'germany', 'river', 'south'], ['country/2']).
+_lex(['album', 'burn', 'name', 'song', 'icd10', 'center', 'released', 'stroke', 'scottish', 'woodham', 'first'], ['icd10/2']).
+_lex(['kingdom', 'united', 'organ', 'buses', 'bus', 'route', 'contracted', 'rail', 'london', 'underground', 'main', 'transport'], ['mainOrgan/2']).
+_lex(['genetics', 'help', 'collaborative', 'study', 'medlineplus', 'project', 'culture', 'book', 'designed', 'spearheaded', 'alcoholism'], ['medlineplus/2']).
+_lex(['canada', 'summer', 'great', 'united', 'winter', 'states', 'britain', 'games', 'competed', 'represented', 'olympics'], ['games/2']).
+_lex(['town', 'bavaria', 'north', 'district', 'saxony', 'federal', 'brandenburg', 'municipality', 'berlin', 'german', 'state', 'germany'], ['federalState/2']).
+_lex(['bridge', 'river', 'leading', 'number', 'kennington', 'water', 'street', 'road', 'between', 'crossing', 'new', 'vauxhall', 'piers'], ['numberOfPiersInWater/2']).
+_lex(['championship', 'hungarian', 'car', 'grand', 'driver', 'one', 'prix', 'race', '1950', 'formula', 'world', 'first'], ['firstRace/2']).
+_lex(['city', 'united', 'flight', 'center', 'parent', 'space', 'organisation', 'research', 'nasa', 'york', 'department', 'new'], ['parentOrganisation/2']).
+_lex(['legislature', 'development', 'parliament', 'affairs', 'member', 'economic', 'committee', 'international', 'party', 'sits', 'european'], ['committeeInLegislature/2']).
+_lex(['force', 'united', 'fighter', 'tornado', 'royal', 'attack', 'air', 'states', 'aircraft', 'panavia', 'squadron', 'hornet'], ['aircraftAttack/2']).
+_lex(['city', 'north', 'saskatchewan', 'region', 'located', 'near', 'nebraska', 'mouth', 'missouri', 'arkansas', 'river', 'south'], ['mouthRegion/2']).
+_lex(['subtitle', 'name', 'yojimbo', 'rings', 'wars', 'game', 'faerie', 'usagi', 'designed', 'first', 'elasund'], ['subtitle/2']).
+_lex(['television', 'episode', 'show', 'tv', 'season', 'number', 'appeared', '2006', '2007', 'series', 'seasons', 'first'], ['numberOfSeasons/2']).
+_lex(['championship', 'car', 'racing', 'driver', 'born', 'race', 'fastest', 'team', 'formula', 'lap', 'former', '500'], ['fastestLap/2']).
+_lex(['race', 'last', 'win', 'grand', 'one', 'prix', 'won', 'victory', 'team', 'formula', 'first'], ['lastWin/2']).
+_lex(['school', 'educated', 'grammar', 'comprehensive', 'community', 'high', 'located', 'college', 'authority', 'england', 'local', 'secondary'], ['localAuthority/2']).
+_lex(['television', 'network', 'affiliate', 'broadcast', 'cbs', 'station', 'radio', 'nbc', 'news', 'public', 'channel'], ['broadcastNetwork/2']).
+_lex(['located', 'mrt', 'bus', 'transit', 'number', 'levels', 'platform', '2', 'lrt', 'services', 'station', 'line', 'avenue'], ['numberOfPlatformLevels/2']).
+_lex(['via', 'led', 'expedition', 'mount', 'climbed', 'summit', 'peak', 'year', 'made', 'ascent', 'first'], ['firstAscentYear/2']).
+_lex(['suites', '13', 'march', 'chain', '1997', 'over', 'hotel', 'number', 'hollywood', '1959', 'cpr', 'hotels'], ['numberOfSuites/2']).
+_lex(['mendip', 'management', 'north', 'hills', 'edge', 'near', 'limestone', 'place', 'village', 'england', 'somerset', 'blackdown'], ['managementPlace/2']).
+_lex(['chevrolet', 'pontiac', 'car', 'ford', 'start', '2001', '2007', '2004', 'year', 'model', 'first'], ['modelStartYear/2']).
+_lex(['raf', 'memorial', 'bombers', 'vickers', 'sole', 'joined', 'wellington', 'aircraft', 'command', 'night', 'bomber'], ['aircraftBomber/2']).
+_lex(['1968', 'car', '2005', '1960', '1971', 'ford', '1965', 'production', '1950', 'year', 'end', 'model', 'first'], ['productionEndYear/2']).
+_lex(['revolutionary', 'civil', 'wars', 'french', 'france', 'napoleonic', 'battle', 'during', 'combatant', 'war', 'first'], ['combatant/2']).
+_lex(['columbia', 'launch', 'iss', 'space', 'days', 'flew', 'mission', 'shuttle', 'satellites', 'endeavour', 'deployed', 'discovery'], ['satellitesDeployed/2']).
+_lex(['school', 'ontario', 'columbia', 'district', 'british', 'high', 'part', 'board', 'public', 'secondary'], ['schoolBoard/2']).
+_lex(['raf', 'squadron', 'service', 'frewen', '1940', 'number', 'awarded', '73', 'officer', 'november', '33439', 'dfc'], ['serviceNumber/2']).
+_lex(['city', 'liverpool', 'england', 'greater', 'metropolitan', 'area', 'west', 'birmingham', 'manchester', 'borough'], ['metropolitanBorough/2']).
+_lex(['named', 'ancient', 'described', 'shaw', 'naturalist', 'first', 'authority', 'species', 'binomial', 'genus', 'george', 'name'], ['binomialAuthority/2']).
+_lex(['head', 'headteacher', 'headmaster', 'school', 'label', 'eton', 'became', 'master', 'college', 'dr', 'principal'], ['headLabel/2']).
+_lex(['cologne', 'october', 'august', 'german', '1', 'born', 'fortaleza', 'germany', '2007', 'july', 'total', 'population'], ['populationTotal/2']).
+_lex(['north', 'creek', 'reservoir', 'dam', 'lake', 'flows', 'water', 'located', 'outflow', 'river', 'south'], ['outflow/2']).
+_lex(['publication', 'monthly', 'science', 'review', 'economics', 'american', 'philosophical', 'frequency', 'published', 'quarterly', 'journals', 'journal'], ['frequencyOfPublication/2']).
+_lex(['origin', 'israel', 'united', 'force', 'army', 'country', 'space', 'launch', 'states', 'air', 'launched', 'first'], ['countryOrigin/2']).
+_lex(['italy', 'held', 'paris', 'country', 'driver', 'one', 'prix', 'second', 'race', '1950', 'motor', 'grand', 'formula'], ['secondDriverCountry/2']).
+_lex(['soyuz', 'used', 'missions', 'space', 'expedition', 'mission', 'capcom', 'spacecraft', 'gemini', 'apollo', 'previous'], ['previousMission/2']).
+_lex(['web', 'language', 'framework', 'lisp', 'javascript', 'programming', 'perl', 'application', 'written', 'emacs', 'php'], ['programmingLanguage/2']).
+_lex(['member', 'founder', 'current', 'directors', 'board', 'chrysler', 'owner', 'president', 'walter', 'chairman'], ['board/2']).
+_lex(['prize', 'institute', 'max', 'professor', 'nobel', 'awarded', 'field', 'mathematics', 'chemistry', 'physics', 'university'], ['field/2']).
+_lex(['publisher', 'games', 'series', 'nintendo', 'released', 'game', 'video', 'published', '64', 'sega', 'first'], ['publisher/2']).
+_lex(['final', 'champion', 'rage', '19', 'ufc', 'heavyweight', 'against', 'event', 'featured', 'cage', 'finals', 'previous'], ['previousEvent/2']).
+_lex(['code', 'main', 'iata', 'city', 'regional', 'located', 'airport', 'base', 'location', 'international', 'served', 'identifier'], ['iataLocationIdentifier/2']).
+_lex(['hfcl', 'kerry', 'metro', 'gold', 'timeshift', 'india', 'broadcasting', 'nine', 'venture', 'hence', 'channel'], ['timeshiftChannel/2']).
+_lex(['count', 'summer', 'united', 'winter', 'rank', 'states', 'australia', '1992', 'olympics', 'competed', 'team', 'represented', 'medal', 'final'], ['rankInFinalMedalCount/2']).
+_lex(['city', 'identifier', 'airport', 'regional', 'two', 'icao', 'located', 'iata', 'code', 'location', 'international', 'east'], ['icaoLocationIdentifier/2']).
+_lex(['daughter', 'wife', 'child', 'father', 'son', 'born', 'gandhi', 'mother', 'president', 'john', 'first'], ['child/2']).
+_lex(['tycoon', 'postscript', 'windows', 'ii', 'released', '3', 'version', 'rybka', '2005', 'release', 'microsoft', 'latest'], ['latestReleaseVersion/2']).
+_lex(['play', 'theatre', 'premiere', 'award', 'county', '2000', 'production', 'role', 'year', 'orange', 'broadway', 'first'], ['premiereYear/2']).
+_lex(['columbia', 'missions', 'space', '28', 'days', 'flew', 'challenger', 'complex', 'edt', 'shuttle', 'disaster'], ['missions/2']).
+_lex(['angeles', 'format', 'stations', 'broadcasting', 'broadcast', 'los', 'station', 'radio', 'york', 'new', 'fm', 'class'], ['broadcastStationClass/2']).
+_lex(['reside', 'winter', 'frozen', 'lake', 'tournament', 'calhoun', 'ice', 'lakes', 'covered', 'nokomis', 'until'], ['frozen/2']).
+_lex(['pink', 'brown', '1941', 'american', 'cmyk', '2000', 'floyd', 'black', 'coordinate', '100', 'white', 'first'], ['cmykCoordinateBlack/2']).
+_lex(['republican', 'john', 'governor', 'general', 'lieutenant', 'state', 'election', 'new', 'democratic', 'former'], ['governor/2']).
+_lex(['11', 'neil', 'armstrong', 'expedition', 'space', 'mission', 'crew', 'member', 'aboard', 'apollo', 'first'], ['crewMember/2']).
+_lex(['11', 'league', 'basketball', 'football', 'volleyball', 'born', 'american', 'baseball', 'team', 'world', 'size'], ['teamSize/2']).
+_lex(['tp53', 'generifs', '7157', 'here', 'entrezgene', 'human', 'taken', 'gene', 'entrez', 'geneid'], ['entrezgene/2']).
+_lex(['benjamin', 'canal', 'thomas', 'goethals', 'aqueduct', 'panama', 'chief', 'telford', 'principal', 'george', 'engineer'], ['principalEngineer/2']).
+_lex(['prime', 'king', 'death', 'england', 'university', 'india', 'united', 'place', 'york', 'new', 'first', 'minister'], ['deathPlace/2']).
+_lex(['city', 'residence', 'governor', 'mayor', 'born', 'california', 'york', 'party', 'senator', 'new', 'former'], ['residence/2']).
+_lex(['matt', 'parker', 'mel', 'park', 'trey', 'series', 'voiced', 'voice', 'south', 'blanc'], ['voice/2']).
+_lex(['porto', 'portugal', 'portuguese', 'country', 'government', 'june', 'da', 'born', 'madeira', 'island', 'islands', 'funchal'], ['governmentCountry/2']).
+_lex(['last', 'season', 'team', 'michael', 'one', 'prix', 'points', 'hamilton', 'formula', 'position', 'massa', 'schumacher'], ['lastPosition/2']).
+_lex(['city', 'united', 'north', 'born', 'island', 'university', 'largest', 'located', 'capital', 'new', 'south'], ['largestCity/2']).
+_lex(['firm', 'united', 'lawyers', 'over', 'llp', 'number', 'states', 'attorneys', 'offices', 'international', 'law', 'more'], ['numberOfLawyers/2']).
+_lex(['race', 'maserati', 'ayrton', 'driving', 'grand', 'mclaren', 'driver', 'prix', 'pole', 'won', 'team', 'international', 'first'], ['poleDriverTeam/2']).
+_lex(['building', '1991', 'plans', 'form', 'tunnel', 'began', 'dig', 'project', 'start', 'logan', 'construction', 'hill', 'year'], ['buildingStartYear/2']).
+_lex(['satellite', 'v', 'partial', 'rocket', 'launch', 'launches', 'delta', 'failed', 'vehicle', 'atlas', 'saturn', 'launched', 'first'], ['partialFailedLaunches/2']).
+_lex(['yamasaki', 'center', 'otto', 'louis', 'wagner', 'project', 'architect', 'designed', 'significant', 'new', 'world', 'vienna'], ['significantProject/2']).
+_lex(['army', 'american', 'defeated', 'commander', 'second', 'under', 'battle', 'during', 'general', 'war', 'napoleon'], ['commander/2']).
+_lex(['force', 'army', 'general', 'notable', 'commander', 'regiment', 'command', 'under', 'air', 'lanka', 'admiral'], ['notableCommander/2']).
+_lex(['christian', 'bass', 'format', 'trance', 'southern', 'music', 'rock', 'drum', 'soukous', 'subgenre', 'gospel'], ['musicSubgenre/2']).
+_lex(['directed', 'starring', 'pitt', 'hepburn', 'stars', 'katharine', 'partner', 'tracy', 'jolie', 'spencer', 'film'], ['partner/2']).
+_lex(['campaign', 'civil', 'ii', 'american', 'fought', 'during', 'world', 'battle', 'military', 'part', 'war', 'conflict', 'first'], ['isPartOfMilitaryConflict/2']).
+_lex(['town', 'mountain', 'old', 'carthage', 'site', 'troy', 'unesco', 'world', 'scipio', 'id', 'spain'], ['id/2']).
+_lex(['blue', 'brown', 'purple', '1975', '30', '2000', 'rgb', 'black', 'coordinate', 'new', 'red', 'first'], ['rgbCoordinateBlue/2']).
+_lex(['league', 'england', 'name', 'greens', 'colour', 'malaysian', 'member', 'green', 'party', 'scottish', 'wales', 'red'], ['colourName/2']).
+_lex(['cuisine', 'hong', 'chinese', 'famous', 'tokyo', 'quanjude', 'restaurant', 'kong', 'traditional', 'located', 'belgian'], ['cuisine/2']).
+_lex(['mercury', 'flight', 'prize', 'glenn', 'spaceshipone', 'spacecraft', '7', '6', 'john', '16p', 'first'], ['spacecraft/2']).
+_lex(['commonwealth', 'city', 'central', 'government', 'type', 'states', 'republic', 'council', 'african', 'democratic', 'cameroon', 'south'], ['governmentType/2']).
+_lex(['novel', 'based', 'author', 'series', 'character', 'written', 'book', 'john', 'film', 'first'], ['author/2']).
+_lex(['glen', 'union', 'parish', 'ballasalla', 'mills', 'malew', 'village', 'groudle', 'isle', 'man'], ['parish/2']).
+_lex(['television', 'evening', 'show', 'format', 'morning', 'nightly', 'cbs', 'abc', 'news', 'nbc', 'world'], ['format/2']).
+_lex(['kingdom', 'became', 'union', 'dissolution', 'dynasty', 'state', 'part', 'republic', 'year', 'during', 'empire', 'soviet'], ['dissolutionYear/2']).
+_lex(['over', 'neptune', 'precision', 'same', 'years', 'j2000', 'epoch', 'jupiter', 'uranus', 'saturn', 'before'], ['epoch/2']).
+_lex(['origin', 'united', 'tecumseh', 'cherokee', 'india', 'states', 'born', 'state', 'germany', 'new', 'john', 'first'], ['stateOfOrigin/2']).
+_lex(['republican', 'district', 'ran', 'democrat', 'against', '2006', 'election', 'incumbent', 'november', 'democratic'], ['incumbent/2']).
+_lex(['toronto', 'code', 'walcheren', 'sheffield', 'london', 'hms', 'station', 'radio', 'manchester', 'postal', 'fm', 'road'], ['postalCode/2']).
+_lex(['led', 'government', 'national', 'new', 'minister', 'president', 'party', 'liberal', 'democratic', 'leader'], ['party/2']).
+_lex(['mountain', 'great', 'ridge', 'parent', 'pike', 'fell', 'crag', 'summit', 'peak', 'y', 'north', 'highest', 'south'], ['parentMountainPeak/2']).
+_lex(['status', 'graves', 'athletic', 'national', 'scotland', 'collegiate', 'intercollegiate', 'athletics', 'trust', 'war', 'association'], ['status/2']).
+_lex(['chiswick', 'based', 'stations', 'lifeboat', 'material', 'station', 'thames', 'result', 'tower', 'river', 'pier'], ['material/2']).
+_lex(['shuttle', 'flight', 'disaster', 'launch', 'space', 'columbia', 'commission', 'mission', 'ended', 'during', 'challenger', 'last'], ['lastFlight/2']).
+_lex(['album', 'band', 'series', 'work', 'two', 'dune', 'released', 'stargate', 'show', 'albums', 'previous', 'first'], ['previousWork/2']).
+_lex(['established', 'publication', 'review', 'published', 'american', 'founded', 'society', 'scientific', 'year', 'studies', 'journal', 'first'], ['firstPublicationYear/2']).
+_lex(['inducted', '1999', 'former', 'elected', 'hockey', 'team', 'fame', 'along', 'hall', 'first'], ['hallOfFame/2']).
+_lex(['directed', 'played', 'movie', 'director', 'role', 'film', 'starring', 'films', 'john', 'best'], ['director/2']).
+_lex(['mountain', 'river', 'north', 'west', 'park', 'lake', 'source', 'near', 'through', 'valley', 'south'], ['sourceMountain/2']).
+_lex(['mountain', 'east', 'intel', 'valley', 'willamette', 'includes', 'project', 'complex', 'child', 'shavers', 'codenamed', 'left'], ['leftChild/2']).
+_lex(['league', 'major', 'mutiny', 'played', 'abandonment', 'bay', 'game', 'stadium', 'between', 'date', 'final', 'tampa'], ['dateOfAbandonment/2']).
+_lex(['enforcement', 'rice', 'accreditation', 'institute', 'football', 'research', 'commission', 'purpose', 'international', 'law', 'association'], ['purpose/2']).
+_lex(['divisions', 'tegmentum', 'temporal', 'gyrus', 'brainstem', 'anatomical', 'pinky', 'brain', 'part', 'human', 'model', 'midbrain', 'structure'], ['isPartOfAnatomicalStructure/2']).
+_lex(['taft', 'worse', 'born', 'phillip', 'athlete', 'robert', 'majority', 'lydia', 'letter', 'ohio', 'leader', 'abandoned'], ['majorityLeader/2']).
+_lex(['10', 'saturn', 'launch', 'apollo', 'v', 'orbits', 'lunar', '6', '9', 'booster', 'first'], ['booster/2']).
+_lex(['include', 'family', 'pine', 'species', 'known', 'common', 'found', 'small', 'such', 'genus', 'bird'], ['genus/2']).
+_lex(['glycophorin', 'polypeptide', 'acids', 'gpc', 'supplementary', '2', '128', 'encoded', 'locus', 'data', 'arm', 'chromosome', 'amino'], ['locusSupplementaryData/2']).
+_lex(['built', 'builder', 'rail', 'british', 'ocean', 'class', 'ms', 'locomotive', 'works', 'baldwin', 'locomotives'], ['builder/2']).
+_lex(['bridge', 'transportation', 'chicago', 'avenue', 'authority', 'crossing', 'maintained', 'department', 'new', 'river', 'border'], ['maintainedBy/2']).
+_lex(['duke', 'television', 'georgia', 'community', 'station', 'affiliate', 'analog', 'new', 'township', 'meridian', 'channel'], ['analogChannel/2']).
+_lex(['sixteenth', 'episode', 'expert', 'person', 'show', 'urine', '1961', 'stroud', 'born', 'les', 'survivorman'], ['person/2']).
+_lex(['king', 'play', 'theatre', 'chicago', 'david', 'production', 'setting', 'oedipus', 'perversity', 'mamet', 'thebes', 'sexual'], ['settingOfPlay/2']).
+_lex(['prime', 'harold', 'government', 'blair', 'margaret', 'minister', 'president', 'tony', 'party', 'john'], ['primeMinister/2']).
+_lex(['town', 'city', 'north', 'district', 'india', 'state', 'council', 'village', 'england', 'south'], ['district/2']).
+_lex(['tributary', 'north', 'creek', 'west', 'lake', 'flows', 'bay', 'located', 'mouth', 'river', 'south'], ['riverMouth/2']).
+_lex(['trainer', 'championship', 'trained', 'mcmahon', 'wrestling', 'wrestler', 'team', 'chris', 'professional', 'hart', 'funk'], ['trainer/2']).
+_lex(['city', 'coimbatore', 'currently', 'pacific', 'connections', 'located', 'construction', 'vancouver', 'centre', 'station', 'structure'], ['stationStructure/2']).
+_lex(['august', 'bantry', '1998', 'cork', '1918', '8', 'rural', 'railway', 'population', 'senior', 'road', 'kealkill'], ['populationRural/2']).
+_lex(['bradford', 'canal', 'mersey', 'system', 'part', 'connected', 'york', 'branch', 'through', 'line', 'river', 'caldon'], ['riverBranchOf/2']).
+_lex(['television', 'played', 'show', 'series', 'portrayer', 'character', 'actor', 'role', 'fictional', 'portrayed', 'film'], ['portrayer/2']).
+_lex(['mystery', 'trek', 'novel', 'based', 'movie', 'simpsons', 'drood', 'star', 'musical', 'film'], ['basedOn/2']).
+_lex(['product', 'entertainment', 'series', 'company', 'nintendo', 'system', 'released', 'game', 'video', 'developed', 'games'], ['product/2']).
+_lex(['school', 'jackson', 'college', 'grade', '12th', 'grades', 'foster', 'through', 'crescent', 'penn', 'friends'], ['grades/2']).
+_lex(['league', 'season', 'national', 'football', 'american', 'born', 'game', 'draft', 'yards', 'touchdown', 'round', 'quarterback'], ['draftRound/2']).
+_lex(['album', 'band', 'motown', 'signed', 'label', 'record', 'music', 'records', 'released', 'first'], ['recordLabel/2']).
+_lex(['passenger', 'used', 'transportation', 'center', 'service', 'passengers', 'rail', '30th', 'system', 'station', 'city', 'amtrak'], ['passengersUsedSystem/2']).
+_lex(['canal', 'england', 'point', 'cromford', 'start', 'near', 'through', 'trent', 'junction', 'river', 'navigation', 'south'], ['startPoint/2']).
+_lex(['president', 'group', 'ceo', 'corporation', 'company', 'person', 'game', 'chairman', 'key', 'nintendo', 'nbc', 'news'], ['keyPerson/2']).
+_lex(['biome', 'north', 'southern', 'desert', 'located', 'california', 'chile', 'between', 'sahara', 'mojave', 'atacama'], ['biome/2']).
+_lex(['road', 'north', 'west', 'route', 'number', 'motorway', 'state', 'highway', 'new', 'south', 'interstate'], ['routeNumber/2']).
+_lex(['north', 'west', 'transit', 'rail', 'underground', 'station', 'london', 'trains', 'operated', 'railway', 'line'], ['operatedBy/2']).
+_lex(['toronto', 'head', 'coach', 'title', 'assistant', 'duncan', 'manager', 'fc', 'wilde', 'lynx', '2006', 'soccer'], ['managerTitle/2']).
+_lex(['named', 'series', 'developed', 'de', 'one', 'book', 'james', 'known', 'world', 'john', 'first'], ['knownFor/2']).
+_lex(['status', 'development', 'jaguar', 'car', 'two', 'ford', 'current', 'game', 'conservation', 'including', 'atari', 'species'], ['conservationStatus/2']).
+_lex(['river', 'north', 'creek', 'located', 'lake', 'flows', 'source', 'nile', 'tributary', 'platte', 'south'], ['source/2']).
+_lex(['wgau', 'format', 'cox', 'fm', 'broadcasting', 'callsign', 'wngc', 'station', 'along', 'now', 'former', 'radio'], ['formerCallsign/2']).
+_lex(['canada', 'summer', '1992', 'italy', 'winter', '1996', 'number', 'born', 'britain', 'won', 'olympics', 'medals', 'represented', 'bronze'], ['numberOfBronzeMedalsWon/2']).
+_lex(['prime', 'united', 'office', 'taoiseach', 'governor', 'order', 'states', 'became', 'minister', 'president', 'former', 'first'], ['orderInOffice/2']).
+_lex(['city', 'united', 'england', 'museum', 'park', 'lake', 'london', 'location', 'new', 'national', 'york'], ['location/2']).
+_lex(['album', 'gray', '1992', 'group', 'tragically', 'song', 'hip', 'hop', 'released', 'rap', 'subject', 'first'], ['graySubject/2']).
+_lex(['league', 'founding', 'became', 'football', 'founded', 'records', 'state', 'part', 'republic', 'year', 'empire', 'first'], ['foundingYear/2']).
+_lex(['mountain', 'management', 'north', 'hills', 'mendip', 'edge', 'near', 'limestone', 'village', 'england', 'somerset', 'blackdown'], ['managementMountain/2']).
+_lex(['kingdom', 'plant', 'hawk', 'national', 'bear', 'species', 'planet', 'cat', 'animal', 'include', 'collective'], ['kingdom/2']).
+_lex(['independent', 'sister', 'observer', 'guardian', 'newspapers', 'sunday', 'daily', 'times', 'written', 'newspaper', 'weekly'], ['sisterNewspaper/2']).
+_lex(['1984', 'born', 'car', '1960', '1972', 'ford', 'produced', 'start', 'production', 'year', 'model', 'introduced', 'first'], ['productionStartYear/2']).
+_lex(['boudin', 'united', 'march', 'official', 'royal', 'british', 'navy', 'regimental', 'brazilian', 'quick'], ['march/2']).
+_lex(['force', 'center', 'kennedy', 'launch', 'florida', 'space', '1', 'gemini', 'pad', 'apollo', 'launched', 'first'], ['launchPad/2']).
+_lex(['sterling', 'konica', 'fate', 'airways', 'acquired', 'british', 'imperial', '2000', 'minolta', 'merged', 'software'], ['fate/2']).
+_lex(['1991', 'city', '1983', 'government', 'formed', 'orchestra', 'bratislava', 'chamber', 'council', 'appointed'], ['government/2']).
+_lex(['adolf', 'tulsa', 'chancellor', 'von', 'roberts', 'college', 'president', 'oral', 'university', 'hitler'], ['chancellor/2']).
+_lex(['champion', '1998', '2002', '2003', '2001', '2006', '2007', '2005', 'world', '2008', '2009'], ['worldChampion/2']).
+_lex(['bridge', 'over', 'viaduct', 'carries', 'street', 'thames', 'railway', 'river', 'route', 'road'], ['bridgeCarries/2']).
+_lex(['category', 'solo', 'singer', 'right', 'grammy', '22', 'lauper', 'band', 'mentor', 'background', 'rick'], ['background/2']).
+_lex(['television', 'colorado', 'joined', 'virtual', 'station', 'plus', 'weather', 'known', 'affiliate', 'denver', 'channel'], ['virtualChannel/2']).
+_lex(['10', 'docking', 'september', 'docked', 'iss', 'spacecraft', 'station', 'date', 'progress', 'launched', 'port1'], ['port1DockingDate/2']).
+_lex(['summer', 'netherlands', 'italy', 'winter', 'number', 'sports', '1928', 'britain', 'olympics', '1936', 'represented', 'norway'], ['numberOfSports/2']).
+_lex(['bridge', '1999', 'vehicles', 'per', 'street', 'day', 'putnam'], ['vehiclesPerDay/2']).
+_lex(['name', 'language', 'university', 'new', 'one', 'born', 'during', 'such', 'john', 'film', 'first'], ['name/2']).
+_lex(['blue', 'league', 'school', 'united', 'england', 'greens', 'colour', 'green', 'party', 'scottish', 'wales'], ['colour/2']).
+_lex(['bruges', 'opening', 'festival', 'sundance', 'night', '2008', 'film'], ['openingFilm/2']).
+_lex(['nepal', 'language', 'spoken', 'island', 'regional', 'scotland', 'gaelic', 'bhasa', 'scottish', 'cape', 'creole'], ['regionalLanguage/2']).
+_lex(['discipline', 'journal', 'journals', 'university', 'philosophy', 'academic', 'american', 'published', 'medicine', 'law', 'physics', 'review'], ['academicDiscipline/2']).
+_lex(['album', 'name', 'cheek', 'face', 'mesh', 'chin', 'liver', 'hop', 'knee', 'hand', 'prostate', 'first'], ['meshName/2']).
+_lex(['firm', 'kingdom', 'united', 'based', 'form', 'llp', 'legal', 'pearce', 'primarily', 'england', 'law', 'bond'], ['legalForm/2']).
+_lex(['15', 'launch', 'reach', 'days', 'moon', 'four', 'take', 'edt', 'date', 'apollo', 'launching'], ['launchDate/2']).
+_lex(['league', 'boston', 'season', 'game', 'york', 'team', 'new', 'traded', 'former', 'quarterback', 'first'], ['formerTeam/2']).
+_lex(['won', 'win', 'grand', 'driver', 'one', 'prix', 'race', 'team', 'formula', '2008', 'first'], ['firstDriver/2']).
+_lex(['engine', 'emd', 'less', 'forming', 'powered', 'powerful', 'related', 'switchers', '645', 'line', 'type', 'model'], ['engineType/2']).
+_lex(['catholic', 'courthouse', 'holy', 'anglican', 'diocesan', 'located', 'quebec', 'church', 'cathedral', 'page', 'trinity'], ['page/2']).
+_lex(['alps', 'mountains', 'several', 'mesozoic', 'valley', 'period', 'willamette', 'rocks', 'american', 'race', 'geologic', 'first'], ['geologicPeriod/2']).
+_lex(['canal', 'england', 'built', 'point', 'end', 'junction', 'near', 'through', 'llangollen', 'ship', 'river', 'manchester'], ['endPoint/2']).
+_lex(['toronto', 'school', 'management', 'dean', 'business', 'professor', 'current', 'born', 'college', 'university'], ['dean/2']).
+_lex(['states', 'population', 'united', 'north', 'people', 'cherokee', 'oklahoma', 'alaska', 'county', 'place', 'natives', 'carolina'], ['populationPlace/2']).
+_lex(['school', 'students', 'university', 'florida', 'high', 'born', 'atlantic', 'college', 'senior', 'staff', 'secondary'], ['staff/2']).
+_lex(['united', 'force', 'army', 'royal', 'british', 'air', 'states', 'branch', 'during', 'navy', 'military', 'war'], ['militaryBranch/2']).
+_lex(['updated', '12', '1932', '32', 'eyes', 'hayes', '2002', 'born', '2', 'frequently', 'yes', 'first'], ['frequentlyUpdated/2']).
+_lex(['school', 'north', 'angus', 'scotland', 'authority', 'high', 'located', 'state', 'monifieth', 'comprehensive', 'european'], ['authority/2']).
+_lex(['1987', 'race', 'prix', 'grand', 'driver', 'british', 'one', 'held', 'won', 'fastest', 'schumacher', 'formula'], ['fastestDriver/2']).
+_lex(['doctoral', 'simon', 'university', 'max', 'von', 'work', 'david', 'student', 'john', 'physics', 'hilbert'], ['doctoralStudent/2']).
+_lex(['television', 'episode', 'show', 'series', 'park', 'number', 'season', '1', '2', 'west', 'wing'], ['episodeNumber/2']).
+_lex(['mini', 'designer', 'alfa', 'car', 'company', 'romeo', 'design', 'designed', 'issigonis', 'ford', 'first'], ['designCompany/2']).
+_lex(['redesignated', 'made', 'launch', 'launches', 'ariane', 'ela', 'designated', 'number', '43', 'pads', '4', 'entered'], ['numberOfPads/2']).
+_lex(['highway', 'north', 'west', 'route', 'start', 'street', 'road', 'station', 'line', 'south', 'interstate'], ['routeStart/2']).
+_lex(['author', 'core#subject', 'writer', 'critic', 'livy', 'ebert', 'written', 'book', 'roger', 'film', 'history'], ['core#subject/2']).
+_lex(['direction', 'north', 'west', 'route', 'virginia', 'start', 'state', 'street', 'south', 'east', 'highway', 'interstate'], ['routeStartDirection/2']).
+_lex(['body', 'league', 'cricket', 'championship', 'federation', 'canadian', 'football', 'governing', 'gaelic', 'international', 'world', 'sport', 'association'], ['sportGoverningBody/2']).
+_lex(['x', 'emedicine', 'hives', 'arthritis', 'topic', 'pneumonia', 'stroke', 'stillbirth', '9', 'such', 'bore', 'urticaria'], ['emedicineTopic/2']).
+_lex(['catholic', 'founder', 'wesley', 'nation', 'religion', 'muhammad', 'methodism', 'church', 'john', 'leader', 'islam'], ['religion/2']).
+_lex(['king', 'thomas', 'sade', 'mozart', 'wolfgang', 'de', 'character', 'play', 'oedipus', 'amadeus', 'becket'], ['characterInPlay/2']).
+_lex(['division', 'army', 'ss', 'light', 'infantry', 'airborne', 'air', 'regiment', '1st', 'military', 'brigade', 'unit', 'size'], ['militaryUnitSize/2']).
+_lex(['atlantis', 'space', 'iss', 'mission', 'endeavour', 'crew', 'dockings', 'aboard', 'shuttle', 'during', 'mir', 'discovery'], ['mirDockings/2']).
+_lex(['body', 'city', 'government', 'university', 'park', 'governing', 'states', 'state', 'council', 'balearic', 'pradesh', 'national'], ['governingBody/2']).
+_lex(['united', 'union', 'national', 'political', 'british', 'minister', 'party', 'president', 'democratic', 'leader'], ['leader/2']).
+_lex(['school', 'students', 'university', '1971', 'high', 'graduated', 'college', 'faculty', 'schools', 'senior', 'law', 'size'], ['facultySize/2']).
+_lex(['fiat', 'mazda', 'assembly', 'built', 'car', 'honda', 'ford', 'produced', 'japan', 'new', 'model'], ['assembly/2']).
+_lex(['portuguese', 'language', 'english', 'spoken', 'official', 'french', 'one', 'germany', 'spanish', 'germans'], ['officialLanguage/2']).
+_lex(['code', 'language', 'form', 'nynorsk', 'official', 'two', 'one', 'norwegian', 'written', 'iso6391', 'standard', 'norway'], ['iso6391Code/2']).
+_lex(['produced', 'set', 'don', 'dcc', 'gustave', 'large', '1863', 'drawings', 'based', 'quixote'], ['dcc/2']).
+_lex(['tim', 'john', 'lost', 'lieutenant', 'governor', 'elected', 'state', 'election', 'under', 'republican'], ['lieutenant/2']).
+_lex(['suis', 'trichuris', 'nymphalidae', 'helminthic', 'japonica', 'member', 'saccharina', 'binomial', 'therapy', 'kombu', 'important'], ['binomial/2']).
+_lex(['performer', 'mandy', 'number', 'actress', 'galanta', 'born', 'won', 'slovakia', 'award', '2004', 'films', 'suzie'], ['numberOfFilms/2']).
+_lex(['right', 'ron', 'field', 'throwing', 'playing', 'starters', 'kelly', 'games', 'hocking', 'position', 'side', 'fielder'], ['throwingSide/2']).
+_lex(['television', 'show', 'movie', 'played', 'character', 'actor', 'role', 'starring', 'series', 'film'], ['starring/2']).
+_lex(['building', 'united', 'built', 'house', 'began', 'states', 'historic', 'construction', 'year', 'new', 'fort', 'first'], ['yearOfConstruction/2']).
+_lex(['lyrics', 'song', 'opera', 'written', 'book', 'music', 'stephen', 'broadway', 'musical', 'sondheim'], ['lyrics/2']).
+_lex(['television', 'opening', 'hannah', 'series', 'show', 'cyrus', 'theme', 'montana', 'music', 'miley', 'song'], ['openingTheme/2']).
+_lex(['canada', '1982', 'canadian', 'country', 'player', 'snooker', 'professional', 'quebec', 'act', 'born', 'world', 'sport'], ['sportCountry/2']).
+_lex(['ranking', 'san', 'mexico', 'de', 'county', 'born', 'state', 'diego', 'july', 'total', 'pradesh', 'city', 'population'], ['populationTotalRanking/2']).
+_lex(['catholic', 'saint', 'pope', 'september', 'de', 'rome', 'place', 'manila', 'lorenzo', 'beatified', 'ruiz', 'first'], ['beatifiedPlace/2']).
+_lex(['10', 'brown', '30', '2000', 'yellow', 'rgb', 'green', 'background', 'coordinate', 'black', 'red', 'first'], ['rgbCoordinateGreen/2']).
+_lex(['canada', 'ontario', 'runway', 'bay', 'lake', 'surface', 'lac', 'water', 'located', 'adjacent', 'river', 'aerodrome'], ['runwaySurface/2']).
+_lex(['superior', 'leven', 'island', 'loch', 'lake', 'located', 'largest', 'islands', 'castle', 'isle'], ['island/2']).
+_lex(['steel', 'television', 'group', 'entertainment', 'comics', 'corporation', 'industry', 'music', 'sony', 'company', 'bank'], ['industry/2']).
+_lex(['rebuilding', 'central', 'opened', 'theatre', 'vic', 'year', 'terminal', 'station', 'london', 'grand', 'old', 'rebuilt'], ['rebuildingYear/2']).
+_lex(['school', 'iowa', 'born', 'season', 'university', 'washington', 'illinois', 'wright', 'job', 'transfer', 'highschool', 'former'], ['formerHighschool/2']).
+_lex(['league', 'united', 'democracy', 'union', 'national', 'political', 'ideology', 'social', 'front', 'party', 'independence'], ['ideology/2']).
+_lex(['portuguese', 'great', 'located', 'azores', 'island', 'terceira', 'range', 'part', 'mountain', 'mountains'], ['range/2']).
+_lex(['school', '12', 'phoenix', 'carihi', 'offered', 'grades', 'classes', 'schoolchildren', 'campbell', 'ferry', 'river', 'secondary'], ['offeredClasses/2']).
+_lex(['member', 'kyuhyun', 'siwon', 'nan', 'mi', 'ryeowook', 'current', 'mama', 'quan', 'members', 'consists', 'super'], ['currentMember/2']).
+_lex(['canal', 'junction', 'extension', 'cromford', 'montgomery', 'erewash', 'england', 'branch', 'llangollen', 'river', 'pinxton'], ['riverBranch/2']).
+_lex(['last', '1994', 'car', 'grand', 'one', 'prix', 'race', 'marino', 'during', 'formula', 'san'], ['lastRace/2']).
+_lex(['nerve', 'levator', 'muscles', 'ani'], ['nerve/2']).
+_lex(['shetland', 'unitary', 'north', 'island', 'scotland', 'authority', 'mainland', 'hebrides', 'islands', 'outer', 'orkney', 'south'], ['unitaryAuthority/2']).
+_lex(['zealand', 'child', 'defence', 'service', 'organisation', 'agency', 'states', 'united', 'treasury', 'department', 'new', 'national'], ['childOrganisation/2']).
+_lex(['lowest', 'porto', 'cruz', 'km', 'falls', 'located', 'state', 'madeira', 'moniz', 'islands', 'da', 'road'], ['lowestState/2']).
+_lex(['philharmonic', 'band', 'hometown', 'orchestra', 'new', 'born', 'symphony', 'london', 'york', 'rock', 'music'], ['hometown/2']).
+_lex(['john', 'profession', 'long', 'hay', 'state', 'governor', 'president', 'huey', 'louisiana', 'former', 'secretary'], ['profession/2']).
+_lex(['playstation', 'motorsport', 'computing', 'media', 'xbox', 'released', 'game', '2', 'dvd', 'forza', '360', 'first'], ['computingMedia/2']).
+_lex(['used', 'laser', 'service', 'mapping', 'module', 'panoramic', 'camera', 'mass', 'spectrometer', '15', 'apollo', 'sim'], ['serviceModule/2']).
+_lex(['arena', 'force', 'university', 'royal', 'air', 'field', 'airport', 'stadium', 'home', 'operator', 'international'], ['operator/2']).
+_lex(['training', 'school', 'superintendent', 'philippines', 'philippine', 'officers', 'future', 'pma', 'forces', 'military', 'armed'], ['superintendent/2']).
+_lex(['star', 'hagman', 'niklas', 'wing', 'player', 'uncle', 'hockey', 'leafs', 'shoots', 'former', 'left'], ['shoots/2']).
+_lex(['party', 'form', 'corporation', 'company', 'formed', 'founded', 'became', 'formation', 'year', 'new', 'merged', 'first'], ['formationYear/2']).
+_lex(['natural', 'shipwreck', 'national', 'tree', 'placed', 'historic', 'california', 'historical', 'fleet', 'landmark', 'nrhp', 'type'], ['nrhpType/2']).
+_lex(['onchan', 'club', 'parish', 'crown', 'isle', 'dependency', 'station', 'village', 'railway', 'laxey', 'port', 'man'], ['crownDependency/2']).
+_lex(['pakistan', 'force', 'tornado', 'embraer', '100b', 'luftwaffe', 'radar', 'aircraft', 'air', 'panavia', 'erieye', 'electronic'], ['aircraftElectronic/2']).
+_lex(['11', 'lower', 'educated', 'pupils', '16', '18', 'age', '13', 'years', 'school', 'college', 'aged'], ['lowerAge/2']).
+_lex(['12', '1995', 'center', 'space', 'iss', 'mission', 'shuttle', 'dockings', 'launched', 'atlantis', 'international', 'special'], ['issDockings/2']).
+_lex(['sultan', 'national', 'janissary', 'commander', 'ii', 'second', 'air', 'mahmud', 'navy', 'general', 'admiral'], ['secondCommander/2']).
+_lex(['force', 'center', 'rocket', 'launch', 'canaveral', 'space', 'site', 'air', 'complex', 'cape', 'launched'], ['launchSite/2']).
+_lex(['michelle', 'poker', 'name', 'family', 'tiffany', 'antonius', 'player', 'second', 'won', 'helppi', 'professional', 'patrik'], ['familyName/2']).
+_lex(['publisher', 'hefner', 'playboy', 'hugh', 'times', 'magazine', 'forbes', 'editor', 'international', 'new'], ['editor/2']).
+_lex(['legislature', 'assembly', 'senate', 'house', 'florida', 'representatives', 'general', 'state', 'california', 'illinois'], ['house/2']).
+_lex(['novel', '1983', 'fiction', 'literary', 'fantasy', 'game', 'book', 'genre', 'world', 'subsequently', 'law', 'greyhawk'], ['literaryGenre/2']).
+_lex(['burn', 'hiv', 'people', 'million', 'two', 'through', 'released', 'transmitted', 'infection', 'aids', 'icd9'], ['icd9/2']).
+_lex(['influenced', 'thomas', 'works', 'william', 'john', 'plato', 'philosophers', 'socrates', 'aristotle', 'such', 'include'], ['influencedBy/2']).
+_lex(['hip', '12', 'march', 'zero', 'rose', 'vanderbilt', 'released', 'prefix', 'nominations', 'dorlands', '2008', 'tokyopop'], ['dorlandsPrefix/2']).
+_lex(['made', 'expedition', 'mount', 'climbed', 'everest', 'person', 'hillary', 'edmund', 'first', 'ascent', 'peak'], ['firstAscentPerson/2']).
+_lex(['republican', 'simon', 'ben', 'candidate', 'frank', 'election', 'year', 'party', 'democratic', 'earp', 'opponent'], ['opponent/2']).
+_lex(['lowest', 'recreation', 'river', 'north', 'wilderness', 'area', 'west', 'national', 'california', 'valley', 'gauley'], ['lowest/2']).
+_lex(['doctoral', 'simon', 'max', 'university', 'under', 'jung', 'david', 'work', 'carl', 'advisor', 'john', 'first'], ['doctoralAdvisor/2']).
+_lex(['conservatory', 'head', 'attended', 'school', 'theatre', 'boston', 'university', 'young', 'music', 'london', 'sylvia'], ['head/2']).
+_lex(['directed', 'television', 'narrator', 'show', 'movie', 'role', 'starring', 'series', 'chris', 'documentary', 'film'], ['narrator/2']).
+_lex(['held', 'paris', 'country', 'driver', 'one', 'prix', 'race', '1950', 'motor', 'grand', 'bari', 'formula', 'first'], ['firstDriverCountry/2']).
+_lex(['bradford', 'school', 'university', 'professor', 'official', 'scotland', 'st', 'glasgow', 'college', 'andrews', 'colour', 'syracuse'], ['officialSchoolColour/2']).
+_lex(['baptist', 'alex', 'prize', 'film', 'feature', 'driscoll', 'international', 'church', 'pastor', 'award', 'sherwood', 'founded', 'festival', 'won', 'christopher', 'hill', 'kendrick', 'new', 'documentary', 'best'], ['pastor/2']).
+_lex(['television', 'network', 'show', 'station', 'area', 'bbc', 'broadcast', 'broadcasting', 'radio', 'new', 'fm', 'channel'], ['broadcastArea/2']).
+_lex(['used', 'name', 'sodium', 'compound', 'iupac', 'chemical', 'oxide', 'dioxide', 'known', 'formula', 'acid', 'chloride'], ['iupacName/2']).
+_lex(['zealand', 'party', 'chairperson', 'anton', 'national', 'foljambe', 'college', 'chairman', 'ndp', 'new', 'democrats'], ['chairperson/2']).
+_lex(['glycosides', 'code', 'a06ab56', 'atc', 'listed', 'preparations', 'combined', 'a06ab06', 'senna', 'suffix'], ['atcSuffix/2']).
+_lex(['trachis', 'play', 'character', 'brother', 'bound', 'chorus', 'prometheus', 'knights', 'oceanids', 'soldiers', 'sophocles', 'women'], ['chorusCharacterInPlay/2']).
+_lex(['album', 'released', 'song', 'track', '2005', 'number', 'band', 'music', 'film', 'night', 'video', 'best'], ['trackNumber/2']).
+_lex(['group', 'corporation', 'universal', 'owned', 'part', 'music', 'new', 'subsidiary', 'company', 'bank'], ['subsidiary/2']).
+_lex(['catholic', 'francis', 'assisi', 'church', 'canonized', 'st', 'rome', 'place', 'saint', 'japan', 'cathedral', 'nicholas'], ['canonizedPlace/2']).
+_lex(['directed', 'akira', 'smith', 'kurosawa', 'director', 'samurai', 'film', 'clerks', 'editing', 'kevin', 'films'], ['editing/2']).
+_lex(['steel', 'bridge', 'built', 'becoming', 'material', 'fabricated', 'detroit', 'construction', 'york', 'new', 'numerous'], ['constructionMaterial/2']).
+_lex(['division', 'group', 'parent', 'entertainment', 'company', 'motors', 'owned', 'general', 'records', 'sony', 'subsidiary'], ['parentCompany/2']).
+_lex(['acland', 'school', 'ellis', 'form', 'la', 'students', 'sixth', 'consortium', 'together', 'hill', 'burghley', 'swap'], ['sixthFormStudents/2']).
+_lex(['landings', 'west', 'russian', 'part', 'normandy', 'following', 'during', 'empire', 'territory', 'war', 'first'], ['territory/2']).
+_lex(['novel', 'illustrator', 'author', 'series', 'character', 'illustrated', 'book', 'written', 'books', 'railway', 'children'], ['illustrator/2']).
+_lex(['stokes', 'serving', 'amtrak', 'louis', 'lines', 'bus', 'station', 'cleveland', 'routes', 'railway', 'several', 'line'], ['otherServingLines/2']).
+_lex(['school', 'university', 'hopkins', 'professor', 'johns', 'college', 'new', 'maryland', 'campus', 'baltimore'], ['campus/2']).
+_lex(['judges', 'simon', 'jackson', 'show', 'abdul', 'american', 'randy', 'judge', 'cowell', 'idol'], ['showJudge/2']).
+_lex(['alexei', 'palamarchuk', 'students', 'obertas', 'dmitri', 'ice', 'julia', 'hubbell', 'partner', 'include', 'former'], ['formerPartner/2']).
+_lex(['columba', 'catholic', 'major', 'patron', 'rome', 'st', 'anthony', 'shrine', 'padua', 'saint', 'church', 'bishop'], ['majorShrine/2']).
+_lex(['north', 'civil', 'parish', 'cornwall', 'county', 'born', 'cheshire', 'village', 'england', 'east', 'ceremonial'], ['ceremonialCounty/2']).
+_lex(['1997', 'third', 'villeneuve', 'debut', 'driver', '1988', 'prix', 'race', 'grand', 'during', 'first', 'european'], ['thirdDriver/2']).
+_lex(['shavuot', 'similar', 'days', 'wednesday', 'passover', 'sunday', 'year', 'ash', 'easter', 'christmas', 'day'], ['similar/2']).
+_lex(['viking', 'sevilla', 'ordered', 'adcc', 'de', 'astilleros', 'shipyard', 'date', 'line', 'order', 'spain'], ['orderDate/2']).
+_lex(['iso6393', 'code', 'chinese', 'language', 'variety', 'tang', 'dialects', 'gan', 'dialect', 'speech', 'local', 'jiangxi'], ['iso6393Code/2']).
+_lex(['christianity', 'venerated', 'judaism', 'catholic', 'abraham', 'roman', 'saint', 'church', 'moses', 'john', 'islam'], ['veneratedIn/2']).
+_lex(['over', 'bridge', 'mississippi', 'united', '15', 'passes', 'track', 'national', 'number', 'states', 'swing', 'approach', 'id', 'road'], ['unitedStatesNationalBridgeId/2']).
+_lex(['pakistan', 'united', 'citizenship', 'university', 'professor', 'states', 'born', '2', 'germany', 'soviet', 'george'], ['citizenship/2']).
+_lex(['memorial', 'founding', 'number', 'marked', 'project', 'visitors', 'featured', 'disc', 'video', '2005', 'sandbox', 'z'], ['numberOfVisitorsAsOf/2']).
+_lex(['mountain', 'within', 'area', 'region', 'larger', 'located', 'american', 'part', 'viticultural', 'napa', 'valley', 'ava', 'wine'], ['isPartOfWineRegion/2']).
+_lex(['football', 'season', 'nfl', '1', 'born', 'game', 'draft', 'yards', 'pick', 'touchdown', 'quarterback'], ['draftPick/2']).
+_lex(['used', 'missions', 'space', 'apollo', 'expedition', 'mission', 'crew', 'capcom', 'spacecraft', 'soyuz', 'next'], ['nextMission/2']).
+_lex(['lowest', 'mountain', 'north', 'azores', 'west', 'national', 'ocean', 'located', 'madeira', 'forest', 'atlantic', 'islands'], ['lowestMountain/2']).
+_lex(['college', 'university', 'grant', 'malcolm', 'suggests', 'provost', 'london', 'etchemendy', 'president', 'professor'], ['provost/2']).
+_lex(['states', 'obama', 'democratic', 'barack', 'united', 'senator', 'seniority', 'senior', 'john', 'former', 'first'], ['seniority/2']).
+_lex(['yves', 'force', 'iis', 'northrop', 'iiis', 'royal', 'air', 'aircraft', 'indian', 'typhoon', 'swiss', 'interceptor'], ['aircraftInterceptor/2']).
+_lex(['product', 'light', 'coke', 'drink', 'variant', 'diet', 'clamato', 'featured', 'plus', 'soft', 'cola'], ['hasVariant/2']).
+_lex(['school', 'attended', 'meredith', 'james', 'professor', 'william', 'born', 'college', 'new', 'education', 'university'], ['education/2']).
+_lex(['engine', 'v8', 'powered', 'series', 'cummins', 'diesel', 'volkswagen', 'petrol', '1990s', 'fuel', 'international', 'type'], ['fuelType/2']).
+_lex(['building', 'buildings', 'statistics', 'house', 'visitor', 'arrangements', 'terminal', 'individual', '2006', 'many', 'still', 'beginning'], ['visitorStatisticsAsOf/2']).
+_lex(['1', 'located', '2', 'receptor', 'cd1', 'human', 'known', 'protein', 'gene', 'chromosome'], ['chromosome/2']).
+_lex(['1948', 'maserati', 'grand', 'third', 'monaco', 'bull', '1954', 'podium', 'prix', 'team', 'first', 'belgian'], ['thirdTeam/2']).
+_lex(['seating', 'capacity', 'theatre', '1980', 'people', 'sheffield', 'lebanon', 'reality', 'between', 'seat', 'enjoyed', 'crucible'], ['seatingCapacity/2']).
+_lex(['1987', 'end', 'chevrolet', 'year', '1962', '2001', 'nova', '2004', 'buick', 'model', '1000', 'first'], ['modelEndYear/2']).
+_lex(['donington', 'won', 'grand', 'mclaren', 'driver', 'prix', 'race', 'victory', 'team', 'formula', 'australian', 'first'], ['firstDriverTeam/2']).
+_lex(['transportation', 'center', 'rail', 'organisation', 'septa', 'terminal', 'street', 'station', 'new', 'line', 'railway', 'owning'], ['owningOrganisation/2']).
+_lex(['united', 'end', 'service', 'army', 'june', '1945', 'states', 'chief', 'year', 'during', 'july', 'general', 'war'], ['serviceEndYear/2']).
+_lex(['basketball', 'played', 'season', 'gaelic', 'football', 'florida', 'nick', 'state', 'college', 'team', 'university'], ['nick/2']).
+_lex(['director', 'story', 'outline', 'created', 'developed', 'marshall', 'distributed', 'atv', 'editor', 'devised', 'husband'], ['storyEditor/2']).
+_lex(['group', 'corps', 'infantry', 'royal', 'wing', 'air', 'role', 'force', 'squadron', 'fighter', 'commando'], ['role/2']).
+_lex(['commune', 'northern', 'born', 'arrondissement', 'region', 'french', 'france', 'located', 'calvados', 'department'], ['department/2']).
+_lex(['race', 'italy', 'prix', '1999', 'country', 'driver', 'one', 'held', 'pole', 'rhin', '1950', 'grand', 'formula'], ['poleDriverCountry/2']).
+_lex(['category', 'national', 'park', 'lake', 'crater', 'ii', 'iucn', 'california', 'during', 'world', 'poppy', 'war'], ['iucnCategory/2']).
+_lex(['issn', 'scientific', 'journal', 'brazilian', 'research', 'chemical', 'published', 'polish', 'chemistry', 'coden'], ['coden/2']).
+_lex(['writer', 'name', 'novels', 'series', 'author', 'romance', 'born', 'written', 'novel', 'george', 'pseudonym'], ['pseudonym/2']).
+_lex(['heisenberg', 'max', 'quantum', 'rutherford', 'niels', 'bohr', 'academic', 'werner', 'advisor', 'isaac', 'ernest', 'robert'], ['academicAdvisor/2']).
+_lex(['album', 'picture', 'southwark', 'bridge', 'located', 'station', 'thames', 'between', 'london', 'river', 'road'], ['picture/2']).
+_lex(['album', 'studios', 'song', 'recorded', 'abbey', 'recording', 'band', 'live', 'london', 'road'], ['recordedIn/2']).
+_lex(['1985', 'sinclair', 'amstrad', 'employees', 'cpc', 'motors', 'spectrum', 'number', 'zx', 'vauxhall', 'new', 'research'], ['numberOfEmployees/2']).
+_lex(['chemokine', 'symbol', 'humans', '1', 'receptor', 'cd1', 'known', 'encoded', 'protein', 'gene', 'cells'], ['symbol/2']).
+_lex(['service', 'buses', 'trimet', 'transit', 'vehicles', 'number', '40', 'operates', 'routes', 'bus', 'operated', 'fleet'], ['numberOfVehicles/2']).
+_lex(['1987', '1984', 'standout', 'clark', 'season', 'university', 'year', 'draft', 'quarterback', 'gary', 'supplemental'], ['supplementalDraftYear/2']).
+_lex(['hyacinth', 'given', 'female', 'means', 'name', 'william', 'meaning', 'saint', 'guillermo', 'first'], ['meaning/2']).
+_lex(['lowest', 'rhine', 'geneva', 'azores', 'west', 'national', 'basel', 'lake', 'ocean', 'located', 'place', 'atlantic'], ['lowestPlace/2']).
+_lex(['17', 'government', 'poland', 'miles', 'piotrowa', 'wola', 'sanok', 'region'], ['governmentRegion/2']).
+_lex(['king', 'married', 'england', 'wife', 'queen', 'son', 'born', 'daughter', 'spouse', 'film', 'first'], ['spouse/2']).
+_lex(['body', 'style', 'van', 'pontiac', 'lotus', 'chevrolet', 'ford', 'ferrari', 'mustang', 'reward', 'convertible', 'roadster'], ['bodyStyle/2']).
+_lex(['pennsylvania', 'route', 'abbreviation', 'state', 'road', 'turnpike', 'new', 'parkway', 'expressway', 'type', 'highway', 'interstate'], ['routeTypeAbbreviation/2']).
+_lex(['engine', 'used', 'developed', 'unreal', '3', 'game', '2', 'games', 'using', '3d'], ['gameEngine/2']).
+_lex(['pau', 'third', 'prix', 'country', 'driver', 'one', 'held', 'race', 'aires', 'motor', 'grand', 'formula', '1950'], ['thirdDriverCountry/2']).
+_lex(['canada', 'city', 'north', 'located', 'west', 'khartoum', 'nile', 'confluence', 'source', 'saskatchewan', 'river', 'south'], ['sourceConfluence/2']).
+_lex(['2', 'playstation', 'boy', 'computing', 'xbox', 'platform', 'game', 'version', 'games', 'nintendo', '64', 'released'], ['computingPlatform/2']).
+_lex(['serving', 'eating', 'temperature', 'contest', 'many', 'top', 'hot', 'dog', 'state', 'through', 'alfred', 'hamburger'], ['servingTemperature/2']).
+_lex(['town', 'fife', 'area', 'village', 'scotland', 'born', 'council', 'scottish', 'north', 'east', 'glasgow', 'south'], ['councilArea/2']).
+_lex(['utc', 'galway', '10', 'season', 'over', 'dublin', 'born', '2000', 'offset', 'new', 'city', 'first'], ['utcOffset/2']).
+_lex(['championship', 'driver', 'racing', 'racecar', 'born', 'american', 'races', 'world', 'formula', 'participated'], ['races/2']).
+_lex(['town', 'urban', 'census', '15', 'august', 'german', 'born', 'germany', '2005', 'essen', 'population'], ['populationUrban/2']).
+_lex(['management', 'natural', 'state', 'centre', 'park', 'minnesota', 'dartmoor', 'portion', 'crosses', 'department', 'resources'], ['management/2']).
+_lex(['playstation', 'full', '1080p', 'released', '3', 'video', 'download', '2008', 'resolution', 'featuring'], ['resolution/2']).
+_lex(['used', '8080', 'intel', 'continuous', 'graphics', 'game', 'vastly', 'allowed', 'mips', 'cpu'], ['cpu/2']).

@@ -1,0 +1,34 @@
+_include('../../general/lexicon.dlog').
+
+%Lexical triggers
+_lex(['canal', 'duct', 'canalise', 'epithelial', 'channel', 'canalize'], ['Canal/2']).
+_lex(['plenty', 'deal', 'pot', 'tidy', 'sight', 'flock', 'mint', 'slew', 'mountain', 'little', 'sum', 'wad', 'muckle', 'pile', 'lot', 'mickle', 'raft', 'passel', 'good', 'hatful', 'mess', 'spate', 'quite', 'heap', 'peck', 'stack', 'a', 'great', 'mount', 'batch', 'mass'], ['Mountain/2']).
+_lex(['city', 'metropolis', 'center', 'urban'], ['City/2']).
+_lex(['cave', 'spelunk', 'undermine'], ['Cave/2']).
+_lex(['lake'], ['Lake/2']).
+_lex(['worldwide', 'planetary', 'domain', 'creation', 'internet', 'world-wide', 'worldly', 'globe', 'global', 'humans', 'site', 'beings', 'macrocosm', 'mankind', 'human', 'existence', 'earthly', 'earth', 'humanity', 'concern', 'web', 'land', 'world', 'populace', 'universe', 'inheritance', 'reality', 'website', 'race', 'humankind', 'place', 'heritage', 'situation', 'cosmos', 'man', 'locate', 'public'], ['WorldHeritageSite/2']).
+_lex(['commonwealth', 'body', 'land', 'area', 'country', 'publica', 'nation', 'politic', 'state', 'res', 'rural'], ['Country/2']).
+_lex(['junction', 'adjunction', 'articulation', 'colligation', 'conjugation', 'juncture', 'joint', 'join', 'conjunction', 'route', 'road'], ['RoadJunction/2']).
+_lex(['arena', 'field', 'domain', 'area', 'country', 'region', 'orbit', 'surface', 'expanse', 'sphere', 'ski'], ['SkiArea/2']).
+_lex(['parkland', 'car', 'ballpark', 'park', 'commons', 'mungo', 'area', 'green', 'common', 'lot', 'parking'], ['Park/2']).
+_lex(['tunnel', 'waterway', 'burrow', 'watercourse'], ['WaterwayTunnel/2']).
+_lex(['piddle', 'supply', 'urine', 'dead', 'system', 'physical', 'irrigate', 'eubstance', 'pee', 'piss', 'body', 'water', 'trunk', 'weewee', 'structure', 'organic', 'soundbox', 'of', 'consistence', 'h2o', 'personify', 'consistency', 'torso'], ['BodyOfWater/2']).
+_lex(['shoes', 'office', 'point', 'grade', 'rank', 'identify', 'lieu', 'localize', 'send', 'live', 'station', 'dwell', 'inhabit', 'billet', 'direct', 'berth', 'target', 'aim', 'stead', 'situation', 'property', 'set', 'populated', 'blank', 'site', 'seat', 'rate', 'in', 'home', 'out', 'space', 'localise', 'locate', 'populate', 'pose', 'spot', 'lay', 'commit', 'put', 'post', 'come', 'topographic', 'piazza', 'invest', 'plaza', 'range', 'place', 'position', 'order'], ['PopulatedPlace/2']).
+_lex(['set', 'shoes', 'office', 'point', 'grade', 'commit', 'blank', 'localize', 'site', 'rank', 'seat', 'rate', 'identify', 'lieu', 'home', 'out', 'space', 'localise', 'send', 'station', 'stead', 'locate', 'billet', 'pose', 'spot', 'direct', 'historic', 'lay', 'situation', 'put', 'post', 'come', 'target', 'berth', 'topographic', 'in', 'piazza', 'invest', 'plaza', 'aim', 'range', 'place', 'historical', 'position', 'property', 'order'], ['HistoricPlace/2']).
+_lex(['town', 'townspeople', 'township', 'townsfolk', 'ithiel'], ['Town/2']).
+_lex(['tunnel', 'burrow'], ['Tunnel/2']).
+_lex(['island'], ['Island/2']).
+_lex(['tunnel', 'route', 'burrow', 'road'], ['RoadTunnel/2']).
+_lex(['set', 'shoes', 'office', 'point', 'grade', 'commit', 'blank', 'localize', 'site', 'rank', 'seat', 'rate', 'identify', 'lieu', 'home', 'out', 'space', 'localise', 'send', 'station', 'stead', 'locate', 'billet', 'pose', 'spot', 'direct', 'lay', 'situation', 'put', 'post', 'come', 'target', 'berth', 'topographic', 'in', 'piazza', 'invest', 'plaza', 'aim', 'range', 'place', 'position', 'property', 'order'], ['Place/2']).
+_lex(['memorial', 'repository', 'monument'], ['Monument/2']).
+_lex(['volcano', 'vent'], ['Volcano/2']).
+_lex(['river'], ['River/2']).
+_lex(['cooking', 'heap', 'deal', 'grade', 'pot', 'compass', 'tidy', 'crop', 'orbit', 'swan', 'stove', 'set', 'sight', 'vagabond', 'pasture', 'flock', 'straddle', 'mint', 'slew', 'out', 'mountain', 'little', 'rank', 'chain', 'rate', 'browse', 'sum', 'wad', 'wander', 'tramp', 'muckle', 'pile', 'lot', 'mickle', 'raft', 'image', 'passel', 'function', 'mountains', 'stray', 'good', 'run', 'hatful', 'mess', 'drift', 'reach', 'ambit', 'spate', 'quite', 'graze', 'lay', 'plenty', 'scope', 'peck', 'stack', 'kitchen', 'a', 'great', 'ramble', 'array', 'of', 'mount', 'batch', 'roll', 'cast', 'range', 'mass', 'place', 'rove', 'roam', 'grasp', 'order'], ['MountainRange/2']).
+_lex(['route', 'road'], ['Road/2']).
+_lex(['bridge', 'span', 'deck', 'nosepiece', 'over', 'circuit', 'bridgework'], ['Bridge/2']).
+_lex(['tunnel', 'burrow', 'track', 'railway', 'railroad', 'line', 'system'], ['RailwayTunnel/2']).
+_lex(['set', 'shoes', 'office', 'point', 'grade', 'commit', 'blank', 'localize', 'site', 'rank', 'seat', 'born', 'rate', 'identify', 'lieu', 'cancel', 'home', 'lifelike', 'out', 'innate', 'in', 'space', 'localise', 'send', 'station', 'place', 'locate', 'rude', 'billet', 'pose', 'spot', 'direct', 'lay', 'situation', 'put', 'instinctive', 'post', 'come', 'target', 'berth', 'topographic', 'natural', 'piazza', 'raw', 'invest', 'plaza', 'aim', 'range', 'stead', 'position', 'property', 'order'], ['NaturalPlace/2']).
+_lex(['town', 'greenwich', 'hamlet', 'village', 'small', 'settlement'], ['Village/2']).
+_lex(['town', 'closure', 'liquidation', 'colonisation', 'colony', 'colonization', 'village', 'small', 'settlement', 'resolution'], ['Settlement/2']).
+_lex(['celibate', 'continent'], ['Continent/2']).
+_lex(['fare', 'deportation', 'exile', 'transportation', 'transfer', 'route', 'system', 'shipping', 'transferral', 'conveyance', 'expatriation', 'transport', 'itinerary', 'of', 'department', 'path', 'dot', 'transit', 'road'], ['RouteOfTransportation/2']).

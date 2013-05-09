@@ -1,0 +1,9 @@
+_include('../../general/lexicon.dlog').
+
+%Lexical triggers
+_lex(['city', 'metropolis', 'center', 'urban'], ['city/2']).
+_lex(['good', 'sight', 'deal', 'mess', 'pot', 'tidy', 'great', 'spate', 'quite', 'mass', 'heap', 'flock', 'peck', 'mint', 'slew', 'a', 'mountain', 'little', 'hatful', 'sum', 'wad', 'batch', 'stack', 'muckle', 'pile', 'lot', 'mickle', 'plenty', 'raft', 'mount', 'passel'], ['mountain/1']).
+_lex(['commonwealth', 'body', 'land', 'area', 'country', 'publica', 'nation', 'politic', 'state', 'res', 'rural'], ['country/1']).
+_lex(['lake'], ['lake/1']).
+_lex(['commonwealth', 'body', 'express', 'nation', 'states', 'posit', 'say', 'united', 'publica', 'put', 'land', 'province', 'politic', 'res', 'department', 'submit', 'matter', 'state', 'of', 'forward', 'dos', 'country', 'tell'], ['state/1']).
+_lex(['river'], ['river/1']).

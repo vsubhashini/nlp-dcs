@@ -1,0 +1,28 @@
+_include('../../general/lexicon.dlog').
+
+%Lexical triggers (predicates.dlog file) from Wordnet
+_lex(['argmax'], ['argmax/4']).
+_lex(['and', 'grade', 'flagrant', 'rank', 'rate', 'file', 'absolute', 'gross', 'sheer', 'station', 'right-down', 'crying', 'glaring', 'out-and-out', 'status', 'membership', 'downright', 'egregious', 'outrank', 'range', 'place', 'social', 'order'], ['rank/2']).
+_lex(['not', 'non'], ['not/3']).
+_lex(['swedish', 'statute', 'stat', 'land', 'sea', 'geographical', 'naut', 'mi', 'air', 'roman', 'mile', 'knot', 'nautical', 'international', 'admiralty', 'mil'], ['mile/2']).
+_lex(['yr', 'twelvemonth', 'class', 'year'], ['year/2']).
+_lex(['contravene', 'neutralize', 'contradict', 'nullify', 'belie', 'negate', 'neutralise'], ['negate/2']).
+_lex(['dialect', 'min', 'fukkianese', 'taiwanese', 'amoy', 'hokkianese', 'fukien', 'minute'], ['min/2']).
+_lex(['matrimony', 'trade', 'conglutination', 'sexual', 'spousal', 'wedlock', 'union', 'sum', 'pairing', 'conjugation', 'labor', 'uniting', 'north', 'relationship', 'unification', 'jointure', 'brotherhood', 'join', 'coupling', 'trades', 'federal', 'marriage', 'mating'], ['union/3']).
+_lex(['and', 'kernel', 'heart', 'nitty-gritty', 'essence', 'up', 'summation', 'total', 'nub', 'summarize', 'tote', 'union', 'sum', 'tot', 'add', 'totality', 'money', 'core', 'gist', 'centre', 'tally', 'aggregate', 'marrow', 'meat', 'substance', 'join', 'center', 'of', 'soul', 'together', 'pith', 'amount', 'summate', 'inwardness', 'summarise'], ['sum/2']).
+_lex(['percentage', 'pct', 'percent', 'centum', 'per'], ['percent/2']).
+_lex(['compare', 'less', 'liken', 'extent', 'a', 'comparison', 'lupus', 'le', 'equivalence', 'comparability', 'lesser', 'to', 'equate', 'erythematosus'], ['compareLess/3']).
+_lex(['swedish', 'statute', 'stat', 'square', 'sea', 'geographical', 'mi', 'squared', 'up', 'air', 'naut', 'roman', 'mile', 'mil', 'knot', 'nautical', 'international', 'feather', 'admiralty', 'land'], ['squared_mile/2']).
+_lex(['kilometre', 'kilometer', 'klick', 'km'], ['kilometer/2']).
+_lex(['compare', 'greater', 'sir', 'liken', 'thomas', 'extent', 'than', 'a', 'comparison', 'equivalence', 'comparability', 'to', 'equate', 'more'], ['compareMore/3']).
+_lex(['kilometre', 'square', 'squared', 'up', 'km', 'kilometer', 'klick', 'feather'], ['squared_kilometer/2']).
+_lex(['upper', 'exceed', 'graded', 'inning', 'grade', 'circus', 'crown', 'rank', 'height', 'past', 'spinning', 'pass', 'go', 'frac', 'whirligig', 'out', 'lead', 'top', 'tip', 'overstep', 'outrank', 'teetotum', 'order', 'crest', 'meridian', 'tent', 'elevation', 'big', 'tiptop', 'ranked', 'peak', 'stratified', 'superlative', 'pinnacle', 'transcend', 'off', 'acme', 'of', 'clear', 'cover', 'rate', 'side', 'range', 'summit', 'upside', 'place', 'pinch', 'the', 'round'], ['fracTopRanked/2']).
+_lex(['boy', 'harm', 'georgia', 'grievous', 'liquid', 'scoop', 'max', 'bodily', 'ecstasy', 'lay', 'easy', 'goop', 'home', 'soap'], ['max/2']).
+_lex(['every'], ['every/3']).
+_lex(['beat', 'metre', 'time', 'm', 'meter', 'measure', 'cadence'], ['meter/2']).
+_lex(['frac', 'quant'], ['fracQuant/3']).
+_lex(['count', 'counting', 'depend', 'consider', 'look', 'reckon', 'tally', 'number', 'enumeration', 'matter', 'bet', 'enumerate', 'weigh', 'reckoning', 'calculate', 'numeration', 'numerate'], ['count/2']).
+_lex(['argmin'], ['argmin/4']).
+_lex(['avow', 'swan', 'confirm', 'substantiate', 'support', 'affirm', 'assert', 'corroborate', 'swear', 'sustain', 'verify', 'aver'], ['affirm/2']).
+_lex(['pick', 'foundation', 'infantry', 'ft', 'human', 'metrical', 'groundwork', 'up', 'understructure', 'it', 'pes', 'base', 'animal', 'fundament', 'foot', 'invertebrate', 'hoof', 'leg', 'unit', 'substructure'], ['foot/2']).
+_lex(['signify', 'entail', 'mind', 'imply', 'meanspirited', 'have', 'in', 'mingy', 'for', 'tight', 'beggarly', 'intend', 'miserly', 'base', 'hateful', 'of', 'average', 'value', 'stand', 'bastardly', 'think', 'mean'], ['mean/2']).

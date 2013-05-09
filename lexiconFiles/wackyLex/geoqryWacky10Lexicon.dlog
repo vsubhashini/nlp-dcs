@@ -1,0 +1,34 @@
+_include('../../general/lexicon.dlog').
+
+%Lexical triggers
+_lex(['mountain', 'north', 'mountains', 'mount', 'area', 'ranges', 'located', 'range', 'highest', 'south'], ['mountain/1']).
+_lex(['traverse', 'route', 'two', 'ultraverse', 'trail', 'through', 'gun', 'time', 'one', 'first'], ['traverse/2']).
+_lex(['highest', 'time', 'point', 'up', 'age', 'view', 'two', 'first', 'fellow', 'below', 'points', 'low', 'allow', 'under', 'line', 'one', 'out', 'over', 'those', 'population'], ['low_point/2']).
+_lex(['league', 'major', 'city', 'many', 'two', 'one', 'three', 'during', 'new', 'first'], ['major/1']).
+_lex(['emphasize', 'brezhoneg', 'family', 'due', 'ya', 'neg', 'average', 'municipality', 'primary', 'one', 'large', 'through', 'plan', 'bilingual', 'pecheneg', 'small', 'linguistic', 'more', 'household', 'launched', 'size'], ['negSize/2']).
+_lex(['school', 'level', 'students', 'up', 'point', 'two', 'first', 'one', 'high', 'very', 'points', 'low', 'time', 'schools', 'new', 'highest', 'out', 'public', 'view'], ['high_point/2']).
+_lex(['family', 'average', 'due', 'one', 'large', 'emphasize', 'small', 'more', 'household', 'size'], ['size/2']).
+_lex(['loc', 'countries', 'eastern', 'elections', 'bloc', 'election', 'belloc', 'forward', 'party', 'soviet', 'former'], ['loc/1']).
+_lex(['united', 'land', 'area', 'according', 'km', 'states', 'miles', 'bureau', 'census', 'total'], ['area/2']).
+_lex(['blake', 'north', 'area', 'park', 'lake', 'water', 'located', 'near', 'small', 'river'], ['lake/1']).
+_lex(['longer', 'two', 'long', 'one', 'shorter', 'length', 'much', 'version', 'time', 'more'], ['shorter/2']).
+_lex(['upper', 'lower', 'flower', 'slower', 'average', 'two', 'one', 'literacy', 'higher', 'more'], ['lower/2']).
+_lex(['city', 'estate', 'district', 'route', 'one', 'county', 'located', 'state', 'new', 'interstate'], ['state/1']).
+_lex(['city', 'north', 'south-east', 'west', 'regional', 'approximately', 'lies', 'capital', 'east', 'south'], ['capital/1']).
+_lex(['square', 'brezhoneg', 'density', 'ya', 'neg', 'average', 'people', 'municipality', 'primary', 'km', 'per', 'mile', 'through', 'plan', 'bilingual', 'pecheneg', 'units', 'linguistic', 'housing', 'launched', 'population'], ['negDensity/2']).
+_lex(['files', 'given', 'used', 'surname', 'name', '3ds', 'int', 'type', 'changed', '-', 'use', 'same', 'y', 'see', 'under', 'known', 'obj', 'nickname', 'new', 'first'], ['nameObj/2']).
+_lex(['male', 'average', 'more', 'rate', 'much', 'higher', 'female', 'education', 'national', 'literacy'], ['higher/2']).
+_lex(['meters', 'elevation', 'brezhoneg', 'level', 'ya', 'neg', 'average', 'area', 'municipality', 'primary', 'feet', 'located', 'm', 'through', 'plan', 'bilingual', 'pecheneg', 'linguistic', 'sea', 'launched', 'above'], ['negElevation/2']).
+_lex(['elevation', 'sea', 'level', 'average', 'area', 'm', 'feet', 'located', 'meters', 'above'], ['elevation/2']).
+_lex(['city', 'census', 'capacity', 'area', 'median', 'county', 'states', 'located', 'united', 'income'], ['city/1']).
+_lex(['glen', 'stolen', 'new', 'len', 'one', 'born', 'ellen', 'helen', 'allen', 'fallen', 'first'], ['len/2']).
+_lex(['census', 'people', 'age', 'density', 'km', '2000', 'per', 'under', 'those', 'population'], ['population/2']).
+_lex(['one', 'used', 'up', 'many', 'over', 'time', 'two', 'years', 'to', 'three', 'during', 'year', 'new', 'more', 'next', 'day', 'first'], ['next_to/2']).
+_lex(['still', 'used', 'longer', 'one', 'much', 'although', 'time', 'new', 'now', 'more'], ['longer/2']).
+_lex(['around', 'world', 'country', 'over', 'one', 'music', 'many', 'new', 'national', 'first'], ['country/1']).
+_lex(['square', 'density', 'average', 'people', 'per', 'mile', 'km', 'units', 'housing', 'population'], ['density/2']).
+_lex(['census', 'brezhoneg', 'under', 'people', 'ya', 'neg', 'age', 'density', 'municipality', 'primary', 'km', 'per', '2000', 'through', 'plan', 'bilingual', 'pecheneg', 'those', 'linguistic', 'launched', 'population'], ['negPopulation/2']).
+_lex(['brezhoneg', 'municipality', 'primary', 'one', 'born', 'through', 'pecheneg', 'allen', 'glen', 'neg', 'ellen', 'bilingual', 'linguistic', 'ya', 'len', 'plan', 'helen', 'new', 'stolen', 'fallen', 'launched', 'first'], ['negLen/2']).
+_lex(['takes', 'took', 'replace', 'second', 'place', 'take', 'during', 'new', 'one', 'first'], ['place/1']).
+_lex(['north', 'driver', 'flows', 'one', 'located', 'near', 'through', 'along', 'river', 'south'], ['river/1']).
+_lex(['united', 'land', 'brezhoneg', 'area', 'ya', 'neg', 'census', 'municipality', 'primary', 'km', 'according', 'states', 'miles', 'through', 'plan', 'bilingual', 'pecheneg', 'bureau', 'linguistic', 'total', 'launched'], ['negArea/2']).

@@ -1,0 +1,753 @@
+_include('../../general/lexicon.dlog').
+
+%Lexical triggers
+_lex(['coach'], ['coach/2']).
+_lex(['dorlands', 'suffix'], ['dorlandsSuffix/2']).
+_lex(['status', 'conservation', 'system'], ['conservationStatusSystem/2']).
+_lex(['manager'], ['manager/2']).
+_lex(['code'], ['code/2']).
+_lex(['students', 'postgraduate', 'number'], ['numberOfPostgraduateStudents/2']).
+_lex(['source', 'country'], ['sourceCountry/2']).
+_lex(['battle'], ['battle/2']).
+_lex(['member', 'parliament'], ['memberOfParliament/2']).
+_lex(['album'], ['album/2']).
+_lex(['land', 'area'], ['areaLand/2']).
+_lex(['rolling', 'railway', 'stock'], ['railwayRollingStock/2']).
+_lex(['growing', 'grape'], ['growingGrape/2']).
+_lex(['certification'], ['certification/2']).
+_lex(['visitors', 'number'], ['numberOfVisitors/2']).
+_lex(['position', 'capital'], ['capitalPosition/2']).
+_lex(['regulator', 'language'], ['languageRegulator/2']).
+_lex(['date', 'record'], ['recordDate/2']).
+_lex(['island', 'major'], ['majorIsland/2']).
+_lex(['homepage'], ['homepage/2']).
+_lex(['utc', 'offset'], ['utcOffset/2']).
+_lex(['building', 'significant'], ['significantBuilding/2']).
+_lex(['region', 'highest'], ['highestRegion/2']).
+_lex(['geology'], ['geology/2']).
+_lex(['route', 'end'], ['routeEnd/2']).
+_lex(['automobile', 'platform'], ['automobilePlatform/2']).
+_lex(['philosophical', 'school'], ['philosophicalSchool/2']).
+_lex(['average', 'speed'], ['averageSpeed/2']).
+_lex(['site', 'launch'], ['launchSite/2']).
+_lex(['code', 'vehicle'], ['vehicleCode/2']).
+_lex(['pole', 'driver'], ['poleDriver/2']).
+_lex(['region', 'code', 'iso'], ['isoCodeRegion/2']).
+_lex(['core', 'subject'], ['core_subject/2']).
+_lex(['country', 'mouth'], ['mouthCountry/2']).
+_lex(['transmission'], ['transmission/2']).
+_lex(['confluence', 'source', 'state'], ['sourceConfluenceState/2']).
+_lex(['notes'], ['notes/2']).
+_lex(['right', 'tributary'], ['rightTributary/2']).
+_lex(['presenter'], ['presenter/2']).
+_lex(['team'], ['team/2']).
+_lex(['place', 'mouth'], ['mouthPlace/2']).
+_lex(['given', 'name'], ['givenName/2']).
+_lex(['route', 'end', 'direction'], ['routeEndDirection/2']).
+_lex(['date', 'last', 'election'], ['lastElectionDate/2']).
+_lex(['party', 'split'], ['splitFromParty/2']).
+_lex(['notable', 'wine'], ['notableWine/2']).
+_lex(['distance', 'belfast'], ['distanceToBelfast/2']).
+_lex(['served', 'region'], ['regionServed/2']).
+_lex(['prominence'], ['prominence/2']).
+_lex(['coordinate', 'hsv', 'value'], ['hsvCoordinateValue/2']).
+_lex(['licensee'], ['licensee/2']).
+_lex(['affiliation'], ['affiliation/2']).
+_lex(['cost'], ['cost/2']).
+_lex(['governor'], ['governor/2']).
+_lex(['record', 'clubs', 'goalscorer'], ['clubsRecordGoalscorer/2']).
+_lex(['school', 'patron'], ['schoolPatron/2']).
+_lex(['burial', 'place'], ['placeOfBurial/2']).
+_lex(['anthem'], ['anthem/2']).
+_lex(['islands', 'number'], ['numberOfIslands/2']).
+_lex(['anniversary'], ['anniversary/2']).
+_lex(['urban', 'density', 'population'], ['populationUrbanDensity/2']).
+_lex(['discharge', 'maximum'], ['maximumDischarge/2']).
+_lex(['capital'], ['capital/2']).
+_lex(['legislature', 'party', 'political'], ['politicalPartyInLegislature/2']).
+_lex(['staff'], ['staff/2']).
+_lex(['frazioni'], ['frazioni/2']).
+_lex(['movement'], ['movement/2']).
+_lex(['affiliation', 'european'], ['europeanAffiliation/2']).
+_lex(['velocity', 'escape'], ['escapeVelocity/2']).
+_lex(['name', 'birth'], ['birthName/2']).
+_lex(['confluence', 'source', 'position'], ['sourceConfluencePosition/2']).
+_lex(['electrification', 'voltage'], ['voltageOfElectrification/2']).
+_lex(['address'], ['address/2']).
+_lex(['ratio'], ['ratio/2']).
+_lex(['combatant'], ['combatant/2']).
+_lex(['origin', 'stylistic'], ['stylisticOrigin/2']).
+_lex(['date', 'formation'], ['formationDate/2']).
+_lex(['number', 'members'], ['numberOfMembers/2']).
+_lex(['party'], ['otherParty/2']).
+_lex(['publisher'], ['publisher/2']).
+_lex(['cmyk', 'coordinate', 'yellow'], ['cmykCoordinateYellow/2']).
+_lex(['precursor'], ['precursor/2']).
+_lex(['function', 'person'], ['personFunction/2']).
+_lex(['governor', 'general'], ['governorGeneral/2']).
+_lex(['trainer'], ['trainer/2']).
+_lex(['diameter'], ['diameter/2']).
+_lex(['date', 'extinction'], ['extinctionDate/2']).
+_lex(['leader', 'name'], ['leaderName/2']).
+_lex(['family'], ['family/2']).
+_lex(['deputy'], ['deputy/2']).
+_lex(['ground'], ['ground/2']).
+_lex(['start', 'production', 'year'], ['productionStartYear/2']).
+_lex(['spoken'], ['spokenIn/2']).
+_lex(['county'], ['county/2']).
+_lex(['waist', 'size'], ['waistSize/2']).
+_lex(['phylum'], ['phylum/2']).
+_lex(['city', 'type'], ['cityType/2']).
+_lex(['composer'], ['composer/2']).
+_lex(['military', 'branch'], ['militaryBranch/2']).
+_lex(['intercommunality'], ['intercommunality/2']).
+_lex(['associated', 'rocket'], ['associatedRocket/2']).
+_lex(['death', 'cause'], ['deathCause/2']).
+_lex(['coordinate', 'rgb', 'red'], ['rgbCoordinateRed/2']).
+_lex(['density', 'metro', 'population'], ['populationMetroDensity/2']).
+_lex(['code', 'area'], ['areaCode/2']).
+_lex(['subgenre', 'music'], ['musicSubgenre/2']).
+_lex(['upper', 'age'], ['upperAge/2']).
+_lex(['leader', 'title'], ['leaderTitle/2']).
+_lex(['year', 'opening'], ['openingYear/2']).
+_lex(['battle', 'honours'], ['battleHonours/2']).
+_lex(['ranking', 'total', 'population'], ['populationTotalRanking/2']).
+_lex(['type'], ['type/2']).
+_lex(['position', 'government'], ['governmentPosition/2']).
+_lex(['military', 'rank'], ['militaryRank/2']).
+_lex(['transportation', 'related', 'mean'], ['relatedMeanOfTransportation/2']).
+_lex(['place', 'birth'], ['birthPlace/2']).
+_lex(['premiere', 'place'], ['premierePlace/2']).
+_lex(['seating', 'capacity'], ['seatingCapacity/2']).
+_lex(['net', 'income'], ['netIncome/2']).
+_lex(['company'], ['company/2']).
+_lex(['recorded'], ['recordedIn/2']).
+_lex(['award'], ['award/2']).
+_lex(['confluence', 'source'], ['sourceConfluence/2']).
+_lex(['grades'], ['grades/2']).
+_lex(['billed'], ['billed/2']).
+_lex(['mascot'], ['mascot/2']).
+_lex(['slogan'], ['slogan/2']).
+_lex(['design', 'significant'], ['significantDesign/2']).
+_lex(['aircraft', 'fighter'], ['aircraftFighter/2']).
+_lex(['director', 'creative'], ['creativeDirector/2']).
+_lex(['confluence', 'source', 'mountain'], ['sourceConfluenceMountain/2']).
+_lex(['military', 'command'], ['militaryCommand/2']).
+_lex(['b', 'side'], ['bSide/2']).
+_lex(['era'], ['era/2']).
+_lex(['island'], ['island/2']).
+_lex(['apoapsis'], ['apoapsis/2']).
+_lex(['mesh', 'number'], ['meshNumber/2']).
+_lex(['ingredient'], ['ingredient/2']).
+_lex(['majority', 'election'], ['electionMajority/2']).
+_lex(['party', 'merged'], ['mergedIntoParty/2']).
+_lex(['patron'], ['patron/2']).
+_lex(['archipelago'], ['archipelago/2']).
+_lex(['currency'], ['currency/2']).
+_lex(['subregion'], ['subregion/2']).
+_lex(['oclc'], ['oclc/2']).
+_lex(['theme', 'ending'], ['endingTheme/2']).
+_lex(['species'], ['species/2']).
+_lex(['recon', 'aircraft'], ['aircraftRecon/2']).
+_lex(['influenced'], ['influenced/2']).
+_lex(['format', 'programme'], ['programmeFormat/2']).
+_lex(['railway', 'serving', 'line'], ['servingRailwayLine/2']).
+_lex(['extinction', 'year'], ['extinctionYear/2']).
+_lex(['media', 'type'], ['mediaType/2']).
+_lex(['military', 'unit'], ['militaryUnit/2']).
+_lex(['start', 'service', 'year'], ['serviceStartYear/2']).
+_lex(['preview', 'version', 'latest'], ['latestPreviewVersion/2']).
+_lex(['ethnicity'], ['ethnicity/2']).
+_lex(['company', 'owning'], ['owningCompany/2']).
+_lex(['elevation', 'maximum'], ['maximumElevation/2']).
+_lex(['maximum', 'temperature'], ['maximumTemperature/2']).
+_lex(['product'], ['product/2']).
+_lex(['designer'], ['designer/2']).
+_lex(['building'], ['building/2']).
+_lex(['sub', 'channel', 'digital'], ['digitalSubChannel/2']).
+_lex(['distributing', 'company'], ['distributingCompany/2']).
+_lex(['fansgroup'], ['fansgroup/2']).
+_lex(['genre', 'fusion', 'music'], ['musicFusionGenre/2']).
+_lex(['resting', 'place'], ['restingPlace/2']).
+_lex(['nssdc', 'id'], ['nssdcId/2']).
+_lex(['date'], ['date/2']).
+_lex(['president'], ['president/2']).
+_lex(['causalties'], ['causalties/2']).
+_lex(['students', 'number', 'graduate'], ['numberOfGraduateStudents/2']).
+_lex(['member', 'band'], ['bandMember/2']).
+_lex(['cmyk', 'coordinate', 'cyanic'], ['cmykCoordinateCyanic/2']).
+_lex(['nrhp', 'number', 'reference'], ['nrhpReferenceNumber/2']).
+_lex(['headquarters'], ['headquarters/2']).
+_lex(['city', 'twin'], ['twinCity/2']).
+_lex(['alias'], ['alias/2']).
+_lex(['subdivisions'], ['subdivisions/2']).
+_lex(['call', 'sign'], ['callSign/2']).
+_lex(['person', 'founding'], ['foundingPerson/2']).
+_lex(['water', 'percentage', 'area'], ['percentageOfAreaWater/2']).
+_lex(['function', 'leader'], ['leaderFunction/2']).
+_lex(['operating', 'income'], ['operatingIncome/2']).
+_lex(['failed', 'launches'], ['failedLaunches/2']).
+_lex(['office'], ['office/2']).
+_lex(['confluence', 'source', 'elevation'], ['sourceConfluenceElevation/2']).
+_lex(['band', 'musical'], ['musicalBand/2']).
+_lex(['function', 'rocket'], ['rocketFunction/2']).
+_lex(['demonym'], ['demonym/2']).
+_lex(['release', 'date'], ['releaseDate/2']).
+_lex(['course'], ['course/2']).
+_lex(['mater', 'alma'], ['almaMater/2']).
+_lex(['mayor'], ['mayor/2']).
+_lex(['developer'], ['developer/2']).
+_lex(['rate', 'bar', 'pass'], ['barPassRate/2']).
+_lex(['internationally'], ['internationally/2']).
+_lex(['birth', 'year'], ['birthYear/2']).
+_lex(['country', 'location'], ['locationCountry/2']).
+_lex(['production'], ['production/2']).
+_lex(['derivative'], ['derivative/2']).
+_lex(['bust', 'size'], ['bustSize/2']).
+_lex(['notable', 'commander'], ['notableCommander/2']).
+_lex(['ceo'], ['ceo/2']).
+_lex(['main', 'organ'], ['mainOrgan/2']).
+_lex(['position', 'management'], ['managementPosition/2']).
+_lex(['system', 'highway'], ['highwaySystem/2']).
+_lex(['place', 'capital'], ['capitalPlace/2']).
+_lex(['notable', 'student'], ['notableStudent/2']).
+_lex(['party'], ['party/2']).
+_lex(['former', 'name'], ['formerName/2']).
+_lex(['cmyk', 'coordinate', 'magenta'], ['cmykCoordinateMagenta/2']).
+_lex(['track', 'number'], ['trackNumber/2']).
+_lex(['successor'], ['successor/2']).
+_lex(['active', 'year', 'end', 'years'], ['activeYearsEndYear/2']).
+_lex(['channel'], ['otherChannel/2']).
+_lex(['name'], ['name/2']).
+_lex(['symbol', 'identification'], ['identificationSymbol/2']).
+_lex(['channel', 'digital'], ['digitalChannel/2']).
+_lex(['date', 'launch', 'first'], ['firstLaunchDate/2']).
+_lex(['debut'], ['debut/2']).
+_lex(['flight', 'maiden'], ['maidenFlight/2']).
+_lex(['spokesperson'], ['spokesperson/2']).
+_lex(['input', 'computing'], ['computingInput/2']).
+_lex(['gender'], ['gender/2']).
+_lex(['fare', 'award', 'film'], ['filmFareAward/2']).
+_lex(['athletics'], ['athletics/2']).
+_lex(['number', 'staff'], ['numberOfStaff/2']).
+_lex(['driver', 'fastest', 'team'], ['fastestDriverTeam/2']).
+_lex(['nick'], ['nick/2']).
+_lex(['domain'], ['domain/2']).
+_lex(['weight'], ['weight/2']).
+_lex(['series'], ['series/2']).
+_lex(['date', 'preview', 'latest'], ['latestPreviewDate/2']).
+_lex(['plant'], ['plant/2']).
+_lex(['related'], ['related/2']).
+_lex(['frequency'], ['frequency/2']).
+_lex(['distributor'], ['distributor/2']).
+_lex(['seniority'], ['seniority/2']).
+_lex(['release', 'date', 'latest'], ['latestReleaseDate/2']).
+_lex(['category'], ['category/2']).
+_lex(['network'], ['network/2']).
+_lex(['track', 'length'], ['trackLength/2']).
+_lex(['route', 'junction'], ['routeJunction/2']).
+_lex(['reporting', 'mark'], ['reportingMark/2']).
+_lex(['electrification', 'type'], ['typeOfElectrification/2']).
+_lex(['part'], ['isPartOf/2']).
+_lex(['arena', 'home'], ['homeArena/2']).
+_lex(['home', 'stadium'], ['homeStadium/2']).
+_lex(['minimum', 'temperature'], ['minimumTemperature/2']).
+_lex(['music', 'composer'], ['musicComposer/2']).
+_lex(['second', 'team'], ['secondTeam/2']).
+_lex(['associate'], ['associate/2']).
+_lex(['state', 'highest'], ['highestState/2']).
+_lex(['affiliation', 'national'], ['nationalAffiliation/2']).
+_lex(['third', 'commander'], ['thirdCommander/2']).
+_lex(['located', 'area'], ['locatedInArea/2']).
+_lex(['tenant'], ['tenant/2']).
+_lex(['country', 'capital'], ['capitalCountry/2']).
+_lex(['training'], ['training/2']).
+_lex(['distance', 'dublin'], ['distanceToDublin/2']).
+_lex(['service'], ['service/2']).
+_lex(['language'], ['language/2']).
+_lex(['number', 'pages'], ['numberOfPages/2']).
+_lex(['membership'], ['membership/2']).
+_lex(['settlement', 'largest'], ['largestSettlement/2']).
+_lex(['length'], ['length/2']).
+_lex(['place'], ['place/2']).
+_lex(['date', 'opening'], ['openingDate/2']).
+_lex(['zone', 'time'], ['timeZone/2']).
+_lex(['closing', 'year'], ['closingYear/2']).
+_lex(['origin'], ['origin/2']).
+_lex(['connotation'], ['connotation/2']).
+_lex(['isbn'], ['isbn/2']).
+_lex(['dish', 'creator'], ['creatorOfDish/2']).
+_lex(['revenue'], ['revenue/2']).
+_lex(['aircraft', 'transport'], ['aircraftTransport/2']).
+_lex(['date', 'air', 'first'], ['firstAirDate/2']).
+_lex(['municipality'], ['municipality/2']).
+_lex(['number'], ['number/2']).
+_lex(['musical', 'artist'], ['musicalArtist/2']).
+_lex(['owner'], ['owner/2']).
+_lex(['nearest', 'city'], ['nearestCity/2']).
+_lex(['engineer'], ['engineer/2']).
+_lex(['city'], ['city/2']).
+_lex(['date', 'death'], ['deathDate/2']).
+_lex(['guest'], ['guest/2']).
+_lex(['district'], ['district/2']).
+_lex(['executive', 'producer'], ['executiveProducer/2']).
+_lex(['iso6392', 'code'], ['iso6392Code/2']).
+_lex(['count', 'floor'], ['floorCount/2']).
+_lex(['students', 'undergraduate', 'number'], ['numberOfUndergraduateStudents/2']).
+_lex(['catchment', 'area'], ['areaOfCatchment/2']).
+_lex(['urban', 'area'], ['areaUrban/2']).
+_lex(['episodes', 'number'], ['numberOfEpisodes/2']).
+_lex(['chairman', 'title'], ['chairmanTitle/2']).
+_lex(['associated', 'act'], ['associatedAct/2']).
+_lex(['passengers', 'day', 'per'], ['passengersPerDay/2']).
+_lex(['inflow'], ['inflow/2']).
+_lex(['coordinate', 'saturation', 'hsv'], ['hsvCoordinateSaturation/2']).
+_lex(['saint'], ['saint/2']).
+_lex(['arrondissement'], ['arrondissement/2']).
+_lex(['mountain', 'mouth'], ['mouthMountain/2']).
+_lex(['successful', 'launches'], ['successfulLaunches/2']).
+_lex(['area', 'principal'], ['principalArea/2']).
+_lex(['stages', 'rocket'], ['rocketStages/2']).
+_lex(['students', 'number'], ['numberOfStudents/2']).
+_lex(['part'], ['part/2']).
+_lex(['county', 'seat'], ['countySeat/2']).
+_lex(['major', 'shrine'], ['majorShrine/2']).
+_lex(['distance'], ['distance/2']).
+_lex(['associated', 'musical', 'artist'], ['associatedMusicalArtist/2']).
+_lex(['distance', 'edinburgh'], ['distanceToEdinburgh/2']).
+_lex(['total', 'population'], ['totalPopulation/2']).
+_lex(['tributary', 'left'], ['leftTributary/2']).
+_lex(['date', 'last', 'air'], ['lastAirDate/2']).
+_lex(['classes'], ['classes/2']).
+_lex(['family', 'language'], ['languageFamily/2']).
+_lex(['draft', 'team'], ['draftTeam/2']).
+_lex(['college'], ['college/2']).
+_lex(['garrison'], ['garrison/2']).
+_lex(['operating', 'system'], ['operatingSystem/2']).
+_lex(['game', 'first'], ['firstGame/2']).
+_lex(['lines', 'number'], ['numberOfLines/2']).
+_lex(['highest', 'place'], ['highestPlace/2']).
+_lex(['draft', 'year'], ['draftYear/2']).
+_lex(['place', 'government'], ['governmentPlace/2']).
+_lex(['orbital', 'period'], ['orbitalPeriod/2']).
+_lex(['type', 'government'], ['governmentType/2']).
+_lex(['death', 'year'], ['deathYear/2']).
+_lex(['albedo'], ['albedo/2']).
+_lex(['trainer', 'aircraft'], ['aircraftTrainer/2']).
+_lex(['work', 'notable'], ['notableWork/2']).
+_lex(['iobdb', 'id'], ['iobdbId/2']).
+_lex(['strength'], ['strength/2']).
+_lex(['party', 'political', 'leader'], ['politicalPartyOfLeader/2']).
+_lex(['helicopter', 'aircraft'], ['aircraftHelicopter/2']).
+_lex(['canton'], ['canton/2']).
+_lex(['equipment'], ['equipment/2']).
+_lex(['passengers', 'per', 'year'], ['passengersPerYear/2']).
+_lex(['gray', 'subject'], ['graySubject/2']).
+_lex(['chairman'], ['chairman/2']).
+_lex(['season'], ['season/2']).
+_lex(['density', 'population'], ['populationDensity/2']).
+_lex(['channel'], ['channel/2']).
+_lex(['province'], ['province/2']).
+_lex(['country', 'twin'], ['twinCountry/2']).
+_lex(['season', 'number'], ['seasonNumber/2']).
+_lex(['band', 'associated'], ['associatedBand/2']).
+_lex(['body', 'sport', 'governing'], ['sportGoverningBody/2']).
+_lex(['year', 'groups', 'ethnic'], ['ethnicGroupsInYear/2']).
+_lex(['type', 'campus'], ['campusType/2']).
+_lex(['confluence', 'source', 'region'], ['sourceConfluenceRegion/2']).
+_lex(['former', 'channel'], ['formerChannel/2']).
+_lex(['position'], ['position/2']).
+_lex(['current', 'status'], ['currentStatus/2']).
+_lex(['confluence', 'source', 'place'], ['sourceConfluencePlace/2']).
+_lex(['legislative', 'period', 'name'], ['legislativePeriodName/2']).
+_lex(['second', 'commander'], ['secondCommander/2']).
+_lex(['radius', 'mean'], ['meanRadius/2']).
+_lex(['salary'], ['salary/2']).
+_lex(['diseasesdb'], ['diseasesdb/2']).
+_lex(['date', 'share'], ['shareDate/2']).
+_lex(['lowest', 'mountain'], ['lowestMountain/2']).
+_lex(['source', 'position'], ['sourcePosition/2']).
+_lex(['dissolved'], ['dissolved/2']).
+_lex(['date', 'last', 'launch'], ['lastLaunchDate/2']).
+_lex(['city', 'location'], ['locationCity/2']).
+_lex(['parliament', 'group', 'european'], ['europeanParliamentGroup/2']).
+_lex(['orogeny'], ['orogeny/2']).
+_lex(['gauge', 'rail'], ['railGauge/2']).
+_lex(['subsequent', 'work'], ['subsequentWork/2']).
+_lex(['school', 'number'], ['schoolNumber/2']).
+_lex(['tracks', 'number'], ['numberOfTracks/2']).
+_lex(['active', 'start', 'year', 'years'], ['activeYearsStartYear/2']).
+_lex(['mountain', 'highest'], ['highestMountain/2']).
+_lex(['jurisdiction'], ['jurisdiction/2']).
+_lex(['president', 'vice'], ['vicePresident/2']).
+_lex(['headquarter'], ['headquarter/2']).
+_lex(['disbanded'], ['disbanded/2']).
+_lex(['relation'], ['relation/2']).
+_lex(['rector'], ['rector/2']).
+_lex(['youth', 'wing'], ['youthWing/2']).
+_lex(['volunteers', 'number'], ['numberOfVolunteers/2']).
+_lex(['endowment'], ['endowment/2']).
+_lex(['occupation'], ['occupation/2']).
+_lex(['mountain', 'government'], ['governmentMountain/2']).
+_lex(['editing'], ['editing/2']).
+_lex(['census', 'year'], ['censusYear/2']).
+_lex(['producer'], ['producer/2']).
+_lex(['title'], ['title/2']).
+_lex(['faa', 'location', 'identifier'], ['faaLocationIdentifier/2']).
+_lex(['writer'], ['writer/2']).
+_lex(['county', 'ceremonial'], ['ceremonialCounty/2']).
+_lex(['international', 'affiliation'], ['internationalAffiliation/2']).
+_lex(['employer'], ['employer/2']).
+_lex(['group', 'ethnic'], ['ethnicGroup/2']).
+_lex(['picture', 'format'], ['pictureFormat/2']).
+_lex(['equity'], ['equity/2']).
+_lex(['mountain', 'range'], ['mountainRange/2']).
+_lex(['command', 'structure'], ['commandStructure/2']).
+_lex(['predecessor'], ['predecessor/2']).
+_lex(['ranking'], ['ranking/2']).
+_lex(['date', 'election', 'leader'], ['electionDateLeader/2']).
+_lex(['non', 'subject', 'fiction'], ['nonFictionSubject/2']).
+_lex(['general', 'secretary'], ['secretaryGeneral/2']).
+_lex(['honours'], ['honours/2']).
+_lex(['number', 'stations'], ['numberOfStations/2']).
+_lex(['second', 'driver'], ['secondDriver/2']).
+_lex(['layout'], ['layout/2']).
+_lex(['builder'], ['builder/2']).
+_lex(['launches', 'total'], ['totalLaunches/2']).
+_lex(['artist'], ['artist/2']).
+_lex(['route', 'direction'], ['routeDirection/2']).
+_lex(['aircraft', 'patrol'], ['aircraftPatrol/2']).
+_lex(['sister', 'station'], ['sisterStation/2']).
+_lex(['watershed'], ['watershed/2']).
+_lex(['cinematography'], ['cinematography/2']).
+_lex(['river'], ['river/2']).
+_lex(['source', 'share'], ['shareSource/2']).
+_lex(['id', 'facility'], ['facilityId/2']).
+_lex(['creator'], ['creator/2']).
+_lex(['principal'], ['principal/2']).
+_lex(['date', 'founding'], ['foundingDate/2']).
+_lex(['relative'], ['relative/2']).
+_lex(['students', 'doctoral', 'number'], ['numberOfDoctoralStudents/2']).
+_lex(['source', 'region'], ['sourceRegion/2']).
+_lex(['member', 'band', 'former'], ['formerBandMember/2']).
+_lex(['result'], ['result/2']).
+_lex(['sport'], ['sport/2']).
+_lex(['coordinate', 'hue', 'hsv'], ['hsvCoordinateHue/2']).
+_lex(['capacity'], ['capacity/2']).
+_lex(['review'], ['review/2']).
+_lex(['driver', 'third'], ['thirdDriver/2']).
+_lex(['lieutenancy', 'area'], ['lieutenancyArea/2']).
+_lex(['state'], ['state/2']).
+_lex(['earth', 'lower', 'orbit', 'payload'], ['lowerEarthOrbitPayload/2']).
+_lex(['emedicine', 'subject'], ['emedicineSubject/2']).
+_lex(['architect'], ['architect/2']).
+_lex(['date', 'closing'], ['closingDate/2']).
+_lex(['metro', 'population'], ['populationMetro/2']).
+_lex(['manager', 'general'], ['generalManager/2']).
+_lex(['parent'], ['parent/2']).
+_lex(['cover', 'artist'], ['coverArtist/2']).
+_lex(['party', 'leader'], ['leaderParty/2']).
+_lex(['denomination'], ['denomination/2']).
+_lex(['chancellor', 'vice'], ['viceChancellor/2']).
+_lex(['daylight', 'saving', 'zone', 'time'], ['daylightSavingTimeZone/2']).
+_lex(['population'], ['populationAsOf/2']).
+_lex(['main', 'interest'], ['mainInterest/2']).
+_lex(['distributing', 'label'], ['distributingLabel/2']).
+_lex(['genre'], ['genre/2']).
+_lex(['nationality'], ['nationality/2']).
+_lex(['motto'], ['motto/2']).
+_lex(['source', 'place'], ['sourcePlace/2']).
+_lex(['league'], ['league/2']).
+_lex(['visitors', 'per', 'year'], ['visitorsPerYear/2']).
+_lex(['founded'], ['foundedBy/2']).
+_lex(['license'], ['license/2']).
+_lex(['country'], ['country/2']).
+_lex(['region'], ['region/2']).
+_lex(['density'], ['density/2']).
+_lex(['discharge', 'average'], ['dischargeAverage/2']).
+_lex(['medlineplus'], ['medlineplus/2']).
+_lex(['source', 'elevation'], ['sourceElevation/2']).
+_lex(['federal', 'state'], ['federalState/2']).
+_lex(['code', 'municipality'], ['municipalityCode/2']).
+_lex(['source', 'mountain'], ['sourceMountain/2']).
+_lex(['organisation', 'parent'], ['parentOrganisation/2']).
+_lex(['genus'], ['genus/2']).
+_lex(['file', 'size'], ['fileSize/2']).
+_lex(['aircraft', 'attack'], ['aircraftAttack/2']).
+_lex(['region', 'mouth'], ['mouthRegion/2']).
+_lex(['record', 'label'], ['recordLabel/2']).
+_lex(['seasons', 'number'], ['numberOfSeasons/2']).
+_lex(['point'], ['point/2']).
+_lex(['date', 'birth'], ['birthDate/2']).
+_lex(['height'], ['height/2']).
+_lex(['region', 'capital'], ['capitalRegion/2']).
+_lex(['year', 'ascent', 'first'], ['firstAscentYear/2']).
+_lex(['management', 'place'], ['managementPlace/2']).
+_lex(['start', 'model', 'year'], ['modelStartYear/2']).
+_lex(['aircraft', 'bomber'], ['aircraftBomber/2']).
+_lex(['production', 'end', 'year'], ['productionEndYear/2']).
+_lex(['local', 'association', 'government'], ['associationOfLocalGovernment/2']).
+_lex(['coordinate', 'rgb', 'green'], ['rgbCoordinateGreen/2']).
+_lex(['instrument'], ['instrument/2']).
+_lex(['number', 'service'], ['serviceNumber/2']).
+_lex(['borough', 'metropolitan'], ['metropolitanBorough/2']).
+_lex(['binomial', 'authority'], ['binomialAuthority/2']).
+_lex(['head', 'label'], ['headLabel/2']).
+_lex(['total', 'population'], ['populationTotal/2']).
+_lex(['outflow'], ['outflow/2']).
+_lex(['rural', 'area'], ['areaRural/2']).
+_lex(['average', 'terrain', 'above', 'height'], ['heightAboveAverageTerrain/2']).
+_lex(['gray', 'page'], ['grayPage/2']).
+_lex(['territory'], ['territory/2']).
+_lex(['board'], ['board/2']).
+_lex(['engine'], ['engine/2']).
+_lex(['region', 'part', 'wine'], ['isPartOfWineRegion/2']).
+_lex(['periapsis'], ['periapsis/2']).
+_lex(['iata', 'location', 'identifier'], ['iataLocationIdentifier/2']).
+_lex(['power', 'radiated', 'effective'], ['effectiveRadiatedPower/2']).
+_lex(['timeshift', 'channel'], ['timeshiftChannel/2']).
+_lex(['date', 'dissolution'], ['dissolutionDate/2']).
+_lex(['start', 'route', 'direction'], ['routeStartDirection/2']).
+_lex(['icao', 'identifier', 'location'], ['icaoLocationIdentifier/2']).
+_lex(['child'], ['child/2']).
+_lex(['release', 'version', 'latest'], ['latestReleaseVersion/2']).
+_lex(['fourth', 'commander'], ['fourthCommander/2']).
+_lex(['premiere', 'year'], ['premiereYear/2']).
+_lex(['neighboring', 'municipality'], ['neighboringMunicipality/2']).
+_lex(['water', 'area'], ['areaWater/2']).
+_lex(['broadcast', 'station', 'class'], ['broadcastStationClass/2']).
+_lex(['lowest', 'position'], ['lowestPosition/2']).
+_lex(['launches'], ['launches/2']).
+_lex(['cmyk', 'coordinate', 'black'], ['cmykCoordinateBlack/2']).
+_lex(['budget'], ['budget/2']).
+_lex(['date', 'canonized'], ['canonizedDate/2']).
+_lex(['size', 'team'], ['teamSize/2']).
+_lex(['death', 'place'], ['deathPlace/2']).
+_lex(['residence'], ['residence/2']).
+_lex(['voice'], ['voice/2']).
+_lex(['country', 'government'], ['governmentCountry/2']).
+_lex(['icd10'], ['icd10/2']).
+_lex(['city', 'largest'], ['largestCity/2']).
+_lex(['pole', 'driver', 'team'], ['poleDriverTeam/2']).
+_lex(['management', 'asset', 'under'], ['assetUnderManagement/2']).
+_lex(['voice', 'type'], ['voiceType/2']).
+_lex(['project', 'significant'], ['significantProject/2']).
+_lex(['commander'], ['commander/2']).
+_lex(['discharge', 'minimum'], ['minimumDischarge/2']).
+_lex(['lowest', 'region'], ['lowestRegion/2']).
+_lex(['partner'], ['partner/2']).
+_lex(['total', 'area'], ['areaTotal/2']).
+_lex(['military', 'part', 'conflict'], ['isPartOfMilitaryConflict/2']).
+_lex(['id'], ['id/2']).
+_lex(['coordinate', 'blue', 'rgb'], ['rgbCoordinateBlue/2']).
+_lex(['colour', 'name'], ['colourName/2']).
+_lex(['longtype'], ['longtype/2']).
+_lex(['borough'], ['borough/2']).
+_lex(['mesh', 'id'], ['meshId/2']).
+_lex(['author'], ['author/2']).
+_lex(['runway', 'designation'], ['runwayDesignation/2']).
+_lex(['border'], ['border/2']).
+_lex(['format'], ['format/2']).
+_lex(['dissolution', 'year'], ['dissolutionYear/2']).
+_lex(['epoch'], ['epoch/2']).
+_lex(['origin', 'state'], ['stateOfOrigin/2']).
+_lex(['code', 'postal'], ['postalCode/2']).
+_lex(['monarch'], ['monarch/2']).
+_lex(['district', 'congressional'], ['congressionalDistrict/2']).
+_lex(['mountain', 'peak', 'parent'], ['parentMountainPeak/2']).
+_lex(['status'], ['status/2']).
+_lex(['active', 'start', 'date', 'years'], ['activeYearsStartDate/2']).
+_lex(['side'], ['aSide/2']).
+_lex(['director'], ['director/2']).
+_lex(['purpose'], ['purpose/2']).
+_lex(['surface', 'area'], ['surfaceArea/2']).
+_lex(['audience', 'share'], ['shareOfAudience/2']).
+_lex(['style', 'architectural'], ['architecturalStyle/2']).
+_lex(['management', 'elevation'], ['managementElevation/2']).
+_lex(['accessible', 'publicly'], ['publiclyAccessible/2']).
+_lex(['last', 'rocket', 'launch'], ['lastLaunchRocket/2']).
+_lex(['colour'], ['colour/2']).
+_lex(['channel', 'analog'], ['analogChannel/2']).
+_lex(['person'], ['person/2']).
+_lex(['play', 'setting'], ['settingOfPlay/2']).
+_lex(['prime', 'minister'], ['primeMinister/2']).
+_lex(['river', 'mouth'], ['riverMouth/2']).
+_lex(['lcc'], ['lcc/2']).
+_lex(['map', 'national', 'topographic', 'system', 'number'], ['nationalTopographicSystemMapNumber/2']).
+_lex(['rural', 'population'], ['populationRural/2']).
+_lex(['organisation', 'owning'], ['owningOrganisation/2']).
+_lex(['portrayer'], ['portrayer/2']).
+_lex(['abbreviation'], ['abbreviation/2']).
+_lex(['position', 'highest'], ['highestPosition/2']).
+_lex(['organisation', 'child'], ['childOrganisation/2']).
+_lex(['current', 'production'], ['currentProduction/2']).
+_lex(['distance', 'london'], ['distanceToLondon/2']).
+_lex(['top', 'speed'], ['topSpeed/2']).
+_lex(['person', 'key'], ['keyPerson/2']).
+_lex(['biome'], ['biome/2']).
+_lex(['route', 'number'], ['routeNumber/2']).
+_lex(['distance', 'charing', 'cross'], ['distanceToCharingCross/2']).
+_lex(['operated'], ['operatedBy/2']).
+_lex(['field'], ['field/2']).
+_lex(['known'], ['knownFor/2']).
+_lex(['status', 'conservation'], ['conservationStatus/2']).
+_lex(['source'], ['source/2']).
+_lex(['callsign', 'former'], ['formerCallsign/2']).
+_lex(['story', 'editor'], ['storyEditor/2']).
+_lex(['order', 'office'], ['orderInOffice/2']).
+_lex(['location'], ['location/2']).
+_lex(['broadcast', 'former', 'network'], ['formerBroadcastNetwork/2']).
+_lex(['founding', 'year'], ['foundingYear/2']).
+_lex(['mountain', 'management'], ['managementMountain/2']).
+_lex(['elevation', 'mouth'], ['mouthElevation/2']).
+_lex(['newspaper', 'sister'], ['sisterNewspaper/2']).
+_lex(['distance', 'laps'], ['distanceLaps/2']).
+_lex(['elevation'], ['elevation/2']).
+_lex(['fate'], ['fate/2']).
+_lex(['government'], ['government/2']).
+_lex(['chancellor'], ['chancellor/2']).
+_lex(['work', 'previous'], ['previousWork/2']).
+_lex(['area', 'floor'], ['floorArea/2']).
+_lex(['local', 'authority'], ['localAuthority/2']).
+_lex(['background'], ['background/2']).
+_lex(['hip', 'size'], ['hipSize/2']).
+_lex(['regional', 'language'], ['regionalLanguage/2']).
+_lex(['broadcast', 'network'], ['broadcastNetwork/2']).
+_lex(['mesh', 'name'], ['meshName/2']).
+_lex(['minimum', 'elevation'], ['minimumElevation/2']).
+_lex(['driver', 'first'], ['firstDriver/2']).
+_lex(['geologic', 'period'], ['geologicPeriod/2']).
+_lex(['superintendent'], ['superintendent/2']).
+_lex(['place', 'population'], ['populationPlace/2']).
+_lex(['picture'], ['picture/2']).
+_lex(['networth'], ['networth/2']).
+_lex(['frequently', 'updated'], ['frequentlyUpdated/2']).
+_lex(['win', 'largest'], ['largestWin/2']).
+_lex(['sister', 'college'], ['sisterCollege/2']).
+_lex(['added'], ['added/2']).
+_lex(['temperature', 'mean'], ['meanTemperature/2']).
+_lex(['driver', 'fastest'], ['fastestDriver/2']).
+_lex(['doctoral', 'student'], ['doctoralStudent/2']).
+_lex(['position', 'mouth'], ['mouthPosition/2']).
+_lex(['march'], ['march/2']).
+_lex(['gross'], ['gross/2']).
+_lex(['pads', 'number'], ['numberOfPads/2']).
+_lex(['start', 'route'], ['routeStart/2']).
+_lex(['topic', 'emedicine'], ['emedicineTopic/2']).
+_lex(['religion'], ['religion/2']).
+_lex(['military', 'unit', 'size'], ['militaryUnitSize/2']).
+_lex(['body', 'governing'], ['governingBody/2']).
+_lex(['leader'], ['leader/2']).
+_lex(['size', 'faculty'], ['facultySize/2']).
+_lex(['assembly'], ['assembly/2']).
+_lex(['official', 'language'], ['officialLanguage/2']).
+_lex(['code', 'iso6391'], ['iso6391Code/2']).
+_lex(['dcc'], ['dcc/2']).
+_lex(['tuition'], ['tuition/2']).
+_lex(['lieutenant'], ['lieutenant/2']).
+_lex(['starring'], ['starring/2']).
+_lex(['construction', 'year'], ['yearOfConstruction/2']).
+_lex(['theme', 'opening'], ['openingTheme/2']).
+_lex(['manufacturer'], ['manufacturer/2']).
+_lex(['flight', 'final'], ['finalFlight/2']).
+_lex(['runway', 'surface'], ['runwaySurface/2']).
+_lex(['elevation', 'government'], ['governmentElevation/2']).
+_lex(['industry'], ['industry/2']).
+_lex(['elevation', 'capital'], ['capitalElevation/2']).
+_lex(['sheading'], ['sheading/2']).
+_lex(['meaning', 'callsign'], ['callsignMeaning/2']).
+_lex(['ideology'], ['ideology/2']).
+_lex(['range'], ['range/2']).
+_lex(['mountain', 'capital'], ['capitalMountain/2']).
+_lex(['omim'], ['omim/2']).
+_lex(['runtime'], ['runtime/2']).
+_lex(['current', 'member'], ['currentMember/2']).
+_lex(['unitary', 'authority'], ['unitaryAuthority/2']).
+_lex(['colour', 'code', 'hex'], ['colourHexCode/2']).
+_lex(['vehicles', 'number'], ['numberOfVehicles/2']).
+_lex(['logo'], ['logo/2']).
+_lex(['hometown'], ['hometown/2']).
+_lex(['profession'], ['profession/2']).
+_lex(['cardiff', 'distance'], ['distanceToCardiff/2']).
+_lex(['operator'], ['operator/2']).
+_lex(['dean'], ['dean/2']).
+_lex(['formation', 'year'], ['formationYear/2']).
+_lex(['completion', 'date'], ['completionDate/2']).
+_lex(['dependency', 'crown'], ['crownDependency/2']).
+_lex(['aircraft', 'electronic'], ['aircraftElectronic/2']).
+_lex(['area'], ['area/2']).
+_lex(['width'], ['width/2']).
+_lex(['route', 'part'], ['isPartOfRoute/2']).
+_lex(['runway', 'length'], ['runwayLength/2']).
+_lex(['editor'], ['editor/2']).
+_lex(['canonized'], ['canonizedBy/2']).
+_lex(['literary', 'genre'], ['literaryGenre/2']).
+_lex(['icd9'], ['icd9/2']).
+_lex(['influenced'], ['influencedBy/2']).
+_lex(['prefix', 'dorlands'], ['dorlandsPrefix/2']).
+_lex(['person', 'ascent', 'first'], ['firstAscentPerson/2']).
+_lex(['lowest'], ['lowest/2']).
+_lex(['doctoral', 'advisor'], ['doctoralAdvisor/2']).
+_lex(['head'], ['head/2']).
+_lex(['narrator'], ['narrator/2']).
+_lex(['school', 'official', 'colour'], ['officialSchoolColour/2']).
+_lex(['anthem', 'royal'], ['royalAnthem/2']).
+_lex(['broadcast', 'area'], ['broadcastArea/2']).
+_lex(['volume'], ['volume/2']).
+_lex(['body', 'style'], ['bodyStyle/2']).
+_lex(['worst', 'defeat'], ['worstDefeat/2']).
+_lex(['origin', 'country'], ['countryOrigin/2']).
+_lex(['limit', 'speed'], ['speedLimit/2']).
+_lex(['subsidiary'], ['subsidiary/2']).
+_lex(['place', 'canonized'], ['canonizedPlace/2']).
+_lex(['metro', 'area'], ['areaMetro/2']).
+_lex(['company', 'parent'], ['parentCompany/2']).
+_lex(['illustrator'], ['illustrator/2']).
+_lex(['administrative', 'district'], ['administrativeDistrict/2']).
+_lex(['launch', 'rocket', 'first'], ['firstLaunchRocket/2']).
+_lex(['similar'], ['similar/2']).
+_lex(['venerated'], ['veneratedIn/2']).
+_lex(['notable', 'idea'], ['notableIdea/2']).
+_lex(['citizenship'], ['citizenship/2']).
+_lex(['programming', 'language'], ['programmingLanguage/2']).
+_lex(['provost'], ['provost/2']).
+_lex(['wavelength'], ['wavelength/2']).
+_lex(['aircraft', 'interceptor'], ['aircraftInterceptor/2']).
+_lex(['variant'], ['hasVariant/2']).
+_lex(['education'], ['education/2']).
+_lex(['campus'], ['campus/2']).
+_lex(['third', 'team'], ['thirdTeam/2']).
+_lex(['model', 'end', 'year'], ['modelEndYear/2']).
+_lex(['team', 'driver', 'first'], ['firstDriverTeam/2']).
+_lex(['end', 'service', 'year'], ['serviceEndYear/2']).
+_lex(['manager', 'title'], ['managerTitle/2']).
+_lex([''], ['other/2']).
+_lex(['role'], ['role/2']).
+_lex(['region', 'wine'], ['wineRegion/2']).
+_lex(['department'], ['department/2']).
+_lex(['category', 'iucn'], ['iucnCategory/2']).
+_lex(['pseudonym'], ['pseudonym/2']).
+_lex(['academic', 'advisor'], ['academicAdvisor/2']).
+_lex(['line', 'length'], ['lineLength/2']).
+_lex(['employees', 'number'], ['numberOfEmployees/2']).
+_lex(['episode', 'number'], ['episodeNumber/2']).
+_lex(['foundation', 'place'], ['foundationPlace/2']).
+_lex(['meaning'], ['meaning/2']).
+_lex(['lowest', 'place'], ['lowestPlace/2']).
+_lex(['region', 'government'], ['governmentRegion/2']).
+_lex(['discharge'], ['discharge/2']).
+_lex(['spouse'], ['spouse/2']).
+_lex(['lower', 'age'], ['lowerAge/2']).
+_lex(['abbreviation', 'route', 'type'], ['routeTypeAbbreviation/2']).
+_lex(['grid', 'reference'], ['gridReference/2']).
+_lex(['resting', 'place', 'position'], ['restingPlacePosition/2']).
+_lex(['chairperson'], ['chairperson/2']).
+_lex(['assets'], ['assets/2']).
+_lex(['platform', 'computing'], ['computingPlatform/2']).
+_lex(['shore', 'length'], ['shoreLength/2']).
+_lex(['serving', 'temperature'], ['servingTemperature/2']).
+_lex(['council', 'area'], ['councilArea/2']).
+_lex(['depth'], ['depth/2']).
+_lex(['mass'], ['mass/2']).
+_lex(['urban', 'population'], ['populationUrban/2']).
+_lex(['active', 'date', 'end', 'years'], ['activeYearsEndDate/2']).

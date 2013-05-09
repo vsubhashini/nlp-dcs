@@ -1,0 +1,310 @@
+_include('../../general/lexicon.dlog').
+
+%Lexical triggers
+_lex(['canal', 'duct', 'canalise', 'epithelial', 'channel', 'canalize'], ['Canal/1']).
+_lex(['conference', 'league', 'game', 'volleyball'], ['VolleyballLeague/1']).
+_lex(['cave', 'spelunk', 'undermine'], ['Cave/1']).
+_lex(['eucaryote', 'eukaryote'], ['Eukaryote/1']).
+_lex(['and', 'ane', 'racer', 'unitary', 'peerless', 'driver', 'recipe', 'one', 'single', 'racing', 'matchless', 'unmatchable', 'nonpareil', 'car', '1', 'unrivalled', 'ace', 'i', 'pattern', 'normal', 'unity', 'unmatched', 'unrivaled', 'chemical', 'only', 'race', 'rule', 'convention', 'formula', 'expression', 'automobile'], ['FormulaOneRacer/1']).
+_lex(['worldwide', 'planetary', 'domain', 'global', 'human', 'world-wide', 'ranking', 'grade', 'globe', 'creation', 'humans', 'rank', 'order', 'beings', 'macrocosm', 'mankind', 'worldly', 'earth', 'earthly', 'existence', 'higher-ranking', 'concern', 'superior', 'world', 'populace', 'universe', 'snooker', 'reality', 'public', 'range', 'race', 'humankind', 'outrank', 'place', 'cosmos', 'man', 'humanity', 'rate'], ['SnookerWorldRanking/1']).
+_lex(['lacrosse', 'league', 'conference'], ['LacrosseLeague/1']).
+_lex(['and', 'kernel', 'heart', 'nitty-gritty', 'essence', 'message', 'nub', 'subject', 'content', 'matter', 'sum', 'centre', 'chemical', 'chemic', 'core', 'gist', 'means', 'meaning', 'marrow', 'meat', 'substance', 'center', 'soul', 'pith', 'inwardness'], ['ChemicalSubstance/1']).
+_lex(['games', 'olympic', 'olympics', 'olympiad'], ['Olympics/1']).
+_lex(['driver', 'number', 'nascar', 'one', 'wood', 'device'], ['NascarDriver/1']).
+_lex(['canonise', 'nonesuch', 'holy', 'angel', 'canonize', 'nonsuch', 'paragon', 'apotheosis', 'person', 'ideal', 'saint', 'enshrine', 'nonpareil', 'man'], ['Saint/1']).
+_lex(['thespian', 'participant', 'musician', 'actor', 'player', 'snooker', 'histrion', 'instrumentalist', 'role'], ['SnookerPlayer/1']).
+_lex(['thespian', 'musician', 'normal', 'rules', 'ruler', 'role', 'football', 'reign', 'formula', 'player', 'aboriginal', 'harness', 'actor', 'govern', 'principle', 'instrumentalist', 'australian', 'prevail', 'find', 'decree', 'participant', 'pattern', 'prescript', 'game', 'rule', 'regulation', 'histrion', 'dominion', 'convention', 'aussie', 'linguistic', 'rein', 'dominate', 'predominate'], ['AustralianRulesFootballPlayer/1']).
+_lex(['razz', 'birdie', 'doll', 'fowl', 'birdwatch', 'hiss', 'hoot', 'snort', 'shuttle', 'cheer', 'shuttlecock', 'razzing', 'wench', 'boo', 'bronx', 'chick', 'raspberry', 'skirt', 'bird', 'dame'], ['Bird/1']).
+_lex(['fleshly', 'being', 'brute', 'beast', 'animal', 'carnal', 'animate', 'fauna', 'sensual', 'creature'], ['Animal/1']).
+_lex(['infrastructure', 'substructure', 'base'], ['Infrastructure/1']).
+_lex(['clubhouse', 'ball', 'golf', 'club', 'season', 'football', 'society', 'baseball', 'year', 'flavour', 'flavor', 'cabaret', 'association', 'guild', 'temper', 'of', 'nightspot', 'mollify', 'bludgeon', 'nightclub', 'harden', 'gild', 'nine', 'time', 'night', 'lodge', 'golf-club', 'soccer', 'order', 'social'], ['SoccerClubSeason/1']).
+_lex(['conference', 'league', 'canadian', 'football', 'game', 'river'], ['CanadianFootballLeague/1']).
+_lex(['accompany', 'companionship', 'society', 'company', 'caller', 'ships', 'companion', 'fellowship', 'party', 'troupe', 'keep'], ['Company/1']).
+_lex(['back', 'halting', 'plot', 'lame', 'stake', 'gage', 'secret', 'halt', 'spunky', 'mettlesome', 'gamy', 'game', 'biz', 'plan', 'crippled', 'on', 'gritty', 'gimpy', 'spirited', 'punt', 'bet', 'gamey'], ['Game/1']).
+_lex(['prize', 'grant', 'honour', 'awarding', 'award', 'accolade', 'laurels', 'honor', 'present'], ['Award/1']).
+_lex(['in', 'spacefaring', 'number', 'atomic', 'year', 'hoosier', 'yr', 'class', 'spaceflight', 'inward', 'travel', '49', 'twelvemonth', 'space', 'state', 'inch', 'inwards', 'indium', 'indiana'], ['YearInSpaceflight/1']).
+_lex(['distance', 'outer', 'space', 'send', 'station', 'place', 'blank', 'infinite', 'quad', 'post'], ['SpaceStation/1']).
+_lex(['set', 'shoes', 'office', 'point', 'grade', 'commit', 'blank', 'localize', 'site', 'rank', 'seat', 'born', 'rate', 'identify', 'lieu', 'cancel', 'home', 'lifelike', 'out', 'innate', 'in', 'space', 'localise', 'send', 'station', 'place', 'locate', 'rude', 'billet', 'pose', 'spot', 'direct', 'lay', 'situation', 'put', 'instinctive', 'post', 'come', 'target', 'berth', 'topographic', 'natural', 'piazza', 'raw', 'invest', 'plaza', 'aim', 'range', 'stead', 'position', 'property', 'order'], ['NaturalPlace/1']).
+_lex(['lymph'], ['Lymph/1']).
+_lex(['guess', 'adjudicate', 'justice', 'evaluate', 'pronounce', 'approximate', 'label', 'try', 'gauge', 'pass', 'judge', 'evaluator', 'jurist', 'judgment', 'estimate'], ['Judge/1']).
+_lex(['ingress', 'entryway', 'competition', 'dynasty', 'strain', 'eurovision', 'entering', 'accounting', 'sung', 'contend', 'contest', 'introduction', 'ledger', 'call', 'launching', 'entrance', 'entree', 'unveiling', 'song', 'repugn', 'incoming', 'submission', 'debut', 'appearance', 'vocal', 'birdcall', 'birdsong', 'entry', 'entranceway', 'first'], ['EurovisionSongContestEntry/1']).
+_lex(['force', 'house', 'fast', 'constabulary', 'unwavering', 'strong', 'police', 'jurisprudence', 'legal', 'tauten', 'firmly', 'firm', 'unfaltering', 'practice', 'business', 'nature', 'unwaveringly', 'philosophy', 'unshakable', 'steadfastly', 'immobile', 'law', 'unbendable', 'natural', 'steadfast', 'stiff', 'solid', 'of', 'steady', 'loyal', 'unfluctuating', 'truehearted'], ['LawFirm/1']).
+_lex(['mineral', 'nervure', 'vessel', 'vena', 'blood', 'venous', 'vein'], ['Vein/1']).
+_lex(['building', 'ramp', 'make', 'work', 'edifice', 'up', 'construct', 'construction', 'build', 'progress', 'establish'], ['Building/1']).
+_lex(['passenger', 'coach', 'private', 'manager', 'college', 'charabanc', 'autobus', 'double-decker', 'tutor', 'handler', 'coach-and-four', 'vehicle', 'jitney', 'motorcoach', 'train', 'motorbus', 'instructor', 'omnibus', 'car', 'carriage', 'four-in-hand', 'bus'], ['CollegeCoach/1']).
+_lex(['thespian', 'football', 'musician', 'player', 'game', 'grid', 'participant', 'gridiron', 'actor', 'field', 'histrion', 'instrumentalist', 'role'], ['GridironFootballPlayer/1']).
+_lex(['family', 'people', 'house', 'royal', 'british', 'royalty', 'brits', 'line'], ['BritishRoyalty/1']).
+_lex(['body', 'constitution', 'extremity', 'organisation', 'administration', 'system', 'governing', 'arrangement', 'member', 'penis', 'formation', 'governance', 'appendage', 'organization', 'brass', 'fellow', 'establishment', 'phallus'], ['OrganisationMember/1']).
+_lex(['house', 'eatery', 'eating', 'place', 'restaurant'], ['Restaurant/1']).
+_lex(['island'], ['Island/1']).
+_lex(['discolour', 'people', 'color', 'emblazon', 'in', 'colourize', 'colorize', 'colouration', 'coloring', 'colorise', 'gloss', 'semblance', 'material', 'distort', 'colouring', 'coloration', 'vividness', 'of', 'colour', 'colourise', 'discolor', 'tinge'], ['Colour/1']).
+_lex(['insane', 'foundation', 'educational', 'instauration', 'founding', 'mental', 'introduction', 'origination', 'creation', 'psychiatric', 'asylum', 'initiation', 'innovation', 'home', 'hospital', 'establishment', 'institution'], ['EducationalInstitution/1']).
+_lex(['body', 'organisation', 'social', 'system', 'anatomical', 'complex', 'architectural', 'part', 'organization', 'construction', 'bodily', 'structure'], ['ArchitecturalStructure/1']).
+_lex(['engine', 'machine', 'automobile', 'auto', 'railway', 'motorcar', 'locomotive', 'car'], ['AutomobileEngine/1']).
+_lex(['drugs', 'do', 'drug', 'dose'], ['Drug/1']).
+_lex(['conference', 'league', 'cricket'], ['CricketLeague/1']).
+_lex(['projection', 'figure', 'image', 'contrive', 'fancy', 'see', 'design', 'externalize', 'protrude', 'envision', 'visualize', 'send', 'labor', 'out', 'picture', 'visualise', 'propose', 'stick', 'jut', 'throw', 'task', 'off', 'undertaking', 'project', 'cast', 'externalise', 'plan'], ['Project/1']).
+_lex(['publisher', 'clip', 'cartridge', 'magazine', 'powder', 'mag', 'holder', 'store'], ['Magazine/1']).
+_lex(['designer', 'architect'], ['Architect/1']).
+_lex(['conference', 'league', 'game', 'baseball'], ['BaseballLeague/1']).
+_lex(['arterial', 'artery', 'arteria', 'blood', 'vessel'], ['Artery/1']).
+_lex(['newspaper', 'publisher', 'paper', 'newsprint'], ['Newspaper/1']).
+_lex(['volcano', 'vent'], ['Volcano/1']).
+_lex(['feed', 'engine', 'methamphetamine', 'internal-combustion', 'frost', 'water', 'glass', 'game', 'crank', 'rink', 'methedrine', 'sparkler', 'chicken', 'meth', 'ice-skating', 'icing', 'conference', 'league', 'trash', 'hydrochloride', 'shabu', 'ice', 'frosting', 'chalk', 'field', 'hockey', 'frappe', 'deoxyephedrine'], ['IceHockeyLeague/1']).
+_lex(['musculus', 'muscleman', 'brawn', 'heftiness', 'muscular', 'sinew', 'brawniness', 'tissue', 'muscle', 'muscularity'], ['Muscle/1']).
+_lex(['thespian', 'musician', 'participant', 'football', 'actor', 'player', 'rugger', 'histrion', 'instrumentalist', 'rugby', 'role'], ['RugbyPlayer/1']).
+_lex(['ambassador', 'embassador'], ['Ambassador/1']).
+_lex(['biomolecule'], ['Biomolecule/1']).
+_lex(['lit', 'periodic', 'periodical', 'literature'], ['PeriodicalLiterature/1']).
+_lex(['wine-colored', 'neighborhood', 'vino', 'area', 'region', 'part', 'realm', 'wine-coloured', 'wine'], ['WineRegion/1']).
+_lex(['box', 'television', 'set', 'tv', 'tube', 'goggle', 'system', 'send', 'idiot', 'station', 'video', 'telly', 'telecasting', 'place', 'boob', 'post', 'receiver'], ['TelevisionStation/1']).
+_lex(['agentive', 'federal', 'broker', 'agent', 'role', 'factor'], ['Agent/1']).
+_lex(['congressman', 'representative', 'congresswoman'], ['Congressman/1']).
+_lex(['post', 'station', 'place', 'send'], ['Station/1']).
+_lex(['conference', 'league', 'lawn', 'tennis'], ['TennisLeague/1']).
+_lex(['coach', 'managing', 'football', 'director', 'manager', 'handler', 'soccer', 'association'], ['SoccerManager/1']).
+_lex(['distance', 'outer', 'space', 'work', 'delegacy', 'mission', 'foreign', 'delegation', 'commission', 'charge', 'station', 'place', 'blank', 'infinite', 'quad', 'post', 'military', 'deputation', 'missionary'], ['SpaceMission/1']).
+_lex(['protein'], ['Protein/1']).
+_lex(['mutant', 'sportsman', 'summercater', 'rollick', 'sport', 'cavort', 'feature', 'mutation', 'frisk', 'lark', 'frolic', 'play', 'run', 'around', 'about', 'variation', 'disport', 'romp', 'boast', 'sportswoman', 'skylark', 'fun', 'athletics', 'gambol'], ['Sport/1']).
+_lex(['fare', 'deportation', 'exile', 'transportation', 'transfer', 'route', 'system', 'shipping', 'transferral', 'conveyance', 'expatriation', 'transport', 'itinerary', 'of', 'department', 'path', 'dot', 'transit', 'road'], ['RouteOfTransportation/1']).
+_lex(['thespian', 'participant', 'musician', 'actor', 'player', 'game', 'baseball', 'instrumentalist', 'histrion', 'role'], ['BaseballPlayer/1']).
+_lex(['ensue', 'olympic', 'solvent', 'final', 'lead', 'resultant', 'resolution', 'effect', 'solution', 'leave', 'answer', 'olympian', 'role', 'result', 'termination', 'consequence', 'upshot', 'outcome', 'issue', 'event'], ['OlympicResult/1']).
+_lex(['constitution', 'profit', 'non-', 'administration', 'system', 'governance', 'arrangement', 'earnings', 'income', 'net', 'establishment', 'body', 'lucre', 'governing', 'formation', 'gain', 'brass', 'a', 'turn', 'benefit', 'organization', 'organisation', 'profits'], ['Non-ProfitOrganisation/1']).
+_lex(['body', 'celestial', 'organic', 'personify', 'soundbox', 'consistence', 'consistency', 'eubstance', 'supernal', 'dead', 'ethereal', 'trunk', 'heavenly', 'torso', 'structure', 'physical'], ['CelestialBody/1']).
+_lex(['play', 'mutant', 'run', 'around', 'fellow', 'appendage', 'about', 'sportsman', 'summercater', 'lark', 'rollick', 'variation', 'penis', 'feature', 'sport', 'skylark', 'disport', 'cavort', 'boast', 'extremity', 'romp', 'sportswoman', 'phallus', 'up', 'sports', 'member', 'squad', 'mutation', 'frisk', 'team', 'fun', 'athletics', 'frolic', 'gambol'], ['SportsTeamMember/1']).
+_lex(['picture', 'projection', 'figure', 'visualise', 'propose', 'image', 'contrive', 'fancy', 'envision', 'explore', 'visualize', 'design', 'stick', 'jut', 'externalize', 'protrude', 'research', 'throw', 'out', 'search', 'task', 'off', 'enquiry', 'undertaking', 'see', 'send', 'labor', 'project', 'cast', 'inquiry', 'externalise', 'plan'], ['ResearchProject/1']).
+_lex(['body', 'constitution', 'organisation', 'administration', 'system', 'governing', 'arrangement', 'formation', 'governance', 'organization', 'brass', 'establishment'], ['Organisation/1']).
+_lex(['thespian', 'football', 'participant', 'musician', 'actor', 'player', 'histrion', 'instrumentalist', 'role', 'soccer', 'association'], ['SoccerPlayer/1']).
+_lex(['martial', 'person', 'warriorlike', 'artist', 'soldierlike', 'soldierly', 'warlike', 'creative'], ['MartialArtist/1']).
+_lex(['depository', 'program', 'subroutine', 'library'], ['Library/1']).
+_lex(['conference', 'league', 'ball', 'game', 'playground', 'softball'], ['SoftballLeague/1']).
+_lex(['volcanic', 'lunar', 'crater'], ['LunarCrater/1']).
+_lex(['butterfly', 'head', 'danaus', 'sovereign', 'milkweed', 'crowned', 'monarch', 'plexippus'], ['Monarch/1']).
+_lex(['thespian', 'goidelic', 'on', 'musician', 'back', 'erse', 'player', 'game', 'biz', 'plan', 'role', 'plot', 'celtic', 'participant', 'stake', 'actor', 'gage', 'gaelic', 'secret', 'punt', 'games', 'instrumentalist', 'histrion', 'bet'], ['GaelicGamesPlayer/1']).
+_lex(['malefactor', 'condemnable', 'reprehensible', 'outlaw', 'vicious', 'crook', 'felonious', 'felon', 'criminal', 'deplorable'], ['Criminal/1']).
+_lex(['compositors', 'pillowcase', 'pig', 'vitrine', 'slip', 'sheath', 'font', 'event', 'subject', 'instance', 'guinea', 'caseful', 'typesetters', 'character', 'legal', 'grammatical', 'encase', 'suit', 'causa', 'type', 'case', 'shell', 'eccentric', 'casing', 'display', 'lawsuit', 'showcase', 'sound', 'cause', 'incase', 'fount', 'typeface', 'face', 'effectual', 'pillow', 'example'], ['LegalCase/1']).
+_lex(['diagnose', 'figure', 'describe', 'discover', 'up', 'constitute', 'bring', 'identify', 'out', 'make', 'advert', 'call', 'cite', 'refer', 'epithet', 'mention', 'key', 'distinguish', 'appoint', 'name', 'nominate', 'list', 'gens', 'public'], ['Name/1']).
+_lex(['feed', 'diagnose', 'precondition', 'cite', 'render', 'give', 'over', 'move', 'discover', 'apt', 'dedicate', 'constitute', 'bring', 'consecrate', 'identify', 'have', 'pass', 'apply', 'establish', 'out', 'presumption', 'given', 'ease', 'founder', 'grant', 'describe', 'open', 'make', 'cave', 'disposed', 'generate', 'advert', 'call', 'way', 'impart', 'figure', 'chip', 'kick', 'refer', 'contribute', 'return', 'collapse', 'gens', 'afford', 'epithet', 'sacrifice', 'reach', 'tending', 'hand', 'break', 'mention', 'minded', 'key', 'fall', 'distinguish', 'hold', 'throw', 'present', 'appoint', 'on', 'in', 'name', 'gift', 'devote', 'nominate', 'list', 'up', 'yield', 'public', 'leave', 'turn', 'pay', 'commit', 'granted'], ['GivenName/1']).
+_lex(['operations', 'art', 'theatre', 'house', 'dramatics', 'field', 'dramatic', 'dramaturgy', 'of', 'theater'], ['Theatre/1']).
+_lex(['birdcall', 'song', 'vocal', 'dynasty', 'strain', 'call', 'sung', 'birdsong'], ['Song/1']).
+_lex(['prime', 'exchequer', 'chancellor', 'premier', 'minister', 'of', 'the'], ['Chancellor/1']).
+_lex(['parkland', 'car', 'ballpark', 'park', 'commons', 'mungo', 'area', 'green', 'common', 'lot', 'parking'], ['Park/1']).
+_lex(['coniferous', 'tree', 'conifer'], ['Conifer/1']).
+_lex(['around', 'distribute', 'broadcast', 'beam', 'mesh', 'propagate', 'disperse', 'pass', 'electronic', 'diffuse', 'meshing', 'web', 'network', 'disseminate', 'meshwork', 'circularise', 'send', 'air', 'spread', 'program', 'circularize', 'transmit', 'net', 'programme', 'circulate'], ['BroadcastNetwork/1']).
+_lex(['up', 'ice', 'field', 'game', 'squad', 'hockey', 'team'], ['HockeyTeam/1']).
+_lex(['piddle', 'supply', 'urine', 'dead', 'system', 'physical', 'irrigate', 'eubstance', 'pee', 'piss', 'body', 'water', 'trunk', 'weewee', 'structure', 'organic', 'soundbox', 'of', 'consistence', 'h2o', 'personify', 'consistency', 'torso'], ['BodyOfWater/1']).
+_lex(['renovating-'], ['Renovating-/1']).
+_lex(['melodic', 'person', 'theater', 'melodious', 'artist', 'comedy', 'musical', 'creative'], ['MusicalArtist/1']).
+_lex(['commonwealth', 'body', 'land', 'area', 'country', 'publica', 'nation', 'politic', 'state', 'res', 'rural'], ['Country/1']).
+_lex(['bike', 'run', 'league', 'it', 'hotfoot', 'step', 'motorcycle', 'cycle', 'along', 'speed', 'belt', 'conference', 'on', 'rush', 'motorbike', 'pelt', 'bucket', 'race', 'hasten', 'racing', 'cannonball', 'hie'], ['MotorcycleRacingLeague/1']).
+_lex(['envision', 'figure', 'flesh', 'soma', 'frame', 'number', 'fancy', 'shape', 'design', 'human', 'physical', 'visualize', 'calculate', 'pattern', 'physique', 'forecast', 'reckon', 'speech', 'fig', 'skater', 'out', 'image', 'build', 'body', 'picture', 'digit', 'form', 'visualise', 'material', 'anatomy', 'chassis', 'estimate', 'count', 'on', 'cypher', 'compute', 'name', 'of', 'work', 'see', 'public', 'project', 'cipher', 'enter', 'bod', 'trope'], ['FigureSkater/1']).
+_lex(['fantastic', 'sumptuous', 'chiliad', 'one', 'howling', 'high-minded', 'gilded', 'tremendous', 'noble-minded', 'elevated', 'terrific', 'imposing', 'wonderful', 'wondrous', 'grand', 'piano', 'high-flown', '1000', 'expansive', 'august', 'princely', 'idealistic', 'exalted', 'thousand', 'marvelous', 'opulent', 'luxurious', 'rarefied', 'rattling', 'heroic', 'magisterial', 'yard', 'g', 'prix', 'thou', 'k', 'm', 'lordly', 'marvellous', 'rarified', 'deluxe', 'distinguished', 'sublime', 'lofty'], ['GrandPrix/1']).
+_lex(['conference', 'league', 'game', 'basketball', 'hoops'], ['BasketballLeague/1']).
+_lex(['town', 'townspeople', 'township', 'townsfolk', 'ithiel'], ['Town/1']).
+_lex(['school', 'schooltime', 'civilise', 'educate', 'schooling', 'civilize', 'train', 'shoal', 'cultivate', 'schoolhouse', 'day'], ['School/1']).
+_lex(['political', 'pol', 'politician', 'politico', 'leader'], ['Politician/1']).
+_lex(['basketball', 'up', 'game', 'squad', 'team', 'hoops'], ['BasketballTeam/1']).
+_lex(['university'], ['University/1']).
+_lex(['function', 'lick', 'figure', 'process', 'puzzle', 'influence', 'crop', 'bring', 'shape', 'mould', 'go', 'cultivate', 'employment', 'out', 'for', 'mold', 'make', 'wreak', 'to', 'forge', 'exercise', 'body', 'do', 'play', 'run', 'form', 'upon', 'ferment', 'put', 'oeuvre', 'on', 'piece', 'of', 'study', 'work', 'exploit', 'turn', 'sour', 'solve', 'workplace', 'act', 'operate', 'knead'], ['Work/1']).
+_lex(['cleric', 'divine', 'ecclesiastic', 'churchman'], ['Cleric/1']).
+_lex(['thespian', 'basketball', 'participant', 'musician', 'actor', 'player', 'game', 'histrion', 'instrumentalist', 'role', 'hoops'], ['BasketballPlayer/1']).
+_lex(['device', 'twist', 'gimmick'], ['Device/1']).
+_lex(['planet', 'major', 'satellite'], ['Planet/1']).
+_lex(['crustacean', 'crustaceous'], ['Crustacean/1']).
+_lex(['on', 'rush', 'hasten', 'run', 'slipstream', 'pelt', 'bucket', 'it', 'hotfoot', 'wash', 'step', 'race', 'backwash', 'hie', 'along', 'subspecies', 'raceway', 'speed', 'airstream', 'cannonball', 'belt'], ['Race/1']).
+_lex(['set', 'shoes', 'office', 'point', 'grade', 'commit', 'blank', 'localize', 'site', 'rank', 'seat', 'rate', 'identify', 'lieu', 'home', 'out', 'space', 'localise', 'send', 'station', 'stead', 'locate', 'billet', 'pose', 'spot', 'direct', 'lay', 'situation', 'put', 'post', 'come', 'target', 'berth', 'topographic', 'in', 'piazza', 'invest', 'plaza', 'aim', 'range', 'place', 'position', 'property', 'order'], ['Place/1']).
+_lex(['emplacement', 'pussyfoot', 'gene', 'eye', 'position', 'fix', 'localization', 'positioning', 'sneak', 'localisation', 'computer', 'black', 'location', 'factor', 'cistron', 'shiner', 'mouse', 'placement', 'creep', 'locating'], ['MouseGeneLocation/1']).
+_lex(['matman', 'grappler', 'wrestler'], ['Wrestler/1']).
+_lex(['senator'], ['Senator/1']).
+_lex(['disease'], ['Disease/1']).
+_lex(['steel', 'heart', 'spunk', 'boldness', 'nerve', 'nervus', 'cheek', 'face', 'brass', 'mettle'], ['Nerve/1']).
+_lex(['legislature', 'legislative', 'assembly', 'body', 'general', 'law-makers'], ['Legislature/1']).
+_lex(['set', 'paper', 'in', 'domiciliation', 'establish', 'fill', 'blow', 'launchpad', 'tablet', 'area', 'stamp', 'dramatize', 'inkpad', 'plod', 'footslog', 'slog', 'pad', 'lard', 'out', 'launching', 'bolster', 'plunge', 'lodgings', 'dramatise', 'embellish', 'digs', 'inking', 'tramp', 'aggrandise', 'embroider', 'launch', 'of', 'trudge', 'up', 'motion', 'diggings', 'found', 'aggrandize'], ['LaunchPad/1']).
+_lex(['and', 'well', 'teem', 'stream', 'pelt', 'buckets', 'flow', 'pour', 'pullulate', 'current', 'swarm', 'cats', 'watercourse', 'rain', 'dogs', 'out'], ['Stream/1']).
+_lex(['colonial', 'substance', 'heighten', 'chemical', 'combine', 'compound', 'chemic', 'intensify', 'deepen'], ['ChemicalCompound/1']).
+_lex(['run', 'on', 'auto', 'motorcar', 'it', 'hotfoot', 'step', 'hie', 'along', 'speed', 'belt', 'conference', 'league', 'rush', 'pelt', 'bucket', 'automobile', 'machine', 'race', 'car', 'hasten', 'racing', 'cannonball'], ['AutoRacingLeague/1']).
+_lex(['fishes', 'pisces', 'fish', 'angle', 'the'], ['Fish/1']).
+_lex(['canadian', 'football', 'up', 'game', 'squad', 'team', 'river'], ['CanadianFootballTeam/1']).
+_lex(['lady', 'tie-up', 'woman', 'fair', 'tournament', 'sex', 'char', 'affiliation', 'adult', 'female', 'connexion', 'association', 'lawn', 'charwoman', 'womanhood', 'tennis', 'connection', 'tie', 'womens', 'tourney', 'cleaning'], ['WomensTennisAssociationTournament/1']).
+_lex(['case', 'effect', 'result', 'consequence', 'upshot', 'outcome', 'issue', 'event'], ['Event/1']).
+_lex(['currency', 'currentness', 'up-to-dateness'], ['Currency/1']).
+_lex(['scientist'], ['Scientist/1']).
+_lex(['comic', 'comedian'], ['Comedian/1']).
+_lex(['shop', 'buy', 'shopping', 'give', 'denounce', 'promenade', 'stag', 'rat', 'at', 'snitch', 'shit', 'on', 'center', 'browse', 'away', 'plaza', 'patronize', 'mall', 'patronise', 'betray', 'centre', 'grass', 'tell', 'frequent', 'sponsor'], ['ShoppingMall/1']).
+_lex(['amphibious', 'aircraft', 'amphibian', 'vehicle'], ['Amphibian/1']).
+_lex(['member', 'extremity', 'parliament', 'fantan', 'sevens', 'appendage', 'fellow', 'phallus', 'penis'], ['MemberOfParliament/1']).
+_lex(['arena', 'field', 'domain', 'area', 'country', 'region', 'orbit', 'surface', 'expanse', 'sphere', 'ski'], ['SkiArea/1']).
+_lex(['celibate', 'continent'], ['Continent/1']).
+_lex(['tunnel', 'route', 'burrow', 'road'], ['RoadTunnel/1']).
+_lex(['being', 'homo', 'human', 'factor', 'cistron', 'gene', 'man'], ['HumanGene/1']).
+_lex(['representation', 'office', 'government', 'federal', 'science', 'agency', 'political', 'governance', 'delegacy', 'bureau', 'governing', 'way', 'activity', 'authorities', 'politics', 'means', 'administration', 'authority', 'regime'], ['GovernmentAgency/1']).
+_lex(['plenty', 'deal', 'pot', 'tidy', 'sight', 'flock', 'mint', 'slew', 'mountain', 'little', 'sum', 'wad', 'muckle', 'pile', 'lot', 'mickle', 'raft', 'passel', 'good', 'hatful', 'mess', 'spate', 'quite', 'heap', 'peck', 'stack', 'a', 'great', 'mount', 'batch', 'mass'], ['Mountain/1']).
+_lex(['picture', 'halt', 'on', 'spunky', 'gage', 'back', 'gamy', 'mettlesome', 'halting', 'game', 'video', 'plan', 'crippled', 'telecasting', 'plot', 'television', 'gritty', 'lame', 'tv', 'stake', 'gimpy', 'recording', 'secret', 'punt', 'gamey', 'biz', 'spirited', 'bet'], ['VideoGame/1']).
+_lex(['building', 'ramp', 'make', 'work', 'edifice', 'up', 'construct', 'historic', 'construction', 'build', 'historical', 'progress', 'establish'], ['HistoricBuilding/1']).
+_lex(['grapevine', 'vine', 'grape', 'grapeshot'], ['Grape/1']).
+_lex(['gnetophytes'], ['Gnetophytes/1']).
+_lex(['box', 'television', 'set', 'episode', 'installment', 'sequence', 'tv', 'tube', 'goggle', 'system', 'instalment', 'idiot', 'video', 'telly', 'telecasting', 'boob', 'receiver'], ['TelevisionEpisode/1']).
+_lex(['squad', 'up', 'speedway', 'team'], ['SpeedwayTeam/1']).
+_lex(['worldwide', 'planetary', 'domain', 'creation', 'internet', 'world-wide', 'worldly', 'globe', 'global', 'humans', 'site', 'beings', 'macrocosm', 'mankind', 'human', 'existence', 'earthly', 'earth', 'humanity', 'concern', 'web', 'land', 'world', 'populace', 'universe', 'inheritance', 'reality', 'website', 'race', 'humankind', 'place', 'heritage', 'situation', 'cosmos', 'man', 'locate', 'public'], ['WorldHeritageSite/1']).
+_lex(['case', 'fibre', 'persona', 'fiber', 'reference', 'theatrical', 'eccentric', 'lineament', 'grapheme', 'character', 'fabricated', 'fictional', 'fictitious', 'role', 'type', 'graphic', 'part', 'quality', 'symbol', 'fancied'], ['FictionalCharacter/1']).
+_lex(['al-quran', 'script', 'god', 'ledger', 'book', 'scripture', 'good', 'christian', 'holy', 'quran', 'leger', 'volume', 'playscript', 'hold', 'account', 'bible', 'word', 'of', 'rule', 'koran', 'record', 'writ', 'reserve'], ['Book/1']).
+_lex(['artistry', 'mingle', 'motley', 'creation', 'amalgamate', 'immix', 'result', 'in', 'warriorlike', 'shuffle', 'merge', 'fine', 'event', 'discipline', 'arts', 'mix', 'art', 'commingle', 'coalesce', 'production', 'combine', 'integrate', 'upshot', 'liberal', 'issue', 'meld', 'commix', 'case', 'ruffle', 'conflate', 'assorted', 'soldierlike', 'desegregate', 'sundry', 'miscellaneous', 'effect', 'consequence', 'fuse', 'prowess', 'graphics', 'soldierly', 'warlike', 'matter', 'nontextual', 'unify', 'martial', 'humanities', 'interracial', 'humanistic', 'artistic', 'flux', 'mixed', 'artwork', 'outcome', 'blend'], ['MixedMartialArtsEvent/1']).
+_lex(['skyscraper'], ['Skyscraper/1']).
+_lex(['arena', 'bowl', 'stadium', 'sports'], ['Stadium/1']).
+_lex(['mammalian', 'mammal'], ['Mammal/1']).
+_lex(['keeper', 'diarist', 'diary', 'journalist'], ['Journalist/1']).
+_lex(['holiday', 'vacation'], ['Holiday/1']).
+_lex(['archaea'], ['Archaea/1']).
+_lex(['thespian', 'lawn', 'musician', 'participant', 'tennis', 'actor', 'player', 'histrion', 'instrumentalist', 'role'], ['TennisPlayer/1']).
+_lex(['website', 'web', 'site', 'internet'], ['Website/1']).
+_lex(['represent', 'childs', 'gaming', 'recreate', 'period', 'bring', 'as', 'trifle', 'sport', 'swordplay', 'make', 'caper', 'flirt', 'toy', 'for', 'diddle', 'wreak', 'shimmer', 'manoeuvre', 'take', 'gambling', 'frolic', 'roleplay', 'maneuver', 'play', 'run', 'wager', 'bid', 'free', 'spiel', 'dramatic', 'dally', 'playact', 'encounter', 'on', 'looseness', 'romp', 'of', 'work', 'drama', 'turn', 'fiddle', 'bet', 'act', 'fun', 'meet', 'rein', 'playing', 'gambol'], ['Play/1']).
+_lex(['snooker', 'champ', 'champion', 'chomp', 'title-holder'], ['SnookerChamp/1']).
+_lex(['conference', 'league', 'soccer', 'football', 'association'], ['SoccerLeague/1']).
+_lex(['city', 'manager', 'mayor'], ['Mayor/1']).
+_lex(['spoken', 'communication', 'computer', 'lyric', 'words', 'scheduling', 'language', 'programming', 'nomenclature', 'process', 'program', 'speech', 'terminology', 'linguistic', 'voice', 'oral', 'programing', 'programme'], ['ProgrammingLanguage/1']).
+_lex(['hotel'], ['Hotel/1']).
+_lex(['aircraft'], ['Aircraft/1']).
+_lex(['body', 'reference', 'organisation', 'social', 'system', 'anatomical', 'complex', 'structure', 'part', 'organization', 'construction', 'bodily', 'anatomic'], ['AnatomicalStructure/1']).
+_lex(['fungus'], ['Fungus/1']).
+_lex(['case', 'grappling', 'wrestle', 'upshot', 'writhe', 'wrestling', 'worm', 'effect', 'twist', 'grapple', 'squirm', 'struggle', 'hand-to-hand', 'consequence', 'rassling', 'wriggle', 'outcome', 'issue', 'event', 'result'], ['WrestlingEvent/1']).
+_lex(['insect', 'dirt', 'worm', 'ball', 'louse'], ['Insect/1']).
+_lex(['packer', 'pugilist', 'boxer', 'bagger'], ['Boxer/1']).
+_lex(['clubhouse', 'ball', 'golf', 'gild', 'social', 'society', 'baseball', 'moss', 'cabaret', 'guild', 'nightspot', 'bludgeon', 'nightclub', 'club', 'golf-club', 'night', 'lodge', 'nine', 'order'], ['ClubMoss/1']).
+_lex(['dynamic', 'fighting', 'participating', 'combat-ready', 'agent', 'active', 'voice', 'alive'], ['Active/1']).
+_lex(['flick', 'picture', 'show', 'pic', 'moving', 'motion-picture', 'photographic', 'film', 'shoot', 'celluloid', 'movie', 'cinema', 'plastic', 'motion', 'festival', 'fete', 'take', 'moving-picture'], ['FilmFestival/1']).
+_lex(['function', 'lick', 'figure', 'process', 'puzzle', 'influence', 'crop', 'bring', 'shape', 'mould', 'go', 'cultivate', 'employment', 'out', 'for', 'mold', 'make', 'wreak', 'creative', 'to', 'forge', 'exercise', 'body', 'do', 'play', 'run', 'form', 'upon', 'ferment', 'put', 'originative', 'oeuvre', 'on', 'piece', 'of', 'study', 'work', 'exploit', 'turn', 'sour', 'solve', 'workplace', 'act', 'operate', 'knead'], ['CreativeWork/1']).
+_lex(['hospital', 'infirmary'], ['Hospital/1']).
+_lex(['thespian', 'participant', 'musician', 'actor', 'player', 'badminton', 'histrion', 'instrumentalist', 'role'], ['BadmintonPlayer/1']).
+_lex(['thespian', 'poker', 'fire', 'stove', 'musician', 'salamander', 'player', 'game', 'participant', 'hook', 'actor', 'histrion', 'instrumentalist', 'role'], ['PokerPlayer/1']).
+_lex(['arena', 'field', 'protect', 'area', 'country', 'region', 'domain', 'surface', 'orbit', 'sphere', 'protected', 'expanse', 'saved'], ['ProtectedArea/1']).
+_lex(['moss'], ['Moss/1']).
+_lex(['language', 'spoken', 'communication', 'nomenclature', 'lyric', 'process', 'speech', 'words', 'linguistic', 'voice', 'oral', 'terminology'], ['Language/1']).
+_lex(['operations', 'battlefield', 'domain', 'force', 'athletic', 'sphere', 'battle', 'operation', 'battleground', 'subject', 'discipline', 'business', 'area', 'flying', 'ice', 'airfield', 'field', 'hockey', 'bailiwick', 'conference', 'theatre', 'champaign', 'landing', 'game', 'line', 'arena', 'league', 'theater', 'of', 'study', 'orbit', 'honor', 'plain', 'playing', 'view'], ['FieldHockeyLeague/1']).
+_lex(['head', 'encephalon', 'capacity', 'mental', 'genius', 'mind', 'mentality', 'brainpower', 'psyche', 'brain', 'wit', 'learning', 'einstein', 'brainiac', 'nous', 'mastermind', 'ability'], ['Brain/1']).
+_lex(['weapon', 'artillery', 'arm', 'system'], ['Weapon/1']).
+_lex(['thespian', 'football', 'musician', 'player', 'game', 'instrumentalist', 'participant', 'language', 'actor', 'american', 'histrion', 'english', 'role'], ['AmericanFootballPlayer/1']).
+_lex(['reptilian', 'reptile'], ['Reptile/1']).
+_lex(['conference', 'league', 'speedway'], ['SpeedwayLeague/1']).
+_lex(['website', 'limited', 'especial', 'stake', 'scientific', 'exceptional', 'site', 'involvement', 'pursuit', 'particular', 'peculiar', 'special', 'concern', 'web', 'land', 'group', 'matter', 'sake', 'extra', 'to', 'interestingness', 'occupy', 'place', 'worry', 'interest', 'internet', 'situation', 'pastime', 'locate'], ['SiteOfSpecialScientificInterest/1']).
+_lex(['artistry', 'mingle', 'motley', 'creation', 'amalgamate', 'immix', 'in', 'warriorlike', 'shuffle', 'merge', 'fine', 'discipline', 'arts', 'mix', 'art', 'commingle', 'coalesce', 'production', 'combine', 'integrate', 'liberal', 'meld', 'commix', 'conference', 'ruffle', 'conflate', 'assorted', 'soldierlike', 'desegregate', 'sundry', 'miscellaneous', 'fuse', 'prowess', 'graphics', 'soldierly', 'warlike', 'matter', 'nontextual', 'league', 'unify', 'martial', 'humanities', 'interracial', 'humanistic', 'artistic', 'flux', 'mixed', 'artwork', 'blend'], ['MixedMartialArtsLeague/1']).
+_lex(['drinkable', 'beverage', 'potable', 'drink'], ['Beverage/1']).
+_lex(['thespian', 'worker', 'actor', 'player', 'doer', 'role', 'histrion'], ['Actor/1']).
+_lex(['function', 'bearer', 'office', 'government', 'billet', 'spot', 'authority', 'part', 'position', 'post', 'role', 'holder', 'situation', 'berth', 'business', 'federal', 'agency', 'power', 'bureau', 'place', 'staff'], ['OfficeHolder/1']).
+_lex(['conference', 'league', 'game', 'language', 'english', 'football', 'american'], ['AmericanFootballLeague/1']).
+_lex(['mathematical', 'radical', 'heathenish', 'ethnical', 'ethnic', 'pagan', 'group', 'cultural', 'chemical', 'aggroup', 'heathen', 'grouping'], ['EthnicGroup/1']).
+_lex(['cistron', 'gene', 'factor'], ['Gene/1']).
+_lex(['unfolding', 'set', 'life', 'constitute', 'florescence', 'industrial', 'establish', 'flower', 'blossom', 'imbed', 'implant', 'plant', 'efflorescence', 'anthesis', 'flowering', 'bloom', 'inflorescence', 'flora', 'institute', 'blossoming', 'engraft', 'found', 'embed', 'works'], ['FloweringPlant/1']).
+_lex(['conference', 'league', 'rugger', 'football', 'rugby'], ['RugbyLeague/1']).
+_lex(['route', 'road'], ['Road/1']).
+_lex(['package', 'program', 'computer', 'system', 'software'], ['Software/1']).
+_lex(['set', 'session', 'ready', 'apply', 'use', 'prepare', 'pattern', 'fix', 'rehearse', 'practise', 'exercise', 'do', 'gear', 'practice', 'recitation', 'cook', 'up', 'drill', 'quick', 'commit', 'make', 'praxis'], ['PracticeReady/1']).
+_lex(['exhibit', 'set', 'render', 'show', 'demo', 'goggle', 'testify', 'shew', 'evince', 'video', 'telly', 'telecasting', 'establish', 'witness', 'depict', 'prove', 'tv', 'tube', 'point', 'system', 'indicate', 'boob', 'designate', 'picture', 'read', 'express', 'bear', 'evidence', 'present', 'box', 'television', 'register', 'appearance', 'up', 'idiot', 'usher', 'receiver', 'demonstrate', 'record', 'display'], ['TelevisionShow/1']).
+_lex(['engine', 'sativa', 'garden', 'salad', 'roquette', 'rocket', 'eruca', 'vesicaria', 'arugula', 'skyrocket', 'projectile'], ['Rocket/1']).
+_lex(['grown', 'thespian', 'pornographic', 'full-grown', 'fully', 'worker', 'actor', 'player', 'doer', 'histrion', 'adult', 'big', 'grownup', 'role'], ['AdultActor/1']).
+_lex(['function', 'map', 'someone', 'somebody', 'office', 'affair', 'serve', 'social', 'subprogram', 'mapping', 'individual', 'purpose', 'occasion', 'go', 'run', 'routine', 'use', 'subroutine', 'work', 'soul', 'officiate', 'person', 'part', 'role', 'mortal', 'single-valued', 'mathematical', 'operate', 'procedure'], ['PersonFunction/1']).
+_lex(['catch', 'tally', 'friction', 'correspond', 'peer', 'twin', 'mates', 'lucifer', 'touch', 'pit', 'check', 'fit', 'with', 'equalise', 'mate', 'match', 'play', 'gibe', 'cope', 'couple', 'football', 'game', 'jibe', 'pair', 'compeer', 'off', 'rival', 'equal', 'oppose', 'equalize', 'meet', 'equate', 'agree'], ['FootballMatch/1']).
+_lex(['gross', 'agreement', 'cut-rate', 'revenue', 'sale', 'sales', 'event'], ['Sales/1']).
+_lex(['tunnel', 'burrow', 'track', 'railway', 'railroad', 'line', 'system'], ['RailwayTunnel/1']).
+_lex(['fern'], ['Fern/1']).
+_lex(['medicine', 'euphony', 'fete', 'music', 'festival'], ['MusicFestival/1']).
+_lex(['spacecraft', 'vehicle', 'ballistic', 'capsule', 'space'], ['Spacecraft/1']).
+_lex(['fleeceable', 'unripened', 'surface', 'viridity', 'acid', 'leafy', 'special', 'jet', 'unripe', 'greenness', 'vegetable', 'immature', 'dark-green', 'oil', 'light-green', 'park', 'william', 'putting', 'super', 'algae', 'valium', 'honey', 'c', 'river', 'greens', 'k', 'commons', 'cat', 'gullible', 'green', 'common', 'greenish', 'alga'], ['GreenAlga/1']).
+_lex(['college'], ['College/1']).
+_lex(['set', 'banding', 'stria', 'dance', 'orchestra', 'band', 'stripe', 'lot', 'striation', 'circle', 'ring', 'isthmus'], ['Band/1']).
+_lex(['someone', 'somebody', 'individual', 'services', 'armed', 'soul', 'machine', 'person', 'forces', 'mortal', 'military', 'war'], ['MilitaryPerson/1']).
+_lex(['tie-up', 'gymnastic', 'athletic', 'national', 'affiliation', 'home', 'connexion', 'association', 'subject', 'collegial', 'athlete', 'jock', 'collegiate', 'connection', 'internal', 'interior', 'tie', 'acrobatic'], ['NationalCollegiateAthleticAssociationAthlete/1']).
+_lex(['town', 'closure', 'liquidation', 'colonisation', 'colony', 'colonization', 'village', 'small', 'settlement', 'resolution'], ['Settlement/1']).
+_lex(['origin', 'stemma', 'railroad', 'communication', 'describe', 'argument', 'logical', 'course', 'seam', 'trace', 'phrase', 'melody', 'air', 'reasoning', 'occupation', 'parentage', 'argumentation', 'descent', 'dividing', 'personal', 'system', 'subscriber', 'production', 'run', 'bank', 'tune', 'channel', 'stock', 'melodic', 'pedigree', 'product', 'assembly', 'delineate', 'business', 'track', 'billet', 'rail', 'telephone', 'phone', 'job', 'ancestry', 'blood', 'letter', 'along', 'line', 'wrinkle', 'merchandise', 'furrow', 'lineage', 'pipeline', 'short', 'demarcation', 'cable', 'bloodline', 'transmission', 'of', 'work', 'draw', 'crease', 'strain', 'credit', 'note', 'products', 'contrast', 'circuit', 'crinkle', 'agate', 'railway'], ['RailwayLine/1']).
+_lex(['album', 'record'], ['Album/1']).
+_lex(['city', 'metropolis', 'center', 'urban'], ['City/1']).
+_lex(['light', 'lighthouse', 'beacon', 'pharos'], ['Lighthouse/1']).
+_lex(['contravene', 'run', 'services', 'struggle', 'afoul', 'opinion', 'battle', 'difference', 'armed', 'infringe', 'of', 'engagement', 'fight', 'machine', 'forces', 'military', 'war', 'conflict', 'dispute'], ['MilitaryConflict/1']).
+_lex(['museum'], ['Museum/1']).
+_lex(['machine', 'automobile', 'motorcar', 'auto', 'car'], ['Automobile/1']).
+_lex(['writer', 'author'], ['Writer/1']).
+_lex(['lake'], ['Lake/1']).
+_lex(['philosopher'], ['Philosopher/1']).
+_lex(['conference', 'league', 'game', 'golf'], ['GolfLeague/1']).
+_lex(['polo', 'league', 'marco', 'conference'], ['PoloLeague/1']).
+_lex(['river'], ['River/1']).
+_lex(['cosmonaut', 'astronaut', 'spaceman'], ['Astronaut/1']).
+_lex(['playfellow', 'corinthian', 'playboy', 'playmate', 'man-about-town'], ['PlayboyPlaymate/1']).
+_lex(['convening', 'conventionality', 'normal', 'pattern', 'conventionalism', 'rule', 'convention', 'formula'], ['Convention/1']).
+_lex(['boast', 'play', 'mutant', 'run', 'around', 'disport', 'sportsman', 'summercater', 'fun', 'effect', 'rollick', 'variation', 'sport', 'event', 'case', 'about', 'outcome', 'cavort', 'romp', 'consequence', 'sportswoman', 'feature', 'sports', 'skylark', 'mutation', 'frisk', 'lark', 'upshot', 'athletics', 'frolic', 'issue', 'gambol', 'result'], ['SportsEvent/1']).
+_lex(['major', 'force', 'ability', 'office', 'king', 'big', 'executive', 'tycoon', 'mogul', 'mightiness', 'world', 'post', 'business', 'superpower', 'baron', 'index', 'great', 'magnate', 'exponent', 'powerfulness', 'top', 'send', 'power', 'station', 'place', 'businessman', 'might', 'leader'], ['PowerStation/1']).
+_lex(['realm', 'area', 'region', 'part', 'neighborhood', 'administrative'], ['AdministrativeRegion/1']).
+_lex(['valley', 'vale'], ['Valley/1']).
+_lex(['tunnel', 'burrow'], ['Tunnel/1']).
+_lex(['fare', 'signify', 'entail', 'transit', 'mind', 'system', 'transferral', 'imply', 'meanspirited', 'expatriation', 'shipping', 'have', 'in', 'exile', 'transportation', 'stand', 'hateful', 'mingy', 'transport', 'deportation', 'for', 'of', 'average', 'conveyance', 'miserly', 'value', 'tight', 'base', 'beggarly', 'transfer', 'department', 'bastardly', 'intend', 'think', 'dot', 'mean'], ['MeanOfTransportation/1']).
+_lex(['distance', 'outer', 'birdie', 'space', 'shuttlecock', 'infinite', 'place', 'blank', 'shuttle', 'quad', 'bird'], ['SpaceShuttle/1']).
+_lex(['phylum', 'mollusca'], ['Mollusca/1']).
+_lex(['boast', 'play', 'mutant', 'run', 'around', 'disport', 'sportsman', 'summercater', 'fun', 'rollick', 'variation', 'sport', 'conference', 'league', 'about', 'cavort', 'romp', 'sportswoman', 'feature', 'sports', 'skylark', 'mutation', 'frisk', 'lark', 'athletics', 'frolic', 'gambol'], ['SportsLeague/1']).
+_lex(['embryology'], ['Embryology/1']).
+_lex(['immortalize', 'show', 'read', 'phonograph', 'memorialise', 'down', 'judge', 'memorialize', 'disc', 'tag', 'put', 'disk', 'commemorate', 'pronounce', 'immortalise', 'record', 'platter', 'mark', 'register', 'label', 'recording', 'track', 'book', 'tape', 'enter', 'criminal'], ['RecordLabel/1']).
+_lex(['cricketer'], ['Cricketer/1']).
+_lex(['party', 'company', 'political'], ['PoliticalParty/1']).
+_lex(['someone', 'somebody', 'soul', 'person', 'individual', 'mortal'], ['Person/1']).
+_lex(['for', 'food', 'nourishment', 'intellectual', 'thought', 'solid', 'nutrient'], ['Food/1']).
+_lex(['database'], ['Database/1']).
+_lex(['exclusive', 'ace', 'undivided', 'i', 'unmarried', 'unity', 'one', '1', 'bingle', 'single', 'individual'], ['Single/1']).
+_lex(['tunnel', 'waterway', 'burrow', 'watercourse'], ['WaterwayTunnel/1']).
+_lex(['thespian', 'participant', 'musician', 'actor', 'player', 'game', 'histrion', 'instrumentalist', 'golf', 'role'], ['GolfPlayer/1']).
+_lex(['bloom', 'life', 'premier', 'curate', 'government', 'efflorescence', 'pastor', 'choice', 'peak', 'flush', 'rector', 'quality', 'select', 'ground', 'prime', 'flower', 'prize', 'blossom', 'of', 'diplomatic', 'undercoat', 'religion', 'parson', 'quantity', 'meridian', 'heyday', 'minister'], ['PrimeMinister/1']).
+_lex(['ginkgo', 'tree', 'biloba', 'maidenhair', 'gingko'], ['Ginkgo/1']).
+_lex(['pussyfoot', 'shiner', 'eye', 'sneak', 'computer', 'black', 'factor', 'cistron', 'gene', 'mouse', 'creep'], ['MouseGene/1']).
+_lex(['fiber', 'reference', 'theatrical', 'eccentric', 'lineament', 'persona', 'part', 'comedian', 'strip', 'comic', 'quality', 'cartoon', 'funnies', 'case', 'fibre', 'graphic', 'comics', 'grapheme', 'character', 'fictional', 'fictitious', 'role', 'type', 'symbol'], ['ComicsCharacter/1']).
+_lex(['shoes', 'office', 'point', 'grade', 'rank', 'identify', 'lieu', 'localize', 'send', 'live', 'station', 'dwell', 'inhabit', 'billet', 'direct', 'berth', 'target', 'aim', 'stead', 'situation', 'property', 'set', 'populated', 'blank', 'site', 'seat', 'rate', 'in', 'home', 'out', 'space', 'localise', 'locate', 'populate', 'pose', 'spot', 'lay', 'commit', 'put', 'post', 'come', 'topographic', 'piazza', 'invest', 'plaza', 'range', 'place', 'position', 'order'], ['PopulatedPlace/1']).
+_lex(['united', 'of', 'executive', 'prexy', 'states', 'chief', 'chairperson', 'chairman', 'president', 'the', 'chair', 'chairwoman'], ['President/1']).
+_lex(['melodious', 'puzzle', 'bring', 'shape', 'go', 'wreak', 'to', 'melodic', 'do', 'form', 'ferment', 'work', 'exploit', 'sour', 'piece', 'function', 'mould', 'lick', 'figure', 'process', 'influence', 'crop', 'cultivate', 'mold', 'out', 'for', 'employment', 'make', 'forge', 'comedy', 'exercise', 'body', 'play', 'run', 'upon', 'put', 'oeuvre', 'on', 'theater', 'of', 'study', 'musical', 'turn', 'solve', 'workplace', 'act', 'operate', 'knead'], ['MusicalWork/1']).
+_lex(['libc'], ['Libc/1']).
+_lex(['conference', 'league', 'aboriginal', 'aussie', 'australian', 'football', 'game'], ['AustralianFootballLeague/1']).
+_lex(['set', 'shoes', 'office', 'point', 'grade', 'commit', 'blank', 'localize', 'site', 'rank', 'seat', 'rate', 'identify', 'lieu', 'home', 'out', 'space', 'localise', 'send', 'station', 'stead', 'locate', 'billet', 'pose', 'spot', 'direct', 'historic', 'lay', 'situation', 'put', 'post', 'come', 'target', 'berth', 'topographic', 'in', 'piazza', 'invest', 'plaza', 'aim', 'range', 'place', 'historical', 'position', 'property', 'order'], ['HistoricPlace/1']).
+_lex(['game', 'squad', 'language', 'english', 'team', 'football', 'american', 'up'], ['AmericanFootballTeam/1']).
+_lex(['christian', 'bishop'], ['ChristianBishop/1']).
+_lex(['cyclist', 'wheeler', 'bicycler', 'bicyclist'], ['Cyclist/1']).
+_lex(['central', 'key', 'primal', 'number', 'cardinalis', 'richmondena', 'redbird', 'cardinal', 'grosbeak', 'fundamental', 'carmine'], ['Cardinal/1']).
+_lex(['function', 'work', 'figure', 'do', 'process', 'puzzle', 'influence', 'crop', 'exercise', 'bring', 'shape', 'lick', 'mould', 'go', 'cultivate', 'employment', 'out', 'compose', 'for', 'wreak', 'mold', 'make', 'pen', 'publish', 'write', 'to', 'written', 'indite', 'forge', 'save', 'scripted', 'body', 'oeuvre', 'play', 'run', 'form', 'spell', 'upon', 'ferment', 'put', 'line', 'a', 'on', 'operate', 'of', 'study', 'drop', 'exploit', 'turn', 'sour', 'solve', 'workplace', 'act', 'piece', 'knead'], ['WrittenWork/1']).
+_lex(['person', 'creative', 'artist'], ['Artist/1']).
+_lex(['organization', 'transportation', 'populace', 'rules', 'theodolite', 'over', 'move', 'system', 'passage', 'across', 'public', 'through', 'arrangement', 'organisation', 'pass', 'world', 'of', 'scheme', 'transit'], ['PublicTransitSystem/1']).
+_lex(['cycad'], ['Cycad/1']).
+_lex(['engine', 'locomotor', 'railway', 'locomotive'], ['Locomotive/1']).
+_lex(['town', 'greenwich', 'hamlet', 'village', 'small', 'settlement'], ['Village/1']).
+_lex(['boast', 'play', 'mutant', 'run', 'around', 'up', 'disport', 'sportsman', 'summercater', 'fun', 'rollick', 'variation', 'sport', 'about', 'cavort', 'romp', 'sportswoman', 'feature', 'sports', 'skylark', 'squad', 'mutation', 'frisk', 'team', 'lark', 'athletics', 'frolic', 'gambol'], ['SportsTeam/1']).
+_lex(['plant', 'industrial', 'institute', 'flora', 'life', 'imbed', 'constitute', 'set', 'engraft', 'found', 'implant', 'works', 'establish', 'embed'], ['Plant/1']).
+_lex(['regulator', 'governor'], ['Governor/1']).
+_lex(['set', 'radiocommunication', 'send', 'wireless', 'station', 'radio', 'place', 'receiver', 'tuner', 'post', 'receiving'], ['RadioStation/1']).
+_lex(['airport', 'aerodrome', 'drome', 'airdrome'], ['Airport/1']).
+_lex(['conference', 'league', 'game', 'hockey', 'field', 'inline', 'ice'], ['InlineHockeyLeague/1']).
+_lex(['biological', 'biologic', 'database'], ['BiologicalDatabase/1']).
+_lex(['memorial', 'repository', 'monument'], ['Monument/1']).
+_lex(['style', 'writing', 'literary', 'euphony', 'music', 'medicine', 'genre', 'musical'], ['MusicGenre/1']).
+_lex(['handball', 'league', 'conference'], ['HandballLeague/1']).
+_lex(['fashion', 'exemplary', 'mold', 'sit', 'pattern', 'role', 'manakin', 'posture', 'theoretical', 'mock', 'mould', 'good', 'pose', 'modelling', 'framework', 'mannequin', 'simulate', 'modeling', 'poser', 'manikin', 'mannikin', 'account', 'up', 'simulation', 'exemplar', 'model', 'example'], ['Model/1']).
+_lex(['measurement', 'services', 'armed', 'unit', 'building', 'of', 'machine', 'forces', 'social', 'military', 'whole', 'war', 'block'], ['MilitaryUnit/1']).
+_lex(['pillowcase', 'font', 'homage', 'justice', 'character', 'state', 'combine', 'solicit', 'lodge', 'tourist', 'express', 'nation', 'courtroom', 'unify', 'fount', 'joined', 'merge', 'commonwealth', 'connect', 'publica', 'event', 'subject', 'showcase', 'guinea', 'typesetters', 'woo', 'causa', 'cause', 'body', 'courtyard', 'put', 'lawsuit', 'casing', 'of', 'typeface', 'example', 'pillow', 'politic', 'grammatical', 'royal', 'vitrine', 'motor', 'caseful', 'sovereign', 'submit', 'suit', 'forward', 'type', 'tell', 'compositors', 'shell', 'hotel', 'link', 'case', 'tribunal', 'join', 'up', 'judicature', 'matter', 'encase', 'country', 'posit', 'display', 'say', 'supreme', 'pig', 'states', 'lawcourt', 'inn', 'slip', 'sheath', 'united', 'court', 'unite', 'romance', 'instance', 'department', 'province', 'eccentric', 'margaret', 'law', 'land', 'incase', 'face', 'res', 'dos'], ['SupremeCourtOfTheUnitedStatesCase/1']).
+_lex(['cooking', 'heap', 'deal', 'grade', 'pot', 'compass', 'tidy', 'crop', 'orbit', 'swan', 'stove', 'set', 'sight', 'vagabond', 'pasture', 'flock', 'straddle', 'mint', 'slew', 'out', 'mountain', 'little', 'rank', 'chain', 'rate', 'browse', 'sum', 'wad', 'wander', 'tramp', 'muckle', 'pile', 'lot', 'mickle', 'raft', 'image', 'passel', 'function', 'mountains', 'stray', 'good', 'run', 'hatful', 'mess', 'drift', 'reach', 'ambit', 'spate', 'quite', 'graze', 'lay', 'plenty', 'scope', 'peck', 'stack', 'kitchen', 'a', 'great', 'ramble', 'array', 'of', 'mount', 'batch', 'roll', 'cast', 'range', 'mass', 'place', 'rove', 'roam', 'grasp', 'order'], ['MountainRange/1']).
+_lex(['ivory', 'drum', 'debone', 'get', 'osseous', 'up', 'off-white', 'grind', 'pearl', 'mug', 'tissue', 'cram', 'os', 'away', 'bone', 'swot'], ['Bone/1']).
+_lex(['specie', 'money', 'metal', 'mintage', 'coinage', 'species'], ['Species/1']).
+_lex(['bridge', 'span', 'deck', 'nosepiece', 'over', 'circuit', 'bridgework'], ['Bridge/1']).
+_lex(['airway', 'hose', 'airline', 'business', 'air'], ['Airline/1']).
+_lex(['athlete', 'jock'], ['Athlete/1']).
+_lex(['emplacement', 'position', 'placement', 'localization', 'fix', 'positioning', 'localisation', 'location', 'factor', 'cistron', 'gene', 'locating'], ['GeneLocation/1']).
+_lex(['body', 'function', 'natural', 'process', 'bodily', 'activeness', 'activity', 'action'], ['Activity/1']).
+_lex(['cabaret', 'gild', 'golf-club', 'ball', 'guild', 'night', 'clubhouse', 'club', 'nightspot', 'football', 'bludgeon', 'nightclub', 'society', 'baseball', 'social', 'lodge', 'nine', 'soccer', 'golf', 'order', 'association'], ['SoccerClub/1']).
+_lex(['melodic', 'comedy', 'theater', 'musical', 'melodious'], ['Musical/1']).
+_lex(['emplacement', 'position', 'placement', 'localization', 'being', 'fix', 'locating', 'positioning', 'localisation', 'homo', 'location', 'human', 'factor', 'cistron', 'gene', 'man'], ['HumanGeneLocation/1']).
+_lex(['play', 'mutant', 'run', 'around', 'season', 'of', 'time', 'about', 'sportsman', 'summercater', 'lark', 'rollick', 'variation', 'year', 'feature', 'flavor', 'sport', 'harden', 'disport', 'flavour', 'cavort', 'boast', 'romp', 'sportswoman', 'up', 'sports', 'skylark', 'squad', 'mutation', 'frisk', 'team', 'fun', 'mollify', 'athletics', 'frolic', 'temper', 'gambol'], ['SportsTeamSeason/1']).
+_lex(['junction', 'adjunction', 'articulation', 'colligation', 'conjugation', 'juncture', 'joint', 'join', 'conjunction', 'route', 'road'], ['RoadJunction/1']).
+_lex(['feed', 'engine', 'methamphetamine', 'musician', 'internal-combustion', 'thespian', 'frost', 'water', 'player', 'game', 'crank', 'actor', 'rink', 'methedrine', 'sparkler', 'chicken', 'meth', 'ice-skating', 'icing', 'trash', 'participant', 'glass', 'hydrochloride', 'shabu', 'ice', 'frosting', 'chalk', 'field', 'histrion', 'hockey', 'instrumentalist', 'frappe', 'role', 'deoxyephedrine'], ['IceHockeyPlayer/1']).
+_lex(['house', 'line', 'royalty', 'royal', 'family'], ['Royalty/1']).
+_lex(['member', 'academician', 'pedantic', 'diary', 'academic', 'journal', 'faculty', 'daybook', 'donnish'], ['AcademicJournal/1']).
+_lex(['videogames', 'league', 'conference'], ['VideogamesLeague/1']).
+_lex(['broadcaster', 'spreader'], ['Broadcaster/1']).
+_lex(['arachnoid', 'arachnid'], ['Arachnid/1']).
+_lex(['election'], ['Election/1']).
+_lex(['yr', 'twelvemonth', 'class', 'year'], ['Year/1']).
+_lex(['matrimony', 'deal', 'trade', 'conglutination', 'in', 'sexual', 'sell', 'barter', 'wedlock', 'union', 'sum', 'pairing', 'conjugation', 'labor', 'uniting', 'swap', 'spousal', 'north', 'business', 'relationship', 'craft', 'unification', 'jointure', 'brotherhood', 'swop', 'merchandise', 'patronage', 'join', 'coupling', 'trades', 'federal', 'switch', 'marriage', 'mating', 'wind'], ['TradeUnion/1']).
+_lex(['ship', 'embark', 'send', 'transport'], ['Ship/1']).
+_lex(['jehovah', 'creator', 'comedian', 'strip', 'comic', 'divine', 'cartoon', 'godhead', 'comics', 'god', 'almighty', 'lord', 'funnies', 'maker'], ['ComicsCreator/1']).
+_lex(['bacteria', 'bacterium'], ['Bacteria/1']).
+_lex(['flick', 'picture', 'show', 'celluloid', 'movie', 'pic', 'cinema', 'plastic', 'motion', 'shoot', 'moving', 'motion-picture', 'moving-picture', 'photographic', 'film', 'take'], ['Film/1']).

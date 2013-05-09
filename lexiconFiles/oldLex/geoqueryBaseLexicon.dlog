@@ -1,0 +1,34 @@
+_include('../../general/lexicon.dlog').
+
+%Lexical triggers
+_lex(['mountain'], ['mountain/1']).
+_lex(['traverse'], ['traverse/2']).
+_lex(['low', 'point'], ['low_point/2']).
+_lex(['major'], ['major/1']).
+_lex(['neg', 'size'], ['negSize/2']).
+_lex(['high', 'point'], ['high_point/2']).
+_lex(['size'], ['size/2']).
+_lex(['loc'], ['loc/1']).
+_lex(['area'], ['area/2']).
+_lex(['lake'], ['lake/1']).
+_lex(['shorter'], ['shorter/2']).
+_lex(['lower'], ['lower/2']).
+_lex(['state'], ['state/1']).
+_lex(['capital'], ['capital/1']).
+_lex(['neg', 'density'], ['negDensity/2']).
+_lex(['obj', 'name'], ['nameObj/2']).
+_lex(['higher'], ['higher/2']).
+_lex(['neg', 'elevation'], ['negElevation/2']).
+_lex(['elevation'], ['elevation/2']).
+_lex(['city'], ['city/1']).
+_lex(['len'], ['len/2']).
+_lex(['population'], ['population/2']).
+_lex(['to', 'next'], ['next_to/2']).
+_lex(['longer'], ['longer/2']).
+_lex(['country'], ['country/1']).
+_lex(['density'], ['density/2']).
+_lex(['neg', 'population'], ['negPopulation/2']).
+_lex(['neg', 'len'], ['negLen/2']).
+_lex(['place'], ['place/1']).
+_lex(['river'], ['river/1']).
+_lex(['neg', 'area'], ['negArea/2']).

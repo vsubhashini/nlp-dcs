@@ -1,0 +1,28 @@
+_include('../../general/lexicon.dlog').
+
+%Lexical triggers
+_lex(['argmax', 'state', 'viterbi', 'each'], ['argmax/4']).
+_lex(['rank', 'general', 'army', 'promoted'], ['rank/2']).
+_lex(['squared', 'against', 'two', 'up'], ['squared_kilometer/2']).
+_lex(['mile', 'km', 'square', 'per'], ['mile/2']).
+_lex(['year', 'same', 'first', 'one'], ['year/2']).
+_lex(['negate', 'used', 'effects', 'more'], ['negate/2']).
+_lex(['min', '-', 'time', '1'], ['min/2']).
+_lex(['union', 'rugby', 'trade', 'born'], ['union/3']).
+_lex(['sum', 'money', 'two', 'number'], ['sum/2']).
+_lex(['percent', 'square', 'population', 'vote'], ['percent/2']).
+_lex(['squared', 'against', 'two', 'up'], ['squared_mile/2']).
+_lex(['kilometer', 'square', 'estimated', 'per'], ['kilometer/2']).
+_lex(['compare', 'different', 'used', 'one'], ['compareMore/3']).
+_lex(['frac', 'dlig', 'script', 'tail'], ['fracTopRanked/2']).
+_lex(['max', 'min', 'speed', 'one'], ['max/2']).
+_lex(['100', 'females', 'males', 'over'], ['every/3']).
+_lex(['meter', 'one', 'per', 'square'], ['meter/2']).
+_lex(['one', 'although', 'until', 'time'], ['not/3']).
+_lex(['compare', 'different', 'used', 'one'], ['compareLess/3']).
+_lex(['frac', 'dlig', 'script', 'tail'], ['fracQuant/3']).
+_lex(['g', 'f', 'argmin', 'set'], ['argmin/4']).
+_lex(['affirm', 'god', 'court', 'people'], ['affirm/2']).
+_lex(['foot', 'one', 'two', 'square'], ['foot/2']).
+_lex(['count', 'one', 'first', 'world'], ['count/2']).
+_lex(['mean', 'used', 'one', 'name'], ['mean/2']).

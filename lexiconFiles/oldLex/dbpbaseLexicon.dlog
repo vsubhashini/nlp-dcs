@@ -1,0 +1,8 @@
+_include('../../general/lexicon.dlog').
+
+%Lexical triggers
+_lex(['land', 'area'], ['areaLand/2']).
+_lex(['country'], ['country/2']).
+_lex(['elevation', 'maximum'], ['maximumElevation/2']).
+_lex(['water', 'area'], ['areaWater/2']).
+_lex(['minimum', 'elevation'], ['minimumElevation/2']).

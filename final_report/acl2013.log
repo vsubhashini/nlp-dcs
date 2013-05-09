@@ -1,0 +1,173 @@
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2012.10.5)  7 MAY 2013 15:07
+entering extended mode
+ %&-line parsing enabled.
+**acl2013.tex
+(./acl2013.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, german-x-2008-06-18, ngerman-x-2008-06-18, ancientgreek, ibycus, ar
+abic, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutc
+h, esperanto, estonian, farsi, finnish, french, galician, german, ngerman, mono
+greek, greek, hungarian, icelandic, indonesian, interlingua, irish, italian, la
+tin, lithuanian, mongolian, mongolian2a, bokmal, nynorsk, polish, portuguese, r
+omanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turki
+sh, ukenglish, ukrainian, uppersorbian, welsh, loaded.
+(/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
+(/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(./acl2013.sty
+Conference Style for ACL 2005 -- released Octobe 11, 2004
+\titlebox=\skip43
+) (/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/v/filer4b/software/texlive/2008/texmf-local/tex/latex/html/url.sty
+Package: url 1999/03/02  ver 1.4  Verb mode for urls, email addresses, and file
+ names
+)
+(/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(./acl2013.aux)
+\openout1 = `acl2013.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 37.
+
+(/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 38.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 38.
+
+(/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 38.
+
+(/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
+
+Underfull \hbox (badness 1259) in paragraph at lines 64--76
+\OT1/ptm/m/n/10.95 Doc-u-ment For-mat (PDF) ver-sion of their pa-
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 92.
+
+Underfull \hbox (badness 4341) in paragraph at lines 92--105
+\OT1/ptm/m/n/10.95 (acl2013.tex) and PDF for-mat (acl2013.pdf),
+ []
+
+[1{/v/filer4b/software/texlive/2008/texmf-var/fonts/map/pdftex/updmap/pdftex.ma
+p}
+
+
+
+]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 149.
+
+ (/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 149.
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
+[]\OT1/ptm/m/n/10.95 ``We pre-vi-ously showed (Gus-field,
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 306--309
+[]\OT1/ptm/m/n/10.95 The L[]T[]X and BibT[]X style files pro-vided
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 321.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 321.
+
+Underfull \hbox (badness 1142) in paragraph at lines 327--332
+\OT1/ptm/b/n/10.95 Illustrations\OT1/ptm/m/n/10.95 : Place fig-ures, ta-bles, a
+nd pho-
+ []
+
+[3]
+Underfull \hbox (badness 1466) in paragraph at lines 364--373
+\OT1/ptm/m/n/10.95 will be pub-licly avail-able at ACL An-thol-ogy
+ []
+
+(./acl2013.bbl
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \end{thebibliography}
+                         
+? 
+) [4] (./acl2013.aux) ) 
+Here is how much of TeX's memory you used:
+ 470 strings out of 493876
+ 6097 string characters out of 1147346
+ 60296 words of memory out of 3000000
+ 3769 multiletter control sequences out of 10000+50000
+ 28133 words of font info for 62 fonts, out of 3000000 for 5000
+ 714 hyphenation exceptions out of 8191
+ 23i,9n,19p,162b,256s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/v/filer4b/software/texlive/2008/texmf-dist/fonts/enc/d
+vips/base/8r.enc}</v/filer4b/software/texlive/2008/texmf-dist/fonts/type1/blues
+ky/cm/cmsy10.pfb></v/filer4b/software/texlive/2008/texmf-dist/fonts/type1/urw/c
+ourier/ucrr8a.pfb></v/filer4b/software/texlive/2008/texmf-dist/fonts/type1/urw/
+times/utmb8a.pfb></v/filer4b/software/texlive/2008/texmf-dist/fonts/type1/urw/t
+imes/utmr8a.pfb></v/filer4b/software/texlive/2008/texmf-dist/fonts/type1/urw/ti
+mes/utmri8a.pfb>
+Output written on acl2013.pdf (4 pages, 80282 bytes).
+PDF statistics:
+ 36 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

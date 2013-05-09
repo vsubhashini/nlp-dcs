@@ -1,0 +1,9 @@
+_include('../../general/lexicon.dlog').
+
+%Lexical triggers
+_lex(['city', 'income'], ['city/1']).
+_lex(['mountain', 'range'], ['mountain/1']).
+_lex(['country', 'one'], ['country/1']).
+_lex(['lake', 'water'], ['lake/1']).
+_lex(['state', 'county'], ['state/1']).
+_lex(['river', 'through'], ['river/1']).
