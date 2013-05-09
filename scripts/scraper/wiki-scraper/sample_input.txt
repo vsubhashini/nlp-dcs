@@ -1,0 +1,38 @@
+
+{{Infobox disease
+
+ | Name = Autism
+
+ | Image = Autism-stacking-cans 2nd edit.jpg
+
+ | Alt = Young red-haired boy facing away from camera, stacking a seventh can atop a column of six food cans on the kitchen floor. An open pantry contains many more cans.
+
+ | Caption = Repetitively stacking or lining up objects is a behavior sometimes associated with individuals with autism.
+
+ | DiseasesDB = 1142
+
+ | ICD10 = {{ICD10|F|84|0|f|80}}
+
+ | ICD9 = 299.00
+
+ | ICDO =
+
+ | OMIM = 209850
+
+ | MedlinePlus = 001526
+
+ | eMedicineSubj = med
+
+ | eMedicineTopic = 3202
+
+ | eMedicine_mult = {{eMedicine2|ped|180}}
+
+ | MeshID = D001321
+
+ | GeneReviewsNBK = NBK1442
+
+ | GeneReviewsName = Autism overview
+
+}}
+
+

@@ -1,0 +1,201 @@
+  <page>
+
+    <title>AlbaniaHistory</title>
+
+    <ns>0</ns>
+
+    <id>27</id>
+
+    <redirect title="History of Albania" />
+
+    <revision>
+
+      <id>74467016</id>
+
+      <parentid>15898960</parentid>
+
+      <timestamp>2006-09-08T04:18:56Z</timestamp>
+
+      <contributor>
+
+        <username>Rory096</username>
+
+        <id>750223</id>
+
+      </contributor>
+
+      <comment>cat rd</comment>
+
+      <text xml:space="preserve">#REDIRECT [[History of Albania]] {{R from CamelCase}}</text>
+
+      <sha1>g9bxb8oozl4893y220w82wlkqj0993w</sha1>
+
+      <model>wikitext</model>
+
+      <format>text/x-wiki</format>
+
+    </revision>
+
+  </page>
+
+  <page>
+
+    <title>AlbaniaPeople</title>
+
+    <ns>0</ns>
+
+    <id>29</id>
+
+    <redirect title="Demographics of Albania" />
+
+    <revision>
+
+      <id>74466817</id>
+
+      <parentid>15898962</parentid>
+
+      <timestamp>2006-09-08T04:17:12Z</timestamp>
+
+      <contributor>
+
+        <username>Rory096</username>
+
+        <id>750223</id>
+
+      </contributor>
+
+      <comment>cat rd</comment>
+
+      <text xml:space="preserve">#REDIRECT [[Demographics of Albania]] {{R from CamelCase}}</text>
+
+      <sha1>36a59shuc1v63q9ek0o5itbw4vao7b5</sha1>
+
+      <model>wikitext</model>
+
+      <format>text/x-wiki</format>
+
+    </revision>
+
+  </page>
+
+  <page>
+
+    <title>AsWeMayThink</title>
+
+    <ns>0</ns>
+
+    <id>30</id>
+
+    <redirect title="As We May Think" />
+
+    <revision>
+
+      <id>74467061</id>
+
+      <parentid>15898963</parentid>
+
+      <timestamp>2006-09-08T04:19:17Z</timestamp>
+
+      <contributor>
+
+        <username>Rory096</username>
+
+        <id>750223</id>
+
+      </contributor>
+
+      <comment>cat rd</comment>
+
+      <text xml:space="preserve">#REDIRECT [[As_We_May_Think]] {{R from CamelCase}}</text>
+
+      <sha1>h4ptdnra9wwz7e711ocvi7s7axtt6ds</sha1>
+
+      <model>wikitext</model>
+
+      <format>text/x-wiki</format>
+
+    </revision>
+
+  </page>
+
+  <page>
+
+    <title>AlbaniaGovernment</title>
+
+    <ns>0</ns>
+
+    <id>35</id>
+
+    <redirect title="Politics of Albania" />
+
+    <revision>
+
+      <id>74467128</id>
+
+      <parentid>15898965</parentid>
+
+      <timestamp>2006-09-08T04:19:45Z</timestamp>
+
+      <contributor>
+
+        <username>Rory096</username>
+
+        <id>750223</id>
+
+      </contributor>
+
+      <comment>cat rd</comment>
+
+      <text xml:space="preserve">#REDIRECT [[Politics of Albania]] {{R from CamelCase}}</text>
+
+      <sha1>9la5osjxpu0aysereletnbv44up2k8j</sha1>
+
+      <model>wikitext</model>
+
+      <format>text/x-wiki</format>
+
+    </revision>
+
+  </page>
+
+  <page>
+
+    <title>AlbaniaEconomy</title>
+
+    <ns>0</ns>
+
+    <id>36</id>
+
+    <redirect title="Economy of Albania" />
+
+    <revision>
+
+      <id>74467158</id>
+
+      <parentid>15898966</parentid>
+
+      <timestamp>2006-09-08T04:19:59Z</timestamp>
+
+      <contributor>
+
+        <username>Rory096</username>
+
+        <id>750223</id>
+
+      </contributor>
+
+      <comment>cat rd</comment>
+
+      <text xml:space="preserve">#REDIRECT [[Economy of Albania]] {{R from CamelCase}}</text>
+
+      <sha1>46mddpkuzu2h570565j3p5gsqr7avjp</sha1>
+
+      <model>wikitext</model>
+
+      <format>text/x-wiki</format>
+
+    </revision>
+
+  </page>
+
+  <page>
