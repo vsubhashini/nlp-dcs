@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.7)
+The top-level auxiliary file: final_report.aux
+The style file: acl.bst
+btex is an illegal style-file command---line 1 of file acl.bst
+ : btex
+ :      `acl' style file for BibTeX version 0.99c, LaTeX version 2.09
+Database file #1: acl2013.bib
+You've used 17 entries,
+            2490 wiz_defined-function locations,
+            678 strings with 8084 characters,
+and the built_in function-call counts, 8940 in all, are:
+= -- 1000
+> -- 260
+< -- 16
++ -- 85
+- -- 84
+* -- 585
+:= -- 1276
+add.period$ -- 77
+call.type$ -- 17
+change.case$ -- 109
+chr.to.int$ -- 17
+cite$ -- 17
+duplicate$ -- 441
+empty$ -- 717
+format.name$ -- 111
+if$ -- 2050
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 16
+newline$ -- 105
+num.names$ -- 51
+pop$ -- 130
+preamble$ -- 1
+purify$ -- 127
+quote$ -- 0
+skip$ -- 386
+stack$ -- 0
+substring$ -- 564
+swap$ -- 181
+text.length$ -- 16
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 136
+warning$ -- 0
+while$ -- 76
+width$ -- 20
+write$ -- 268
+(There was 1 error message)

@@ -18,10 +18,12 @@
 \usepackage{times}
 \usepackage{url}
 \usepackage{latexsym}
+\usepackage[pdftex]{graphicx}
+\usepackage{subfig}
 %\setlength\titlebox{6.5cm}    % You can expand the title box if you
 % really have to
 
-\title{Instructions for ACL-2013 Proceedings}
+\title{Adapting DCS-Trees for Wide-Domain Semantic Parsing}
 
 \author{Amelia Harrison \\
   Department of Computer Science\\
@@ -37,316 +39,121 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-   Semantic parsing is the 
+   Recent work in semantic parsing for compositional question answering has shown
+that this task can be successfully approached using question-answer pairs rather
+than questions annotated with logical forms for training. However, existing
+datasets for this task are relatively small and it is unclear that even in
+absence of the burden of producing logical forms for training, that any existing
+approaches to compositional question answering can scale to larger datasets or
+datasets with wide coverage.  In this paper, we explore the possibility of scaling 
+one such approach to a larger dataset with wider coverage. 
 
 \end{abstract}
 
-\section{Credits}
-
-This document has been adapted from the instructions for earlier ACL
-proceedings, including those for ACL-2012 by Maggie Li and Michael White, those
-from ACL-2010 by Jing-Shing Chang and Philipp Koehn, those for ACL-2008 by
-Johanna D. Moore, Simone Teufel, James Allan, and Sadaoki Furui, those for
-ACL-2005 by Hwee Tou Ng and Kemal Oflazer, those for ACL-2002 by Eugene Charniak
-and Dekang Lin, and earlier ACL and EACL formats. Those versions were written by
-several people, including John Chen, Henry S. Thompson and Donald Walker.
-Additional elements were taken from the formatting instructions of the {\em
-International Joint Conference on Artificial Intelligence}.
-
 \section{Introduction}
 
-The following instructions are directed to authors of papers submitted
-to ACL-2013 or accepted
-for publication in its proceedings. All authors are required
-to adhere to these specifications. Authors are required to provide a
-Portable Document Format (PDF) 
-% das: removed reference to PostScript
-% and PostScript 
-version of their papers. \textbf{The proceedings will be printed on A4
-  paper}. Authors from countries in which access to word-processing
-systems is limited should contact the publication chairs Roberto Navigli
-(\texttt{navigli@di.uniroma1.it}) and Jing-Shin Chang
-(\texttt{jshin@csie.ncnu.edu.tw}) as soon as possible.
+In \cite{LJK11}, Liang et al. present a novel approach to the semantic parsing
+task. Most prior approaches have focused on training parsing models using natural
+language utterances annotated with logical forms.\footnote{\cite{CGCR10}, 
+\cite{CGRR11}, and \cite{PD09} are notable exceptions.} In this work, however,
+the logical forms are treated as latent variables, and a semantic parsing model
+is trained using natural language questions and their corresponding answers. 
+This sort of ``weak supervision'' is advantageous because obtaining 
+logical forms for natural language utterances requires expert annotators and is
+thus quite costly. This work is notable because it takes this weakly supervised 
+approach, and also because it introduces an new formalism called
+dependency-based compositional semantics (DCS) trees for representing 
+the meaning of a natural language question. In this note, we will briefly
+summarize the work in \cite{LJK11}, and suggest some useful ways in which that work
+may be extended. 
 
-\section{General Instructions}
+Recent work has shown that the compositional question answering
+task can be successfully approached using question-answer pairs for training
+rather than questions annotated with logical forms \cite{LJK11} \cite{}. In
+\cite{LJK11},   
 
-Manuscripts must be in two-column format.  Exceptions to the
-two-column format include the title, authors' names and complete
-addresses, which must be centered at the top of the first page, and
-any full-width figures or tables (see the guidelines in
-Subsection~\ref{ssec:first}). {\bf Type single-spaced.}  Start all
-pages directly under the top margin. See the guidelines later
-regarding formatting the first page.  The manuscript should be
-printed single-sided and its length
-should not exceed the maximum page limit described in Section~\ref{sec:length}.
-Do not number the pages.
+\section{Experimental Evaluation}
+This section describes the datasets used to evaluate our methods and the results obtained.
 
-\subsection{Electronically-available resources}
-
-ACL 2013 provides this description in \LaTeX2e (acl2013.tex) and PDF
-format (acl2013.pdf), along with the \LaTeX2e style file used to
-format it (acl2013.sty) and an ACL bibliography style
-(acl.bst). These files are all available at
-\url{http://www.acl2013.org}. A Microsoft Word
-template file (acl2013.dot) is also available at the same URL. We
-strongly recommend the use of these style files, which have been
-appropriately tailored for the ACL 2013 proceedings. If you have an
-option, we recommend that you use the \LaTeX2e version. \textbf{If you will be
-using the Microsoft Word template, we suggest that you anonymize your
-source file so that the pdf produced does not retain your identity.}
-This can be done by removing any personal information from your source
-document properties.
-
-
-
-\subsection{Format of Electronic Manuscript}
-\label{sect:pdf}
-
-For the production of the electronic manuscript you must use Adobe's
-Portable Document Format (PDF). This format can be generated from
-postscript files. On Linux/Unix systems, you can use {\tt ps2pdf} for
-this purpose. In Microsoft Windows, you can use Adobe's Distiller,
-or if you have \textit{cygwin}
-installed, you can use \textit{dvipdf} or \textit{ps2pdf}. Note that
-some word processing programs generate PDF which may not include all
-the necessary fonts (esp. tree diagrams, symbols). When you print or
-create the PDF file, there is usually an option in your printer setup
-to include none, all or just non-standard fonts.  Please make sure
-that you select the option of including ALL the fonts. {\em Before
-sending it, test your PDF by printing it from a computer different
-from the one where it was created.} Moreover, some word processors may
-generate very large postscript/PDF files, where each page is rendered
-as an image. Such images may reproduce poorly. In this case, try
-alternative ways to obtain the postscript and/or PDF. One way on some
-systems is to install a driver for a postscript printer, send your
-document to the printer specifying ``Output to a file'', then convert
-the file to PDF.
-
-It is of utmost importance to specify the \textbf{A4 format} (21 cm
-x 29.7 cm) when formatting the paper. When working with
-{\tt dvips}, for instance, one should specify {\tt -t a4}.
-
-Print-outs of the PDF file on A4 paper should be identical to the
-hardcopy version. If you cannot meet the above requirements about the
-production of your electronic submission, please contact the
-publication chairs above as soon as possible.
-
-
-\subsection{Layout}
-\label{ssec:layout}
-
-Format manuscripts two columns to a page, in the manner these
-instructions are formatted. The exact dimensions for a page on A4
-paper are:
-
+\subsection{Data}
+We tested our approach on two datasets. The first is the standard {\sc GEO} dataset \cite{ZM96}. To test the scalability of our approach we also create a wide domain dataset by extracting data from DBpedia \cite{dbpedia}. %\cite{dbpedia full link} 
+%http://dbpedia.org/Datasets
+%http://wiki.dbpedia.org/Downloads38
+The DBpedia data set consists of a multi-domain ontology derived from Wikipedia. Our project uses the DBpedia Infobox dataset \cite{dbpedia2, dbInfo} which contains specific facts about things (such as people, places, films, music, books, games) in Wikipedia articles. The Infobox data consists of
 \begin{itemize}
-\item Left and right margins: 2.5 cm
-\item Top margin: 2.5 cm
-\item Bottom margin: 2.5 cm
-\item Column width: 7.7 cm
-\item Column height: 24.7 cm
-\item Gap between columns: 0.6 cm
+\item Type information of the instances in wikipedia such as city, disease, computer game etc.
+\item Properties of the instances e.g. population of a city, date of birth.
+\item Specific properties specialized for some property value such as units of measurement for a person's height.
 \end{itemize}
+We build our DBpedia data set by extracting type and property information of all instances (as tuples - describe). This results in a large dataset of unary and binary predicates consisting of over five million facts. 
 
-\noindent Papers should not be submitted on any other paper size.
- If you cannot meet the above requirements about the production of your
-electronic submission, please contact the publication chairs above as soon as
-possible.
+\paragraph{Relevant wide-domain dataset} We reduce the initial large dataset (DBP) to a more relevant smaller dataset consisting of 538,821 facts. To create this subset, we first considered all the binary predicates in the initial dataset (of the form predicate( key, value) ). Next, we identify all items occuring as a key. We then count the frequency of occurence of each of these items as a value in the tuple and rank and pick the top 30000 most frequent items. We finally select all tuples containing any of these top items as a key. The idea is to select those items that are popular in the database and hence likely to also be more relevant.
 
+\subsection{Methodology}
+We evaluate our approach of generating lexical triggers with the DCS framework on the {\sc GEO} dataset as outlined below. We split our evaluation into the following four categories:
+\begin{itemize} \label{cats}
+ \item $ours$ - Lexical triggers generated purely from our approach. 
+ \item $+bridge$ - In addition to our trigger set, we add a small set of bridge predicate triggers described in \cite{LJK11}. (expand?) 
+ \item $+general$ - This includes a set of handcoded a general trigger set of lexicons for mathematical operations such as sum and argmax (along with our triggers)
+ \item $all$ - The final set of triggers include all of the above, namely, our lexical triggers, the bridge predicate triggers and the general handcoded trigger set.
+\end{itemize}
+We split the lexical sets into the above categories for triggers generated using wordnet and wackypedia. In all the experiments, the training set consisted of 600 questions and the test set consisted of 280 questions.
 
-% Removed by KO  we are not accepting printed papers any more!!!
-%  Exceptionally,
-% authors for whom it is \emph{impossible} to print on A4 paper may use
-% \emph{US Letter} paper. In this case, they should keep the \emph{top}
-% and \emph{left} margins as given above, use the same column width,
-% height and gap, and modify the bottom and right margins as
-% necessary. Note that the text will no longer be centered.
+\paragraph{Impact of number of lexical triggers per predicate.} We further performed a series of tests to identify if the number of lexical triggers per predicate affected the performance in any way. This test was performed only on the lexical trigger set generated from wackypedia since the context lexical words have a total ordering (rank) and also because this set gave us the best performance. In our experiments we varied the number of lexical words from 1 to 12 and compared the performance of the DCS framework on the four categories described in \ref{cats}.
 
-\subsection{Fonts}
-
-For reasons of uniformity, Adobe's {\bf Times Roman} font should be
-used. In \LaTeX2e{} this is accomplished by putting
-
-\begin{quote}
-\begin{verbatim}
-\usepackage{times}
-\usepackage{latexsym}
-\end{verbatim}
-\end{quote}
-in the preamble. If Times Roman is unavailable, use {\bf Computer
-  Modern Roman} (\LaTeX2e{}'s default).  Note that the latter is about
-  10\% less dense than Adobe's Times Roman font.
-
-
-\begin{table}[h]
+\section{Results}
 \begin{center}
-\begin{tabular}{|l|rl|}
-\hline \bf Type of Text & \bf Font Size & \bf Style \\ \hline
-paper title & 15 pt & bold \\
-author names & 12 pt & bold \\
-author affiliation & 12 pt & \\
-the word ``Abstract'' & 12 pt & bold \\
-section titles & 12 pt & bold \\
-document text & 11 pt  &\\
-captions & 11 pt & \\
-abstract text & 10 pt & \\
-bibliography & 10 pt & \\
-footnotes & 9 pt & \\
+\begin{table}[!h]
+\centering
+\begin{tabular}{|l|c|c|}
 \hline
+{\textbf{Lexicon Source}} & {\textbf{WordNet} } & {\textbf{Wackypedia}} \\ %\cline{4}
+\textbf{Category}&  & (threshold=6) \\
+%\textbf{Function}& (after iteration 8) &\textbf{words}  & (total)\\
+\hline
+ours     & 0.00 & {{21.78}} \\ \hline
++bridge  & 43.21 & {{42.5}} \\ \hline
++general & 0.00 & {{36.07}} \\ \hline
+all      & 61.07 & {\textbf{69.64}} \\ \hline
 \end{tabular}
-\end{center}
-\caption{\label{font-table} Font guide. }
+\caption{Comparing performance of external lexical trigger sources on GEO dataset (600 train and 280 test queries)} \label{tab:normal}
 \end{table}
+\end{center}
 
-\subsection{The First Page}
-\label{ssec:first}
+\begin{figure}[!htb]
+\begin{center}
+  \includegraphics[scale=0.45]{figs/ablationTest.png}
+\caption{Graph showing the effect of varying the number of lexical triggers per predicate on GEO.}
+\end{center}
+\end{figure}
 
-Center the title, author's name(s) and affiliation(s) across both
-columns. Do not use footnotes for affiliations. Do not include the
-paper ID number assigned during the submission process. Use the
-two-column format only when you begin the abstract.
+\begin{figure}[!htb]
+\begin{center}
+  \includegraphics[scale=0.45]{figs/ibPerf.png}
+\caption{Performance of automatically generated lexical triggers on the wide-domain DBP dataset (80-20 split).}
+\end{center}
+\end{figure}
 
-{\bf Title}: Place the title centered at the top of the first page, in
-a 15-point bold font. (For a complete guide to font sizes and styles, see
-Table~\ref{font-table}) Long titles should be typed on two lines without
-a blank line intervening. Approximately, put the title at 2.5 cm from
-the top of the page, followed by a blank line, then the author's
-names(s), and the affiliation on the following line. Do not use only
-initials for given names (middle initials are allowed). Do not format surnames
-in all capitals (e.g., use ``Schlangen'' not ``SCHLANGEN'').
-Do not format title and section headings in all capitals as well
-except for proper names (such as ``BLEU'') that are conventionally
-in all capitals.
-The affiliation should contain the author's complete address, and if
-possible, an electronic mail address. Leave about 2 cm between the
-affiliation and the body of the first page.
-The title, author names and addresses should be completely
-identical to those entered to the electronical paper submission
-website in order to maintain the consistency of author information
-among all publications of the conference.
+\section{Related Work}
+The task of semantic parsing has been studied quite extensively. Early works \cite{ZM96} introduced a statistical approach to learn a semantic parser using inductive logic programming. This led to a line of machine learning approaches \cite{TM01, GeM05, KWM05, ZC07, WM06, KZGS10} that have continually improved the accuracy of semantic parsing.
+Although the statistical methods are robust and portable, a major drawback of the approach is that it relies crucially on having natural language utterances paired with their logical forms. This not only requires substantial human effort but also expects the annotators to have expertise in some formal language.
 
-{\bf Abstract}: Type the abstract at the beginning of the first
-column. The width of the abstract text should be smaller than the
-width of the columns for the text in the body of the paper by about
-0.6 cm on each side. Center the word {\bf Abstract} in a 12 point bold
-font above the body of the abstract. The abstract should be a concise
-summary of the general thesis and conclusions of the paper. It should
-be no longer than 200 words. The abstract text should be in 10 point font.
+In order to alleviate the burden of annotation recent works \cite{CGRR11, CGCR10, PD09, LJK11, AZ11} %reduce the burden of annotation significantly by obviating the need for logical form annotations and focus on learning from question and answer pairs. 
+are focusing on learning directly from question and answer pairs obviating the need for logical forms.
 
-{\bf Text}: Begin typing the main body of the text immediately after
-the abstract, observing the two-column format as shown in 
-the present document. Do not include page numbers.
 
-{\bf Indent} when starting a new paragraph. Use 11 points for text and 
-subsection headings, 12 points for section headings and 15 points for
-the title. 
+\cite{CGCR10, CGRR11} use external world context to supervise semantic interpretation. Similar in vein to \cite{CM08, LJK09}, the \cite{CGCR10} model learns to map lexical elements to logical forms based on external sources and additionally creates the logical form query relying on the composition rules of the meaning representation language. However, their main contribution that obviates annotated logical forms is the feedback based approach that guides the learning algorithm in identifying hidden alignments between lexical and logical elements.
 
-\subsection{Sections}
+An important limitation of the \cite{CGCR10} system is that although it does require explicit logical form annotations, their model still relies on the framework of the meaning representations language which lacks in its expressiveness (in its ability to express) natural language queries. Researchers have, in the past, explored widely with respect to the formal language used for the logical forms: \cite{GM09} use SQL, \cite{ZM96,TM01} use prolog, \cite{KWM05}  develop a simple functional query language called {\sc FUN}QL, and \cite{ZC05} use lambda calculus. The construction mechanisms that generate these logical forms in a compositional manner from the utterances have also been quite diverse. The logical forms and the construction mechanisms are in sort of orthogonal problems and hence the expressiveness of these models vary to a good degree.
 
-{\bf Headings}: Type and label section and subsection headings in the
-style shown on the present document.  Use numbered sections (Arabic
-numerals) in order to facilitate cross references. Number subsections
-with the section number and the subsection number separated by a dot,
-in Arabic numerals. Do not number subsubsections.
+\cite{LJK11} proposes the DCS trees logical form that pushes towards a deeper representation of language. %Each natural language question
+We have discussed the DCS framework previously in [ ref the background]
+As mentioned before, although the DCS framework appears to be a good candidate to tackle wide-domain semantic parsing, the model requires some non-trivial supervision to identify the set of lexical triggers.
+Our work addresses the task of automatically identifying the lexical triggers in the DCS framework and aims to reduce the burden of supervision further.
 
-{\bf Citations}: Citations within the text appear
-in parentheses as~\cite{Gusfield:97} or, if the author's name appears in
-the text itself, as Gusfield~\shortcite{Gusfield:97}. 
-Append lowercase letters to the year in cases of ambiguity.  
-Treat double authors as in~\cite{Aho:72}, but write as in~\cite{Chandra:81} when
-more than two authors are involved. Collapse multiple citations as
-in~\cite{Gusfield:97,Aho:72}. Also refrain from using full citations as sentence
-constituents. We suggest that instead of
-\begin{quote}
-  ``\cite{Gusfield:97} showed that ...''
-\end{quote}
-you use
-\begin{quote}
-``Gusfield \shortcite{Gusfield:97}   showed that ...''
-\end{quote}
+Apart from generating the lexical triggers automatically from the database, our work is amongst the first (to the best of our knowledge) to explore the idea of semantic parsing on a wide-domain dataset. The system {\sc BOXER} developed by JB is a wide-coverage semantic parsing system. However, his system is incomparable to our -- due to the lack of evaluation
 
-If you are using the provided \LaTeX{} and Bib\TeX{} style files, you
-can use the command \verb|\newcite| to get ``author (year)'' citations.
 
-As reviewing will be double-blind, the submitted version of the papers should
-not include the
-authors' names and affiliations. Furthermore, self-references that
-reveal the author's identity, e.g.,
-\begin{quote}
-``We previously showed \cite{Gusfield:97} ...''  
-\end{quote}
-should be avoided. Instead, use citations such as 
-\begin{quote}
-``Gusfield \shortcite{Gusfield:97}
-previously showed ... ''
-\end{quote}
-
-\textbf{Please do not  use anonymous citations} and  do not include
-acknowledgements when submitting your papers. Papers that do not conform
-to these requirements may be rejected without review. 
-
-\textbf{References}: Gather the full set of references together under
-the heading {\bf References}; place the section before any Appendices,
-unless they contain references. Arrange the references alphabetically
-by first author, rather than by order of occurrence in the text.
-Provide as complete a citation as possible, using a consistent format,
-such as the one for {\em Computational Linguistics\/} or the one in the 
-{\em Publication Manual of the American 
-Psychological Association\/}~\cite{APA:83}.  Use of full names for
-authors rather than initials is preferred.  A list of abbreviations
-for common computer science journals can be found in the ACM 
-{\em Computing Reviews\/}~\cite{ACM:83}.
-
-The \LaTeX{} and Bib\TeX{} style files provided roughly fit the
-American Psychological Association format, allowing regular citations, 
-short citations and multiple citations as described above.
-
-{\bf Appendices}: Appendices, if any, directly follow the text and the
-references (but see above).  Letter them in sequence and provide an
-informative title: {\bf Appendix A. Title of Appendix}.
-
-\textbf{Acknowledgement} section should go as a last section immediately
-before the references.  Do not number the acknowledgement section.
-
-\subsection{Footnotes}
-
-{\bf Footnotes}: Put footnotes at the bottom of the page and use 9
-points text. They may be numbered or referred to by asterisks or other
-symbols.\footnote{This is how a footnote should appear.} Footnotes
-should be separated from the text by a line.\footnote{Note the line
-separating the footnotes from the text.}
-
-\subsection{Graphics}
-
-{\bf Illustrations}: Place figures, tables, and photographs in the
-paper near where they are first discussed, rather than at the end, if
-possible.  Wide illustrations may run across both columns.  Color
-illustrations are discouraged, unless you have verified that  
-they will be understandable when printed in black ink.
-
-{\bf Captions}: Provide a caption for every illustration; number each one
-sequentially in the form:  ``Figure 1. Caption of the Figure.'' ``Table 1.
-Caption of the Table.''  Type the captions of the figures and 
-tables below the body, using 11 point text.  
-
-\section{Translation of non-English Terms}
-
-It is also advised to supplement non-English characters and terms
-with appropriate transliterations and/or translations
-since not all readers understand all such characters and terms.
-Inline transliteration or translation can be represented in
-the order of: original-form transliteration ``translation''.
-
-\section{Length of Submission}
-\label{sec:length}
-
-Long papers may consist of up to 8 pages of content, plus two extra pages for
-references
-and short papers may consist of up to 4 pages of content, plus two extra pages
-for references, in the proceedings.
-Papers that do not conform to the specified length and formatting requirements
-are
-subject to be rejected without review.
 
 \section{Other Issues}
 
@@ -367,44 +174,12 @@ instead of the opening day of the conference.
 
 \section*{Acknowledgments}
 
-Do not number the acknowledgment section. Do not include this section
-when submitting your paper for review.
+Thanks to Karl Pichotta and Ray Mooney for helpful discussions and healthy
+skepticism.
+
 \bibliographystyle{acl}
-bib.bib
+report.bib
 \bibliography{acl2013}
 
-\begin{thebibliography}{}
-
-\bibitem[\protect\citename{Aho and Ullman}1972]{Aho:72}
-Alfred~V. Aho and Jeffrey~D. Ullman.
-\newblock 1972.
-\newblock {\em The Theory of Parsing, Translation and Compiling}, volume~1.
-\newblock Prentice-{Hall}, Englewood Cliffs, NJ.
-
-\bibitem[\protect\citename{{American Psychological Association}}1983]{APA:83}
-{American Psychological Association}.
-\newblock 1983.
-\newblock {\em Publications Manual}.
-\newblock American Psychological Association, Washington, DC.
-
-\bibitem[\protect\citename{{Association for Computing Machinery}}1983]{ACM:83}
-{Association for Computing Machinery}.
-\newblock 1983.
-\newblock {\em Computing Reviews}, 24(11):503--512.
-
-\bibitem[\protect\citename{Chandra \bgroup et al.\egroup }1981]{Chandra:81}
-Ashok~K. Chandra, Dexter~C. Kozen, and Larry~J. Stockmeyer.
-\newblock 1981.
-\newblock Alternation.
-\newblock {\em Journal of the Association for Computing Machinery},
-  28(1):114--133.
-
-\bibitem[\protect\citename{Gusfield}1997]{Gusfield:97}
-Dan Gusfield.
-\newblock 1997.
-\newblock {\em Algorithms on Strings, Trees and Sequences}.
-\newblock Cambridge University Press, Cambridge, UK.
-
-\end{thebibliography}
 
 \end{document}

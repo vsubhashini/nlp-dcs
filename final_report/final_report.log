@@ -1,0 +1,234 @@
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2012.10.5)  10 MAY 2013 16:14
+entering extended mode
+ %&-line parsing enabled.
+**final_report.tex
+(./final_report.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, german-x-2008-06-18, ngerman-x-2008-06-18, ancientgreek, ibycus, ar
+abic, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutc
+h, esperanto, estonian, farsi, finnish, french, galician, german, ngerman, mono
+greek, greek, hungarian, icelandic, indonesian, interlingua, irish, italian, la
+tin, lithuanian, mongolian, mongolian2a, bokmal, nynorsk, polish, portuguese, r
+omanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turki
+sh, ukenglish, ukrainian, uppersorbian, welsh, loaded.
+(/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
+(/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(./acl2013.sty
+Conference Style for ACL 2005 -- released Octobe 11, 2004
+\titlebox=\skip43
+) (/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/v/filer4b/software/texlive/2008/texmf-local/tex/latex/html/url.sty
+Package: url 1999/03/02  ver 1.4  Verb mode for urls, email addresses, and file
+ names
+)
+(/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/v/filer4b/software/texlive/2008/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 90.
+
+(/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2008/09/08 v0.04l Graphics/color for pdfTeX
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+) (./final_report.aux)
+\openout1 = `final_report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 38.
+
+(/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/v/filer4b/software/texlive/2008/texmf-dist/tex/context/base/supp-pdf.tex
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count88
+\scratchdimen=\dimen105
+\scratchbox=\box26
+\nofMPsegments=\count89
+\nofMParguments=\count90
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count91
+\MPscratchDim=\dimen106
+\MPnumerator=\count92
+\everyMPtoPDFconversion=\toks16
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 39.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 39.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 39.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 39.
+ (/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 39.
+
+(/v/filer4b/software/texlive/2008/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 3168) in paragraph at lines 41--49
+[]\OT1/ptm/m/n/10.95 Recent work in se-man-tic pars-ing for
+ []
+
+
+Underfull \hbox (badness 4846) in paragraph at lines 41--49
+\OT1/ptm/m/n/10.95 com-po-si-tional ques-tion an-swer-ing has
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 63.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 64.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 64.
+[1{/v/filer4b/software/texlive/2008/texmf-var/fonts/map/pdftex/updmap/pdftex.ma
+p}
+
+
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 144.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+[3] <figs/ablationTest.png, id=17, 578.16pt x 433.62pt>
+File: figs/ablationTest.png Graphic file (type png)
+
+<use figs/ablationTest.png>
+Overfull \hbox (12.17378pt too wide) in paragraph at lines 264--266
+ [] 
+ []
+
+
+LaTeX Warning: Reference `disc' on page 4 undefined on input line 294.
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 291--297
+\OT1/ptm/m/n/10.95 We run sim-i-lar ex-per-i-ments for the \OT1/ptm/m/sc/10.95 
+in-fobox
+ []
+
+<figs/ibPerf.png, id=19, 578.16pt x 433.62pt>
+File: figs/ibPerf.png Graphic file (type png)
+ <use figs/ibPerf.png>
+Overfull \hbox (12.17378pt too wide) in paragraph at lines 308--310
+ [] 
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 316--323
+\OT1/ptm/m/n/10.95 are in-cluded, the test pre-dic-tion ac-cu-racy ap-
+ []
+
+
+Underfull \vbox (badness 7667) has occurred while \output is active []
+
+ [4 <./figs/ablationTest.png> <./figs/ibPerf.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 368--370
+\OT1/ptm/m/n/10.95 ming. This led to a line of ma-chine learn-
+ []
+
+[5] (./final_report.bbl [6]
+Underfull \hbox (badness 1178) in paragraph at lines 50--55
+[]\OT1/ptm/m/n/10 Rohit J. Kate, Yuk Wah Wong, and Ray-mond J.
+ []
+
+
+Underfull \hbox (badness 1147) in paragraph at lines 57--64
+\OT1/ptm/m/n/10 order uni-fi-ca-tion.  In \OT1/ptm/m/it/10 Pro-ceed-ings of the
+ 2010
+ []
+
+
+Underfull \hbox (badness 2837) in paragraph at lines 116--123
+\OT1/ptm/m/n/10 tured clas-si-fi-ca-tion with prob-a-bilis-tic cat-e-go-rial
+ []
+
+) [7] (./final_report.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1150 strings out of 493876
+ 15187 string characters out of 1147346
+ 70615 words of memory out of 3000000
+ 4420 multiletter control sequences out of 10000+50000
+ 31541 words of font info for 66 fonts, out of 3000000 for 5000
+ 714 hyphenation exceptions out of 8191
+ 25i,9n,19p,900b,302s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/v/filer4b/software/texlive/2008/texmf-dist/fonts/enc/dvips/base/8r.enc}</v/
+filer4b/software/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmmi10.pfb></v/
+filer4b/software/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr10.pfb></v/f
+iler4b/software/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr8.pfb></v/fil
+er4b/software/texlive/2008/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></v/fi
+ler4b/software/texlive/2008/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></v/fil
+er4b/software/texlive/2008/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></v/file
+r4b/software/texlive/2008/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on final_report.pdf (7 pages, 168792 bytes).
+PDF statistics:
+ 60 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,132 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Artzi and Zettlemoyer}2011]{AZ11}
+Yoav Artzi and Luke~S. Zettlemoyer.
+\newblock 2011.
+\newblock Bootstrapping semantic parsers from conversations.
+\newblock In {\em EMNLP}, pages 421--432.
+
+\bibitem[\protect\citename{Chen and Mooney}2008]{CM08}
+David~L. Chen and Raymond~J. Mooney.
+\newblock 2008.
+\newblock Learning to sportscast: a test of grounded language acquisition.
+\newblock In {\em ICML}, pages 128--135.
+
+\bibitem[\protect\citename{Clarke \bgroup et al.\egroup }2010]{CGCR10}
+James Clarke, Dan Goldwasser, Ming-Wei Chang, and Dan Roth.
+\newblock 2010.
+\newblock Driving semantic parsing from the world's response.
+\newblock In {\em Proceedings of the Fourteenth Conference on Computational
+  Natural Language Learning}, CoNLL '10, pages 18--27, Stroudsburg, PA, USA.
+  Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Ge and Mooney}2005]{GeM05}
+Ruifang Ge and Raymond~J. Mooney.
+\newblock 2005.
+\newblock A statistical semantic parser that integrates syntax and semantics.
+\newblock In {\em Proceedings of the Ninth Conference on Computational Natural
+  Language Learning}, CONLL '05, pages 9--16, Stroudsburg, PA, USA. Association
+  for Computational Linguistics.
+
+\bibitem[\protect\citename{Giordani and Moschitti}2010]{GM09}
+Alessandra Giordani and Alessandro Moschitti.
+\newblock 2010.
+\newblock Semantic mapping between natural language questions and sql queries
+  via syntactic pairing.
+\newblock In {\em Proceedings of the 14th international conference on
+  Applications of Natural Language to Information Systems}, NLDB'09, pages
+  207--221, Berlin, Heidelberg. Springer-Verlag.
+
+\bibitem[\protect\citename{Goldwasser \bgroup et al.\egroup }2011]{CGRR11}
+Dan Goldwasser, Roi Reichart, James Clarke, and Dan Roth.
+\newblock 2011.
+\newblock Confidence driven unsupervised semantic parsing.
+\newblock In {\em Proceedings of the 49th Annual Meeting of the Association for
+  Computational Linguistics: Human Language Technologies - Volume 1}, HLT '11,
+  pages 1486--1495, Stroudsburg, PA, USA. Association for Computational
+  Linguistics.
+
+\bibitem[\protect\citename{Kate \bgroup et al.\egroup }2005]{KWM05}
+Rohit~J. Kate, Yuk~Wah Wong, and Raymond~J. Mooney.
+\newblock 2005.
+\newblock Learning to transform natural to formal languages.
+\newblock In {\em Proceedings of the Twentieth National Conference on
+  Artificial Intelligence (AAAI-05)}, pages 1062--1068, Pittsburgh, PA, July.
+
+\bibitem[\protect\citename{Kwiatkowski \bgroup et al.\egroup }2010]{KZGS10}
+Tom Kwiatkowski, Luke Zettlemoyer, Sharon Goldwater, and Mark Steedman.
+\newblock 2010.
+\newblock Inducing probabilistic ccg grammars from logical form with
+  higher-order unification.
+\newblock In {\em Proceedings of the 2010 Conference on Empirical Methods in
+  Natural Language Processing}, EMNLP '10, pages 1223--1233, Stroudsburg, PA,
+  USA. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Liang \bgroup et al.\egroup }2009]{LJK09}
+Percy Liang, Michael~I. Jordan, and Dan Klein.
+\newblock 2009.
+\newblock Learning semantic correspondences with less supervision.
+\newblock In {\em ACL/IJCNLP}, pages 91--99.
+
+\bibitem[\protect\citename{Liang \bgroup et al.\egroup }2011]{LJK11}
+P.~Liang, M.~I. Jordan, and D.~Klein.
+\newblock 2011.
+\newblock Learning dependency-based compositional semantics.
+\newblock In {\em Association for Computational Linguistics (ACL)}, pages
+  590--599.
+
+\bibitem[\protect\citename{Liang}2011]{LThesis}
+Percy~Shuo Liang.
+\newblock 2011.
+\newblock {\em {Learning Dependency-Based Compositional Semantics}}.
+\newblock {Ph.D.} thesis, University of California, Berkeley, Fall.
+
+\bibitem[\protect\citename{Poon and Domingos}2009]{PD09}
+Hoifung Poon and Pedro Domingos.
+\newblock 2009.
+\newblock Unsupervised semantic parsing.
+\newblock In {\em Proceedings of the 2009 Conference on Empirical Methods in
+  Natural Language Processing: Volume 1 - Volume 1}, EMNLP '09, pages 1--10,
+  Stroudsburg, PA, USA. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Tang and Mooney}2001]{TM01}
+Lappoon~R. Tang and Raymond~J. Mooney.
+\newblock 2001.
+\newblock Using multiple clause constructors in inductive logic programming for
+  semantic parsing.
+\newblock In {\em Proceedings of the 12th European Conference on Machine
+  Learning}, EMCL '01, pages 466--477, London, UK, UK. Springer-Verlag.
+
+\bibitem[\protect\citename{Wong and Mooney}2006]{WM06}
+Yuk~Wah Wong and Raymond~J. Mooney.
+\newblock 2006.
+\newblock Learning for semantic parsing with statistical machine translation.
+\newblock In {\em Proceedings of the main conference on Human Language
+  Technology Conference of the North American Chapter of the Association of
+  Computational Linguistics}, HLT-NAACL '06, pages 439--446, Stroudsburg, PA,
+  USA. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Zelle and Mooney}1996]{ZM96}
+John~M. Zelle and Raymond~J. Mooney.
+\newblock 1996.
+\newblock Learning to parse database queries using inductive logic programming.
+\newblock In {\em AAAI/IAAI, Vol. 2}, pages 1050--1055.
+
+\bibitem[\protect\citename{Zettlemoyer and Collins}2005]{ZC05}
+Luke~S. Zettlemoyer and Michael Collins.
+\newblock 2005.
+\newblock Learning to map sentences to logical form: Structured classification
+  with probabilistic categorial grammars.
+\newblock In {\em UAI 05, Proceedings of the 21st Conference in Uncertainty in
+  Artificial Intelligence, July 26-29 2005, Edinburgh, Scotland}, pages
+  658--666. AUAI Press.
+
+\bibitem[\protect\citename{Zettlemoyer and Collins}2007]{ZC07}
+Luke~S. Zettlemoyer and Michael Collins.
+\newblock 2007.
+\newblock Online learning of relaxed ccg grammars for parsing to logical form.
+\newblock In {\em In Proceedings of the 2007 Joint Conference on Empirical
+  Methods in Natural Language Processing and Computational Natural Language
+  Learning (EMNLP-CoNLL-2007)}, pages 678--687.
+
+\end{thebibliography}
