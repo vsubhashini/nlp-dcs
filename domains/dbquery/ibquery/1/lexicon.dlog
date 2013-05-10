@@ -1,7 +1,13 @@
-_include('../../general/lexicon.dlog').
 
-%_lex('-BRIDGE-', ['loc/2', 'hasInhabitant/2', 'next_to/2', 'traverse/2']).
-
-_include('lexicon0.dlog') :- lexMode(0).
-_include('lexicon1.dlog') :- lexMode(1).
+_include('iblex0.dlog') :- lexMode(0).
+_include('iblex1.dlog') :- lexMode(1).
+_include('iblex2.dlog') :- lexMode(2).
+_include('iblex3.dlog') :- lexMode(3).
+_include('iblex4.dlog') :- lexMode(4).
+_include('iblex5.dlog') :- lexMode(5).
+_include('iblex6.dlog') :- lexMode(6).
+_include('iblex7.dlog') :- lexMode(7).
+_include('iblex8.dlog') :- lexMode(8).
+_include('iblex9.dlog') :- lexMode(9).
+_include('iblex10.dlog') :- lexMode(10).
 
