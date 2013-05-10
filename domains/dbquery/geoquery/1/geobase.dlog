@@ -696,12 +696,3 @@ lake('mille lacs',536,['minnesota']).
 lake('flathead',510,['montana']).
 lake('tahoe',497,['nevada','california']).
 country('usa',307890000,9826675).
-country('algeria',307890000,9826675).
-country('Andorra',307890000,9826675).
-language('algeria', 'arabic language').
-language('angola', 'spanish').
-language('usa', 'spanish').
-language('algeria', 'spanish').
-language('algeria', 'babel').
-motto('andorra', '\"Virtue United is Stronger\"').
-

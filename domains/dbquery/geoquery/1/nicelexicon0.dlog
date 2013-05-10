@@ -1,0 +1,207 @@
+%_include('../../general/lexicon.dlog').
+_include('../../general/lexicon3.dlog').
+
+%%BEGIN PERCY ORIGINAL lexicon2.dlog
+%_lex(['city/N'], 'city/1').
+%_lex(['state/N'], 'state/1').
+%_lex(['country/N'], 'country/1').
+%_lex(['lake/N'], 'lake/1').
+%_lex(['mountain/N'], 'mountain/1').
+%_lex(['river/N'], 'river/1').
+%_lex(['point/N'], 'place/1').
+%_lex(['where/N'], 'loc/1').
+%
+%_lex(['major'], 'major/1').
+%_lex(['capital/N'], 'capital/1').
+%_lex('high point/N', 'high_point/2').
+%
+%_lex(['person/N'], 'person/1').
+%_lex(['population/N'], 'population/2').
+%
+%_lex(['long'], 'len/2').
+%_lex(['short'], 'negLen/2').
+%_lex(['large'], 'size/2').
+%_lex(['small'], 'negSize/2').
+%_lex(['high'], 'elevation/2').
+%_lex(['low'], 'negElevation/2').
+%_lex(['dense'], 'density/2').
+%_lex(['sparse'], 'negDensity/2').
+%_lex(['area'], 'area/2').
+%
+%_include('lexicon0.dlog').
+%%END PERCY ORIGINAL lexicon2.dlog
+%
+%%BEGIN PERCY ORIGINAL lexicon0.dlog
+%
+%_lex([':WRB'], ['loc/1']).
+%_lex([':NN', ':NNS'], ['city/1', 'state/1', 'country/1', 'lake/1', 'mountain/1', 'river/1', 'place/1', 'person/1', 'capital/1', 'population/2']).
+%_lex([':NN', ':NNS', ':JJ'], ['len/2', 'negLen/2', 'size/2', 'negSize/2', 'elevation/2', 'negElevation/2', 'density/2', 'negDensity/2', 'area/2', 'negArea/2']).
+%_lex([':JJ'], 'major/1').
+%_lex([':NN', ':NNS'], countryid('usa')).
+%
+%%END PERCY ORIGINAL lexicon0.dlog
+
+
+%_lex([':WRB'], ['loc/1']).
+
+_lex(['where/N'], 'loc/1').
+
+%
+%_lex(['long'], 'len/2').
+%_lex(['short'], 'negLen/2').
+%_lex(['large'], 'size/2').
+%_lex(['small'], 'negSize/2').
+%_lex(['high'], 'elevation/2').
+%_lex(['low'], 'negElevation/2').
+%_lex(['dense'], 'density/2').
+%_lex(['sparse'], 'negDensity/2').
+%_lex(['area'], 'area/2').
+%
+
+%geobase.dlog predicates as Lexical triggers
+_lex(['city'], ['city/1']).
+_lex(['mountain'], ['mountain/1']).
+_lex(['country'], ['country/1']).
+_lex(['lake'], ['lake/1']).
+_lex(['state'], ['state/1']).
+_lex(['river'], ['river/1']).
+
+%%%BEGIN WACKYPEDIA 10context PREDICATES
+%%
+%%%geobase.dlog predicate 10 Wackypedia contexts as Lexical triggers
+%_lex(['city', 'census', 'capacity', 'area', 'median', 'county', 'states', 'located', 'united', 'income'], ['city/1']).
+%_lex(['mountain', 'north', 'mountains', 'mount', 'area', 'ranges', 'located', 'range', 'highest', 'south'], ['mountain/1']).
+%_lex(['around', 'world', 'country', 'over', 'one', 'music', 'many', 'new', 'national', 'first'], ['country/1']).
+%_lex(['blake', 'north', 'area', 'park', 'lake', 'water', 'located', 'near', 'small', 'river'], ['lake/1']).
+%_lex(['city', 'estate', 'district', 'route', 'one', 'county', 'located', 'state', 'new', 'interstate'], ['state/1']).
+%_lex(['north', 'driver', 'flows', 'one', 'located', 'near', 'through', 'along', 'river', 'south'], ['river/1']).
+%
+%%%geoquery.dlog predicate 10 context distribution from Wackypedia as Lexical triggers
+%_lex(['mountain', 'north', 'mountains', 'mount', 'area', 'ranges', 'located', 'range', 'highest', 'south'], ['mountain/1']).
+%_lex(['traverse', 'route', 'two', 'ultraverse', 'trail', 'through', 'gun', 'time', 'one', 'first'], ['traverse/2']).
+%_lex(['highest', 'time', 'point', 'up', 'age', 'view', 'two', 'first', 'fellow', 'below', 'points', 'low', 'allow', 'under', 'line', 'one', 'out', 'over', 'those', 'population'], ['low_point/2']).
+%_lex(['league', 'major', 'city', 'many', 'two', 'one', 'three', 'during', 'new', 'first'], ['major/1']).
+%_lex(['emphasize', 'brezhoneg', 'family', 'due', 'ya', 'neg', 'average', 'municipality', 'primary', 'one', 'large', 'through', 'plan', 'bilingual', 'pecheneg', 'small', 'linguistic', 'more', 'household', 'launched', 'size'], ['negSize/2']).
+%_lex(['school', 'level', 'students', 'up', 'point', 'two', 'first', 'one', 'high', 'very', 'points', 'low', 'time', 'schools', 'new', 'highest', 'out', 'public', 'view'], ['high_point/2']).
+%_lex(['family', 'average', 'due', 'one', 'large', 'emphasize', 'small', 'more', 'household', 'size'], ['size/2']).
+%_lex(['loc', 'countries', 'eastern', 'elections', 'bloc', 'election', 'belloc', 'forward', 'party', 'soviet', 'former'], ['loc/1']).
+%_lex(['united', 'land', 'area', 'according', 'km', 'states', 'miles', 'bureau', 'census', 'total'], ['area/2']).
+%_lex(['blake', 'north', 'area', 'park', 'lake', 'water', 'located', 'near', 'small', 'river'], ['lake/1']).
+%_lex(['longer', 'two', 'long', 'one', 'shorter', 'length', 'much', 'version', 'time', 'more'], ['shorter/2']).
+%_lex(['upper', 'lower', 'flower', 'slower', 'average', 'two', 'one', 'literacy', 'higher', 'more'], ['lower/2']).
+%_lex(['city', 'estate', 'district', 'route', 'one', 'county', 'located', 'state', 'new', 'interstate'], ['state/1']).
+%_lex(['city', 'north', 'south-east', 'west', 'regional', 'approximately', 'lies', 'capital', 'east', 'south'], ['capital/1']).
+%_lex(['square', 'brezhoneg', 'density', 'ya', 'neg', 'average', 'people', 'municipality', 'primary', 'km', 'per', 'mile', 'through', 'plan', 'bilingual', 'pecheneg', 'units', 'linguistic', 'housing', 'launched', 'population'], ['negDensity/2']).
+%_lex(['files', 'given', 'used', 'surname', 'name', '3ds', 'int', 'type', 'changed', '-', 'use', 'same', 'y', 'see', 'under', 'known', 'obj', 'nickname', 'new', 'first'], ['nameObj/2']).
+%_lex(['male', 'average', 'more', 'rate', 'much', 'higher', 'female', 'education', 'national', 'literacy'], ['higher/2']).
+%_lex(['meters', 'elevation', 'brezhoneg', 'level', 'ya', 'neg', 'average', 'area', 'municipality', 'primary', 'feet', 'located', 'm', 'through', 'plan', 'bilingual', 'pecheneg', 'linguistic', 'sea', 'launched', 'above'], ['negElevation/2']).
+%_lex(['elevation', 'sea', 'level', 'average', 'area', 'm', 'feet', 'located', 'meters', 'above'], ['elevation/2']).
+%_lex(['city', 'census', 'capacity', 'area', 'median', 'county', 'states', 'located', 'united', 'income'], ['city/1']).
+%_lex(['glen', 'stolen', 'new', 'len', 'one', 'born', 'ellen', 'helen', 'allen', 'fallen', 'first'], ['len/2']).
+%_lex(['census', 'people', 'age', 'density', 'km', '2000', 'per', 'under', 'those', 'population'], ['population/2']).
+%_lex(['one', 'used', 'up', 'many', 'over', 'time', 'two', 'years', 'to', 'three', 'during', 'year', 'new', 'more', 'next', 'day', 'first'], ['next_to/2']).
+%_lex(['still', 'used', 'longer', 'one', 'much', 'although', 'time', 'new', 'now', 'more'], ['longer/2']).
+%_lex(['around', 'world', 'country', 'over', 'one', 'music', 'many', 'new', 'national', 'first'], ['country/1']).
+%_lex(['square', 'density', 'average', 'people', 'per', 'mile', 'km', 'units', 'housing', 'population'], ['density/2']).
+%_lex(['census', 'brezhoneg', 'under', 'people', 'ya', 'neg', 'age', 'density', 'municipality', 'primary', 'km', 'per', '2000', 'through', 'plan', 'bilingual', 'pecheneg', 'those', 'linguistic', 'launched', 'population'], ['negPopulation/2']).
+%_lex(['brezhoneg', 'municipality', 'primary', 'one', 'born', 'through', 'pecheneg', 'allen', 'glen', 'neg', 'ellen', 'bilingual', 'linguistic', 'ya', 'len', 'plan', 'helen', 'new', 'stolen', 'fallen', 'launched', 'first'], ['negLen/2']).
+%_lex(['takes', 'took', 'replace', 'second', 'place', 'take', 'during', 'new', 'one', 'first'], ['place/1']).
+%_lex(['north', 'driver', 'flows', 'one', 'located', 'near', 'through', 'along', 'river', 'south'], ['river/1']).
+%_lex(['united', 'land', 'brezhoneg', 'area', 'ya', 'neg', 'census', 'municipality', 'primary', 'km', 'according', 'states', 'miles', 'through', 'plan', 'bilingual', 'pecheneg', 'bureau', 'linguistic', 'total', 'launched'], ['negArea/2']).
+%
+%%%END WACKYPEDIA 10 contexts PREDICATES
+%
+
+%BEGIN WORDNET PREDICATES
+
+%geobase.dlog predicate synonyms from WordNet as Lexical triggers
+_lex(['city', 'metropolis', 'center', 'urban'], ['city/1']).
+_lex(['good', 'sight', 'deal', 'mess', 'pot', 'tidy', 'great', 'spate', 'quite', 'mass', 'heap', 'flock', 'peck', 'mint', 'slew', 'a', 'mountain', 'little', 'hatful', 'sum', 'wad', 'batch', 'stack', 'muckle', 'pile', 'lot', 'mickle', 'plenty', 'raft', 'mount', 'passel'], ['mountain/1']).
+_lex(['commonwealth', 'body', 'land', 'area', 'country', 'publica', 'nation', 'politic', 'state', 'res', 'rural'], ['country/1']).
+_lex(['lake'], ['lake/1']).
+_lex(['commonwealth', 'body', 'express', 'nation', 'states', 'posit', 'say', 'united', 'publica', 'put', 'land', 'province', 'politic', 'res', 'department', 'submit', 'matter', 'state', 'of', 'forward', 'dos', 'country', 'tell'], ['state/1']).
+_lex(['river'], ['river/1']).
+
+
+%geoquery.dlog predicate Lexical triggers from WordNet
+_lex(['plenty', 'deal', 'pot', 'tidy', 'sight', 'flock', 'mint', 'slew', 'mountain', 'little', 'sum', 'wad', 'muckle', 'pile', 'lot', 'mickle', 'raft', 'passel', 'good', 'hatful', 'mess', 'spate', 'quite', 'heap', 'peck', 'stack', 'a', 'great', 'mount', 'batch', 'mass'], ['mountain/1']).
+_lex(['traverse', 'crossbeam', 'trave', 'get', 'track', 'cover', 'over', 'sweep', 'traversal', 'through', 'transom', 'pass', 'deny', 'cut', 'span', 'crosspiece', 'cross', 'across'], ['traverse/2']).
+_lex(['decimal', 'point', 'compass', 'period', 'down', 'lowly', 'low-pitched', 'manoeuver', 'show', 'indicate', 'charge', 'manoeuvre', 'low', 'bespeak', 'sharpen', 'luff', 'designate', 'head', 'dispirited', 'low-toned', 'gear', 'stop', 'betoken', 'downhearted', 'gloomy', 'moo', 'low-spirited', 'abject', 'grim', 'alexander', 'pointedness', 'humbled', 'target', 'level', 'depressed', 'signal', 'low-down', 'aim', 'item', 'small', 'guide', 'steer', 'repoint', 'humble', 'gunpoint', 'direct', 'depleted', 'in', 'distributor', 'miserable', 'channelize', 'cecil', 'depression', 'blue', 'sir', 'power', 'tip', 'detail', 'orient', 'channelise', 'place', 'maneuver', 'full', 'degree', 'spot', 'crushed', 'broken', 'modest', 'mouth', 'peak', 'stage', 'scurvy', 'taper', 'downcast', 'percentage', 'humiliated', 'david', 'scummy', 'time', 'the', 'breaker', 'dot', 'first'], ['low_point/2']).
+_lex(['roy', 'major', 'john', 'r.'], ['major/1']).
+_lex(['sizing', 'neg', 'of', 'it', 'size'], ['negSize/2']).
+_lex(['repoint', 'point', 'gunpoint', 'period', 'eminent', 'high', 'richly', 'in', 'distributor', 'channelize', 'manoeuver', 'highschool', 'channelise', 'spirits', 'show', 'tip', 'detail', 'heights', 'power', 'indicate', 'charge', 'manoeuvre', 'bespeak', 'percentage', 'luff', 'designate', 'maneuver', 'head', 'full', 'gear', 'degree', 'luxuriously', 'stop', 'spot', 'betoken', 'gamy', 'direct', 'signal', 'orient', 'compass', 'mellow', 'sharpen', 'stage', 'steer', 'school', 'pointedness', 'high-pitched', 'target', 'level', 'decimal', 'taper', 'up', 'aim', 'item', 'place', 'dot', 'time', 'senior', 'breaker', 'guide', 'gamey', 'peak'], ['high_point/2']).
+_lex(['sizing', 'of', 'it', 'size'], ['size/2']).
+_lex(['loc'], ['loc/1']).
+_lex(['arena', 'domain', 'area', 'country', 'region', 'orbit', 'surface', 'expanse', 'sphere', 'field'], ['area/2']).
+_lex(['lake'], ['lake/1']).
+_lex(['poor', 'little', 'short', 'brusque', 'inadequate', 'curt', 'forgetful', 'myopic', 'shorter', 'unforesightful', 'unretentive', 'brusk', 'light', 'scant', 'shortsighted'], ['shorter/2']).
+_lex(['berth', 'down', 'bring', 'depleted', 'lowly', 'in', 'depressed', 'miserable', 'low-pitched', 'blue', 'depress', 'take', 'low', 'dispirited', 'low-toned', 'frown', 'get', 'scurvy', 'crushed', 'downhearted', 'broken', 'modest', 'gloomy', 'let', 'low-spirited', 'abject', 'grim', 'lower', 'humbled', 'low-down', 'glower', 'downcast', 'lour', 'humble', 'humiliated', 'turn', 'scummy', 'small', 'mouth', 'the'], ['lower/2']).
+_lex(['commonwealth', 'body', 'states', 'say', 'publica', 'united', 'politic', 'res', 'submit', 'state', 'department', 'tell', 'province', 'express', 'nation', 'forward', 'put', 'land', 'country', 'matter', 'of', 'posit', 'dos'], ['state/1']).
+_lex(['majuscule', 'great', 'working', 'uppercase', 'cap', 'washington', 'chapiter', 'letter', 'das', 'upper-case', 'capital', 'kapital'], ['capital/1']).
+_lex(['tightness', 'denseness', 'density', 'neg', 'compactness', 'concentration'], ['negDensity/2']).
+_lex(['diagnose', 'figure', 'describe', 'epithet', 'discover', 'gens', 'constitute', 'bring', 'identify', 'key', 'distinguish', 'out', 'appoint', 'obj', 'name', 'mention', 'nominate', 'make', 'list', 'up', 'public', 'advert', 'call', 'cite', 'refer'], ['nameObj/2']).
+_lex(['spirits', 'high-pitched', 'eminent', 'gamy', 'high', 'in', 'mellow', 'gamey', 'higher'], ['higher/2']).
+_lex(['superlative', 'aggrandizement', 'elevation', 'acme', 'el', 'neg', 'top', 'altitude', 'aggrandisement', 'natural', 'height', 'alt', 'lift', 'peak', 'pinnacle', 'tiptop', 'meridian', 'raising', 'summit'], ['negElevation/2']).
+_lex(['superlative', 'elevation', 'el', 'height', 'lift', 'aggrandisement', 'natural', 'alt', 'aggrandizement', 'pinnacle', 'acme', 'top', 'altitude', 'summit', 'raising', 'tiptop', 'meridian', 'peak'], ['elevation/2']).
+_lex(['city', 'metropolis', 'center', 'urban'], ['city/1']).
+_lex(['len'], ['len/2']).
+_lex(['universe', 'population'], ['population/2']).
+_lex(['next', 'to', 'future', 'adjacent', 'following', 'by', 'succeeding', 'side'], ['next_to/2']).
+_lex(['tenacious', 'longer', 'farseeing', 'longsighted', 'farsighted', 'thirster', 'long', 'recollective', 'prospicient', 'yearner', 'foresightful', 'foresighted', 'retentive'], ['longer/2']).
+_lex(['commonwealth', 'body', 'land', 'area', 'country', 'publica', 'nation', 'politic', 'state', 'res', 'rural'], ['country/1']).
+_lex(['compactness', 'concentration', 'tightness', 'denseness', 'density'], ['density/2']).
+_lex(['neg', 'universe', 'population'], ['negPopulation/2']).
+_lex(['neg', 'len'], ['negLen/2']).
+_lex(['set', 'shoes', 'office', 'point', 'grade', 'lieu', 'site', 'rank', 'seat', 'rate', 'identify', 'blank', 'localize', 'out', 'position', 'space', 'range', 'send', 'station', 'place', 'locate', 'billet', 'pose', 'spot', 'direct', 'lay', 'situation', 'put', 'post', 'come', 'piazza', 'berth', 'topographic', 'in', 'target', 'home', 'invest', 'plaza', 'aim', 'localise', 'stead', 'commit', 'property', 'order'], ['place/1']).
+_lex(['river'], ['river/1']).
+_lex(['arena', 'field', 'domain', 'area', 'neg', 'region', 'orbit', 'surface', 'expanse', 'sphere', 'country'], ['negArea/2']).
+
+%END WORDNET PREDICATES
+%
+%
+%%BEGIN WACKYPEDIA context PREDICATES
+%
+%%geobase.dlog predicate Wackypedia context as Lexical triggers
+%_lex(['family', 'people', 'household', 'one', 'county', 'families', 'racial', 'total', 'native', 'city', 'united', 'capacity', 'district', 'area', 'electricity', '2000', 'per', 'households', 'located', 'state', 'miles', 'bureau', 'income', 'largest', 'new', 'white', 'capital', 'residing', 'north', 'centre', 'makeup', 'water', 'part', 'two', 'census', 'during', 'population', 'states', 'land', 'many', 'median', 'according', 'more', 'capita', 'races', 'african', 'american', 'river', 'south', 'first'], ['city/1']).
+%_lex(['named', 'mountains', 'national', 'pass', 'two', 'county', 'through', 'village', 'range', 'border', 'mountain', 'highest', 'northern', 'area', 'west', 'top', 'lake', 'located', 'above', 'between', 'new', 'east', 'over', 'alps', 'north', 'city', 'park', 'southern', 'ranges', 'switzerland', 'part', 'western', 'known', 'one', 'mount', 'town', 'high', 'valley', 'name', 'many', 'region', 'm', 'up', 'near', 'small', 'river', 'biking', 'side', 'south', 'peak'], ['mountain/1']).
+%_lex(['people', 'being', 'national', 'number', 'years', 'states', 'born', 'through', 'during', 'year', 'home', 'throughout', 'native', 'album', 'city', 'united', 'area', 'top', 'two', 'state', 'station', 'music', 'time', 'cross-country', 'cross', 'out', 'war', 'more', 'over', 'around', 'government', 'team', 'school', 'part', 'new', 'known', 'such', 'one', 'singer', 'largest', 'world', 'country', 'many', 'well', 'up', 'american', 'became', 'each', 'south', 'first'], ['country/1']).
+%_lex(['named', 'fish', 'westlake', 'near', 'two', 'high', 'through', 'fishing', 'city', 'blake', 'end', 'northern', 'area', 'west', 'timberlake', 'lake', 'located', 'state', 'between', 'new', 'east', 'over', 'used', 'north', 'around', 'dam', 'largest', 'park', 'water', 'part', 'known', 'during', 'along', 'one', 'town', 'county', 'school', 'name', 'island', 'up', 'km', 'side', 'large', 'shore', 'many', 'small', 'river', 'called', 'south', 'first'], ['lake/1']).
+%_lex(['estate', 'over', 'year', 'municipality', 'years', 'high', 'through', 'village', 'one', 'city', 'united', 'district', 'area', 'federal', 'west', '-', 'system', 'located', 'state', 'indian', 'capital', 'new', 'local', 'national', 'highway', 'more', 'real', 'north', 'government', 'india', 'michigan', 'under', 'park', 'part', 'york', 'during', 'law', 'between', 'town', 'states', 'school', 'many', 'route', 'county', 'became', 'south', 'time', 'interstate', 'two', 'first'], ['state/1']).
+%_lex(['bridge', 'named', 'valley', 'over', 'two', 'down', 'born', 'through', 'village', 'situated', 'east', 'built', 'area', 'west', 'lake', 'long', 'located', 'between', 'new', 'main', 'racing', 'used', 'north', 'city', 'driver', 'flows', 'water', 'banks', 'part', 'known', 'during', 'along', 'one', 'bank', 'town', 'county', 'river', 'name', 'car', 'up', 'km', 'side', 'near', 'race', 'south', 'small', 'tributary', 'called', 'road', 'first'], ['river/1']).
+%
+%
+%%geoquery.dlog predicate context distribution from Wackypedia as Lexical triggers
+%_lex(['named', 'one', 'high', 'pass', 'mountain', 'area', 'west', 'range', 'located', 'between', 'mountains', 'north', 'park', 'ranges', 'part', 'peak', 'highest', 'alps', 'county', 'name', 'mount', 'up', 'near', 'river', 'south'], ['mountain/1']).
+%_lex(['traverse', 'over', 'one', 'through', 'ridge', 'area', 'two', 'state', 'degrees', 'between', 'more', 'malibu', 'used', 'each', 'ultraverse', 'trail', 'line', 'comics', 'many', 'route', 'gun', 'time', 'river', 'road', 'first'], ['traverse/2']).
+%_lex(['point', 'being', 'over', 'each', 'yellow', 'fellow', 'high', 'see', 'including', '65', 'follow', 'out', 'slow', 'highest', 'two', 'points', 'low', 'under', 'new', 'more', 'used', 'families', 'viewpoint', 'between', 'game', 'poverty', 'during', 'line', 'one', 'those', 'population', 'appoint', '18', 'age', 'flow', 'up', 'below', 'became', 'time', 'allow', 'many', 'view', 'starting', 'first'], ['low_point/2']).
+%_lex(['major', 'played', 'over', 'years', 'including', 'during', 'such', 'one', 'city', 'area', 'three', 'role', 'between', 'new', 'several', 'war', 'part', 'two', 'world', 'cities', 'league', 'made', 'many', 'became', 'first'], ['major/1']).
+%_lex(['smaller', 'brezhoneg', 'family', 'century', 'maelor', 'over', 'municipality', 'primary', 'due', 'shape', 'used', 'through', 'saesneg', 'pecheneg', 'education', 'children', 'size', 'neg', '-', 'two', 'same', 'very', 'emphasize', 'bilingual', 'isneg', 'linguistic', 'household', 'more', 'attended', 'ya', 'between', 'number', 'plan', 'new', 'schools', 'november', 'one', 'population', 'february', 'name', 'language', 'many', 'average', 'larger', 'up', 'large', '2007', 'each', 'small', 'launched'], ['negSize/2']).
+%_lex(['point', 'being', 'over', 'two', 'high', 'college', 'year', 'quality', 'out', 'highest', 'district', 'due', 'located', 'points', 'low', 'between', 'new', 'public', 'more', 'such', 'used', 'viewpoint', 'students', 'time', 'game', 'schools', 'during', 'one', 'appoint', 'school', 'level', 'many', 'up', 'became', 'each', 'very', 'view', 'starting', 'first'], ['high_point/2']).
+%_lex(['smaller', 'family', 'over', 'number', 'one', 'shape', 'size', 'due', 'same', 'emphasize', 'between', 'new', 'household', 'more', 'used', 'very', 'two', 'population', 'many', 'average', 'larger', 'up', 'large', 'each', 'small'], ['size/2']).
+%_lex(['electoral', 'national', 'one', 'elected', 'election', 'belloc', 'loc', 'federal', 'political', 'two', 'member', 'bloc', 'forward', 'new', 'communist', 'parliament', 'eastern', 'part', 'party', 'during', 'former', 'countries', 'elections', 'union', 'soviet', 'first'], ['loc/1']).
+%_lex(['square', 'covers', 'one', 'states', 'village', 'total', 'before', 'city', 'united', 'area', 'located', 'bureau', 'new', 'around', 'water', 'part', 'known', 'population', 'town', 'land', 'census', 'many', 'according', 'km', 'miles'], ['area/2']).
+%_lex(['two', 'county', 'city', 'blake', 'area', 'lake', 'located', 'largest', 'new', 'north', 'around', 'dam', 'park', 'water', 'part', 'one', 'town', 'name', 'km', 'large', 'shore', 'near', 'small', 'river', 'south'], ['lake/1']).
+%_lex(['smaller', 'less', 'being', 'over', 'one', 'much', 'two', 'long', 'tend', 'shorter', 'version', 'between', 'new', 'bitterns', 'higher', 'used', 'longer', 'similar', 'route', 'necked', 'length', 'time', 'usually', 'more', 'slightly'], ['shorter/2']).
+%_lex(['upper', 'slower', 'house', 'national', 'one', 'high', 'rate', 'flower', 'two', 'much', 'new', 'higher', 'used', 'levels', 'literacy', 'lower', 'level', 'many', 'average', 'follower', 'more', 'part', 'each', 'river', 'first'], ['lower/2']).
+%_lex(['estate', 'national', 'india', 'one', 'states', 'city', 'district', 'area', 'located', 'state', 'indian', 'new', 'highway', 'interstate', 'real', 'north', 'government', 'park', 'part', 'town', 'county', 'school', 'route', 'south', 'first'], ['state/1']).
+%_lex(['south-east', 'north-east', 'city', 'gdadsk', 'district', 'located', 'west', 'approximately', 'north-west', 'state', 'capital', 'new', 'east', 'olsztyn', 'province', 'north', 'regional', 'poznad', 'kielce', 'town', 'lies', 'region', 'km', 'south-west', 'south'], ['capital/1']).
+%_lex(['square', 'brezhoneg', 'century', 'maelor', 'squaremile', 'municipality', 'primary', 'high', 'mile', 'through', 'saesneg', 'pecheneg', 'education', 'children', 'city', 'total', 'density', 'inhabitants', 'neg', 'housing', 'people', '-', 'per', 'kilometer', 'estimated', 'low', 'bilingual', 'isneg', 'units', 'linguistic', 'attended', 'ya', 'persons', 'sqmi', 'plan', 'kilometers', 'schools', 'november', 'population', 'town', 'february', 'name', 'language', 'average', 'area', 'mi', 'km', '2003', '2007', 'launched'], ['negDensity/2']).
+%_lex(['files', 'changed', 'surname', 'family', '3ds', 'jobject', 'one', 'see', 'file', 'unit', 'city', 'given', 'delete', 'val', '-', 'two', 'same', 'int', 'under', 'new', 'several', 'type', 'refer', 'function', 'used', 'means', 'company', 'use', 'derived', 'containing', 'here', 'meaning', 'known', 'obj', 'nickname', 'town', 'property', 'word', 'name', 'dog', 'later', 'jintarray', 'object', 'ocaml', 'common', 'formats', 'y', '3d', 'first'], ['nameObj/2']).
+%_lex(['national', 'number', 'one', 'high', 'rate', 'college', 'higher', 'female', 'education', 'much', 'more', 'used', 'students', 'lower', 'average', 'levels', 'such', 'literacy', 'school', 'level', 'many', 'university', 'up', 'male', 'institutions'], ['higher/2']).
+%_lex(['brezhoneg', 'century', 'maelor', 'municipality', 'primary', 'metres', 'high', 'lies', 'through', 'surface', 'saesneg', 'pecheneg', 'education', 'children', 'mountain', 'area', 'neg', 'point', '-', 'lake', 'located', 'bilingual', 'isneg', 'linguistic', 'sea', 'attended', 'elevation', 'above', 'ya', 'between', 'plan', 'schools', 'november', 'highest', 'town', 'feet', 'february', 'name', 'language', 'level', 'ft', 'average', 'm', 'km', '2007', 'north', 'meters', 'river', 'launched', 'peak'], ['negElevation/2']).
+%_lex(['point', 'metres', 'high', 'lies', 'meters', 'sea', 'ft', 'mountain', 'area', 'lake', 'elevation', 'located', 'above', 'between', 'north', 'peak', 'highest', 'town', 'feet', 'level', 'average', 'm', 'km', 'river', 'surface'], ['elevation/2']).
+%_lex(['family', 'people', 'one', 'states', 'total', 'city', 'united', 'capacity', 'area', 'electricity', '2000', 'per', 'located', 'capital', 'new', 'more', 'income', 'races', 'two', 'county', 'census', 'median', 'according', 'american', 'miles'], ['city/1']).
+%_lex(['pollen', 'married', 'one', 'born', 'allen', 'film', 'out', 'glen', 'van', '-', 'two', 'ellen', 'new', 'john', 'len', 'cullen', 'helen', 'during', 'years', 'school', 'stolen', 'later', 'american', 'time', 'fallen', 'first'], ['len/2']).
+%_lex(['square', 'people', 'over', 'mile', 'including', '65', 'village', 'area', 'below', 'per', 'under', 'latino', 'families', 'poverty', 'line', 'those', 'population', 'census', '18', 'age', 'density', 'km', 'hispanic', '2000', 'race'], ['population/2']).
+%_lex(['later', 'being', 'over', 'moved', 'back', 'one', 'four', 'year', 'out', 'album', 'city', 'united', 'located', 'three', 'next', 'few', 'according', 'before', 'new', 'several', 'more', 'such', 'used', 'to', 'season', 'two', 'during', 'years', 'day', 'school', 'made', 'many', 'months', 'up', 'against', 'morning', 'due', 'time', 'first'], ['next_to/2']).
+%_lex(['exists', 'being', 'over', 'one', 'years', 'still', 'even', 'use', 'due', 'much', 'new', 'more', 'available', 'used', 'though', 'part', 'two', 'although', 'such', 'now', 'longer', 'many', 'up', 'time', 'first'], ['longer/2']).
+%_lex(['people', 'over', 'cross', 'during', 'throughout', 'album', 'city', 'two', 'music', 'largest', 'cross-country', 'new', 'many', 'national', 'more', 'around', 'government', 'part', 'world', 'one', 'country', 'american', 'became', 'time', 'first'], ['country/1']).
+%_lex(['square', 'people', 'high', 'mile', 'estimated', 'city', 'total', 'density', 'inhabitants', 'housing', 'squaremile', 'per', 'kilometer', 'low', 'units', 'persons', 'sqmi', 'kilometers', 'population', 'town', 'average', 'area', 'mi', 'km', '2003'], ['density/2']).
+%_lex(['square', 'brezhoneg', 'century', 'maelor', 'over', 'village', 'municipality', 'primary', 'mile', 'through', '65', 'saesneg', 'pecheneg', 'education', 'children', 'area', 'neg', 'people', '-', '2000', 'per', 'bilingual', 'isneg', 'linguistic', 'latino', 'attended', 'families', 'ya', 'under', 'line', 'poverty', 'plan', 'schools', 'november', 'those', 'population', 'february', 'census', 'name', 'language', '18', 'age', 'density', 'km', 'hispanic', 'below', 'race', '2007', 'including', 'launched'], ['negPopulation/2']).
+%_lex(['pollen', 'later', 'brezhoneg', 'century', 'maelor', 'helen', 'municipality', 'primary', 'years', 'born', 'through', 'saesneg', 'pecheneg', 'education', 'children', 'film', 'out', 'glen', 'van', 'neg', '-', 'two', 'ellen', 'bilingual', 'isneg', 'linguistic', 'john', 'attended', 'ya', 'school', 'len', 'allen', 'cullen', 'plan', 'new', 'schools', 'during', 'november', 'one', 'february', 'stolen', 'name', 'language', 'married', 'american', '2007', 'time', 'fallen', 'launched', 'first'], ['negLen/2']).
+%_lex(['world', 'one', 'states', 'second', 'year', 'birthplace', 'united', 'takes', 'two', 'take', 'between', 'new', 'season', 'team', 'census-designated', 'took', 'finished', 'during', 'replace', 'county', 'third', 'taking', 'place', 'time', 'first'], ['place/1']).
+%_lex(['bridge', 'one', 'through', 'city', 'area', 'lake', 'located', 'between', 'valley', 'racing', 'north', 'driver', 'flows', 'water', 'two', 'along', 'bank', 'town', 'name', 'car', 'up', 'km', 'near', 'river', 'south'], ['river/1']).
+%_lex(['square', 'brezhoneg', 'century', 'maelor', 'village', 'municipality', 'primary', 'covers', 'one', 'states', 'known', 'through', 'saesneg', 'pecheneg', 'education', 'children', 'before', 'city', 'united', 'area', 'neg', '-', 'located', 'bureau', 'bilingual', 'isneg', 'total', 'linguistic', 'attended', 'around', 'ya', 'water', 'part', 'plan', 'new', 'schools', 'november', 'population', 'town', 'land', 'february', 'census', 'name', 'language', 'many', 'according', 'km', 'miles', '2007', 'launched'], ['negArea/2']).
+%
+%
+%%END WACKYPEDIA context PREDICATES

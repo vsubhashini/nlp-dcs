@@ -1,3 +1,7 @@
+
+_include('../../general/lexicon.dlog').
+
+%%BEGIN PERCY ORIGINAL lexicon2.dlog
 _lex(['city/N'], 'city/1').
 _lex(['state/N'], 'state/1').
 _lex(['country/N'], 'country/1').
@@ -25,3 +29,4 @@ _lex(['sparse'], 'negDensity/2').
 _lex(['area'], 'area/2').
 
 _include('lexicon0.dlog').
+%%END PERCY ORIGINAL lexicon2.dlog

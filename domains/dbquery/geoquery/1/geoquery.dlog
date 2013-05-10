@@ -10,8 +10,6 @@ _constructPred('mountainid',1).
 _constructPred('riverid',1).
 _constructPred('lakeid',1).
 _constructPred('placeid',1).
-_constructPred('languageid',1).
-_constructPred('mottoid',1).
 _constructPred('person',0).
 
 _include('../../general/predicates.dlog').
@@ -26,18 +24,8 @@ area(cityid('seattle','wa'), squared_kilometer(369.2)).
 loc(placeid('mount davidson'), cityid('san francisco','ca')). elevation(placeid('mount davidson'), meter(282)).
 
 country(countryid(usa)).
-country(countryid(algeria)).
-country(countryid(andorra)).
 
 state(stateid(State)) :- state(State,_,_,_,_,_,_,_,_,_).
-
-language(languageid(L)) :- language(_,L).
-language(countryid(X),L) :- language(X,L), country(countryid(X)).
-%language(stateid(X),L) :- language(X,L), state(stateid(X)).
-
-motto(mottoid(L)) :- motto(_,L).
-motto(countryid(X),L) :- motto(X,L).
-
 
 city(cityid(City,St)) :- state(State,St,_,_,_,_,City,_,_,_). loc(cityid(City,St),stateid(State)) :- state(State,St,_,_,_,_,City,_,_,_). % NEW
 city(cityid(City,St)) :- state(State,St,_,_,_,_,_,City,_,_). loc(cityid(City,St),stateid(State)) :- state(State,St,_,_,_,_,_,City,_,_). % NEW
@@ -129,6 +117,5 @@ nameObj(N,X) :- lake(X),lakeid(N,X).
 nameObj(N,X) :- place(X),placeid(N,X).
 nameObj(N,X) :- mountain(X),mountainid(N,X).
 nameObj(N,X) :- country(X),countryid(N,X).
-nameObj(N,X) :- language(X),languageid(N,X).
 
 %nameObj(N,X) :- city(C),cityid(_,N,C),loc(C,X),state(X). % State abbreviations - causing too much trouble

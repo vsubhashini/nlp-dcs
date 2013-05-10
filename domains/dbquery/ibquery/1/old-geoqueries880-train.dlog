@@ -1,0 +1,7 @@
+_parse([where,is,achiltibuie,located,?], answer(A,country(achiltibuie, A))).
+_parse([where,is,atlanta,located,?], answer(A,country(atlanta, A))).
+_parse([what,is,the,capital,of,azores,portugal,?], answer(A,capital(azores, A))).
+_parse([what,is,the,capital,of,angola,?], answer(A,capital(angola, A))).
+_parse([what,ethnic,groups,are,found,in,angola,?], answer(A,ethnicGroup(angola, A))).
+_parse([what,ethnic,groups,are,found,in,andorra,?], answer(A,ethnicGroup(andorra, A))).
+_parse([how,many,countries,speak,spanish,?], answer(A, count(B, language(B, 'spanish language'),A))).

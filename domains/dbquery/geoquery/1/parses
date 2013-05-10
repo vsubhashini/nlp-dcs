@@ -875,4 +875,3 @@ what is the area of wisconsin ?	( (SBARQ (WHNP (WP what)) (SQ (VBZ is) (NP (NP (
 how large is texas ?	( (SBARQ (WHADJP (WRB how) (JJ large)) (SQ (VBZ is) (NP (NNP texas))) (. ?)) )
 what is the population of the most small state ?	( (SBARQ (WHNP (WP what)) (SQ (VBZ is) (NP (NP (DT the) (NN population)) (PP (IN of) (NP (DT the) (RBS most) (JJ small) (NN state))))) (. ?)) )
 which is the density of the state that the most large river in the united states runs through ?	( (SBARQ (WHNP (WDT which)) (SQ (VBZ is) (NP (NP (DT the) (NN density)) (PP (IN of) (NP (NP (DT the) (NN state)) (SBAR (IN that) (S (NP (NP (DT the) (ADJP (RBS most) (JJ large)) (NN river)) (PP (IN in) (NP (DT the) (NNP united) (NNPS states)))) (VP (VBZ runs) (ADVP (RB through))))))))) (. ?)) )
-test test test test test?	( (NP (NN test) (NN test) (NN test) (NN test) (NN test?)) )

@@ -1,28 +1,61 @@
-% Only lowest counts
-
-_lex(['city/N'], 'city/1').
-_lex(['state/N'], 'state/1').
-_lex(['country/N'], 'country/1').
-_lex(['lake/N'], 'lake/1').
-_lex(['mountain/N'], 'mountain/1').
-_lex(['river/N'], 'river/1').
-_lex(['point/N'], 'place/1').
-_lex(['where/N'], 'loc/1').
-
-_lex(['major'], 'major/1').
-_lex(['capital/N'], 'capital/1').
-_lex('high point/N', 'high_point/2').
-
-_lex(['person/N'], 'person/1').
-_lex(['population/N'], 'population/2').
-
-_lex(['tall'], 'elevation/2').
-_lex(['peak'], 'mountain/1').
-_lex(['stay'], 'population/2').
-_lex(['populous'], 'population/2').
-_lex(['urban'], 'city/1').
-_lex(['length'], 'len/2').
+_include('../../general/lexicon.dlog').
+_include('../../general/lexicon3.dlog').
 
 
+%%geobase.dlog predicates as Lexical triggers
+%_lex(['city'], ['city/1']).
+%_lex(['mountain'], ['mountain/1']).
+%_lex(['country'], ['country/1']).
+%_lex(['lake'], ['lake/1']).
+%_lex(['state'], ['state/1']).
+%_lex(['river'], ['river/1']).
+%
 
-_include('lexicon0.dlog').
+
+%geobase.dlog predicate Wordnet synonyms as Lexical triggers
+_lex(['city', 'metropolis', 'center', 'urban'], ['city/1']).
+_lex(['good', 'sight', 'deal', 'mess', 'pot', 'tidy', 'great', 'spate', 'quite', 'mass', 'heap', 'flock', 'peck', 'mint', 'slew', 'a', 'mountain', 'little', 'hatful', 'sum', 'wad', 'batch', 'stack', 'muckle', 'pile', 'lot', 'mickle', 'plenty', 'raft', 'mount', 'passel'], ['mountain/1']).
+_lex(['commonwealth', 'body', 'land', 'area', 'country', 'publica', 'nation', 'politic', 'state', 'res', 'rural'], ['country/1']).
+_lex(['lake'], ['lake/1']).
+_lex(['commonwealth', 'body', 'express', 'nation', 'states', 'posit', 'say', 'united', 'publica', 'put', 'land', 'province', 'politic', 'res', 'department', 'submit', 'matter', 'state', 'of', 'forward', 'dos', 'country', 'tell'], ['state/1']).
+_lex(['river'], ['river/1']).
+
+
+%%Lexical triggers
+%_lex(['highlow'], ['highlow/2']).
+%_lex(['perimeter', 'march', 'molding', 'frame', 'mete', 'bound', 'abut', 'against', 'in', 'ring', 'skirt', 'line', 'on', 'borderline', 'border', 'butt', 'surround', 'delimitation', 'edge', 'environ', 'adjoin', 'boundary', 'moulding', 'margin'], ['border/2']).
+%_lex(['route', 'road'], ['road/2']).
+
+
+%geoquery.dlog predicate Lexical triggers from WordNet
+_lex(['plenty', 'deal', 'pot', 'tidy', 'sight', 'flock', 'mint', 'slew', 'mountain', 'little', 'sum', 'wad', 'muckle', 'pile', 'lot', 'mickle', 'raft', 'passel', 'good', 'hatful', 'mess', 'spate', 'quite', 'heap', 'peck', 'stack', 'a', 'great', 'mount', 'batch', 'mass'], ['mountain/1']).
+_lex(['traverse', 'crossbeam', 'trave', 'get', 'track', 'cover', 'over', 'sweep', 'traversal', 'through', 'transom', 'pass', 'deny', 'cut', 'span', 'crosspiece', 'cross', 'across'], ['traverse/2']).
+_lex(['decimal', 'point', 'compass', 'period', 'down', 'lowly', 'low-pitched', 'manoeuver', 'show', 'indicate', 'charge', 'manoeuvre', 'low', 'bespeak', 'sharpen', 'luff', 'designate', 'head', 'dispirited', 'low-toned', 'gear', 'stop', 'betoken', 'downhearted', 'gloomy', 'moo', 'low-spirited', 'abject', 'grim', 'alexander', 'pointedness', 'humbled', 'target', 'level', 'depressed', 'signal', 'low-down', 'aim', 'item', 'small', 'guide', 'steer', 'repoint', 'humble', 'gunpoint', 'direct', 'depleted', 'in', 'distributor', 'miserable', 'channelize', 'cecil', 'depression', 'blue', 'sir', 'power', 'tip', 'detail', 'orient', 'channelise', 'place', 'maneuver', 'full', 'degree', 'spot', 'crushed', 'broken', 'modest', 'mouth', 'peak', 'stage', 'scurvy', 'taper', 'downcast', 'percentage', 'humiliated', 'david', 'scummy', 'time', 'the', 'breaker', 'dot', 'first'], ['low_point/2']).
+_lex(['roy', 'major', 'john', 'r.'], ['major/1']).
+_lex(['sizing', 'neg', 'of', 'it', 'size'], ['negSize/2']).
+_lex(['repoint', 'point', 'gunpoint', 'period', 'eminent', 'high', 'richly', 'in', 'distributor', 'channelize', 'manoeuver', 'highschool', 'channelise', 'spirits', 'show', 'tip', 'detail', 'heights', 'power', 'indicate', 'charge', 'manoeuvre', 'bespeak', 'percentage', 'luff', 'designate', 'maneuver', 'head', 'full', 'gear', 'degree', 'luxuriously', 'stop', 'spot', 'betoken', 'gamy', 'direct', 'signal', 'orient', 'compass', 'mellow', 'sharpen', 'stage', 'steer', 'school', 'pointedness', 'high-pitched', 'target', 'level', 'decimal', 'taper', 'up', 'aim', 'item', 'place', 'dot', 'time', 'senior', 'breaker', 'guide', 'gamey', 'peak'], ['high_point/2']).
+_lex(['sizing', 'of', 'it', 'size'], ['size/2']).
+_lex(['loc'], ['loc/1']).
+_lex(['arena', 'domain', 'area', 'country', 'region', 'orbit', 'surface', 'expanse', 'sphere', 'field'], ['area/2']).
+_lex(['lake'], ['lake/1']).
+_lex(['poor', 'little', 'short', 'brusque', 'inadequate', 'curt', 'forgetful', 'myopic', 'shorter', 'unforesightful', 'unretentive', 'brusk', 'light', 'scant', 'shortsighted'], ['shorter/2']).
+_lex(['berth', 'down', 'bring', 'depleted', 'lowly', 'in', 'depressed', 'miserable', 'low-pitched', 'blue', 'depress', 'take', 'low', 'dispirited', 'low-toned', 'frown', 'get', 'scurvy', 'crushed', 'downhearted', 'broken', 'modest', 'gloomy', 'let', 'low-spirited', 'abject', 'grim', 'lower', 'humbled', 'low-down', 'glower', 'downcast', 'lour', 'humble', 'humiliated', 'turn', 'scummy', 'small', 'mouth', 'the'], ['lower/2']).
+_lex(['commonwealth', 'body', 'states', 'say', 'publica', 'united', 'politic', 'res', 'submit', 'state', 'department', 'tell', 'province', 'express', 'nation', 'forward', 'put', 'land', 'country', 'matter', 'of', 'posit', 'dos'], ['state/1']).
+_lex(['majuscule', 'great', 'working', 'uppercase', 'cap', 'washington', 'chapiter', 'letter', 'das', 'upper-case', 'capital', 'kapital'], ['capital/1']).
+_lex(['tightness', 'denseness', 'density', 'neg', 'compactness', 'concentration'], ['negDensity/2']).
+_lex(['diagnose', 'figure', 'describe', 'epithet', 'discover', 'gens', 'constitute', 'bring', 'identify', 'key', 'distinguish', 'out', 'appoint', 'obj', 'name', 'mention', 'nominate', 'make', 'list', 'up', 'public', 'advert', 'call', 'cite', 'refer'], ['nameObj/2']).
+_lex(['spirits', 'high-pitched', 'eminent', 'gamy', 'high', 'in', 'mellow', 'gamey', 'higher'], ['higher/2']).
+_lex(['superlative', 'aggrandizement', 'elevation', 'acme', 'el', 'neg', 'top', 'altitude', 'aggrandisement', 'natural', 'height', 'alt', 'lift', 'peak', 'pinnacle', 'tiptop', 'meridian', 'raising', 'summit'], ['negElevation/2']).
+_lex(['superlative', 'elevation', 'el', 'height', 'lift', 'aggrandisement', 'natural', 'alt', 'aggrandizement', 'pinnacle', 'acme', 'top', 'altitude', 'summit', 'raising', 'tiptop', 'meridian', 'peak'], ['elevation/2']).
+_lex(['city', 'metropolis', 'center', 'urban'], ['city/1']).
+_lex(['len'], ['len/2']).
+_lex(['universe', 'population'], ['population/2']).
+_lex(['next', 'to', 'future', 'adjacent', 'following', 'by', 'succeeding', 'side'], ['next_to/2']).
+_lex(['tenacious', 'longer', 'farseeing', 'longsighted', 'farsighted', 'thirster', 'long', 'recollective', 'prospicient', 'yearner', 'foresightful', 'foresighted', 'retentive'], ['longer/2']).
+_lex(['commonwealth', 'body', 'land', 'area', 'country', 'publica', 'nation', 'politic', 'state', 'res', 'rural'], ['country/1']).
+_lex(['compactness', 'concentration', 'tightness', 'denseness', 'density'], ['density/2']).
+_lex(['neg', 'universe', 'population'], ['negPopulation/2']).
+_lex(['neg', 'len'], ['negLen/2']).
+_lex(['set', 'shoes', 'office', 'point', 'grade', 'lieu', 'site', 'rank', 'seat', 'rate', 'identify', 'blank', 'localize', 'out', 'position', 'space', 'range', 'send', 'station', 'place', 'locate', 'billet', 'pose', 'spot', 'direct', 'lay', 'situation', 'put', 'post', 'come', 'piazza', 'berth', 'topographic', 'in', 'target', 'home', 'invest', 'plaza', 'aim', 'localise', 'stead', 'commit', 'property', 'order'], ['place/1']).
+_lex(['river'], ['river/1']).
+_lex(['arena', 'field', 'domain', 'area', 'neg', 'region', 'orbit', 'surface', 'expanse', 'sphere', 'country'], ['negArea/2']).

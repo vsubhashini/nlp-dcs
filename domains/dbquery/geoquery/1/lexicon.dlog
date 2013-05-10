@@ -5,7 +5,5 @@ _lex('-BRIDGE-', ['loc/2', 'hasInhabitant/2', 'next_to/2', 'traverse/2']).
 _include('lexicon0.dlog') :- lexMode(0).
 _include('lexicon1.dlog') :- lexMode(1).
 _include('lexicon2.dlog') :- lexMode(2).
-_include('lexicon3.dlog') :- lexMode(3).
-_include('lexicon4.dlog') :- lexMode(4).
-_include('lexicon5.dlog') :- lexMode(5).
-_include('lexicon6.dlog') :- lexMode(6).
+%_include('lexicon3.dlog') :- lexMode(3).
+

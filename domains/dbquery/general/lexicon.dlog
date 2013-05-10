@@ -2,13 +2,13 @@
 _lex(['no', 'not', 'dont', 'doesnt', 'outside', 'exclude'], 'not/3').
 _lex(['each', 'every'], 'every/3').
 
-% Extensions
+%% Extensions
 extAction('.').
 extUnion('.').
 
-_lex('-BRIDGE-', ['fracQuant/3', 'countQuant/3'])         :- extAction(1). % Generalized quantification: 30% of the cities | 3 cities
-_lex('-BRIDGE-', ['fracTopRanked/2', 'countTopRanked/2']) :- extAction(1). % Generalized quantification: 30% of the largest cities | 3 largest cities
-_lex(['fraction', 'percent'], 'fracQuant/3').
+%_lex('-BRIDGE-', ['fracQuant/3', 'countQuant/3'])         :- extAction(1). % Generalized quantification: 30% of the cities | 3 cities
+%_lex('-BRIDGE-', ['fracTopRanked/2', 'countTopRanked/2']) :- extAction(1). % Generalized quantification: 30% of the largest cities | 3 largest cities
+%_lex(['fraction', 'percent'], 'fracQuant/3').
 
 %%% Superlatives
 _lex('most', 'argmax/4').
@@ -32,6 +32,7 @@ _lex(['at least', 'no less'], 'compareMore/3').
 
 _lex(['and', 'or', ','], 'union/3') :- extUnion(1). % Conjunction
 _lex(['called', 'named'], 'nameObj/2').
+%_lex(['called', 'named'], 'name/2').
 
 %%% Units
 _lex(['%', 'percent'], 'percent/2').
